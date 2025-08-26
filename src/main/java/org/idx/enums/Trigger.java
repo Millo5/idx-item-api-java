@@ -1,0 +1,59 @@
+package org.idx.enums;
+
+import com.fasterxml.jackson.annotation.JsonValue;
+
+public enum Trigger {
+
+    // Triggers when the player is hurt
+    HURT(true),
+
+    // Triggers when the player hits an entity
+    HIT(true),
+    // Triggers when the player uses an item
+    USE,
+    // Triggers when the player swings an item
+    SWING,
+
+    // Triggers on a loop
+    PASSIVE(true),
+    PASSIVE_SLOW(true),
+
+    // Triggers when the player drops an item
+    DROP,
+    // Triggers when the player eats an item
+    EAT;
+
+
+
+    // Used only internally, not added to the data file
+    private final boolean global;
+
+    Trigger() {
+        this(false);
+    }
+
+    Trigger(boolean global) {
+        this.global = global;
+    }
+
+    /**
+     * Returns whether this trigger is global, meaning it applies to all items with this trigger type.
+     *
+     * @return true if the trigger is global, false otherwise
+     */
+    public boolean isGlobal() {
+        return global;
+    }
+
+
+    @Override
+    public String toString() {
+        return name().toLowerCase().replace('_', ' ');
+    }
+
+    @JsonValue
+    public String getValue() {
+        return toString();
+    }
+
+}
