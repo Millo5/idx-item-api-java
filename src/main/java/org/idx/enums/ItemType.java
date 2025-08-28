@@ -19,16 +19,17 @@ public enum ItemType {
 
     MATERIAL,
 
-    ACCESSORY,
-    TRINKET,
     CONSUMABLE,
+
+    ACCESSORY, // Group
+    TRINKET,
     OFFHAND,
 
-    WEAPON,
+    WEAPON, // Group
     MELEE_WEAPON,
     RANGED_WEAPON,
 
-    ARMOR,
+    ARMOR, // Group
     HELMET,
     CHESTPLATE,
     LEGGINGS,
