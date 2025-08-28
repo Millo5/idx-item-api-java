@@ -38,7 +38,7 @@ public enum Stat {
     WEAPON_RANGE("weapon-range"),
 
     /** Chance for an action to trigger twice */
-    RECURSION,
+    RECURSION
 
 
     ;
