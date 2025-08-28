@@ -2,6 +2,7 @@ package org.idx.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
+@SuppressWarnings("unused")
 public enum Trigger {
 
     // Triggers when the player is hurt
@@ -21,7 +22,11 @@ public enum Trigger {
     // Triggers when the player drops an item
     DROP,
     // Triggers when the player eats an item
-    EAT;
+    EAT,
+    EAT_GLOBAL(true),
+
+    ;
+
 
 
 

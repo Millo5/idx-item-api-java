@@ -59,7 +59,49 @@ public class Armor {
     }
 
     public static void sets() {
+        // Leather
+        {
+            Main.dataManager.addItem(new Item<>(
+                    "leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
+                    .setDescription("Slightly lessens blows to the head. Slightly.")
+                    .setRarity(Rarity.COMMON)
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 2)))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(1))
+            );
 
+            Main.dataManager.addItem(new Item<>(
+                    "leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("Protect yourself with the power of cow skin.")
+                    .setRarity(Rarity.COMMON)
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 3)))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(1))
+            );
+
+            Main.dataManager.addItem(new Item<>(
+                    "leather-pants", "Leather Pants", "leather_leggings", ItemType.LEGGINGS)
+                    .setDescription("Protect your legs with the power of cow skin.")
+                    .setRarity(Rarity.COMMON)
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 3)))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(1))
+            );
+
+            Main.dataManager.addItem(new Item<>(
+                    "leather-boots", "Leather Boots", "leather_boots", ItemType.BOOTS)
+                    .setDescription("Protect your feet with the power of cow skin.")
+                    .setRarity(Rarity.COMMON)
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 2)))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(1))
+            );
+
+        }
     }
 
 }

@@ -3,9 +3,11 @@ package org.idx.data;
 
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.idx.items.AttributeItem;
 import org.idx.items.Item;
 
@@ -105,7 +107,11 @@ public class DataManager {
             ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter()
                     .with(SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS);
 
-            writer.writeValue(file, items);
+            HashMap<String, Object> root = new HashMap<>();
+            root.put("items", itemMap);
+            root.put("attributes", attributeMap);
+
+            writer.writeValue(file, root);
         } catch (IOException e) {
             e.printStackTrace();
         }
