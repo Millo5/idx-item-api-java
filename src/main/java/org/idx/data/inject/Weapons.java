@@ -22,7 +22,7 @@ public class Weapons {
                         Stat.ATTACK_SPEED, 1.6,
                         Stat.CRIT_CHANCE, 5.0)))
                 .addComponent(new AttributesComponent(
-                        "sharp")));
+                        "sharp", "sword-slash")));
 
         Main.dataManager.addItem(new Item<>("clydes-blade", "Clyde's Blade", "armor_stand", ItemType.MELEE_WEAPON)
                 .setDescription("A blade that seems to have a mind of it's own. Can be quite dangerous.")
@@ -40,12 +40,27 @@ public class Weapons {
                 .addComponent(new AttributesComponent(
                         "sharp", "sword-slash", "two-handed")
                         .setEnchantSlots(3)));
-
+        Main.dataManager.addItem(new Item<>("wooden-shiv", "Wooden Shiv", "wooden_sword", ItemType.MELEE_WEAPON)
+            .setDescription("A simple wooden blade, not particularly effective.")
+            .addComponent(new StatsComponent(Map.of(
+                Stat.DAMAGE, 1,
+                Stat.WEAPON_ATTACK_SPEED, 3.1
+            )))
+            .addComponent(new AttributesComponent("sword-slash"))
+        );
     }
 
 
     public static void ranged() {
 
+        Main.dataManager.addItem(new Item<>("simple-bow", "Simple Bow", "bow", ItemType.RANGED_WEAPON)
+            .setDescription("A basic bow, not particularly powerful but gets the job done,")
+            .addComponent(new StatsComponent(Map.of(
+                Stat.DAMAGE, 2,
+                Stat.WEAPON_ATTACK_SPEED, 1.5,
+                Stat.WEAPON_RANGE, 15
+            )))
+        );
         Main.dataManager.addItem(new Item<>("longbow", "Longbow", "bow", ItemType.RANGED_WEAPON)
                 .setDescription("A large bow with increased range and damage")
                 .setRarity(Rarity.UNCOMMON)

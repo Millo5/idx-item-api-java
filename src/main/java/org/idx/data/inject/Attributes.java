@@ -21,11 +21,32 @@ public class Attributes {
     }
 
     public static void weaponAttributes() {
+        
+        Main.dataManager.addItem(new AttributeItem("sword-slash", "Sword Slash", "iron-sword", AttributeType.ATTRIBUTE)
+            .setDescription("A three swing combo.")
+            .setTarget(ItemType.MELEE_WEAPON)
+            .addComponent(new TriggersComponent(
+                Trigger.SWING
+            ))
+        );
+    }
 
+    public static void weaponCurses() {
+
+        Main.dataManager.addItem(new AttributeItem("two-handed", "Two Handed", "lever", AttributeType.CURSE)
+            .setDescription("Requires both hands to wield, remove offhand item to use")
+            .setTarget(ItemType.WEAPON)
+        );
     }
 
     public static void weaponEnchants() {
-
+        Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden-sword", AttributeType.ENCHANTMENT)
+            .setDescription("Increases the damage of melee weapons")
+            .setTarget(ItemType.MELEE_WEAPON)
+            .addComponent(new StatsComponent(Map.of(
+                Stat.DAMAGE, 1.5
+            )))
+        );
     }
 
     public static void armorAttributes() {

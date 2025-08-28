@@ -20,6 +20,7 @@ public enum ItemType {
     MATERIAL,
 
     CONSUMABLE,
+    ARROW,
 
     ACCESSORY, // Group
     TRINKET,

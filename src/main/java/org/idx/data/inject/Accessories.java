@@ -22,6 +22,6 @@ public class Accessories {
     }
 
     public static void trinkets() {
-
+        
     }
 }
