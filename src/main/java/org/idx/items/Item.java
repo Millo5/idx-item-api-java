@@ -113,6 +113,11 @@ public class Item<T extends Item<T>> {
     public String getMaterial() { return material; }
     public String getColor() { return color; }
     @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    public boolean getStackable() {
+        if (componentContainer.amount() == 0) return true;
+        return componentContainer.all().stream().allMatch(ItemComponent::stackable);
+    }
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     public int getModelData() { return modeldata; }
     public ItemType getType() { return type; }
     @JsonIgnore

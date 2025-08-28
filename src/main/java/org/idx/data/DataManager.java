@@ -118,10 +118,33 @@ public class DataManager {
     public void load() {
         if (!file.exists()) return;
 
+        if (true) return; // Temporary disable loading
+
         try {
-            List<Item<?>> loaded = mapper.readValue(file, new TypeReference<>() {});
-            items.clear();
-            items.addAll(loaded);
+//            List<Item<?>> loaded = mapper.readValue(file, new TypeReference<>() {});
+
+            Map<String, List<Item<?>>> root = mapper.readValue(file, new TypeReference<>() {});
+            List<Item<?>> loadedItems = root.get("items");
+            List<Item<?>> loadedAttributes = root.get("attributes");
+
+            if (loadedItems != null) {
+                for (Item<?> item : loadedItems) {
+                    addItem(item);
+                }
+            }
+
+            if (loadedAttributes != null) {
+                for (Item<?> item : loadedAttributes) {
+                    if (item instanceof AttributeItem attributeItem) {
+                        addItem(attributeItem);
+                    } else {
+                        System.out.println("Warning: Item in attributes list is not an AttributeItem: " + item.getId());
+                    }
+                }
+            }
+
+//            items.clear();
+//            items.addAll(loaded);
         } catch (IOException e) {
             e.printStackTrace();
         }

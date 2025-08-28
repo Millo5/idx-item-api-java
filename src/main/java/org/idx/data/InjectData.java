@@ -17,6 +17,7 @@ public class InjectData {
         Attributes.weaponEnchants();
         Attributes.armorAttributes();
         Attributes.armorEnchants();
+        Attributes.weaponCurses();
 
         Weapons.melee();
         Weapons.ranged();

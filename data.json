@@ -10,6 +10,19 @@
       "triggers" : [ "use" ]
     }
   }, {
+    "id" : "two-handed",
+    "name" : "Two Handed",
+    "material" : "lever",
+    "type" : "attribute",
+    "description" : "Requires both hands to wield, remove offhand item to use",
+    "components" : {
+      "attribute-target" : "weapon",
+      "attribute-type" : "curse",
+      "stats" : {
+        "two-handed-curse" : 1
+      }
+    }
+  }, {
     "id" : "recursion",
     "name" : "Recursion",
     "material" : "echo_shard",
@@ -26,7 +39,7 @@
   }, {
     "id" : "sword-slash",
     "name" : "Sword Slash",
-    "material" : "iron-sword",
+    "material" : "iron_sword",
     "type" : "attribute",
     "description" : "A three swing combo.",
     "components" : {
@@ -37,7 +50,7 @@
   }, {
     "id" : "sharp",
     "name" : "Sharp",
-    "material" : "wooden-sword",
+    "material" : "wooden_sword",
     "type" : "attribute",
     "description" : "Increases the damage of melee weapons",
     "components" : {
@@ -65,7 +78,8 @@
     "name" : "Rotten Flesh",
     "material" : "rotten_flesh",
     "type" : "material",
-    "description" : "For some reason you feel like you used to eat this."
+    "description" : "For some reason you feel like you used to eat this.",
+    "stackable" : true
   }, {
     "id" : "wooden-targe",
     "name" : "Wooden Targe",
@@ -121,6 +135,7 @@
     "material" : "lead",
     "type" : "consumable",
     "description" : "A long piece of rope, useful for climbing.",
+    "stackable" : true,
     "components" : {
       "attributes" : [ "grapple" ]
     }
@@ -151,25 +166,29 @@
     "name" : "Bone",
     "material" : "bone",
     "type" : "material",
-    "description" : "I used to be a femur."
+    "description" : "I used to be a femur.",
+    "stackable" : true
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
     "material" : "gunpowder",
     "type" : "material",
-    "description" : "Useful for creation of boom boom"
+    "description" : "Useful for creation of boom boom",
+    "stackable" : true
   }, {
     "id" : "slime",
     "name" : "Slime",
     "material" : "slime_ball",
     "type" : "material",
-    "description" : "Tastes like a booger"
+    "description" : "Tastes like a booger",
+    "stackable" : true
   }, {
     "id" : "spider-silk",
     "name" : "Spider Silk",
     "material" : "string",
     "type" : "material",
-    "description" : "Stronger than steel!"
+    "description" : "Stronger than steel!",
+    "stackable" : true
   }, {
     "id" : "illusioners-hood",
     "name" : "Illusioner's Hood",
@@ -185,8 +204,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "level" : 5
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",

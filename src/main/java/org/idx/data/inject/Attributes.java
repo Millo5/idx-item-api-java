@@ -23,7 +23,7 @@ public class Attributes {
 
     public static void weaponAttributes() {
         
-        Main.dataManager.addItem(new AttributeItem("sword-slash", "Sword Slash", "iron-sword", AttributeType.ATTRIBUTE)
+        Main.dataManager.addItem(new AttributeItem("sword-slash", "Sword Slash", "iron_sword", AttributeType.ATTRIBUTE)
             .setDescription("A three swing combo.")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
@@ -37,11 +37,15 @@ public class Attributes {
         Main.dataManager.addItem(new AttributeItem("two-handed", "Two Handed", "lever", AttributeType.CURSE)
             .setDescription("Requires both hands to wield, remove offhand item to use")
             .setTarget(ItemType.WEAPON)
+                .addComponent(new StatsComponent(Map.of(
+                        Stat.TWO_HANDED_CURSE, 1
+                )))
         );
+
     }
 
     public static void weaponEnchants() {
-        Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden-sword", AttributeType.ENCHANTMENT)
+        Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden_sword", AttributeType.ENCHANTMENT)
             .setDescription("Increases the damage of melee weapons")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new StatsComponent(Map.of(

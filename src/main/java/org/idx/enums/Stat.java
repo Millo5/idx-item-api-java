@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 @SuppressWarnings("unused")
 public enum Stat {
 
+    //<editor-fold desc="Core Stats" defaultstate="collapsed">
+
     /** Maximum health of the player */
     HEALTH,
     /** Defense reduces incoming damage */
@@ -37,10 +39,21 @@ public enum Stat {
     /** A weapon's range in blocks */
     WEAPON_RANGE("weapon-range"),
 
+    //</editor-fold>
+
+    //<editor-fold desc="Unique Stats" defaultstate="collapsed">
+
     /** Chance for an action to trigger twice */
-    RECURSION
+    RECURSION,
 
+    ///</editor-fold>
 
+    //<editor-fold desc="Curses" defaultstate="collapsed">
+
+    /** Requires two hands to use */
+    TWO_HANDED_CURSE
+
+    //</editor-fold>
     ;
 
 
