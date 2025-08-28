@@ -1,172 +1,260 @@
 {
-  "attributes" : {
-    "sharp" : {
-      "id" : "sharp",
-      "name" : "Sharp",
-      "material" : "wooden-sword",
-      "type" : "attribute",
-      "description" : "Increases the damage of melee weapons",
-      "components" : {
-        "attribute-target" : "melee-weapon",
-        "attribute-type" : "enchantment",
-        "stats" : {
-          "damage" : 1.5
-        }
+  "attributes" : [ {
+    "id" : "grapple",
+    "name" : "Grapple",
+    "material" : "lead",
+    "type" : "attribute",
+    "description" : "A grappling hook used to pull objects or climb.",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "use" ]
+    }
+  }, {
+    "id" : "recursion",
+    "name" : "Recursion",
+    "material" : "echo_shard",
+    "type" : "attribute",
+    "description" : "A strange enchantment that allows the user to duplicate their actions",
+    "components" : {
+      "attribute-target" : "armor",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "recursion" : 0.25
       }
     },
-    "sword-slash" : {
-      "id" : "sword-slash",
-      "name" : "Sword Slash",
-      "material" : "iron-sword",
-      "type" : "attribute",
-      "description" : "A three swing combo.",
-      "components" : {
-        "attribute-target" : "melee-weapon",
-        "attribute-type" : "attribute",
-        "triggers" : [ "swing" ]
+    "rarity" : "mythic"
+  }, {
+    "id" : "sword-slash",
+    "name" : "Sword Slash",
+    "material" : "iron-sword",
+    "type" : "attribute",
+    "description" : "A three swing combo.",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "swing" ]
+    }
+  }, {
+    "id" : "sharp",
+    "name" : "Sharp",
+    "material" : "wooden-sword",
+    "type" : "attribute",
+    "description" : "Increases the damage of melee weapons",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "damage" : 1.5
       }
     }
-  },
-  "items" : {
-    "gunpowder" : {
-      "id" : "gunpowder",
-      "name" : "Gunpowder",
-      "material" : "gunpowder",
-      "type" : "material",
-      "description" : "Useful for creation of boom boom"
-    },
-    "leather-boots" : {
-      "id" : "leather-boots",
-      "name" : "Leather Boots",
-      "material" : "leather_boots",
-      "type" : "boots",
-      "description" : "Protect your feet with the power of cow skin.",
-      "components" : {
-        "enchantSlots" : 1,
-        "stats" : {
-          "defense" : 2
-        }
-      }
-    },
-    "leather-hood" : {
-      "id" : "leather-hood",
-      "name" : "Leather Hood",
-      "material" : "leather_helmet",
-      "type" : "helmet",
-      "description" : "Slightly lessens blows to the head. Slightly.",
-      "components" : {
-        "enchantSlots" : 1,
-        "stats" : {
-          "defense" : 2
-        }
-      }
-    },
-    "leather-pants" : {
-      "id" : "leather-pants",
-      "name" : "Leather Pants",
-      "material" : "leather_leggings",
-      "type" : "leggings",
-      "description" : "Protect your legs with the power of cow skin.",
-      "components" : {
-        "enchantSlots" : 1,
-        "stats" : {
-          "defense" : 3
-        }
-      }
-    },
-    "leather-tunic" : {
-      "id" : "leather-tunic",
-      "name" : "Leather Tunic",
-      "material" : "leather_chestplate",
-      "type" : "chestplate",
-      "description" : "Protect yourself with the power of cow skin.",
-      "components" : {
-        "enchantSlots" : 1,
-        "stats" : {
-          "defense" : 3
-        }
-      }
-    },
-    "madam-8-legs" : {
-      "id" : "madam-8-legs",
-      "name" : "Madam 8 Legs",
-      "material" : "diamond_leggings",
-      "type" : "leggings",
-      "description" : "A pair of enchanted legs that greatly increase the speed of the wearer",
-      "components" : {
-        "stats" : {
-          "health" : 5,
-          "defense" : 10,
-          "attack-speed" : 25,
-          "crit-chance" : 25,
-          "move-speed" : 25
-        }
-      },
-      "rarity" : "epic"
-    },
-    "rope" : {
-      "id" : "rope",
-      "name" : "Rope",
-      "material" : "lead",
-      "type" : "consumable",
-      "description" : "A long piece of rope, useful for climbing.",
-      "components" : {
-        "attributes" : [ "grapple" ]
-      }
-    },
-    "simple-bow" : {
-      "id" : "simple-bow",
-      "name" : "Simple Bow",
-      "material" : "bow",
-      "type" : "ranged-weapon",
-      "description" : "A basic bow, not particularly powerful but gets the job done,",
-      "components" : {
-        "stats" : {
-          "damage" : 2,
-          "weapon-attack-speed" : 1.5,
-          "weapon-range" : 15
-        }
-      }
-    },
-    "slime" : {
-      "id" : "slime",
-      "name" : "Slime",
-      "material" : "slime_ball",
-      "type" : "material",
-      "description" : "Tastes like a booger"
-    },
-    "spider-silk" : {
-      "id" : "spider-silk",
-      "name" : "Spider Silk",
-      "material" : "string",
-      "type" : "material",
-      "description" : "Stronger than steel!"
-    },
-    "wooden-shiv" : {
-      "id" : "wooden-shiv",
-      "name" : "Wooden Shiv",
-      "material" : "wooden_sword",
-      "type" : "melee-weapon",
-      "description" : "A simple wooden blade, not particularly effective.",
-      "components" : {
-        "attributes" : [ "sword-slash" ],
-        "stats" : {
-          "damage" : 1,
-          "weapon-attack-speed" : 3.1
-        }
-      }
-    },
-    "wooden-targe" : {
-      "id" : "wooden-targe",
-      "name" : "Wooden Targe",
-      "material" : "oak_slab",
-      "type" : "offhand",
-      "description" : "A small wooden shield.",
-      "components" : {
-        "stats" : {
-          "defense" : 5
-        }
+  } ],
+  "items" : [ {
+    "id" : "leather-pants",
+    "name" : "Leather Pants",
+    "material" : "leather_leggings",
+    "type" : "leggings",
+    "description" : "Protect your legs with the power of cow skin.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 3
       }
     }
-  }
+  }, {
+    "id" : "rotten-flesh",
+    "name" : "Rotten Flesh",
+    "material" : "rotten_flesh",
+    "type" : "material",
+    "description" : "For some reason you feel like you used to eat this."
+  }, {
+    "id" : "wooden-targe",
+    "name" : "Wooden Targe",
+    "material" : "oak_slab",
+    "type" : "offhand",
+    "description" : "A small wooden shield.",
+    "components" : {
+      "stats" : {
+        "defense" : 5
+      }
+    }
+  }, {
+    "id" : "leather-boots",
+    "name" : "Leather Boots",
+    "material" : "leather_boots",
+    "type" : "boots",
+    "description" : "Protect your feet with the power of cow skin.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 2
+      }
+    }
+  }, {
+    "id" : "leather-hood",
+    "name" : "Leather Hood",
+    "material" : "leather_helmet",
+    "type" : "helmet",
+    "description" : "Slightly lessens blows to the head. Slightly.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 2
+      }
+    }
+  }, {
+    "id" : "longbow",
+    "name" : "Longbow",
+    "material" : "bow",
+    "type" : "ranged-weapon",
+    "description" : "A large bow with increased range and damage",
+    "components" : {
+      "stats" : {
+        "damage" : 4,
+        "weapon-attack-speed" : 1.2,
+        "weapon-range" : 25
+      }
+    },
+    "rarity" : "uncommon"
+  }, {
+    "id" : "rope",
+    "name" : "Rope",
+    "material" : "lead",
+    "type" : "consumable",
+    "description" : "A long piece of rope, useful for climbing.",
+    "components" : {
+      "attributes" : [ "grapple" ]
+    }
+  }, {
+    "id" : "clydes-blade",
+    "name" : "Clyde's Blade",
+    "material" : "armor_stand",
+    "type" : "melee-weapon",
+    "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
+    "components" : {
+      "attributes" : [ "sharp", "sword-slash", "two-handed" ],
+      "enchantSlots" : 3,
+      "stats" : {
+        "health" : 2,
+        "defense" : 2,
+        "damage" : 9.5,
+        "crit-chance" : 40,
+        "crit-damage" : 50,
+        "knockback" : -40,
+        "move-speed" : 40,
+        "luck" : 0.2,
+        "weapon-attack-speed" : 1.6
+      }
+    },
+    "rarity" : "developer"
+  }, {
+    "id" : "bone",
+    "name" : "Bone",
+    "material" : "bone",
+    "type" : "material",
+    "description" : "I used to be a femur."
+  }, {
+    "id" : "gunpowder",
+    "name" : "Gunpowder",
+    "material" : "gunpowder",
+    "type" : "material",
+    "description" : "Useful for creation of boom boom"
+  }, {
+    "id" : "slime",
+    "name" : "Slime",
+    "material" : "slime_ball",
+    "type" : "material",
+    "description" : "Tastes like a booger"
+  }, {
+    "id" : "spider-silk",
+    "name" : "Spider Silk",
+    "material" : "string",
+    "type" : "material",
+    "description" : "Stronger than steel!"
+  }, {
+    "id" : "illusioners-hood",
+    "name" : "Illusioner's Hood",
+    "material" : "leather_helmet",
+    "type" : "helmet",
+    "description" : "A hood worn by illusioners, it has a strange aura.",
+    "color" : "#00a0a0",
+    "components" : {
+      "attributes" : [ "recursion" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "health" : 4,
+        "defense" : 8
+      }
+    },
+    "level" : 5,
+    "rarity" : "mythic"
+  }, {
+    "id" : "madam-8-legs",
+    "name" : "Madam 8 Legs",
+    "material" : "diamond_leggings",
+    "type" : "leggings",
+    "description" : "A pair of enchanted legs that greatly increase the speed of the wearer",
+    "components" : {
+      "stats" : {
+        "health" : 5,
+        "defense" : 10,
+        "attack-speed" : 25,
+        "crit-chance" : 25,
+        "move-speed" : 25
+      }
+    },
+    "rarity" : "epic"
+  }, {
+    "id" : "simple-bow",
+    "name" : "Simple Bow",
+    "material" : "bow",
+    "type" : "ranged-weapon",
+    "description" : "A basic bow, not particularly powerful but gets the job done,",
+    "components" : {
+      "stats" : {
+        "damage" : 2,
+        "weapon-attack-speed" : 1.5,
+        "weapon-range" : 15
+      }
+    }
+  }, {
+    "id" : "wooden-shiv",
+    "name" : "Wooden Shiv",
+    "material" : "wooden_sword",
+    "type" : "melee-weapon",
+    "description" : "A simple wooden blade, not particularly effective.",
+    "components" : {
+      "attributes" : [ "sword-slash" ],
+      "stats" : {
+        "damage" : 1,
+        "weapon-attack-speed" : 3.1
+      }
+    }
+  }, {
+    "id" : "leather-tunic",
+    "name" : "Leather Tunic",
+    "material" : "leather_chestplate",
+    "type" : "chestplate",
+    "description" : "Protect yourself with the power of cow skin.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 3
+      }
+    }
+  }, {
+    "id" : "polished-sword",
+    "name" : "Polished Sword",
+    "material" : "iron_sword",
+    "type" : "melee-weapon",
+    "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
+    "components" : {
+      "attributes" : [ "sharp", "sword-slash" ],
+      "stats" : {
+        "damage" : 7.0,
+        "attack-speed" : 1.6,
+        "crit-chance" : 5.0
+      }
+    },
+    "rarity" : "uncommon"
+  } ]
 }

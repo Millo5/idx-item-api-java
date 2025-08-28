@@ -108,8 +108,8 @@ public class DataManager {
                     .with(SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS);
 
             HashMap<String, Object> root = new HashMap<>();
-            root.put("items", itemMap);
-            root.put("attributes", attributeMap);
+            root.put("items", itemMap.values());
+            root.put("attributes", attributeMap.values());
 
             writer.writeValue(file, root);
         } catch (IOException e) {
