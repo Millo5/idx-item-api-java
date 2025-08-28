@@ -1,15 +1,13 @@
 package org.idx.items.components.impl;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.idx.Main;
+import org.idx.items.AttributeItem;
 import org.idx.items.Item;
 import org.idx.items.components.ItemComponent;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class AttributesComponent implements ItemComponent {
 
@@ -17,7 +15,7 @@ public class AttributesComponent implements ItemComponent {
     private int enchantSlots = 0;
 
     public AttributesComponent(String... attributes) {
-        this.attributes = List.of(attributes);
+        this(List.of(attributes));
     }
 
     public AttributesComponent(List<String> attributes) {
@@ -65,7 +63,30 @@ public class AttributesComponent implements ItemComponent {
     }
 
     @Override
-    public boolean valid() {
+    public boolean hasData() {
         return !attributes.isEmpty() || enchantSlots > 0;
+    }
+
+    @Override
+    public void validate() throws IllegalStateException {
+        List<String> invalidAttributes = new ArrayList<>();
+        for (String attr : attributes) {
+            boolean found = false;
+            for (Item<?> item : Main.dataManager.getItems()) {
+                if (item instanceof AttributeItem attributeItem) {
+                    if (attributeItem.getId().equals(attr)) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            if (!found) {
+                invalidAttributes.add(attr);
+            }
+        }
+        if (!invalidAttributes.isEmpty()) {
+            throw new IllegalStateException("Invalid attributes: " + String.join(", ", invalidAttributes));
+        }
+
     }
 }

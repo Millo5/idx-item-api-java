@@ -1,8 +1,8 @@
 package org.idx.enums;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
+@SuppressWarnings("unused")
 public enum Stat {
 
     /** Maximum health of the player */
@@ -35,7 +35,10 @@ public enum Stat {
     /** A weapon's attacks per second */
     WEAPON_ATTACK_SPEED("weapon-attack-speed"),
     /** A weapon's range in blocks */
-    WEAPON_RANGE("weapon-range")
+    WEAPON_RANGE("weapon-range"),
+
+    /** Chance for an action to trigger twice */
+    RECURSION,
 
 
     ;

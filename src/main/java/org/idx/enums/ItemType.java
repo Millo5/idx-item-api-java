@@ -12,18 +12,23 @@ import org.idx.items.exceptions.UnexpectedComponentException;
 import java.util.Collection;
 import java.util.function.Predicate;
 
+@SuppressWarnings("unused")
 public enum ItemType {
 
     ATTRIBUTE((item) -> requireComponent(item, TriggersComponent.class) && requireComponent(item, AttributeTypeComponent.class)),
 
     MATERIAL,
 
+    ACCESSORY,
     TRINKET,
     CONSUMABLE,
     OFFHAND,
+
+    WEAPON,
     MELEE_WEAPON,
     RANGED_WEAPON,
 
+    ARMOR,
     HELMET,
     CHESTPLATE,
     LEGGINGS,
@@ -34,16 +39,16 @@ public enum ItemType {
     UNIQUE;
 
 
-    Predicate<Item> isValidPredicate = (item) -> true;
+    Predicate<Item<?>> isValidPredicate = (item) -> true;
 
     ItemType() {}
 
-    ItemType(Predicate<Item> isValidPredicate) {
+    ItemType(Predicate<Item<?>> isValidPredicate) {
         this.isValidPredicate = isValidPredicate;
     }
 
 
-    public boolean isValid(Item item) {
+    public boolean isValid(Item<?> item) {
         if (item == null) return false;
         if (item.getType() != this) return false;
 
@@ -51,13 +56,13 @@ public enum ItemType {
     }
 
 
-    private static boolean requireComponent(Item item, Class<? extends ItemComponent> componentClass) {
+    private static boolean requireComponent(Item<?> item, Class<? extends ItemComponent> componentClass) {
         if (!item.hasComponent(componentClass)) {
             throw new ExpectedComponentException(item.getType(), componentClass);
         }
         return true;
     }
-    private static boolean requireSingleComponent(Item item, Class<? extends ItemComponent> componentClass) {
+    private static boolean requireSingleComponent(Item<?> item, Class<? extends ItemComponent> componentClass) {
         if (!item.hasSingleComponent(componentClass)) {
             if (item.hasComponent(componentClass)) {
                 Collection<ItemComponent> components = item.getComponents();

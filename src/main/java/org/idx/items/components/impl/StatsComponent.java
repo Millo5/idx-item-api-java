@@ -41,7 +41,7 @@ public class StatsComponent implements ItemComponent {
     }
 
     @Override
-    public boolean valid() {
+    public boolean hasData() {
         return stats != null && !stats.isEmpty();
     }
 

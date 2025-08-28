@@ -43,7 +43,7 @@ public class TriggersComponent implements ItemComponent {
     }
 
     @Override
-    public boolean valid() {
+    public boolean hasData() {
         return !triggers.isEmpty();
     }
 }

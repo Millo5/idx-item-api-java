@@ -54,11 +54,11 @@ public class ItemDeserializer extends StdDeserializer<Item> {
         if (node.has("components")) {
             ObjectNode componentsNode = (ObjectNode) node.get("components");
 
-            AttributesComponent.fromJson(componentsNode).addIfValid(item);
-            EnchantmentComponent.fromJson(componentsNode).addIfValid(item);
-            StatsComponent.fromJson(componentsNode).addIfValid(item);
-            TriggersComponent.fromJson(componentsNode).addIfValid(item);
-            AttributeTypeComponent.fromJson(componentsNode).addIfValid(item);
+            AttributesComponent.fromJson(componentsNode).addIfHasData(item);
+            EnchantmentComponent.fromJson(componentsNode).addIfHasData(item);
+            StatsComponent.fromJson(componentsNode).addIfHasData(item);
+            TriggersComponent.fromJson(componentsNode).addIfHasData(item);
+            AttributeTypeComponent.fromJson(componentsNode).addIfHasData(item);
         }
 
 

@@ -124,6 +124,15 @@ public class Item<T extends Item<T>> {
     public ComponentContainer getComponentContainer() { return componentContainer; }
     @JsonIgnore
     public Collection<ItemComponent> getComponents() { return componentContainer.all(); }
+    @JsonIgnore
+    public <C extends ItemComponent> Optional<C> getComponent(Class<C> componentClass) {
+        for (ItemComponent component : componentContainer.all()) {
+            if (componentClass.isInstance(component)) {
+                return Optional.of(componentClass.cast(component));
+            }
+        }
+        return Optional.empty();
+    }
 
     // Json Serialization Fields
     @JsonProperty("rarity")
@@ -138,4 +147,18 @@ public class Item<T extends Item<T>> {
         return level > 1 ? level : 0; // Only serialize if level is greater than 1
     }
 
+    @JsonIgnore
+    public void validate() {
+        System.out.println("Validating item: " + id);
+
+        for (ItemComponent component : componentContainer.all()) {
+
+            try {
+                component.validate();
+            } catch (IllegalStateException e) {
+                System.err.println("Validation error in item '" + id + "' for component " + component.getClass().getSimpleName() + ": " + e.getMessage());
+            }
+
+        }
+    }
 }

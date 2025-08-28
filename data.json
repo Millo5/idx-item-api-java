@@ -1,4 +1,37 @@
 [ {
+  "id" : "bone",
+  "name" : "Bone",
+  "material" : "bone",
+  "type" : "material",
+  "description" : "A bone from a creature long gone, useful for crafting or trading."
+}, {
+  "id" : "rotten-flesh",
+  "name" : "Rotten Flesh",
+  "material" : "rotten_flesh",
+  "type" : "material",
+  "description" : "For some reason you feel like you used to eat this."
+}, {
+  "id" : "grapple",
+  "name" : "Grapple",
+  "material" : "lead",
+  "type" : "attribute",
+  "description" : "A grappling hook used to pull objects or climb.",
+  "components" : {
+    "triggers" : [ "use" ]
+  }
+}, {
+  "id" : "recursion",
+  "name" : "Recursion",
+  "material" : "echo_shard",
+  "type" : "attribute",
+  "description" : "A strange enchantment that allows the user to duplicate their actions",
+  "components" : {
+    "stats" : {
+      "recursion" : 0.25
+    }
+  },
+  "rarity" : "mythic"
+}, {
   "id" : "polished-sword",
   "name" : "Polished Sword",
   "material" : "iron_sword",
@@ -14,15 +47,41 @@
   },
   "rarity" : "uncommon"
 }, {
-  "id" : "grapple",
-  "name" : "Grapple",
-  "material" : "lead",
-  "type" : "attribute",
-  "description" : "A grappling hook used to pull objects or climb.",
+  "id" : "clydes-blade",
+  "name" : "Clyde's Blade",
+  "material" : "armor_stand",
+  "type" : "melee-weapon",
+  "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
   "components" : {
-    "attribute-type" : "attribute",
-    "triggers" : [ "use" ]
-  }
+    "attributes" : [ "sharp", "sword-slash", "two-handed" ],
+    "enchantSlots" : 3,
+    "stats" : {
+      "health" : 2,
+      "defense" : 2,
+      "damage" : 9.5,
+      "crit-chance" : 40,
+      "crit-damage" : 50,
+      "knockback" : -40,
+      "move-speed" : 40,
+      "luck" : 0.2,
+      "weapon-attack-speed" : 1.6
+    }
+  },
+  "rarity" : "developer"
+}, {
+  "id" : "longbow",
+  "name" : "Longbow",
+  "material" : "bow",
+  "type" : "ranged-weapon",
+  "description" : "A large bow with increased range and damage",
+  "components" : {
+    "stats" : {
+      "damage" : 4,
+      "weapon-attack-speed" : 1.2,
+      "weapon-range" : 25
+    }
+  },
+  "rarity" : "uncommon"
 }, {
   "id" : "illusioners-hood",
   "name" : "Illusioner's Hood",
@@ -38,26 +97,6 @@
       "defense" : 8
     }
   },
-  "level" : 5,
-  "rarity" : "mythic"
-}, {
-  "id" : "bone",
-  "name" : "Bone",
-  "material" : "bone",
-  "type" : "material",
-  "description" : "A bone from a creature long gone, useful for crafting or trading."
-}, {
-  "id" : "big",
-  "name" : "Big",
-  "material" : "snowball",
-  "type" : "attribute",
-  "description" : "Increases the size of melee weapons.",
-  "components" : {
-    "attribute-type" : "attribute",
-    "stats" : {
-      "damage" : 3.0,
-      "range" : 5.0
-    }
-  },
-  "rarity" : "uncommon"
+  "rarity" : "mythic",
+  "level" : 5
 } ]

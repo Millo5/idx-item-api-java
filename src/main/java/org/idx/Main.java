@@ -13,7 +13,10 @@ public class Main {
         InjectData.injectData();
         dataManager.save();
 
-        Window window = new Window();
+        System.out.println("Saved " + dataManager.getItemMap().size() + " items." +
+                " (" + dataManager.getAttributeMap().size() + " attributes)");
+
+//        Window window = new Window();
 
     }
 }
