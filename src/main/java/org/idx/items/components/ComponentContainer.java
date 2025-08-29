@@ -35,7 +35,7 @@ public class ComponentContainer {
     }
 
     public ItemComponent getFirst() {
-        return components.getFirst();
+        return components.get(0);
     }
 
     public void add(ItemComponent component) {
