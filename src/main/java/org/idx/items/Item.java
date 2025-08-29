@@ -119,6 +119,7 @@ public class Item<T extends Item<T>> {
     }
     @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     public int getModelData() { return modeldata; }
+    @JsonProperty("item-type")
     public ItemType getType() { return type; }
     @JsonIgnore
     public Rarity getRarity() { return rarity; }

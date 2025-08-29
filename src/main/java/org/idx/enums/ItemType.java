@@ -30,11 +30,11 @@ public enum ItemType {
     MELEE_WEAPON,
     RANGED_WEAPON,
 
-    ARMOR, // Group
-    HELMET,
-    CHESTPLATE,
-    LEGGINGS,
-    BOOTS,
+    ARMOR(false), // Group
+    HELMET(false),
+    CHESTPLATE(false),
+    LEGGINGS(false),
+    BOOTS(false),
 
     ENCHANTMENT((item) -> requireSingleComponent(item, EnchantmentComponent.class)),
 
@@ -42,11 +42,16 @@ public enum ItemType {
 
 
     Predicate<Item<?>> isValidPredicate = (item) -> true;
+    private boolean stackable = true;
 
     ItemType() {}
 
     ItemType(Predicate<Item<?>> isValidPredicate) {
         this.isValidPredicate = isValidPredicate;
+    }
+
+    ItemType(boolean stackable) {
+        this.stackable = stackable;
     }
 
 
@@ -57,6 +62,9 @@ public enum ItemType {
         return isValidPredicate.test(item);
     }
 
+    public boolean isStackable() {
+        return stackable;
+    }
 
     private static boolean requireComponent(Item<?> item, Class<? extends ItemComponent> componentClass) {
         if (!item.hasComponent(componentClass)) {
