@@ -3,7 +3,6 @@ package org.idx.data.inject;
 import org.idx.Main;
 import org.idx.enums.*;
 import org.idx.items.AttributeItem;
-import org.idx.items.components.impl.AttributeTypeComponent;
 import org.idx.items.components.impl.StatsComponent;
 import org.idx.items.components.impl.TriggersComponent;
 

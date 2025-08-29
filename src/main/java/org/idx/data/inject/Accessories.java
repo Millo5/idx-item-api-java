@@ -9,6 +9,7 @@ import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.components.impl.StatsComponent;
 
+@SuppressWarnings("unused")
 public class Accessories {
     public static void offhand() {
 
