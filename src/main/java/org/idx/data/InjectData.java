@@ -29,5 +29,6 @@ public class InjectData {
         Accessories.trinkets();
 
         Consumables.consumables();
+        Consumables.arrows();
     }
 }
