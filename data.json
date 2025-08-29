@@ -62,35 +62,13 @@
     }
   } ],
   "items" : [ {
-    "id" : "leather-pants",
-    "name" : "Leather Pants",
-    "material" : "leather_leggings",
-    "item-type" : "leggings",
-    "description" : "Protect your legs with the power of cow skin.",
-    "components" : {
-      "enchantSlots" : 1,
-      "stats" : {
-        "defense" : 3
-      }
-    }
-  }, {
-    "id" : "rotten-flesh",
-    "name" : "Rotten Flesh",
-    "material" : "rotten_flesh",
+    "id" : "ender-pearl",
+    "name" : "Ender Pearl",
+    "material" : "ender_pearl",
     "item-type" : "material",
-    "description" : "For some reason you feel like you used to eat this.",
-    "stackable" : true
-  }, {
-    "id" : "wooden-targe",
-    "name" : "Wooden Targe",
-    "material" : "oak_slab",
-    "item-type" : "offhand",
-    "description" : "A small wooden shield.",
-    "components" : {
-      "stats" : {
-        "defense" : 5
-      }
-    }
+    "description" : "Please be the eyes, please be the eyes...",
+    "stackable" : true,
+    "rarity" : "mythic"
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
@@ -103,6 +81,14 @@
         "defense" : 2
       }
     }
+  }, {
+    "id" : "necrotic-matter",
+    "name" : "Necrotic Matter",
+    "material" : "coal",
+    "item-type" : "material",
+    "description" : "Mr Dweevius, I don't feel so good...",
+    "stackable" : true,
+    "rarity" : "legendary"
   }, {
     "id" : "leather-hood",
     "name" : "Leather Hood",
@@ -152,6 +138,161 @@
       "attributes" : [ "grapple" ]
     }
   }, {
+    "id" : "frog-leg",
+    "name" : "Frog Leg",
+    "material" : "sugar_cane",
+    "item-type" : "material",
+    "description" : "Still twitching.",
+    "stackable" : true,
+    "rarity" : "rare"
+  }, {
+    "id" : "slime",
+    "name" : "Slime",
+    "material" : "slime_ball",
+    "item-type" : "material",
+    "description" : "Tastes like a booger. Don't ask how I know that.",
+    "stackable" : true
+  }, {
+    "id" : "spider-silk",
+    "name" : "Spider Silk",
+    "material" : "string",
+    "item-type" : "material",
+    "description" : "Stronger than steel!",
+    "stackable" : true
+  }, {
+    "id" : "bat-wing",
+    "name" : "Bat Wing",
+    "material" : "black_carpet",
+    "item-type" : "material",
+    "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
+    "stackable" : true,
+    "rarity" : "epic"
+  }, {
+    "id" : "torn-cloth",
+    "name" : "Torn Cloth",
+    "material" : "rabbit_hide",
+    "item-type" : "material",
+    "description" : "Very low quality.",
+    "stackable" : true,
+    "rarity" : "rare"
+  }, {
+    "id" : "crude-iron",
+    "name" : "Crude Iron",
+    "material" : "raw_iron",
+    "item-type" : "material",
+    "description" : "Seems to have been wrecked relatively recently.",
+    "stackable" : true,
+    "rarity" : "rare"
+  }, {
+    "id" : "fungus",
+    "name" : "Fungus",
+    "material" : "brown_mushroom",
+    "item-type" : "material",
+    "description" : "Have a fungus.",
+    "stackable" : true,
+    "rarity" : "rare"
+  }, {
+    "id" : "stick",
+    "name" : "Stick",
+    "material" : "stick",
+    "item-type" : "material",
+    "description" : "Useful for creation of boom boom",
+    "stackable" : true
+  }, {
+    "id" : "wooden-shiv",
+    "name" : "Wooden Shiv",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A simple wooden blade, not particularly effective.",
+    "components" : {
+      "attributes" : [ "sword-slash" ],
+      "stats" : {
+        "damage" : 1,
+        "weapon-attack-speed" : 3.1
+      }
+    }
+  }, {
+    "id" : "leather-tunic",
+    "name" : "Leather Tunic",
+    "material" : "leather_chestplate",
+    "item-type" : "chestplate",
+    "description" : "Protect yourself with the power of cow skin.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 3
+      }
+    }
+  }, {
+    "id" : "guardian-scale",
+    "name" : "Guardian Scale",
+    "material" : "prismarine_shard",
+    "item-type" : "material",
+    "description" : "It's made from some sort of prismatic aquamarine...",
+    "stackable" : true,
+    "rarity" : "rare"
+  }, {
+    "id" : "polished-sword",
+    "name" : "Polished Sword",
+    "material" : "iron_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
+    "components" : {
+      "attributes" : [ "sharp", "sword-slash" ],
+      "stats" : {
+        "damage" : 7.0,
+        "attack-speed" : 1.6,
+        "crit-chance" : 5.0
+      }
+    },
+    "rarity" : "uncommon"
+  }, {
+    "id" : "leather-pants",
+    "name" : "Leather Pants",
+    "material" : "leather_leggings",
+    "item-type" : "leggings",
+    "description" : "Protect your legs with the power of cow skin.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 3
+      }
+    }
+  }, {
+    "id" : "rotten-flesh",
+    "name" : "Rotten Flesh",
+    "material" : "rotten_flesh",
+    "item-type" : "material",
+    "description" : "For some reason you feel like you used to eat this.",
+    "stackable" : true
+  }, {
+    "id" : "golden-nugget",
+    "name" : "Golden Nugget",
+    "material" : "gold_nugget",
+    "item-type" : "material",
+    "description" : "Shiny...",
+    "stackable" : true,
+    "rarity" : "legendary"
+  }, {
+    "id" : "wooden-targe",
+    "name" : "Wooden Targe",
+    "material" : "oak_slab",
+    "item-type" : "offhand",
+    "description" : "A small wooden shield.",
+    "components" : {
+      "stats" : {
+        "defense" : 5
+      }
+    }
+  }, {
+    "id" : "spider-eye",
+    "name" : "Spider Eye",
+    "material" : "spider_eye",
+    "item-type" : "material",
+    "description" : "You'd think you would get a lot more of these...",
+    "stackable" : true,
+    "rarity" : "epic"
+  }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
     "material" : "armor_stand",
@@ -185,22 +326,9 @@
     "name" : "Gunpowder",
     "material" : "gunpowder",
     "item-type" : "material",
-    "description" : "Useful for creation of boom boom",
-    "stackable" : true
-  }, {
-    "id" : "slime",
-    "name" : "Slime",
-    "material" : "slime_ball",
-    "item-type" : "material",
-    "description" : "Tastes like a booger",
-    "stackable" : true
-  }, {
-    "id" : "spider-silk",
-    "name" : "Spider Silk",
-    "material" : "string",
-    "item-type" : "material",
-    "description" : "Stronger than steel!",
-    "stackable" : true
+    "description" : "Useful for creation of boom boom.",
+    "stackable" : true,
+    "rarity" : "rare"
   }, {
     "id" : "illusioners-hood",
     "name" : "Illusioner's Hood",
@@ -216,8 +344,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "mythic",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "mythic"
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
@@ -248,44 +376,20 @@
       }
     }
   }, {
-    "id" : "wooden-shiv",
-    "name" : "Wooden Shiv",
-    "material" : "wooden_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A simple wooden blade, not particularly effective.",
-    "components" : {
-      "attributes" : [ "sword-slash" ],
-      "stats" : {
-        "damage" : 1,
-        "weapon-attack-speed" : 3.1
-      }
-    }
+    "id" : "echo-shard",
+    "name" : "Echo Shard",
+    "material" : "echo_shard",
+    "item-type" : "material",
+    "description" : "Kinda...glitchy?",
+    "stackable" : true,
+    "rarity" : "mythic"
   }, {
-    "id" : "leather-tunic",
-    "name" : "Leather Tunic",
-    "material" : "leather_chestplate",
-    "item-type" : "chestplate",
-    "description" : "Protect yourself with the power of cow skin.",
-    "components" : {
-      "enchantSlots" : 1,
-      "stats" : {
-        "defense" : 3
-      }
-    }
-  }, {
-    "id" : "polished-sword",
-    "name" : "Polished Sword",
-    "material" : "iron_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
-    "components" : {
-      "attributes" : [ "sharp", "sword-slash" ],
-      "stats" : {
-        "damage" : 7.0,
-        "attack-speed" : 1.6,
-        "crit-chance" : 5.0
-      }
-    },
-    "rarity" : "uncommon"
+    "id" : "blaze-rod",
+    "name" : "Blaze Rod",
+    "material" : "blaze_rod",
+    "item-type" : "material",
+    "description" : "What are these? Arms? Legs? Tentacles???",
+    "stackable" : true,
+    "rarity" : "epic"
   } ]
 }
