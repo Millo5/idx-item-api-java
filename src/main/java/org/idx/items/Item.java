@@ -37,7 +37,7 @@ public class Item<T extends Item<T>> {
             @JsonProperty("id") String id,
             @JsonProperty("name") String name,
             @JsonProperty("material") String material,
-            @JsonProperty("type") ItemType type
+            @JsonProperty("item-type") ItemType type
     ) {
         this.id = id;
         this.name = name;
