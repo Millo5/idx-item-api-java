@@ -7,7 +7,7 @@ import org.idx.enums.ItemType;
 import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.components.impl.AttributesComponent;
-import org.idx.items.components.impl.StatsComponent;
+import org.idx.items.components.impl.StackableStatsComponent;
 
 public class Consumables {
     public static void consumables() {
@@ -22,7 +22,7 @@ public class Consumables {
 
         Main.dataManager.addItem(new Item<>("arrow", "Arrow", "arrow", ItemType.ARROW)
             .setDescription("A simple arrow, used for ranged weapons.")
-            .addComponent(new StatsComponent(Map.of(
+            .addComponent(new StackableStatsComponent(Map.of(
                 Stat.DAMAGE, 1
             )))
         );
