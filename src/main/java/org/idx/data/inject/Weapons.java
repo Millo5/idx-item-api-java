@@ -75,17 +75,22 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("clydes-blade", "Clyde's Blade", "armor_stand", ItemType.MELEE_WEAPON)
                 .setDescription("A blade that seems to have a mind of it's own. Can be quite dangerous.")
                 .setRarity(Rarity.DEVELOPER)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 9.5,   
-                    Stat.WEAPON_ATTACK_SPEED, 1.6,
-                    Stat.DEFENSE, 2,
-                    Stat.HEALTH, 2,
-                    Stat.MOVE_SPEED, 40,
-                    Stat.CRIT_CHANCE, 40,
-                    Stat.CRIT_DAMAGE, 50,
-                    Stat.KNOCKBACK, -40,
-                    Stat.LUCK, 0.2
-                )))
+                .addComponent(StatsComponent.builder()
+                        .add(Stat.DAMAGE, 9.5)
+                        .add(Stat.WEAPON_ATTACK_SPEED, 1.6)
+                        .add(Stat.WEAPON_RANGE, 1)
+                        .add(Stat.DEFENSE, 2)
+                        .add(Stat.HEALTH, 2)
+                        .add(Stat.MOVE_SPEED, 40)
+                        .add(Stat.CRIT_CHANCE, 40)
+                        .add(Stat.CRIT_DAMAGE, 50)
+                        .add(Stat.KNOCKBACK, -40)
+                        .add(Stat.LUCK, 225)
+                        .add(Stat.RECURSION, 20)
+                        .add(Stat.EVASION, 30)
+                        .add(Stat.RANGE, 30)
+                        .add(Stat.LIFESTEAL, 20)
+                        .build())
                 .addComponent(new AttributesComponent("sharp", "sword-slash", "two-handed")
                     .setEnchantSlots(3)
                 )

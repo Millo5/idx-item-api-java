@@ -49,4 +49,24 @@ public class StatsComponent implements ItemComponent {
     public Map<String, ?> jsonEntries() {
         return Map.of("stats", stats);
     }
+
+
+    public static StatComponentBuilder builder() {
+        return new StatComponentBuilder();
+    }
+
+    public static class StatComponentBuilder {
+        private final HashMap<Stat, Number> statsMap = new HashMap<>();
+
+        public StatComponentBuilder add(Stat stat, Number value) {
+            statsMap.put(stat, value);
+            return this;
+        }
+
+        public StatsComponent build() {
+            return new StatsComponent(statsMap);
+        }
+    }
+
+
 }
