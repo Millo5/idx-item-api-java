@@ -336,6 +336,15 @@
     "stackable" : true,
     "rarity" : "epic"
   }, {
+    "id" : "echoing-fragment",
+    "name" : "Echoing Fragment",
+    "material" : "echo_shard",
+    "description" : "An echoing fragment that grants the Recursion enchantment.",
+    "item-type" : "enchantment",
+    "components" : {
+      "enchantment" : "recursion"
+    }
+  }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
     "material" : "armor_stand",

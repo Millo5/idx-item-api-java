@@ -1,11 +1,6 @@
 package org.idx.data;
 
-import org.idx.data.inject.Accessories;
-import org.idx.data.inject.Armor;
-import org.idx.data.inject.Attributes;
-import org.idx.data.inject.Consumables;
-import org.idx.data.inject.Material;
-import org.idx.data.inject.Weapons;
+import org.idx.data.inject.*;
 
 public class InjectData {
 
@@ -18,6 +13,8 @@ public class InjectData {
         Attributes.weaponEnchants();
         Attributes.armorAttributes();
         Attributes.armorEnchants();
+
+        Enchantments.enchantments();
 
         Weapons.melee();
         Weapons.ranged();
