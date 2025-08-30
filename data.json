@@ -146,6 +146,23 @@
     "stackable" : true,
     "rarity" : "rare"
   }, {
+    "id" : "echoing-hood",
+    "name" : "Echoing Hood",
+    "material" : "leather_helmet",
+    "item-type" : "helmet",
+    "description" : "A legendary relic of the deep dark, with the ability to echo it's wearer's actions.",
+    "color" : "#012a39",
+    "components" : {
+      "attributes" : [ "recursion" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "health" : 4,
+        "defense" : 8
+      }
+    },
+    "rarity" : "mythic",
+    "level" : 5
+  }, {
     "id" : "slime",
     "name" : "Slime",
     "material" : "slime_ball",
@@ -330,23 +347,6 @@
     "description" : "Useful for creation of boom boom.",
     "stackable" : true,
     "rarity" : "rare"
-  }, {
-    "id" : "illusioners-hood",
-    "name" : "Illusioner's Hood",
-    "material" : "leather_helmet",
-    "item-type" : "helmet",
-    "description" : "A hood worn by illusioners, it has a strange aura.",
-    "color" : "#00a0a0",
-    "components" : {
-      "attributes" : [ "recursion" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "health" : 4,
-        "defense" : 8
-      }
-    },
-    "rarity" : "mythic",
-    "level" : 5
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
