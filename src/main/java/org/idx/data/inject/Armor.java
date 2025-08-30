@@ -16,44 +16,138 @@ public class Armor {
 
         // Helmets
         {
-            Main.dataManager.addItem(new Item<>("illusioners-hood", "Illusioner's Hood", "leather_helmet", ItemType.HELMET)
-                    .setDescription("A hood worn by illusioners, it has a strange aura.")
+            // Common
+            {
+
+            }
+
+            // Rare
+            {
+
+            }
+
+            // Epic
+            {
+
+            }
+
+            // Legendary
+            {
+                
+            }
+
+            // Mythic
+            {
+                Main.dataManager.addItem(new Item<>("echoing-hood", "Echoing Hood", "leather_helmet", ItemType.HELMET)
+                    .setDescription("A legendary relic of the deep dark, with the ability to echo it's wearer's actions.")
                     .setRarity(Rarity.MYTHIC)
-                    .setColor("#00a0a0")
+                    .setColor("#012a39")
                     .addComponent(new StatsComponent(Map.of(
-                            Stat.DEFENSE, 8,
-                            Stat.HEALTH, 4)))
+                        Stat.DEFENSE, 8,
+                        Stat.HEALTH, 4
+                    )))
                     .addComponent(
-                            new AttributesComponent("recursion")
-                                    .setEnchantSlots(1))
-                    .setLevel(5));
+                        new AttributesComponent("recursion")
+                            .setEnchantSlots(1)
+                    )
+                    .setLevel(5)
+                );
+            }
         }
 
         // Chestplates
         {
-            
+            // Common
+            {
+
+            }
+
+            // Rare
+            {
+
+            }
+
+            // Epic
+            {
+
+            }
+
+            // Legendary
+            {
+                
+            }
+
+            // Mythic
+            {
+                
+            }
         }
 
         // Leggings
         {
-            Main.dataManager.addItem(new Item<>("madam-8-legs", "Madam 8 Legs", "diamond_leggings", ItemType.LEGGINGS)
-                .setDescription("A pair of enchanted legs that greatly increase the speed of the wearer")
-                .setRarity(Rarity.EPIC)
-                .addComponent(
-                    new StatsComponent(Map.of(
+            // Common
+            {
+
+            }
+
+            // Rare
+            {
+
+            }
+
+            // Epic
+            {
+                Main.dataManager.addItem(new Item<>("madam-8-legs", "Madam 8 Legs", "diamond_leggings", ItemType.LEGGINGS)
+                    .setDescription("A pair of enchanted legs that greatly increase the speed of the wearer")
+                    .setRarity(Rarity.EPIC)
+                    .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 10,
                         Stat.HEALTH, 5,
                         Stat.MOVE_SPEED, 25,
                         Stat.CRIT_CHANCE, 25,
                         Stat.ATTACK_SPEED, 25
-                    ))
-                )
-            );
+                    )))
+                );
+            }
+
+            // Legendary
+            {
+
+            }
+
+            // Mythic
+            {
+
+            }
+                
         }
 
         // Boots
         {
+            // Common
+            {
 
+            }
+
+            // Rare
+            {
+
+            }
+
+            // Epic
+            {
+
+            }
+
+            // Legendary
+            {
+                
+            }
+
+            // Mythic
+            {
+                
+            }
         }
 
     }

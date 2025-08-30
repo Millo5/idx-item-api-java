@@ -44,6 +44,7 @@ public class Attributes {
     }
 
     public static void weaponEnchants() {
+        
         Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden_sword", AttributeType.ENCHANTMENT)
             .setDescription("Increases the damage of melee weapons")
             .setTarget(ItemType.MELEE_WEAPON)

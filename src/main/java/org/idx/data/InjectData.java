@@ -14,10 +14,10 @@ public class InjectData {
 
         Attributes.unique();
         Attributes.weaponAttributes();
+        Attributes.weaponCurses();
         Attributes.weaponEnchants();
         Attributes.armorAttributes();
         Attributes.armorEnchants();
-        Attributes.weaponCurses();
 
         Weapons.melee();
         Weapons.ranged();

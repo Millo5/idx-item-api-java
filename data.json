@@ -126,7 +126,7 @@
         "weapon-range" : 25
       }
     },
-    "rarity" : "uncommon"
+    "rarity" : "rare"
   }, {
     "id" : "rope",
     "name" : "Rope",
@@ -239,13 +239,14 @@
     "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
     "components" : {
       "attributes" : [ "sharp", "sword-slash" ],
+      "enchantSlots" : 1,
       "stats" : {
         "damage" : 7.0,
-        "attack-speed" : 1.6,
-        "crit-chance" : 5.0
+        "crit-chance" : 5.0,
+        "weapon-attack-speed" : 1.6
       }
     },
-    "rarity" : "uncommon"
+    "rarity" : "rare"
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -344,8 +345,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "level" : 5
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",

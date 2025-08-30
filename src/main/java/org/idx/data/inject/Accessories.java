@@ -9,20 +9,68 @@ import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.components.impl.StatsComponent;
 
-@SuppressWarnings("unused")
+
 public class Accessories {
     public static void offhand() {
 
-        Main.dataManager.addItem(new Item<>("wooden-targe", "Wooden Targe", "oak_slab", ItemType.OFFHAND)
-            .setDescription("A small wooden shield.")
-            .addComponent(new StatsComponent(Map.of(
-                Stat.DEFENSE, 5
-            )))
-        );
+        // Common
+        {
+            Main.dataManager.addItem(new Item<>("wooden-targe", "Wooden Targe", "oak_slab", ItemType.OFFHAND)
+                .setDescription("A small wooden shield.")
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DEFENSE, 5
+                )))
+            );
+        }
+
+        // Rare
+        {
+
+        }
+
+        // Epic
+        {
+
+        }
+
+        // Legendary
+        {
+            
+        }
+
+        // Mythic
+        {
+            
+        }
+        
 
     }
 
     public static void trinkets() {
-        
+
+        // Common
+        {
+
+        }
+
+        // Rare
+        {
+
+        }
+
+        // Epic
+        {
+
+        }
+
+        // Legendary
+        {
+            
+        }
+
+        // Mythic
+        {
+            
+        }
     }
 }
