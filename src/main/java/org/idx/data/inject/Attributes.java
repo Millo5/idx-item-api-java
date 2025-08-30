@@ -29,6 +29,14 @@ public class Attributes {
                 Trigger.SWING
             ))
         );
+
+        Main.dataManager.addItem(new AttributeItem("melee-stab", "Melee Stab", "iron_shovel", AttributeType.ATTRIBUTE)
+            .setDescription("A thin stab.")
+            .setTarget(ItemType.MELEE_WEAPON)
+            .addComponent(new TriggersComponent(
+                Trigger.SWING
+            ))
+        );
     }
 
     public static void weaponCurses() {
@@ -44,7 +52,7 @@ public class Attributes {
     }
 
     public static void weaponEnchants() {
-        
+
         Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden_sword", AttributeType.ENCHANTMENT)
             .setDescription("Increases the damage of melee weapons")
             .setTarget(ItemType.MELEE_WEAPON)

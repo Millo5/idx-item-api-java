@@ -1,5 +1,16 @@
 {
   "attributes" : [ {
+    "id" : "melee-stab",
+    "name" : "Melee Stab",
+    "material" : "iron_shovel",
+    "description" : "A thin stab.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "swing" ]
+    }
+  }, {
     "id" : "grapple",
     "name" : "Grapple",
     "material" : "lead",
@@ -138,6 +149,20 @@
       "attributes" : [ "grapple" ]
     }
   }, {
+    "id" : "wooden-spear",
+    "name" : "Wooden Spear",
+    "material" : "wooden_shovel",
+    "item-type" : "melee-weapon",
+    "description" : "A blunt spear made of wood, most likely used for training.",
+    "components" : {
+      "attributes" : [ "melee-stab" ],
+      "stats" : {
+        "damage" : 1,
+        "weapon-attack-speed" : 1.1,
+        "weapon-range" : 5
+      }
+    }
+  }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
     "material" : "sugar_cane",
@@ -160,8 +185,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "mythic",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "mythic"
   }, {
     "id" : "slime",
     "name" : "Slime",

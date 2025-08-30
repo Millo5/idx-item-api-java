@@ -26,6 +26,19 @@ public class Weapons {
             );
         }
 
+        // Uncommon
+        {
+            Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", "wooden_shovel", ItemType.MELEE_WEAPON)
+                .setDescription("A blunt spear made of wood, most likely used for training.")
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 1,
+                    Stat.WEAPON_ATTACK_SPEED, 1.1,
+                    Stat.WEAPON_RANGE, 5
+                )))
+                .addComponent(new AttributesComponent("melee-stab"))
+            );
+        }
+
         // Rare
         {
             Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", "iron_sword", ItemType.MELEE_WEAPON)
@@ -93,6 +106,11 @@ public class Weapons {
                     Stat.WEAPON_RANGE, 15
                 )))
             );
+        }
+
+        // Uncommon
+        {
+
         }
 
         // Rare
