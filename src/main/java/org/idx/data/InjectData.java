@@ -27,5 +27,7 @@ public class InjectData {
 
         Consumables.consumables();
         Consumables.arrows();
+
+        Unique.unique();
     }
 }
