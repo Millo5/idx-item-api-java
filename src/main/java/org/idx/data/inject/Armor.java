@@ -6,6 +6,7 @@ import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.components.impl.AttributesComponent;
+import org.idx.items.components.impl.SetComponent;
 import org.idx.items.components.impl.StatsComponent;
 
 import java.util.Map;
@@ -205,7 +206,66 @@ public class Armor {
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(1))
             );
+        }
 
+        // Clyde's Lost Set
+        {
+            Main.dataManager.addItem(new Item<>(
+                    "veil-of-clyde", "Veil of Clyde", "chainmail_helmet", ItemType.HELMET)
+                    .setDescription("The lost helmet of the great adventurer, Clyde.")
+                    .setRarity(Rarity.MYTHIC)
+                    .addComponent(new SetComponent("clydes-lost-set"))
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 10,
+                            Stat.HEALTH, 5,
+                            Stat.EVASION, 10,
+                            Stat.CRIT_DAMAGE, 40
+                    )))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(2))
+            );
+            Main.dataManager.addItem(new Item<>(
+                    "clydes-carapace", "Clyde's Carapace", "chainmail_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("The lost chestplate of the great adventurer, Clyde.")
+                    .setRarity(Rarity.MYTHIC)
+                    .addComponent(new SetComponent("clydes-lost-set"))
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 15,
+                            Stat.HEALTH, 7,
+                            Stat.EVASION, 10,
+                            Stat.CRIT_DAMAGE, 40
+                    )))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(2))
+            );
+            Main.dataManager.addItem(new Item<>(
+                    "clydes-strides", "Clyde's Strides", "chainmail_leggings", ItemType.LEGGINGS)
+                    .setDescription("The lost leggings of the great adventurer, Clyde.")
+                    .setRarity(Rarity.MYTHIC)
+                    .addComponent(new SetComponent("clydes-lost-set"))
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 12,
+                            Stat.HEALTH, 6,
+                            Stat.EVASION, 10,
+                            Stat.CRIT_DAMAGE, 40
+                    )))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(2))
+            );
+            Main.dataManager.addItem(new Item<>(
+                    "treads-of-clyde", "Treads of Clyde", "chainmail_boots", ItemType.BOOTS)
+                    .setDescription("The lost boots of the great adventurer, Clyde.")
+                    .setRarity(Rarity.MYTHIC)
+                    .addComponent(new SetComponent("clydes-lost-set"))
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.DEFENSE, 8,
+                            Stat.HEALTH, 4,
+                            Stat.EVASION, 10,
+                            Stat.CRIT_DAMAGE, 40
+                    )))
+                    .addComponent(new AttributesComponent()
+                            .setEnchantSlots(2))
+            );
         }
     }
 

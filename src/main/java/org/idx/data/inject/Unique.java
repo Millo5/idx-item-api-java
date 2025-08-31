@@ -10,8 +10,8 @@ import org.idx.items.Item;
 import org.idx.items.components.impl.StatsComponent;
 
 
-public class Special {
-    public static void special() {
+public class Unique {
+    public static void unique() {
 
         // Common
         {

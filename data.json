@@ -136,6 +136,23 @@
       }
     }
   }, {
+    "id" : "treads-of-clyde",
+    "name" : "Treads of Clyde",
+    "material" : "chainmail_boots",
+    "item-type" : "boots",
+    "description" : "The lost boots of the great adventurer, Clyde.",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 4,
+        "defense" : 8,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
+  }, {
     "id" : "arrow",
     "name" : "Arrow",
     "material" : "arrow",
@@ -171,6 +188,23 @@
     "components" : {
       "attributes" : [ "grapple" ]
     }
+  }, {
+    "id" : "clydes-carapace",
+    "name" : "Clyde's Carapace",
+    "material" : "chainmail_chestplate",
+    "item-type" : "chestplate",
+    "description" : "The lost chestplate of the great adventurer, Clyde.",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 7,
+        "defense" : 15,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
   }, {
     "id" : "wooden-spear",
     "name" : "Wooden Spear",
@@ -208,8 +242,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "level" : 5
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -224,6 +258,23 @@
     "item-type" : "material",
     "description" : "Stronger than steel!",
     "stackable" : true
+  }, {
+    "id" : "veil-of-clyde",
+    "name" : "Veil of Clyde",
+    "material" : "chainmail_helmet",
+    "item-type" : "helmet",
+    "description" : "The lost helmet of the great adventurer, Clyde.",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 5,
+        "defense" : 10,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
   }, {
     "id" : "bat-wing",
     "name" : "Bat Wing",
@@ -410,6 +461,23 @@
     "stackable" : true,
     "rarity" : "rare"
   }, {
+    "id" : "clydes-strides",
+    "name" : "Clyde's Strides",
+    "material" : "chainmail_leggings",
+    "item-type" : "leggings",
+    "description" : "The lost leggings of the great adventurer, Clyde.",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 6,
+        "defense" : 12,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
+  }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
     "material" : "diamond_leggings",
@@ -452,8 +520,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
