@@ -22,15 +22,22 @@ public class Attributes {
 
     public static void weaponAttributes() {
         
-        Main.dataManager.addItem(new AttributeItem("sword-slash", "Sword Slash", "iron_sword", AttributeType.ATTRIBUTE)
-            .setDescription("A three swing combo.")
+        Main.dataManager.addItem(new AttributeItem("slash", "Slash", "iron_sword", AttributeType.ATTRIBUTE)
+            .setDescription("A basic arcing slash.")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
                 Trigger.SWING
             ))
         );
-        Main.dataManager.addItem(new AttributeItem("melee-stab", "Melee Stab", "iron_shovel", AttributeType.ATTRIBUTE)
+        Main.dataManager.addItem(new AttributeItem("stab", "Stab", "iron_shovel", AttributeType.ATTRIBUTE)
             .setDescription("A thin stab.")
+            .setTarget(ItemType.MELEE_WEAPON)
+            .addComponent(new TriggersComponent(
+                Trigger.SWING
+            ))
+        );
+        Main.dataManager.addItem(new AttributeItem("combo-slash", "Combo Slash", "gold_sword", AttributeType.ATTRIBUTE)
+            .setDescription("A three swing combo.")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
                 Trigger.SWING

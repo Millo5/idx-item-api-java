@@ -22,7 +22,7 @@ public class Weapons {
                     Stat.DAMAGE, 1,
                     Stat.WEAPON_ATTACK_SPEED, 3.1
                 )))
-                .addComponent(new AttributesComponent("sword-slash"))
+                .addComponent(new AttributesComponent("slash"))
             );
         }
 
@@ -35,7 +35,7 @@ public class Weapons {
                     Stat.WEAPON_ATTACK_SPEED, 1.1,
                     Stat.WEAPON_RANGE, 5
                 )))
-                .addComponent(new AttributesComponent("melee-stab"))
+                .addComponent(new AttributesComponent("stab"))
             );
         }
 
@@ -49,7 +49,7 @@ public class Weapons {
                     Stat.WEAPON_ATTACK_SPEED, 1.6,
                     Stat.CRIT_CHANCE, 5.0
                 )))
-                .addComponent(new AttributesComponent("sharp", "sword-slash")
+                .addComponent(new AttributesComponent("sharp", "slash")
                     .setEnchantSlots(1)
                 )
             );
@@ -91,7 +91,7 @@ public class Weapons {
                         .add(Stat.RANGE, 30)
                         .add(Stat.LIFESTEAL, 20)
                         .build())
-                .addComponent(new AttributesComponent("sharp", "sword-slash", "two-handed")
+                .addComponent(new AttributesComponent("sharp", "combo-slash", "two-handed")
                     .setEnchantSlots(3)
                 )
             );
