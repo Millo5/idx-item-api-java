@@ -19,7 +19,7 @@
     "components" : {
       "attribute-target" : "helmet",
       "attribute-type" : "enchantment",
-      "triggers" : [ "passive", "passive slow" ]
+      "triggers" : [ "passive", "passive-slow" ]
     },
     "rarity" : "mythic"
   }, {
