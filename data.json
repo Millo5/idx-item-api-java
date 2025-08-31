@@ -46,7 +46,7 @@
   }, {
     "id" : "combo-slash",
     "name" : "Combo Slash",
-    "material" : "gold_sword",
+    "material" : "golden_sword",
     "description" : "A three swing combo.",
     "item-type" : "attribute",
     "components" : {

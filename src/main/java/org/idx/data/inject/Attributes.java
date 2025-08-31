@@ -36,7 +36,7 @@ public class Attributes {
                 Trigger.SWING
             ))
         );
-        Main.dataManager.addItem(new AttributeItem("combo-slash", "Combo Slash", "gold_sword", AttributeType.ATTRIBUTE)
+        Main.dataManager.addItem(new AttributeItem("combo-slash", "Combo Slash", "golden_sword", AttributeType.ATTRIBUTE)
             .setDescription("A three swing combo.")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
