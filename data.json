@@ -1,5 +1,17 @@
 {
   "attributes" : [ {
+    "id" : "voltaic-aura",
+    "name" : "Voltaic Aura",
+    "material" : "light_blue_dye",
+    "description" : "A powerful enchantment that creates an aura of damage around the user",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "helmet",
+      "attribute-type" : "enchantment",
+      "triggers" : [ "passive", "passive slow" ]
+    },
+    "rarity" : "mythic"
+  }, {
     "id" : "melee-stab",
     "name" : "Melee Stab",
     "material" : "iron_shovel",
@@ -415,6 +427,22 @@
         "weapon-range" : 15
       }
     }
+  }, {
+    "id" : "voltaic-crown",
+    "name" : "Voltaic Crown",
+    "material" : "diamond_helmet",
+    "item-type" : "helmet",
+    "description" : "A crown of crystal, brimming with electrical potential.",
+    "components" : {
+      "attributes" : [ "voltaic-aura" ],
+      "enchantSlots" : 2,
+      "stats" : {
+        "defense" : 6,
+        "damage" : 5
+      }
+    },
+    "rarity" : "mythic",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",

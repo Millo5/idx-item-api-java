@@ -29,7 +29,6 @@ public class Attributes {
                 Trigger.SWING
             ))
         );
-
         Main.dataManager.addItem(new AttributeItem("melee-stab", "Melee Stab", "iron_shovel", AttributeType.ATTRIBUTE)
             .setDescription("A thin stab.")
             .setTarget(ItemType.MELEE_WEAPON)
@@ -64,19 +63,26 @@ public class Attributes {
 
     public static void armorAttributes() {
 
-        Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden_sword", AttributeType.ENCHANTMENT));
-
     }
 
     public static void armorEnchants() {
 
         Main.dataManager.addItem(new AttributeItem("recursion", "Recursion", "echo_shard", AttributeType.ENCHANTMENT)
-                .setDescription("A strange enchantment that allows the user to duplicate their actions")
-                .setRarity(Rarity.MYTHIC)
-                .setTarget(ItemType.ARMOR)
-                .addComponent(new StatsComponent(Map.of(
-                        Stat.RECURSION, 0.25
-                ))));
-
+            .setDescription("A strange enchantment that allows the user to duplicate their actions")
+            .setRarity(Rarity.MYTHIC)
+            .setTarget(ItemType.ARMOR)
+            .addComponent(new StatsComponent(Map.of(
+                Stat.RECURSION, 0.25
+            )))
+        );
+        Main.dataManager.addItem(new AttributeItem("voltaic-aura", "Voltaic Aura", "light_blue_dye", AttributeType.ENCHANTMENT)
+            .setDescription("A powerful enchantment that creates an aura of damage around the user")
+            .setRarity(Rarity.MYTHIC)
+            .setTarget(ItemType.HELMET)
+            .addComponent(new TriggersComponent(
+                Trigger.PASSIVE,
+                Trigger.PASSIVE_SLOW
+            ))
+        );
     }
 }

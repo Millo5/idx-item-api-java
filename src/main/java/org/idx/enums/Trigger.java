@@ -2,7 +2,6 @@ package org.idx.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-@SuppressWarnings("unused")
 public enum Trigger {
 
     // Triggers when the player is hurt

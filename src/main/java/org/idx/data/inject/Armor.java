@@ -46,11 +46,22 @@ public class Armor {
                         Stat.DEFENSE, 8,
                         Stat.HEALTH, 4
                     )))
-                    .addComponent(
-                        new AttributesComponent("recursion")
-                            .setEnchantSlots(1)
+                    .addComponent(new AttributesComponent("recursion")
+                        .setEnchantSlots(1)
                     )
                     .setLevel(5)
+                );
+                Main.dataManager.addItem(new Item<>("voltaic-crown", "Voltaic Crown", "diamond_helmet", ItemType.HELMET)
+                    .setDescription("A crown of crystal, brimming with electrical potential.")
+                    .setRarity(Rarity.MYTHIC)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE,  6,
+                        Stat.DAMAGE, 5
+                    )))
+                    .addComponent(new AttributesComponent("voltaic-aura")
+                        .setEnchantSlots(2)
+                    )
+                    .setLevel(10)
                 );
             }
         }

@@ -12,7 +12,6 @@ import org.idx.items.exceptions.UnexpectedComponentException;
 import java.util.Collection;
 import java.util.function.Predicate;
 
-@SuppressWarnings("unused")
 public enum ItemType {
 
     ATTRIBUTE((item) -> requireComponent(item, TriggersComponent.class) && requireComponent(item, AttributeTypeComponent.class)),
