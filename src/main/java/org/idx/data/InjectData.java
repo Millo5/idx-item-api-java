@@ -8,6 +8,7 @@ public class InjectData {
         Material.materials();
 
         Attributes.unique();
+        Attributes.consumable();
         Attributes.weaponAttributes();
         Attributes.weaponCurses();
         Attributes.weaponEnchants();

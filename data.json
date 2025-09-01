@@ -23,6 +23,16 @@
     },
     "rarity" : "legendary"
   }, {
+    "id" : "heal",
+    "name" : "Heal",
+    "material" : "apple",
+    "description" : "Consuming this item heals the consumer.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
+    }
+  }, {
     "id" : "grapple",
     "name" : "Grapple",
     "material" : "lead",
@@ -31,6 +41,16 @@
     "components" : {
       "attribute-type" : "attribute",
       "triggers" : [ "use" ]
+    }
+  }, {
+    "id" : "consume",
+    "name" : "Consume",
+    "material" : "cooked_beef",
+    "description" : "Causes the item to disappear when it runs out of charges.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
     }
   }, {
     "id" : "slash",
