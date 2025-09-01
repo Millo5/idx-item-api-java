@@ -33,6 +33,8 @@ public enum Stat {
     MOVE_SPEED,
     /** Player's luck, affects various random chances */
     LUCK,
+    /** Size of the player model, affects hitbox */
+    SCALE,
 
     /** A weapon's attacks per second */
     WEAPON_ATTACK_SPEED("weapon-attack-speed"),
