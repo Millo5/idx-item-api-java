@@ -10,8 +10,8 @@ import org.idx.items.Item;
 import org.idx.items.components.impl.StatsComponent;
 
 
-public class Special {
-    public static void special() {
+public class Unique {
+    public static void unique() {
 
         // Common
         {
@@ -37,7 +37,9 @@ public class Special {
         {
             
         }
-        
+    }
 
+    public static void menu() {
+        Main.dataManager.addItem(new Item<>("menu", "Menu", "knowledge_book", ItemType.UNIQUE));
     }
 }

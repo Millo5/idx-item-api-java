@@ -37,7 +37,8 @@ public enum ItemType {
 
     ENCHANTMENT((item) -> requireSingleComponent(item, EnchantmentComponent.class)),
 
-    UNIQUE;
+    UNIQUE,
+    MENU;
 
 
     Predicate<Item<?>> isValidPredicate = (item) -> true;

@@ -208,8 +208,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "level" : 5
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -410,6 +410,12 @@
     "stackable" : true,
     "rarity" : "rare"
   }, {
+    "id" : "menu",
+    "name" : "Menu",
+    "material" : "knowledge_book",
+    "item-type" : "unique",
+    "stackable" : true
+  }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
     "material" : "diamond_leggings",
@@ -452,8 +458,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",

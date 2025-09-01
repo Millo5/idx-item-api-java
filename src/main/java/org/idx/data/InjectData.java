@@ -29,5 +29,6 @@ public class InjectData {
         Consumables.arrows();
 
         Unique.unique();
+        Unique.menu();
     }
 }
