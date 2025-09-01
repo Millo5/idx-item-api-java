@@ -498,13 +498,12 @@
     "name" : "Small Health Potion",
     "material" : "potion",
     "item-type" : "consumable",
-    "description" : "One a day keeps the doctor away.",
+    "description" : "Very potent, but not very large.",
     "color" : "#ff0000",
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
-        "healing" : 2,
-        "charges" : 3
+        "healing" : 4
       }
     }
   }, {

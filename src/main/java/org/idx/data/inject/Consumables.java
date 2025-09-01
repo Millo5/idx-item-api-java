@@ -27,12 +27,11 @@ public class Consumables {
                 )))
             );
             Main.dataManager.addItem(new Item<>("small-health-potion", "Small Health Potion", "potion", ItemType.CONSUMABLE)
-                .setDescription("One a day keeps the doctor away.")
+                .setDescription("Very potent, but not very large.")
                 .setColor("#ff0000")
                 .addComponent(new AttributesComponent("heal", "consumable"))
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.HEALING, 2,
-                    Stat.CHARGES, 3
+                    Stat.HEALING, 4
                 )))
             );
         }

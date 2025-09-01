@@ -46,8 +46,6 @@ public enum Stat {
 
     /** The amount of healing an item with attribute "heal" provides on consume */
     HEALING,
-    //** The amount of uses an item with attribute "consumable" has left before being deleted */
-    CHARGES,
 
     //</editor-fold>
 
