@@ -40,6 +40,6 @@ public class Unique {
     }
 
     public static void menu() {
-        Main.dataManager.addItem(new Item<>("menu", "Menu", "knowledge_book", ItemType.UNIQUE));
+        Main.dataManager.addItem(new Item<>("menu", "Menu", "knowledge_book", ItemType.MENU));
     }
 }

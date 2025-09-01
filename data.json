@@ -461,6 +461,12 @@
     "stackable" : true,
     "rarity" : "rare"
   }, {
+    "id" : "menu",
+    "name" : "Menu",
+    "material" : "knowledge_book",
+    "item-type" : "unique",
+    "stackable" : true
+  }, {
     "id" : "clydes-strides",
     "name" : "Clyde's Strides",
     "material" : "chainmail_leggings",
@@ -477,12 +483,6 @@
       }
     },
     "rarity" : "mythic"
-  }, {
-    "id" : "menu",
-    "name" : "Menu",
-    "material" : "knowledge_book",
-    "item-type" : "unique",
-    "stackable" : true
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
