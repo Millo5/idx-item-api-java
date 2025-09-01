@@ -22,7 +22,7 @@ public class Attributes {
 
     public static void consumable() {
         Main.dataManager.addItem(new AttributeItem("consumable", "Consumable", "cooked_beef", AttributeType.ATTRIBUTE)
-            .setDescription("Causes the item to disappear when it runs out of charges.")
+            .setDescription("Causes the item to disappear when eaten.")
             .addComponent(new TriggersComponent(
                 Trigger.EAT
             ))
