@@ -34,14 +34,9 @@ public class Armor {
 
             // Legendary
             {
-                
-            }
-
-            // Mythic
-            {
                 Main.dataManager.addItem(new Item<>("echoing-hood", "Echoing Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("A legendary relic of the deep dark, with the ability to echo it's wearer's actions.")
-                    .setRarity(Rarity.MYTHIC)
+                    .setRarity(Rarity.LEGENDARY)
                     .setColor("#012a39")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 8,
@@ -54,7 +49,7 @@ public class Armor {
                 );
                 Main.dataManager.addItem(new Item<>("voltaic-crown", "Voltaic Crown", "diamond_helmet", ItemType.HELMET)
                     .setDescription("A crown of crystal, brimming with electrical potential.")
-                    .setRarity(Rarity.MYTHIC)
+                    .setRarity(Rarity.LEGENDARY)
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE,  6,
                         Stat.DAMAGE, 5
@@ -64,6 +59,11 @@ public class Armor {
                     )
                     .setLevel(10)
                 );
+            }
+
+            // Mythic
+            {
+                
             }
         }
 

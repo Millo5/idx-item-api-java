@@ -13,11 +13,26 @@ public class Attributes {
     public static void unique() {
 
         Main.dataManager.addItem(new AttributeItem("grapple", "Grapple", "lead", AttributeType.ATTRIBUTE)
-                .setDescription("A grappling hook used to pull objects or climb.")
-                .setRarity(Rarity.COMMON)
-                .addComponent(new TriggersComponent(
-                        Trigger.USE)));
+            .setDescription("Allows the user to pull themselves to elevated positions.")
+            .addComponent(new TriggersComponent(
+                Trigger.USE
+            ))
+        );
+    }
 
+    public static void consumable() {
+        Main.dataManager.addItem(new AttributeItem("consume", "Consume", "cooked_beef", AttributeType.ATTRIBUTE)
+            .setDescription("Causes the item to disappear when it runs out of charges.")
+            .addComponent(new TriggersComponent(
+                Trigger.EAT
+            ))
+        );
+        Main.dataManager.addItem(new AttributeItem("heal", "Heal", "apple", AttributeType.ATTRIBUTE)
+            .setDescription("Consuming this item heals the consumer.")
+            .addComponent(new TriggersComponent(
+                Trigger.EAT
+            ))
+        );
     }
 
     public static void weaponAttributes() {
@@ -38,6 +53,7 @@ public class Attributes {
         );
         Main.dataManager.addItem(new AttributeItem("combo-slash", "Combo Slash", "golden_sword", AttributeType.ATTRIBUTE)
             .setDescription("A three swing combo.")
+            .setRarity(Rarity.RARE)
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
                 Trigger.SWING
@@ -76,15 +92,15 @@ public class Attributes {
 
         Main.dataManager.addItem(new AttributeItem("recursion", "Recursion", "echo_shard", AttributeType.ENCHANTMENT)
             .setDescription("A strange enchantment that allows the user to duplicate their actions")
-            .setRarity(Rarity.MYTHIC)
+            .setRarity(Rarity.LEGENDARY)
             .setTarget(ItemType.ARMOR)
             .addComponent(new StatsComponent(Map.of(
-                Stat.RECURSION, 0.25
+                Stat.RECURSION, 25
             )))
         );
         Main.dataManager.addItem(new AttributeItem("voltaic-aura", "Voltaic Aura", "light_blue_dye", AttributeType.ENCHANTMENT)
             .setDescription("A powerful enchantment that creates an aura of damage around the user")
-            .setRarity(Rarity.MYTHIC)
+            .setRarity(Rarity.LEGENDARY)
             .setTarget(ItemType.HELMET)
             .addComponent(new TriggersComponent(
                 Trigger.PASSIVE,

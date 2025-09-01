@@ -21,12 +21,12 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "rarity" : "mythic"
+    "rarity" : "legendary"
   }, {
     "id" : "grapple",
     "name" : "Grapple",
     "material" : "lead",
-    "description" : "A grappling hook used to pull objects or climb.",
+    "description" : "Allows the user to pull themselves to elevated positions.",
     "item-type" : "attribute",
     "components" : {
       "attribute-type" : "attribute",
@@ -53,7 +53,8 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
       "triggers" : [ "swing" ]
-    }
+    },
+    "rarity" : "rare"
   }, {
     "id" : "two-handed",
     "name" : "Two Handed",
@@ -77,10 +78,10 @@
       "attribute-target" : "armor",
       "attribute-type" : "enchantment",
       "stats" : {
-        "recursion" : 0.25
+        "recursion" : 25
       }
     },
-    "rarity" : "mythic"
+    "rarity" : "legendary"
   }, {
     "id" : "sharp",
     "name" : "Sharp",
@@ -186,7 +187,7 @@
     "description" : "A long piece of rope, useful for climbing.",
     "stackable" : true,
     "components" : {
-      "attributes" : [ "grapple" ]
+      "attributes" : [ "grapple", "consumable" ]
     }
   }, {
     "id" : "clydes-carapace",
@@ -242,7 +243,7 @@
         "defense" : 8
       }
     },
-    "rarity" : "mythic",
+    "rarity" : "legendary",
     "level" : 5
   }, {
     "id" : "slime",
@@ -283,6 +284,18 @@
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stackable" : true,
     "rarity" : "epic"
+  }, {
+    "id" : "apple",
+    "name" : "Apple",
+    "material" : "apple",
+    "item-type" : "consumable",
+    "description" : "One a day keeps the doctor away.",
+    "components" : {
+      "attributes" : [ "heal", "consumable" ],
+      "stats" : {
+        "healing" : 2
+      }
+    }
   }, {
     "id" : "torn-cloth",
     "name" : "Torn Cloth",
@@ -461,6 +474,20 @@
     "stackable" : true,
     "rarity" : "rare"
   }, {
+    "id" : "small-health-potion",
+    "name" : "Small Health Potion",
+    "material" : "potion",
+    "item-type" : "consumable",
+    "description" : "One a day keeps the doctor away.",
+    "color" : "#ff0000",
+    "components" : {
+      "attributes" : [ "heal", "consumable" ],
+      "stats" : {
+        "healing" : 2,
+        "charges" : 3
+      }
+    }
+  }, {
     "id" : "menu",
     "name" : "Menu",
     "material" : "knowledge_book",
@@ -526,7 +553,7 @@
         "damage" : 5
       }
     },
-    "rarity" : "mythic",
+    "rarity" : "legendary",
     "level" : 10
   }, {
     "id" : "echo-shard",

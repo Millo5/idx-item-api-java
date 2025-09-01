@@ -8,6 +8,7 @@ import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.components.impl.AttributesComponent;
 import org.idx.items.components.impl.StackableStatsComponent;
+import org.idx.items.components.impl.StatsComponent;
 
 public class Consumables {
     public static void consumables() {
@@ -15,8 +16,24 @@ public class Consumables {
         // Common
         {
             Main.dataManager.addItem(new Item<>("rope", "Rope", "lead", ItemType.CONSUMABLE)
-                    .setDescription("A long piece of rope, useful for climbing.")
-                    .addComponent(new AttributesComponent("grapple"))
+                .setDescription("A long piece of rope, useful for climbing.")
+                .addComponent(new AttributesComponent("grapple", "consumable"))
+            );
+            Main.dataManager.addItem(new Item<>("apple", "Apple", "apple", ItemType.CONSUMABLE)
+                .setDescription("One a day keeps the doctor away.")
+                .addComponent(new AttributesComponent("heal", "consumable"))
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.HEALING, 2
+                )))
+            );
+            Main.dataManager.addItem(new Item<>("small-health-potion", "Small Health Potion", "potion", ItemType.CONSUMABLE)
+                .setDescription("One a day keeps the doctor away.")
+                .setColor("#ff0000")
+                .addComponent(new AttributesComponent("heal", "consumable"))
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.HEALING, 2,
+                    Stat.CHARGES, 3
+                )))
             );
         }
 

@@ -2,7 +2,6 @@ package org.idx.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-@SuppressWarnings("unused")
 public enum Stat {
 
     //<editor-fold desc="Core Stats" defaultstate="collapsed">
@@ -40,6 +39,15 @@ public enum Stat {
     WEAPON_ATTACK_SPEED("weapon-attack-speed"),
     /** A weapon's range in blocks */
     WEAPON_RANGE("weapon-range"),
+
+    //</editor-fold>
+
+    //<editor-fold desc="Consumables" defaultstate="collapsed">
+
+    /** The amount of healing an item with attribute "heal" provides on consume */
+    HEALING,
+    //** The amount of uses an item with attribute "consumable" has left before being deleted */
+    CHARGES,
 
     //</editor-fold>
 
