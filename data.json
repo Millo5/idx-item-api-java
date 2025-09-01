@@ -11,6 +11,16 @@
       "triggers" : [ "swing" ]
     }
   }, {
+    "id" : "consumable",
+    "name" : "Consumable",
+    "material" : "cooked_beef",
+    "description" : "Causes the item to disappear when it runs out of charges.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
+    }
+  }, {
     "id" : "voltaic-aura",
     "name" : "Voltaic Aura",
     "material" : "light_blue_dye",
@@ -41,16 +51,6 @@
     "components" : {
       "attribute-type" : "attribute",
       "triggers" : [ "use" ]
-    }
-  }, {
-    "id" : "consume",
-    "name" : "Consume",
-    "material" : "cooked_beef",
-    "description" : "Causes the item to disappear when it runs out of charges.",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-type" : "attribute",
-      "triggers" : [ "eat" ]
     }
   }, {
     "id" : "slash",
