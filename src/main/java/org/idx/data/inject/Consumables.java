@@ -22,7 +22,7 @@ public class Consumables {
             Main.dataManager.addItem(new Item<>("apple", "Apple", "apple", ItemType.CONSUMABLE)
                 .setDescription("One a day keeps the doctor away.")
                 .addComponent(new AttributesComponent("heal", "consumable"))
-                .addComponent(new StatsComponent(Map.of(
+                .addComponent(new StackableStatsComponent(Map.of(
                     Stat.HEALING, 2
                 )))
             );
@@ -30,7 +30,7 @@ public class Consumables {
                 .setDescription("Very potent, but not very large.")
                 .setColor("#ff0000")
                 .addComponent(new AttributesComponent("heal", "consumable"))
-                .addComponent(new StatsComponent(Map.of(
+                .addComponent(new StackableStatsComponent(Map.of(
                     Stat.HEALING, 4
                 )))
             );

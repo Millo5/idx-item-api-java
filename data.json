@@ -310,6 +310,7 @@
     "material" : "apple",
     "item-type" : "consumable",
     "description" : "One a day keeps the doctor away.",
+    "stackable" : true,
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
@@ -500,6 +501,7 @@
     "item-type" : "consumable",
     "description" : "Very potent, but not very large.",
     "color" : "#ff0000",
+    "stackable" : true,
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
