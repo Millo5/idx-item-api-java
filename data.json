@@ -464,7 +464,7 @@
     "id" : "menu",
     "name" : "Menu",
     "material" : "knowledge_book",
-    "item-type" : "unique",
+    "item-type" : "menu",
     "stackable" : true
   }, {
     "id" : "clydes-strides",
