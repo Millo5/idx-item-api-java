@@ -12,6 +12,8 @@ public enum Stat {
     DEFENSE,
     /** Chance to avoid incoming damage */
     EVASION,
+    /** Resistance to knockback effects */
+    KNOCKBACK_RESISTANCE,
 
     /** Flat damage added to all attacks */
     DAMAGE,
