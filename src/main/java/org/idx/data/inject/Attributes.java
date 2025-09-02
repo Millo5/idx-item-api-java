@@ -107,5 +107,13 @@ public class Attributes {
                 Trigger.PASSIVE_SLOW
             ))
         );
+        Main.dataManager.addItem(new AttributeItem("gourmand", "Gourmand", "cake", AttributeType.ENCHANTMENT)
+            .setDescription("A wondrous enchantment that heals surrounding allies when the user eats.")
+            .setRarity(Rarity.LEGENDARY)
+            .setTarget(ItemType.CHESTPLATE)
+            .addComponent(new TriggersComponent(
+                Trigger.EAT_GLOBAL
+            ))
+        );
     }
 }

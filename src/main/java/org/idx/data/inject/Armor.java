@@ -86,7 +86,18 @@ public class Armor {
 
             // Legendary
             {
-                
+                Main.dataManager.addItem(new Item<>("gourmands-bib", "Gourmand's Bib", "golden_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("An old bib that has born witness to countless numbers of incredible meals.")
+                    .setRarity(Rarity.LEGENDARY)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE,  2,
+                        Stat.HEALTH, 50
+                    )))
+                    .addComponent(new AttributesComponent("gourmand")
+                        .setEnchantSlots(1)
+                    )
+                    .setLevel(10)
+                );
             }
 
             // Mythic
