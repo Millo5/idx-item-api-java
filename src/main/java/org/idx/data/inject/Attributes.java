@@ -27,6 +27,12 @@ public class Attributes {
                 Trigger.EAT
             ))
         );
+        Main.dataManager.addItem(new AttributeItem("consumed", "Consumed", "structure_void", AttributeType.ATTRIBUTE)
+            .setDescription("Causes the item to disappear when used.")
+            .addComponent(new TriggersComponent(
+                Trigger.USE
+            ))
+        );
         Main.dataManager.addItem(new AttributeItem("heal", "Heal", "apple", AttributeType.ATTRIBUTE)
             .setDescription("Consuming this item heals the consumer.")
             .addComponent(new TriggersComponent(

@@ -1,5 +1,15 @@
 {
   "attributes" : [ {
+    "id" : "consumed",
+    "name" : "Consumed",
+    "material" : "structure_void",
+    "description" : "Causes the item to disappear when used.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "use" ]
+    }
+  }, {
     "id" : "gourmand",
     "name" : "Gourmand",
     "material" : "cake",
@@ -219,7 +229,7 @@
     "description" : "A long piece of rope, useful for climbing.",
     "stackable" : true,
     "components" : {
-      "attributes" : [ "grapple", "consumable" ]
+      "attributes" : [ "grapple", "consumed" ]
     }
   }, {
     "id" : "clydes-carapace",

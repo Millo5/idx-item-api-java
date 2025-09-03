@@ -17,7 +17,7 @@ public class Consumables {
         {
             Main.dataManager.addItem(new Item<>("rope", "Rope", "lead", ItemType.CONSUMABLE)
                 .setDescription("A long piece of rope, useful for climbing.")
-                .addComponent(new AttributesComponent("grapple", "consumable"))
+                .addComponent(new AttributesComponent("grapple", "consumed"))
             );
             Main.dataManager.addItem(new Item<>("apple", "Apple", "apple", ItemType.CONSUMABLE)
                 .setDescription("One a day keeps the doctor away.")
