@@ -42,7 +42,7 @@
     "item-type" : "attribute",
     "components" : {
       "attribute-type" : "attribute",
-      "triggers" : [ "swing" ]
+      "triggers" : [ "swing", "swap" ]
     }
   }, {
     "id" : "stab",
@@ -53,7 +53,7 @@
     "components" : {
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
-      "triggers" : [ "swing" ]
+      "triggers" : [ "melee-attack" ]
     }
   }, {
     "id" : "consumable",
@@ -106,7 +106,7 @@
     "components" : {
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
-      "triggers" : [ "swing" ]
+      "triggers" : [ "melee-attack" ]
     }
   }, {
     "id" : "combo-slash",
@@ -117,7 +117,7 @@
     "components" : {
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
-      "triggers" : [ "swing" ]
+      "triggers" : [ "melee-attack" ]
     },
     "rarity" : "rare"
   }, {

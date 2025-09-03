@@ -22,7 +22,8 @@ public class Attributes {
         Main.dataManager.addItem(new AttributeItem("hook", "Hook", "chain", AttributeType.ATTRIBUTE)
             .setDescription("Pull enemies toward you or yourself to terrain.")
             .addComponent(new TriggersComponent(
-                Trigger.SWING
+                Trigger.SWING,
+                Trigger.SWAP
             ))
         );
 
@@ -56,14 +57,14 @@ public class Attributes {
             .setDescription("A basic arcing slash.")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
-                Trigger.SWING
+                Trigger.MELEE_ATTACK
             ))
         );
         Main.dataManager.addItem(new AttributeItem("stab", "Stab", "iron_shovel", AttributeType.ATTRIBUTE)
             .setDescription("A thin stab.")
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
-                Trigger.SWING
+                Trigger.MELEE_ATTACK
             ))
         );
         Main.dataManager.addItem(new AttributeItem("combo-slash", "Combo Slash", "golden_sword", AttributeType.ATTRIBUTE)
@@ -71,7 +72,7 @@ public class Attributes {
             .setRarity(Rarity.RARE)
             .setTarget(ItemType.MELEE_WEAPON)
             .addComponent(new TriggersComponent(
-                Trigger.SWING
+                Trigger.MELEE_ATTACK
             ))
         );
     }

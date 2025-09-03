@@ -2,6 +2,7 @@ package org.idx.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
+@SuppressWarnings("unused")
 public enum Trigger {
 
     // Triggers when the player is hurt
@@ -13,6 +14,10 @@ public enum Trigger {
     USE,
     // Triggers when the player swings an item
     SWING,
+    // Triggers when the player swaps hands
+    SWAP,
+    // Triggers after swinging a melee weapon
+    MELEE_ATTACK,
 
     // Triggers on a loop
     PASSIVE(true),
