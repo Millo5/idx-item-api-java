@@ -22,6 +22,29 @@
     },
     "rarity" : "legendary"
   }, {
+    "id" : "sharp",
+    "name" : "Sharp",
+    "material" : "wooden_sword",
+    "description" : "Increases the damage of melee weapons",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "damage" : 1.5
+      }
+    }
+  }, {
+    "id" : "hook",
+    "name" : "Hook",
+    "material" : "chain",
+    "description" : "Pull enemies toward you or yourself to terrain.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "swing" ]
+    }
+  }, {
     "id" : "stab",
     "name" : "Stab",
     "material" : "iron_shovel",
@@ -124,21 +147,21 @@
       }
     },
     "rarity" : "legendary"
-  }, {
-    "id" : "sharp",
-    "name" : "Sharp",
-    "material" : "wooden_sword",
-    "description" : "Increases the damage of melee weapons",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "attribute-type" : "enchantment",
-      "stats" : {
-        "damage" : 1.5
-      }
-    }
   } ],
   "items" : [ {
+    "id" : "restless-chain",
+    "name" : "Restless Chain",
+    "material" : "chain",
+    "item-type" : "unique",
+    "description" : "A heavy chain that seems to writhe and move on its own, as if alive.",
+    "components" : {
+      "attributes" : [ "hook" ],
+      "stats" : {
+        "weapon-range" : 5
+      }
+    },
+    "rarity" : "epic"
+  }, {
     "id" : "ender-pearl",
     "name" : "Ender Pearl",
     "material" : "ender_pearl",

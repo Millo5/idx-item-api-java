@@ -57,6 +57,14 @@ public class Weapons {
 
         // Epic
         {
+            Main.dataManager.addItem(new Item<>("restless-chain", "Restless Chain", "chain", ItemType.UNIQUE)
+                    .setDescription("A heavy chain that seems to writhe and move on its own, as if alive.")
+                    .setRarity(Rarity.EPIC)
+                    .addComponent(new AttributesComponent("hook"))
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.WEAPON_RANGE, 5
+                    )))
+            );
 
         }
 

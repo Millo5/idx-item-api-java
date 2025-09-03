@@ -13,11 +13,20 @@ public class Attributes {
     public static void unique() {
 
         Main.dataManager.addItem(new AttributeItem("grapple", "Grapple", "lead", AttributeType.ATTRIBUTE)
-            .setDescription("Allows the user to pull themselves to elevated positions.")
+                .setDescription("Allows the user to pull themselves to elevated positions.")
+                .addComponent(new TriggersComponent(
+                        Trigger.USE
+                ))
+        );
+
+        Main.dataManager.addItem(new AttributeItem("hook", "Hook", "chain", AttributeType.ATTRIBUTE)
+            .setDescription("Pull enemies toward you or yourself to terrain.")
             .addComponent(new TriggersComponent(
-                Trigger.USE
+                Trigger.SWING
             ))
         );
+
+
     }
 
     public static void consumable() {
