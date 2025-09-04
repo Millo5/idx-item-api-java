@@ -22,6 +22,11 @@ public class Armor {
 
             }
 
+            // Uncommon
+            {
+
+            }
+
             // Rare
             {
 
@@ -74,6 +79,11 @@ public class Armor {
 
             }
 
+            // Uncommon
+            {
+
+            }
+
             // Rare
             {
 
@@ -113,6 +123,11 @@ public class Armor {
 
             }
 
+            // Uncommon
+            {
+
+            }
+
             // Rare
             {
 
@@ -148,6 +163,11 @@ public class Armor {
         // Boots
         {
             // Common
+            {
+
+            }
+
+            // Uncommon
             {
 
             }

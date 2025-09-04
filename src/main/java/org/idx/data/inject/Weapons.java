@@ -30,6 +30,7 @@ public class Weapons {
         {
             Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", "wooden_shovel", ItemType.MELEE_WEAPON)
                 .setDescription("A blunt spear made of wood, most likely used for training.")
+                .setRarity(Rarity.UNCOMMON)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 1,
                     Stat.WEAPON_ATTACK_SPEED, 1.1,

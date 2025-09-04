@@ -17,6 +17,11 @@ public class Unique {
         {
             
         }
+        
+        // Uncommon
+        {
+
+        }
 
         // Rare
         {

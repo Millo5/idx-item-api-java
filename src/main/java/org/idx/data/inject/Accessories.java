@@ -23,6 +23,11 @@ public class Accessories {
             );
         }
 
+        // Uncommon
+        {
+
+        }
+
         // Rare
         {
 
@@ -49,6 +54,11 @@ public class Accessories {
     public static void trinkets() {
 
         // Common
+        {
+
+        }
+
+        // Uncommon
         {
 
         }

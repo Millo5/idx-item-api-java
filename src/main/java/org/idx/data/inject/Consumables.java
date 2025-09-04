@@ -36,6 +36,11 @@ public class Consumables {
             );
         }
 
+        // Uncommon
+        {
+
+        }
+
         // Rare
         {
 
@@ -67,6 +72,11 @@ public class Consumables {
                     Stat.DAMAGE, 1
                 )))
             );
+        }
+
+        // Uncommon
+        {
+
         }
 
         // Rare

@@ -13,6 +13,7 @@ public class InjectData {
         Attributes.weaponCurses();
         Attributes.weaponEnchants();
         Attributes.armorAttributes();
+        Attributes.armorCurses();
         Attributes.armorEnchants();
 
         Enchantments.enchantments();
