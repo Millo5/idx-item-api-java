@@ -12,8 +12,7 @@ public class StackableStatsComponent extends StatsComponent{
     }
 
     @Override
-    public boolean stackable() {
-        return true;
+    public int getMaxStackSize() {
+        return 64;
     }
-    
 }

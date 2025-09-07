@@ -21,9 +21,6 @@ public interface ItemComponent {
 
     Map<String,?> jsonEntries();
 
-    default boolean stackable() {
-        return true;
-    }
 
     boolean hasData();
 
@@ -35,4 +32,7 @@ public interface ItemComponent {
         }
     }
 
+    default int getMaxStackSize() {
+        return 64;
+    }
 }

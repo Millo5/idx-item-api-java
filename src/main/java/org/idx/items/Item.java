@@ -2,6 +2,7 @@ package org.idx.items;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import org.idx.IgnoreOneIntFilter;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.items.components.ComponentContainer;
@@ -25,6 +26,7 @@ public class Item<T extends Item<T>> {
 
     private Rarity rarity;
     private int level = 1;
+    private int stackSize = 64;
 
     @JsonUnwrapped
     @JsonProperty("components")
@@ -112,12 +114,17 @@ public class Item<T extends Item<T>> {
     public String getDescription() { return description; }
     public String getMaterial() { return material; }
     public String getColor() { return color; }
-    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-    public boolean getStackable() {
-        if (componentContainer.amount() == 0) return true;
-        return componentContainer.all().stream().allMatch(ItemComponent::stackable);
+    @JsonInclude(value = JsonInclude.Include.CUSTOM, valueFilter = IgnoreOneIntFilter.class)
+    @JsonProperty("stack-size")
+    public Integer getStackSize() {
+        ArrayList<Integer> stackSizes = new ArrayList<>();
+        stackSizes.add(stackSize);
+        for (ItemComponent component : componentContainer.all()) {
+            stackSizes.add(component.getMaxStackSize());
+        }
+        return Collections.min(stackSizes);
     }
-    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    @JsonInclude(value = JsonInclude.Include.NON_DEFAULT)
     public int getModelData() { return modeldata; }
     @JsonProperty("item-type")
     public ItemType getType() { return type; }

@@ -25,9 +25,10 @@ public class EnchantmentComponent implements ItemComponent {
         return enchantment;
     }
 
+
     @Override
-    public boolean stackable() {
-        return false;
+    public int getMaxStackSize() {
+        return 1;
     }
 
     @Override

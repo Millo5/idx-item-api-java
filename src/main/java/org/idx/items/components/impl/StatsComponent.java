@@ -22,10 +22,9 @@ public class StatsComponent implements ItemComponent {
     }
 
     @Override
-    public boolean stackable() {
-        return false; // Stats components are not stackable by default
+    public int getMaxStackSize() {
+        return 1; // Items with stats should not be stackable
     }
-
 
     public static ItemComponent fromJson(ObjectNode node) {
         if (node.has("stats")) {

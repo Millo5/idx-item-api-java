@@ -138,7 +138,7 @@
     "material" : "ender_pearl",
     "item-type" : "material",
     "description" : "Please be the eyes, please be the eyes...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "mythic"
   }, {
     "id" : "leather-boots",
@@ -158,7 +158,7 @@
     "material" : "coal",
     "item-type" : "material",
     "description" : "Mr Dweevius, I don't feel so good...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "legendary"
   }, {
     "id" : "leather-hood",
@@ -195,7 +195,7 @@
     "material" : "arrow",
     "item-type" : "arrow",
     "description" : "A simple arrow, used for ranged weapons.",
-    "stackable" : true,
+    "stack-size" : 64,
     "components" : {
       "stats" : {
         "damage" : 1
@@ -221,7 +221,7 @@
     "material" : "lead",
     "item-type" : "consumable",
     "description" : "A long piece of rope, useful for climbing.",
-    "stackable" : true,
+    "stack-size" : 64,
     "components" : {
       "attributes" : [ "grapple", "consumed" ]
     }
@@ -263,7 +263,7 @@
     "material" : "sugar_cane",
     "item-type" : "material",
     "description" : "Still twitching.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "echoing-hood",
@@ -280,22 +280,22 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "slime",
     "name" : "Slime",
     "material" : "slime_ball",
     "item-type" : "material",
     "description" : "Tastes like a booger. Don't ask how I know that.",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "spider-silk",
     "name" : "Spider Silk",
     "material" : "string",
     "item-type" : "material",
     "description" : "Stronger than steel!",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -319,7 +319,7 @@
     "material" : "black_carpet",
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "epic"
   }, {
     "id" : "apple",
@@ -327,7 +327,7 @@
     "material" : "apple",
     "item-type" : "consumable",
     "description" : "One a day keeps the doctor away.",
-    "stackable" : true,
+    "stack-size" : 64,
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
@@ -340,7 +340,7 @@
     "material" : "rabbit_hide",
     "item-type" : "material",
     "description" : "Very low quality.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "crude-iron",
@@ -348,7 +348,7 @@
     "material" : "raw_iron",
     "item-type" : "material",
     "description" : "Seems to have been wrecked relatively recently.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "fungus",
@@ -356,7 +356,7 @@
     "material" : "brown_mushroom",
     "item-type" : "material",
     "description" : "Have a fungus.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "gourmands-bib",
@@ -372,15 +372,15 @@
         "defense" : 2
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "stick",
     "name" : "Stick",
     "material" : "stick",
     "item-type" : "material",
     "description" : "Useful for creation of boom boom",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "wooden-shiv",
     "name" : "Wooden Shiv",
@@ -412,7 +412,7 @@
     "material" : "prismarine_shard",
     "item-type" : "material",
     "description" : "It's made from some sort of prismatic aquamarine...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "polished-sword",
@@ -448,14 +448,14 @@
     "material" : "rotten_flesh",
     "item-type" : "material",
     "description" : "For some reason you feel like you used to eat this.",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
     "material" : "gold_nugget",
     "item-type" : "material",
     "description" : "Shiny...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "legendary"
   }, {
     "id" : "wooden-targe",
@@ -474,7 +474,7 @@
     "material" : "spider_eye",
     "item-type" : "material",
     "description" : "You'd think you would get a lot more of these...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "epic"
   }, {
     "id" : "echoing-fragment",
@@ -519,14 +519,14 @@
     "material" : "bone",
     "item-type" : "material",
     "description" : "I used to be a femur.",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
     "material" : "gunpowder",
     "item-type" : "material",
     "description" : "Useful for creation of boom boom.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "small-health-potion",
@@ -535,7 +535,7 @@
     "item-type" : "consumable",
     "description" : "Very potent, but not very large.",
     "color" : "#ff0000",
-    "stackable" : true,
+    "stack-size" : 64,
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
@@ -547,7 +547,7 @@
     "name" : "Menu",
     "material" : "knowledge_book",
     "item-type" : "menu",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "clydes-strides",
     "name" : "Clyde's Strides",
@@ -608,15 +608,15 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
     "material" : "echo_shard",
     "item-type" : "material",
     "description" : "Kinda...glitchy?",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "mythic"
   }, {
     "id" : "blaze-rod",
@@ -624,7 +624,7 @@
     "material" : "blaze_rod",
     "item-type" : "material",
     "description" : "What are these? Arms? Legs? Tentacles???",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "epic"
   } ]
 }

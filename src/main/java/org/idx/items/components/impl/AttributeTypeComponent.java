@@ -38,9 +38,10 @@ public class AttributeTypeComponent implements ItemComponent {
         targetType = target;
     }
 
+
     @Override
-    public boolean stackable() {
-        return false;
+    public int getMaxStackSize() {
+        return 1;
     }
 
     @Override
