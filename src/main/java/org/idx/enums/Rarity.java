@@ -3,19 +3,28 @@ package org.idx.enums;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum Rarity {
-    COMMON,
-    UNCOMMON,
-    RARE,
-    EPIC,
-    LEGENDARY,
-    MYTHIC,
-    KIT,
+    COMMON, WRETCHED("common"),
+    UNCOMMON, STANDARD("uncommon"),
+    RARE, REFINED("rare"),
+    EPIC, EXALTED("epic"),
+    LEGENDARY, FABLED("legendary"),
+    MYTHIC, MYTHICAL("mythic"),
     DEVELOPER;
 
 
+    private final String id;
+
+    Rarity() {
+        this.id = name().toLowerCase();
+    }
+
+    Rarity(String id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
-        return name().toLowerCase();
+        return id;
     }
 
     @JsonValue
