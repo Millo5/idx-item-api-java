@@ -1,5 +1,15 @@
 {
   "attributes" : [ {
+    "id" : "consumed",
+    "name" : "Consumed",
+    "material" : "structure_void",
+    "description" : "Causes the item to disappear when used.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "use" ]
+    }
+  }, {
     "id" : "gourmand",
     "name" : "Gourmand",
     "material" : "cake",
@@ -11,6 +21,19 @@
       "triggers" : [ "eat-global" ]
     },
     "rarity" : "legendary"
+  }, {
+    "id" : "sharp",
+    "name" : "Sharp",
+    "material" : "wooden_sword",
+    "description" : "Increases the damage of melee weapons",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "damage" : 1.5
+      }
+    }
   }, {
     "id" : "hook",
     "name" : "Hook",
@@ -34,6 +57,16 @@
       "triggers" : [ "melee-attack" ]
     }
   }, {
+    "id" : "consumable",
+    "name" : "Consumable",
+    "material" : "cooked_beef",
+    "description" : "Causes the item to disappear when eaten.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
+    }
+  }, {
     "id" : "voltaic-aura",
     "name" : "Voltaic Aura",
     "material" : "light_blue_dye",
@@ -45,6 +78,16 @@
       "triggers" : [ "passive", "passive-slow" ]
     },
     "rarity" : "legendary"
+  }, {
+    "id" : "heal",
+    "name" : "Heal",
+    "material" : "apple",
+    "description" : "Consuming this item heals the consumer.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
+    }
   }, {
     "id" : "slash",
     "name" : "Slash",
@@ -105,19 +148,6 @@
       }
     },
     "rarity" : "legendary"
-  }, {
-    "id" : "sharp",
-    "name" : "Sharp",
-    "material" : "wooden_sword",
-    "description" : "Increases the damage of melee weapons",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "attribute-type" : "enchantment",
-      "stats" : {
-        "damage" : 1.5
-      }
-    }
   } ],
   "items" : [ {
     "id" : "restless-chain",
