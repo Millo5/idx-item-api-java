@@ -80,7 +80,13 @@ public class Accessories {
 
         // Mythic
         {
-            
+            Main.dataManager.addItem(new Item<>("infinite-leafed-clover", "Infinite Leafed Clover", "flowering_azalea_leaves", ItemType.TRINKET)
+                .setDescription("A mystical clover that seems to radiate good fortune.")
+                .setRarity(Rarity.MYTHIC)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.LUCK, 57
+                )))
+            );
         }
     }
 }

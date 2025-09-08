@@ -3,6 +3,7 @@ package org.idx.items;
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.idx.IgnoreOneIntFilter;
+import org.idx.enums.CustomMaterial;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.items.components.ComponentContainer;
@@ -33,7 +34,6 @@ public class Item<T extends Item<T>> {
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private ComponentContainer componentContainer = new ComponentContainer();
 
-
     @JsonCreator
     public Item(
             @JsonProperty("id") String id,
@@ -46,6 +46,12 @@ public class Item<T extends Item<T>> {
         this.material = material;
         this.type = type;
         this.rarity = Rarity.COMMON; // Default rarity
+    }
+
+    @JsonIgnore
+    public Item(String id, String name, CustomMaterial material, ItemType type) {
+        this(id, name, material.getId(), type);
+        setModelData(material.getModelData());
     }
 
 

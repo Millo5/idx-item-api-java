@@ -2,6 +2,8 @@ package org.idx.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
+
+@SuppressWarnings("unused")
 public enum Stat {
 
     //<editor-fold desc="Core Stats" defaultstate="collapsed">
@@ -29,6 +31,13 @@ public enum Stat {
     LIFESTEAL,
     /** Bonus damage against bosses */
     KNOCKBACK,
+
+    /** Fatigue gained from actions */
+    STRAIN,
+    /** Fatigue recover rate */
+    RESILIENCE,
+    /** Fatigue capacity */
+    ENDURANCE,
 
     /** Movement speed percentile increase */
     MOVE_SPEED,

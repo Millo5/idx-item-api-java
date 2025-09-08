@@ -13,7 +13,7 @@ public class Weapon {
     public static void inject() {
         // Common
         {
-            Main.dataManager.addItem(new AttributeItem("slash", "Slash", "iron_sword", AttributeType.ATTRIBUTE)
+            Main.dataManager.addItem(new AttributeItem("slash", "Slash", "wooden_sword", AttributeType.ATTRIBUTE)
                     .setDescription("A basic arcing slash.")
                     .setTarget(ItemType.MELEE_WEAPON)
                     .addComponent(new TriggersComponent(

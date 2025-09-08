@@ -1,6 +1,7 @@
 package org.idx.data.inject;
 
 import org.idx.Main;
+import org.idx.enums.CustomMaterial;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
@@ -28,7 +29,7 @@ public class Weapons {
 
         // Uncommon
         {
-            Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", "wooden_shovel", ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", CustomMaterial.SPEAR, ItemType.MELEE_WEAPON)
                 .setDescription("A blunt spear made of wood, most likely used for training.")
                 .setRarity(Rarity.UNCOMMON)
                 .addComponent(new StatsComponent(Map.of(
@@ -42,7 +43,7 @@ public class Weapons {
 
         // Rare
         {
-            Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", "iron_sword", ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", CustomMaterial.SWORD, ItemType.MELEE_WEAPON)
                 .setDescription("A sword polished to a mirror finish, reflecting the light beautifully.")
                 .setRarity(Rarity.RARE)
                 .addComponent(new StatsComponent(Map.of(
@@ -85,7 +86,7 @@ public class Weapons {
 
         // Developer
         {
-            Main.dataManager.addItem(new Item<>("clydes-blade", "Clyde's Blade", "armor_stand", ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("clydes-blade", "Clyde's Blade", CustomMaterial.GREAT_SWORD, ItemType.MELEE_WEAPON)
                 .setDescription("A blade that seems to have a mind of it's own. Can be quite dangerous.")
                 .setRarity(Rarity.DEVELOPER)
                 .addComponent(StatsComponent.builder()
