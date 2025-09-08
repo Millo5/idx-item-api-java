@@ -35,6 +35,17 @@
       }
     }
   }, {
+    "id" : "throwing",
+    "name" : "Throwing",
+    "material" : "snowball",
+    "description" : "Allows melee weapons to be thrown, dealing damage and returning to the thrower",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "drop" ]
+    }
+  }, {
     "id" : "hook",
     "name" : "Hook",
     "material" : "chain",
@@ -98,6 +109,16 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
       "triggers" : [ "melee-attack" ]
+    }
+  }, {
+    "id" : "currency",
+    "name" : "Currency",
+    "material" : "gold_nugget",
+    "description" : "Denotes an item as currency.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "pickup" ]
     }
   }, {
     "id" : "combo-slash",

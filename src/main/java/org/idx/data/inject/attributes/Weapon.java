@@ -27,6 +27,11 @@ public class Weapon {
                             Trigger.MELEE_ATTACK
                     ))
             );
+            Main.dataManager.addItem(new AttributeItem("currency", "Currency", "gold_nugget", AttributeType.ATTRIBUTE)
+                    .setDescription("Denotes an item as currency.")
+                    .addComponent(new TriggersComponent(
+                            Trigger.PICKUP))
+            );
         }
 
         // Uncommon
@@ -43,6 +48,13 @@ public class Weapon {
                     .addComponent(new TriggersComponent(
                             Trigger.MELEE_ATTACK
                     ))
+            );
+
+            Main.dataManager.addItem(new AttributeItem("throwing", "Throwing", "snowball", AttributeType.ATTRIBUTE)
+                    .setDescription("Allows melee weapons to be thrown, dealing damage and returning to the thrower")
+                    .setTarget(ItemType.MELEE_WEAPON)
+                    .addComponent(new TriggersComponent(
+                            Trigger.DROP))
             );
         }
 
@@ -93,7 +105,6 @@ public class Weapon {
 
         // Rare
         {
-
         }
 
         // Epic

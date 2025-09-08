@@ -28,8 +28,9 @@ public enum Trigger {
     // Triggers when the player eats an item
     EAT,
     EAT_GLOBAL(true),
+    // Triggers when the player picks up an item
+    PICKUP;
 
-    ;
 
 
 
