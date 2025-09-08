@@ -135,6 +135,7 @@ public class Item<T extends Item<T>> {
         return Collections.min(stackSizes);
     }
     @JsonInclude(value = JsonInclude.Include.NON_DEFAULT)
+    @JsonProperty("modeldata")
     public int getModelData() { return modeldata; }
     @JsonProperty("item-type")
     public ItemType getType() { return type; }
