@@ -48,6 +48,7 @@ public enum Stat {
 
     /** The amount of healing an item with attribute "heal" provides on consume */
     HEALING,
+    MONEY,
 
     //</editor-fold>
 

@@ -16,7 +16,24 @@ public class Unique {
 
         // Common
         {
-            
+            Main.dataManager.addItem(new Item<>("coin", "Coin", "gold_nugget", ItemType.UNIQUE)
+                    .setDescription("A shiny gold coin, possibly of some value.")
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.MONEY, 1
+                    )))
+                    .addComponent(new AttributesComponent("currency")));
+            Main.dataManager.addItem(new Item<>("big-coin", "Big Coin", "gold_ingot", ItemType.UNIQUE)
+                    .setDescription("A large gold coin, definitely of some value.")
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.MONEY, 5
+                    )))
+                    .addComponent(new AttributesComponent("currency")));
+            Main.dataManager.addItem(new Item<>("large-coin", "Large Coin", "gold_block", ItemType.UNIQUE)
+                    .setDescription("A massive gold coin, certainly of great value.")
+                    .addComponent(new StatsComponent(Map.of(
+                            Stat.MONEY, 20
+                    )))
+                    .addComponent(new AttributesComponent("currency")));
         }
         
         // Uncommon

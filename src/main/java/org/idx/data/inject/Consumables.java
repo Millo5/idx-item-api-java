@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.idx.Main;
 import org.idx.enums.ItemType;
+import org.idx.enums.StackSize;
 import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.components.impl.AttributesComponent;
@@ -28,6 +29,7 @@ public class Consumables {
             );
             Main.dataManager.addItem(new Item<>("small-health-potion", "Small Health Potion", "potion", ItemType.CONSUMABLE)
                 .setDescription("Very potent, but not very large.")
+                .setStackSize(StackSize.POTION)
                 .setColor("#ff0000")
                 .addComponent(new AttributesComponent("heal", "consumable"))
                 .addComponent(new StackableStatsComponent(Map.of(

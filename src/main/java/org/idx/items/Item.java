@@ -107,6 +107,10 @@ public class Item<T extends Item<T>> {
         this.name = name;
         return (T) this;
     }
+    public T setStackSize(int potion) {
+        this.stackSize = potion;
+        return (T) this;
+    }
 
     // Getters
     public String getId() { return id; }
@@ -174,4 +178,6 @@ public class Item<T extends Item<T>> {
 
         }
     }
+
+
 }

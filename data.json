@@ -310,8 +310,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -402,8 +402,8 @@
         "defense" : 2
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "stick",
     "name" : "Stick",
@@ -499,6 +499,22 @@
       }
     }
   }, {
+    "id" : "throwing-axe",
+    "name" : "Throwing Axe",
+    "material" : "stone_axe",
+    "item-type" : "melee-weapon",
+    "description" : "A balanced axe designed for throwing, can be retrieved after use.",
+    "components" : {
+      "attributes" : [ "throwing" ],
+      "stats" : {
+        "damage" : 5.0,
+        "crit-chance" : 10.0,
+        "crit-damage" : 25.0,
+        "weapon-attack-speed" : 1.2
+      }
+    },
+    "rarity" : "rare"
+  }, {
     "id" : "spider-eye",
     "name" : "Spider Eye",
     "material" : "spider_eye",
@@ -565,7 +581,7 @@
     "item-type" : "consumable",
     "description" : "Very potent, but not very large.",
     "color" : "#ff0000",
-    "stack-size" : 64,
+    "stack-size" : 8,
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
@@ -578,6 +594,30 @@
     "material" : "knowledge_book",
     "item-type" : "menu",
     "stack-size" : 64
+  }, {
+    "id" : "large-coin",
+    "name" : "Large Coin",
+    "material" : "gold_block",
+    "item-type" : "unique",
+    "description" : "A massive gold coin, certainly of great value.",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 20
+      }
+    }
+  }, {
+    "id" : "big-coin",
+    "name" : "Big Coin",
+    "material" : "gold_ingot",
+    "item-type" : "unique",
+    "description" : "A large gold coin, definitely of some value.",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 5
+      }
+    }
   }, {
     "id" : "clydes-strides",
     "name" : "Clyde's Strides",
@@ -638,8 +678,8 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
@@ -656,5 +696,17 @@
     "description" : "What are these? Arms? Legs? Tentacles???",
     "stack-size" : 64,
     "rarity" : "epic"
+  }, {
+    "id" : "coin",
+    "name" : "Coin",
+    "material" : "gold_nugget",
+    "item-type" : "unique",
+    "description" : "A shiny gold coin, possibly of some value.",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 1
+      }
+    }
   } ]
 }

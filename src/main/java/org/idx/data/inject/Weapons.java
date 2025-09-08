@@ -54,6 +54,18 @@ public class Weapons {
                     .setEnchantSlots(1)
                 )
             );
+
+            Main.dataManager.addItem(new Item<>("throwing-axe", "Throwing Axe", "stone_axe", ItemType.MELEE_WEAPON)
+                .setDescription("A balanced axe designed for throwing, can be retrieved after use.")
+                .setRarity(Rarity.RARE)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 5.0,
+                    Stat.CRIT_CHANCE, 10.0,
+                    Stat.CRIT_DAMAGE, 25.0,
+                    Stat.WEAPON_ATTACK_SPEED, 1.2
+                )))
+                .addComponent(new AttributesComponent("throwing"))
+            );
         }
 
         // Epic
