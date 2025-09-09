@@ -35,6 +35,17 @@
       }
     }
   }, {
+    "id" : "throwing",
+    "name" : "Throwing",
+    "material" : "snowball",
+    "description" : "Allows melee weapons to be thrown, dealing damage and returning to the thrower",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "drop" ]
+    }
+  }, {
     "id" : "hook",
     "name" : "Hook",
     "material" : "chain",
@@ -89,25 +100,25 @@
       "triggers" : [ "eat" ]
     }
   }, {
-    "id" : "grapple",
-    "name" : "Grapple",
-    "material" : "lead",
-    "description" : "Allows the user to pull themselves to elevated positions.",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-type" : "attribute",
-      "triggers" : [ "use" ]
-    }
-  }, {
     "id" : "slash",
     "name" : "Slash",
-    "material" : "iron_sword",
+    "material" : "wooden_sword",
     "description" : "A basic arcing slash.",
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
       "triggers" : [ "melee-attack" ]
+    }
+  }, {
+    "id" : "currency",
+    "name" : "Currency",
+    "material" : "gold_nugget",
+    "description" : "Denotes an item as currency.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "pickup" ]
     }
   }, {
     "id" : "combo-slash",
@@ -121,6 +132,16 @@
       "triggers" : [ "melee-attack" ]
     },
     "rarity" : "rare"
+  }, {
+    "id" : "grapple",
+    "name" : "Grapple",
+    "material" : "lead",
+    "description" : "Allows the user to pull themselves to elevated positions.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "use" ]
+    }
   }, {
     "id" : "two-handed",
     "name" : "Two Handed",
@@ -152,7 +173,7 @@
   "items" : [ {
     "id" : "restless-chain",
     "name" : "Restless Chain",
-    "material" : "chain",
+    "material" : "archer_pottery_sherd",
     "item-type" : "unique",
     "description" : "A heavy chain that seems to writhe and move on its own, as if alive.",
     "components" : {
@@ -161,47 +182,16 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 6
   }, {
     "id" : "ender-pearl",
     "name" : "Ender Pearl",
     "material" : "ender_pearl",
     "item-type" : "material",
     "description" : "Please be the eyes, please be the eyes...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "mythic"
-  }, {
-    "id" : "leather-boots",
-    "name" : "Leather Boots",
-    "material" : "leather_boots",
-    "item-type" : "boots",
-    "description" : "Protect your feet with the power of cow skin.",
-    "components" : {
-      "enchantSlots" : 1,
-      "stats" : {
-        "defense" : 2
-      }
-    }
-  }, {
-    "id" : "necrotic-matter",
-    "name" : "Necrotic Matter",
-    "material" : "coal",
-    "item-type" : "material",
-    "description" : "Mr Dweevius, I don't feel so good...",
-    "stackable" : true,
-    "rarity" : "legendary"
-  }, {
-    "id" : "leather-hood",
-    "name" : "Leather Hood",
-    "material" : "leather_helmet",
-    "item-type" : "helmet",
-    "description" : "Slightly lessens blows to the head. Slightly.",
-    "components" : {
-      "enchantSlots" : 1,
-      "stats" : {
-        "defense" : 2
-      }
-    }
   }, {
     "id" : "treads-of-clyde",
     "name" : "Treads of Clyde",
@@ -225,7 +215,7 @@
     "material" : "arrow",
     "item-type" : "arrow",
     "description" : "A simple arrow, used for ranged weapons.",
-    "stackable" : true,
+    "stack-size" : 64,
     "components" : {
       "stats" : {
         "damage" : 1
@@ -246,36 +236,9 @@
     },
     "rarity" : "rare"
   }, {
-    "id" : "rope",
-    "name" : "Rope",
-    "material" : "lead",
-    "item-type" : "consumable",
-    "description" : "A long piece of rope, useful for climbing.",
-    "stackable" : true,
-    "components" : {
-      "attributes" : [ "grapple", "consumed" ]
-    }
-  }, {
-    "id" : "clydes-carapace",
-    "name" : "Clyde's Carapace",
-    "material" : "chainmail_chestplate",
-    "item-type" : "chestplate",
-    "description" : "The lost chestplate of the great adventurer, Clyde.",
-    "components" : {
-      "enchantSlots" : 2,
-      "set" : "clydes-lost-set",
-      "stats" : {
-        "health" : 7,
-        "defense" : 15,
-        "evasion" : 10,
-        "crit-damage" : 40
-      }
-    },
-    "rarity" : "mythic"
-  }, {
     "id" : "wooden-spear",
     "name" : "Wooden Spear",
-    "material" : "wooden_shovel",
+    "material" : "angler_pottery_sherd",
     "item-type" : "melee-weapon",
     "description" : "A blunt spear made of wood, most likely used for training.",
     "components" : {
@@ -286,14 +249,15 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "modeldata" : 3
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
     "material" : "sugar_cane",
     "item-type" : "material",
     "description" : "Still twitching.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "echoing-hood",
@@ -313,20 +277,6 @@
     "rarity" : "legendary",
     "level" : 5
   }, {
-    "id" : "slime",
-    "name" : "Slime",
-    "material" : "slime_ball",
-    "item-type" : "material",
-    "description" : "Tastes like a booger. Don't ask how I know that.",
-    "stackable" : true
-  }, {
-    "id" : "spider-silk",
-    "name" : "Spider Silk",
-    "material" : "string",
-    "item-type" : "material",
-    "description" : "Stronger than steel!",
-    "stackable" : true
-  }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
     "material" : "chainmail_helmet",
@@ -344,73 +294,12 @@
     },
     "rarity" : "mythic"
   }, {
-    "id" : "bat-wing",
-    "name" : "Bat Wing",
-    "material" : "black_carpet",
-    "item-type" : "material",
-    "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
-    "stackable" : true,
-    "rarity" : "epic"
-  }, {
-    "id" : "apple",
-    "name" : "Apple",
-    "material" : "apple",
-    "item-type" : "consumable",
-    "description" : "One a day keeps the doctor away.",
-    "stackable" : true,
-    "components" : {
-      "attributes" : [ "heal", "consumable" ],
-      "stats" : {
-        "healing" : 2
-      }
-    }
-  }, {
-    "id" : "torn-cloth",
-    "name" : "Torn Cloth",
-    "material" : "rabbit_hide",
-    "item-type" : "material",
-    "description" : "Very low quality.",
-    "stackable" : true,
-    "rarity" : "rare"
-  }, {
-    "id" : "crude-iron",
-    "name" : "Crude Iron",
-    "material" : "raw_iron",
-    "item-type" : "material",
-    "description" : "Seems to have been wrecked relatively recently.",
-    "stackable" : true,
-    "rarity" : "rare"
-  }, {
-    "id" : "fungus",
-    "name" : "Fungus",
-    "material" : "brown_mushroom",
-    "item-type" : "material",
-    "description" : "Have a fungus.",
-    "stackable" : true,
-    "rarity" : "rare"
-  }, {
-    "id" : "gourmands-bib",
-    "name" : "Gourmand's Bib",
-    "material" : "golden_chestplate",
-    "item-type" : "chestplate",
-    "description" : "An old bib that has born witness to countless numbers of incredible meals.",
-    "components" : {
-      "attributes" : [ "gourmand" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "health" : 50,
-        "defense" : 2
-      }
-    },
-    "rarity" : "legendary",
-    "level" : 10
-  }, {
     "id" : "stick",
     "name" : "Stick",
     "material" : "stick",
     "item-type" : "material",
     "description" : "Useful for creation of boom boom",
-    "stackable" : true
+    "stack-size" : 64
   }, {
     "id" : "wooden-shiv",
     "name" : "Wooden Shiv",
@@ -442,12 +331,12 @@
     "material" : "prismarine_shard",
     "item-type" : "material",
     "description" : "It's made from some sort of prismatic aquamarine...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "polished-sword",
     "name" : "Polished Sword",
-    "material" : "iron_sword",
+    "material" : "angler_pottery_sherd",
     "item-type" : "melee-weapon",
     "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
     "components" : {
@@ -459,7 +348,8 @@
         "weapon-attack-speed" : 1.6
       }
     },
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "modeldata" : 2
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -478,33 +368,42 @@
     "material" : "rotten_flesh",
     "item-type" : "material",
     "description" : "For some reason you feel like you used to eat this.",
-    "stackable" : true
-  }, {
-    "id" : "golden-nugget",
-    "name" : "Golden Nugget",
-    "material" : "gold_nugget",
-    "item-type" : "material",
-    "description" : "Shiny...",
-    "stackable" : true,
-    "rarity" : "legendary"
+    "stack-size" : 64
   }, {
     "id" : "wooden-targe",
     "name" : "Wooden Targe",
-    "material" : "oak_slab",
+    "material" : "angler_pottery_sherd",
     "item-type" : "offhand",
     "description" : "A small wooden shield.",
     "components" : {
       "stats" : {
         "defense" : 5
       }
-    }
+    },
+    "modeldata" : 6
+  }, {
+    "id" : "throwing-axe",
+    "name" : "Throwing Axe",
+    "material" : "stone_axe",
+    "item-type" : "melee-weapon",
+    "description" : "A balanced axe designed for throwing, can be retrieved after use.",
+    "components" : {
+      "attributes" : [ "throwing" ],
+      "stats" : {
+        "damage" : 5.0,
+        "crit-chance" : 10.0,
+        "crit-damage" : 25.0,
+        "weapon-attack-speed" : 1.2
+      }
+    },
+    "rarity" : "rare"
   }, {
     "id" : "spider-eye",
     "name" : "Spider Eye",
     "material" : "spider_eye",
     "item-type" : "material",
     "description" : "You'd think you would get a lot more of these...",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "epic"
   }, {
     "id" : "echoing-fragment",
@@ -519,7 +418,7 @@
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
-    "material" : "armor_stand",
+    "material" : "angler_pottery_sherd",
     "item-type" : "melee-weapon",
     "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
     "components" : {
@@ -542,21 +441,28 @@
         "recursion" : 20
       }
     },
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "modeldata" : 1
   }, {
-    "id" : "bone",
-    "name" : "Bone",
-    "material" : "bone",
-    "item-type" : "material",
-    "description" : "I used to be a femur.",
-    "stackable" : true
+    "id" : "infinite-leafed-clover",
+    "name" : "Infinite Leafed Clover",
+    "material" : "archer_pottery_sherd",
+    "item-type" : "trinket",
+    "description" : "A mystical clover that seems to radiate good fortune.",
+    "components" : {
+      "stats" : {
+        "luck" : 57
+      }
+    },
+    "rarity" : "mythic",
+    "modeldata" : 5
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
     "material" : "gunpowder",
     "item-type" : "material",
     "description" : "Useful for creation of boom boom.",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "rare"
   }, {
     "id" : "small-health-potion",
@@ -565,7 +471,7 @@
     "item-type" : "consumable",
     "description" : "Very potent, but not very large.",
     "color" : "#ff0000",
-    "stackable" : true,
+    "stack-size" : 8,
     "components" : {
       "attributes" : [ "heal", "consumable" ],
       "stats" : {
@@ -573,11 +479,31 @@
       }
     }
   }, {
-    "id" : "menu",
-    "name" : "Menu",
-    "material" : "knowledge_book",
-    "item-type" : "menu",
-    "stackable" : true
+    "id" : "large-coin",
+    "name" : "Large Coin",
+    "material" : "archer_pottery_sherd",
+    "item-type" : "unique",
+    "description" : "A massive gold coin, certainly of great value.",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 20
+      }
+    },
+    "modeldata" : 3
+  }, {
+    "id" : "big-coin",
+    "name" : "Big Coin",
+    "material" : "archer_pottery_sherd",
+    "item-type" : "unique",
+    "description" : "A large gold coin, definitely of some value.",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 5
+      }
+    },
+    "modeldata" : 1
   }, {
     "id" : "clydes-strides",
     "name" : "Clyde's Strides",
@@ -595,22 +521,6 @@
       }
     },
     "rarity" : "mythic"
-  }, {
-    "id" : "madam-8-legs",
-    "name" : "Madam 8 Legs",
-    "material" : "diamond_leggings",
-    "item-type" : "leggings",
-    "description" : "A pair of enchanted legs that greatly increase the speed of the wearer",
-    "components" : {
-      "stats" : {
-        "health" : 5,
-        "defense" : 10,
-        "attack-speed" : 25,
-        "crit-chance" : 25,
-        "move-speed" : 25
-      }
-    },
-    "rarity" : "epic"
   }, {
     "id" : "simple-bow",
     "name" : "Simple Bow",
@@ -646,15 +556,217 @@
     "material" : "echo_shard",
     "item-type" : "material",
     "description" : "Kinda...glitchy?",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "mythic"
+  }, {
+    "id" : "coin",
+    "name" : "Coin",
+    "material" : "archer_pottery_sherd",
+    "item-type" : "unique",
+    "description" : "A shiny gold coin, possibly of some value.",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 1
+      }
+    },
+    "modeldata" : 2
+  }, {
+    "id" : "leather-boots",
+    "name" : "Leather Boots",
+    "material" : "leather_boots",
+    "item-type" : "boots",
+    "description" : "Protect your feet with the power of cow skin.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 2
+      }
+    }
+  }, {
+    "id" : "necrotic-matter",
+    "name" : "Necrotic Matter",
+    "material" : "coal",
+    "item-type" : "material",
+    "description" : "Mr Dweevius, I don't feel so good...",
+    "stack-size" : 64,
+    "rarity" : "legendary"
+  }, {
+    "id" : "leather-hood",
+    "name" : "Leather Hood",
+    "material" : "leather_helmet",
+    "item-type" : "helmet",
+    "description" : "Slightly lessens blows to the head. Slightly.",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "defense" : 2
+      }
+    }
+  }, {
+    "id" : "butcher-knife",
+    "name" : "Butcher Knife",
+    "material" : "angler_pottery_sherd",
+    "item-type" : "melee-weapon",
+    "description" : "A large, heavy knife used for butchering meat.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "damage" : 3.0,
+        "crit-chance" : 2.0,
+        "weapon-attack-speed" : 1.8
+      }
+    },
+    "rarity" : "uncommon",
+    "modeldata" : 4
+  }, {
+    "id" : "rope",
+    "name" : "Rope",
+    "material" : "lead",
+    "item-type" : "consumable",
+    "description" : "A long piece of rope, useful for climbing.",
+    "stack-size" : 64,
+    "components" : {
+      "attributes" : [ "grapple", "consumed" ]
+    }
+  }, {
+    "id" : "clydes-carapace",
+    "name" : "Clyde's Carapace",
+    "material" : "chainmail_chestplate",
+    "item-type" : "chestplate",
+    "description" : "The lost chestplate of the great adventurer, Clyde.",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 7,
+        "defense" : 15,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
+  }, {
+    "id" : "slime",
+    "name" : "Slime",
+    "material" : "slime_ball",
+    "item-type" : "material",
+    "description" : "Tastes like a booger. Don't ask how I know that.",
+    "stack-size" : 64
+  }, {
+    "id" : "spider-silk",
+    "name" : "Spider Silk",
+    "material" : "string",
+    "item-type" : "material",
+    "description" : "Stronger than steel!",
+    "stack-size" : 64
+  }, {
+    "id" : "bat-wing",
+    "name" : "Bat Wing",
+    "material" : "archer_pottery_sherd",
+    "item-type" : "material",
+    "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
+    "stack-size" : 64,
+    "rarity" : "epic",
+    "modeldata" : 4
+  }, {
+    "id" : "apple",
+    "name" : "Apple",
+    "material" : "apple",
+    "item-type" : "consumable",
+    "description" : "One a day keeps the doctor away.",
+    "stack-size" : 64,
+    "components" : {
+      "attributes" : [ "heal", "consumable" ],
+      "stats" : {
+        "healing" : 2
+      }
+    }
+  }, {
+    "id" : "torn-cloth",
+    "name" : "Torn Cloth",
+    "material" : "rabbit_hide",
+    "item-type" : "material",
+    "description" : "Very low quality.",
+    "stack-size" : 64,
+    "rarity" : "rare"
+  }, {
+    "id" : "crude-iron",
+    "name" : "Crude Iron",
+    "material" : "raw_iron",
+    "item-type" : "material",
+    "description" : "Seems to have been wrecked relatively recently.",
+    "stack-size" : 64,
+    "rarity" : "rare"
+  }, {
+    "id" : "fungus",
+    "name" : "Fungus",
+    "material" : "brown_mushroom",
+    "item-type" : "material",
+    "description" : "Have a fungus.",
+    "stack-size" : 64,
+    "rarity" : "rare"
+  }, {
+    "id" : "gourmands-bib",
+    "name" : "Gourmand's Bib",
+    "material" : "golden_chestplate",
+    "item-type" : "chestplate",
+    "description" : "An old bib that has born witness to countless numbers of incredible meals.",
+    "components" : {
+      "attributes" : [ "gourmand" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "health" : 50,
+        "defense" : 2
+      }
+    },
+    "rarity" : "legendary",
+    "level" : 10
+  }, {
+    "id" : "golden-nugget",
+    "name" : "Golden Nugget",
+    "material" : "gold_nugget",
+    "item-type" : "material",
+    "description" : "Shiny...",
+    "stack-size" : 64,
+    "rarity" : "legendary"
+  }, {
+    "id" : "bone",
+    "name" : "Bone",
+    "material" : "bone",
+    "item-type" : "material",
+    "description" : "I used to be a femur.",
+    "stack-size" : 64
+  }, {
+    "id" : "menu",
+    "name" : "Menu",
+    "material" : "knowledge_book",
+    "item-type" : "menu",
+    "stack-size" : 64
+  }, {
+    "id" : "madam-8-legs",
+    "name" : "Madam 8 Legs",
+    "material" : "diamond_leggings",
+    "item-type" : "leggings",
+    "description" : "A pair of enchanted legs that greatly increase the speed of the wearer",
+    "components" : {
+      "stats" : {
+        "health" : 5,
+        "defense" : 10,
+        "attack-speed" : 25,
+        "crit-chance" : 25,
+        "move-speed" : 25
+      }
+    },
+    "rarity" : "epic"
   }, {
     "id" : "blaze-rod",
     "name" : "Blaze Rod",
     "material" : "blaze_rod",
     "item-type" : "material",
     "description" : "What are these? Arms? Legs? Tentacles???",
-    "stackable" : true,
+    "stack-size" : 64,
     "rarity" : "epic"
   } ]
 }
