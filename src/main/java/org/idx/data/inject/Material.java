@@ -3,6 +3,7 @@ package org.idx.data.inject;
 import org.idx.Main;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
+import org.idx.enums.Resource;
 import org.idx.items.Item;
 
 public class Material {
@@ -65,7 +66,7 @@ public class Material {
                 .setDescription("You'd think you would get a lot more of these...")
                 .setRarity(Rarity.EPIC)
             );
-            Main.dataManager.addItem(new Item<>("bat-wing", "Bat Wing", "black_carpet", ItemType.MATERIAL)
+            Main.dataManager.addItem(new Item<>("bat-wing", "Bat Wing", Resource.BAT_WING, ItemType.MATERIAL)
                 .setDescription("If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.")
                 .setRarity(Rarity.EPIC)
             );

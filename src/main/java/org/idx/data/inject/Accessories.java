@@ -3,6 +3,7 @@ package org.idx.data.inject;
 import java.util.Map;
 
 import org.idx.Main;
+import org.idx.enums.Resource;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
@@ -80,7 +81,7 @@ public class Accessories {
 
         // Mythic
         {
-            Main.dataManager.addItem(new Item<>("infinite-leafed-clover", "Infinite Leafed Clover", "flowering_azalea_leaves", ItemType.TRINKET)
+            Main.dataManager.addItem(new Item<>("infinite-leafed-clover", "Infinite Leafed Clover", Resource.INFINITE_LEAFED_CLOVER, ItemType.TRINKET)
                 .setDescription("A mystical clover that seems to radiate good fortune.")
                 .setRarity(Rarity.MYTHIC)
                 .addComponent(new StatsComponent(Map.of(

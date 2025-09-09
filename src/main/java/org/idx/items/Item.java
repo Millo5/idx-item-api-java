@@ -3,7 +3,7 @@ package org.idx.items;
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.idx.IgnoreOneIntFilter;
-import org.idx.enums.CustomMaterial;
+import org.idx.enums.Resource;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.items.components.ComponentContainer;
@@ -49,7 +49,7 @@ public class Item<T extends Item<T>> {
     }
 
     @JsonIgnore
-    public Item(String id, String name, CustomMaterial material, ItemType type) {
+    public Item(String id, String name, Resource material, ItemType type) {
         this(id, name, material.getId(), type);
         setModelData(material.getModelData());
     }

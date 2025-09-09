@@ -1,7 +1,7 @@
 package org.idx.data.inject;
 
 import org.idx.Main;
-import org.idx.enums.CustomMaterial;
+import org.idx.enums.Resource;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
@@ -29,7 +29,7 @@ public class Weapons {
 
         // Uncommon
         {
-            Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", CustomMaterial.SPEAR, ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", Resource.SPEAR, ItemType.MELEE_WEAPON)
                 .setDescription("A blunt spear made of wood, most likely used for training.")
                 .setRarity(Rarity.UNCOMMON)
                 .addComponent(new StatsComponent(Map.of(
@@ -39,11 +39,24 @@ public class Weapons {
                 )))
                 .addComponent(new AttributesComponent("stab"))
             );
+
+            Main.dataManager.addItem(new Item<>("butcher-knife", "Butcher Knife", Resource.BUTCHER_KNIFE, ItemType.MELEE_WEAPON)
+                .setDescription("A large, heavy knife used for butchering meat.")
+                .setRarity(Rarity.UNCOMMON)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 3.0,
+                    Stat.WEAPON_ATTACK_SPEED, 1.8,
+                    Stat.CRIT_CHANCE, 2.0
+                )))
+                .addComponent(new AttributesComponent("slash")
+                    .setEnchantSlots(1)
+                )
+            );
         }
 
         // Rare
         {
-            Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", CustomMaterial.SWORD, ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", Resource.SWORD, ItemType.MELEE_WEAPON)
                 .setDescription("A sword polished to a mirror finish, reflecting the light beautifully.")
                 .setRarity(Rarity.RARE)
                 .addComponent(new StatsComponent(Map.of(
@@ -86,7 +99,7 @@ public class Weapons {
 
         // Developer
         {
-            Main.dataManager.addItem(new Item<>("clydes-blade", "Clyde's Blade", CustomMaterial.GREAT_SWORD, ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("clydes-blade", "Clyde's Blade", Resource.GREAT_SWORD, ItemType.MELEE_WEAPON)
                 .setDescription("A blade that seems to have a mind of it's own. Can be quite dangerous.")
                 .setRarity(Rarity.DEVELOPER)
                 .addComponent(StatsComponent.builder()

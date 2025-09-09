@@ -273,8 +273,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -444,7 +444,7 @@
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
-    "material" : "flowering_azalea_leaves",
+    "material" : "archer_pottery_sherd",
     "item-type" : "trinket",
     "description" : "A mystical clover that seems to radiate good fortune.",
     "components" : {
@@ -452,7 +452,8 @@
         "luck" : 57
       }
     },
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "modeldata" : 5
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -478,7 +479,7 @@
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
-    "material" : "gold_block",
+    "material" : "archer_pottery_sherd",
     "item-type" : "unique",
     "description" : "A massive gold coin, certainly of great value.",
     "components" : {
@@ -486,11 +487,12 @@
       "stats" : {
         "money" : 20
       }
-    }
+    },
+    "modeldata" : 3
   }, {
     "id" : "big-coin",
     "name" : "Big Coin",
-    "material" : "gold_ingot",
+    "material" : "archer_pottery_sherd",
     "item-type" : "unique",
     "description" : "A large gold coin, definitely of some value.",
     "components" : {
@@ -498,7 +500,8 @@
       "stats" : {
         "money" : 5
       }
-    }
+    },
+    "modeldata" : 1
   }, {
     "id" : "clydes-strides",
     "name" : "Clyde's Strides",
@@ -543,8 +546,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
@@ -556,7 +559,7 @@
   }, {
     "id" : "coin",
     "name" : "Coin",
-    "material" : "gold_nugget",
+    "material" : "archer_pottery_sherd",
     "item-type" : "unique",
     "description" : "A shiny gold coin, possibly of some value.",
     "components" : {
@@ -564,7 +567,8 @@
       "stats" : {
         "money" : 1
       }
-    }
+    },
+    "modeldata" : 2
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
@@ -597,6 +601,23 @@
         "defense" : 2
       }
     }
+  }, {
+    "id" : "butcher-knife",
+    "name" : "Butcher Knife",
+    "material" : "angler_pottery_sherd",
+    "item-type" : "melee-weapon",
+    "description" : "A large, heavy knife used for butchering meat.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "damage" : 3.0,
+        "crit-chance" : 2.0,
+        "weapon-attack-speed" : 1.8
+      }
+    },
+    "rarity" : "uncommon",
+    "modeldata" : 4
   }, {
     "id" : "rope",
     "name" : "Rope",
@@ -641,11 +662,12 @@
   }, {
     "id" : "bat-wing",
     "name" : "Bat Wing",
-    "material" : "black_carpet",
+    "material" : "archer_pottery_sherd",
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 4
   }, {
     "id" : "apple",
     "name" : "Apple",
@@ -697,8 +719,8 @@
         "defense" : 2
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
