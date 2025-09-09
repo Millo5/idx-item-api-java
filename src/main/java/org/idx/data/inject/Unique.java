@@ -49,7 +49,7 @@ public class Unique {
 
         // Epic
         {
-            Main.dataManager.addItem(new Item<>("restless-chain", "Restless Chain", "chain", ItemType.UNIQUE)
+            Main.dataManager.addItem(new Item<>("restless-chain", "Restless Chain", Resource.RESTLESS_CHAIN, ItemType.UNIQUE)
                     .setDescription("A heavy chain that seems to writhe and move on its own, as if alive.")
                     .setRarity(Rarity.EPIC)
                     .addComponent(new AttributesComponent("hook"))

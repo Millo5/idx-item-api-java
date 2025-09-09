@@ -11,7 +11,8 @@ public enum Resource {
     BIG_COIN("archer_pottery_sherd", 1),
     LARGE_COIN("archer_pottery_sherd", 3),
     INFINITE_LEAFED_CLOVER("archer_pottery_sherd", 5),
-    BAT_WING("archer_pottery_sherd", 4)
+    BAT_WING("archer_pottery_sherd", 4),
+    RESTLESS_CHAIN("archer_pottery_sherd", 6)
 
     ;
 
