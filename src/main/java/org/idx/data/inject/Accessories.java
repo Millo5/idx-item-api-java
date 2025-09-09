@@ -16,7 +16,7 @@ public class Accessories {
 
         // Common
         {
-            Main.dataManager.addItem(new Item<>("wooden-targe", "Wooden Targe", "oak_slab", ItemType.OFFHAND)
+            Main.dataManager.addItem(new Item<>("wooden-targe", "Wooden Targe", Resource.WOODEN_TARGE, ItemType.OFFHAND)
                 .setDescription("A small wooden shield.")
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DEFENSE, 5

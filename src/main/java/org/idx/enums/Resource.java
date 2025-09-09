@@ -6,6 +6,7 @@ public enum Resource {
     SWORD("angler_pottery_sherd", 2),
     SPEAR("angler_pottery_sherd", 3),
     BUTCHER_KNIFE("angler_pottery_sherd", 4),
+    WOODEN_TARGE("angler_pottery_sherd", 6),
 
     COIN("archer_pottery_sherd", 2),
     BIG_COIN("archer_pottery_sherd", 1),
