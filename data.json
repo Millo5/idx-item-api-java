@@ -22,6 +22,30 @@
     },
     "rarity" : "legendary"
   }, {
+    "id" : "shurikens",
+    "name" : "Shurikens",
+    "material" : "nether_star",
+    "description" : "Allows melee weapons to throw 3 shurikens, which deal 0.3x damage each.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "use" ]
+    },
+    "rarity" : "epic"
+  }, {
+    "id" : "throwable",
+    "name" : "Throwable",
+    "material" : "snowball",
+    "description" : "Allows melee weapons to be thrown when dropped, dealing damage at a distance.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "drop" ]
+    },
+    "rarity" : "rare"
+  }, {
     "id" : "sharp",
     "name" : "Sharp",
     "material" : "wooden_sword",
@@ -33,17 +57,6 @@
       "stats" : {
         "damage" : 1.5
       }
-    }
-  }, {
-    "id" : "throwing",
-    "name" : "Throwing",
-    "material" : "snowball",
-    "description" : "Allows melee weapons to be thrown, dealing damage and returning to the thrower",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "attribute-type" : "attribute",
-      "triggers" : [ "drop" ]
     }
   }, {
     "id" : "hook",
@@ -279,8 +292,8 @@
         "weapon-range" : 2.5
       }
     },
-    "rarity" : "uncommon",
     "level" : 4,
+    "rarity" : "uncommon",
     "modeldata" : 3
   }, {
     "id" : "frog-leg",
@@ -305,8 +318,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -322,8 +335,8 @@
         "resilience" : 15
       }
     },
-    "rarity" : "epic",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "epic"
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -371,7 +384,7 @@
     "components" : {
       "enchantSlots" : 1,
       "stats" : {
-        "defense" : 3
+        "health" : 2
       }
     }
   }, {
@@ -393,8 +406,8 @@
       "enchantSlots" : 1,
       "stats" : {
         "damage" : 7.0,
-        "crit-chance" : 5.0,
-        "weapon-attack-speed" : 1.6
+        "crit-chance" : 10,
+        "strain" : 30
       }
     },
     "rarity" : "rare",
@@ -404,11 +417,11 @@
     "name" : "Leather Pants",
     "material" : "leather_leggings",
     "item-type" : "leggings",
-    "description" : "Protect your legs with the power of cow skin.",
+    "description" : "Incredibly suffocating.",
     "components" : {
       "enchantSlots" : 1,
       "stats" : {
-        "defense" : 3
+        "health" : 2
       }
     }
   }, {
@@ -502,12 +515,12 @@
       "attributes" : [ "slash" ],
       "stats" : {
         "damage" : 5,
-        "range" : -1.5,
         "crit-chance" : 25,
         "crit-damage" : 25,
         "lifesteal" : 5,
         "strain" : 15,
-        "move-speed" : 5
+        "move-speed" : 5,
+        "weapon-range" : -1.5
       }
     },
     "rarity" : "legendary",
@@ -617,8 +630,24 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
+  }, {
+    "id" : "training-katana",
+    "name" : "Training Katana",
+    "material" : "iron_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A weapon given to ninjas in training.",
+    "components" : {
+      "attributes" : [ "slash", "shurikens" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "evasion" : 15,
+        "damage" : 9,
+        "strain" : 25
+      }
+    },
+    "rarity" : "legendary"
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
@@ -645,11 +674,11 @@
     "name" : "Leather Boots",
     "material" : "leather_boots",
     "item-type" : "boots",
-    "description" : "Protect your feet with the power of cow skin.",
+    "description" : "Ye olde Nikes.",
     "components" : {
       "enchantSlots" : 1,
       "stats" : {
-        "defense" : 2
+        "health" : 1
       }
     }
   }, {
@@ -669,7 +698,7 @@
     "components" : {
       "enchantSlots" : 1,
       "stats" : {
-        "defense" : 2
+        "health" : 1
       }
     }
   }, {
@@ -790,8 +819,8 @@
         "endurance" : 20
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",

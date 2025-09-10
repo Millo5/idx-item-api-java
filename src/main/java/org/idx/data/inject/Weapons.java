@@ -76,9 +76,9 @@ public class Weapons {
                 .setRarity(Rarity.RARE)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 7.0,
-                    Stat.WEAPON_ATTACK_SPEED, 1.6,
-                    Stat.CRIT_CHANCE, 5.0
-                )))
+                    Stat.STRAIN, 30,
+                    Stat.CRIT_CHANCE, 10
+                ))) 
                 .addComponent(new AttributesComponent("sharp", "slash")
                     .setEnchantSlots(1)
                 )
@@ -119,13 +119,25 @@ public class Weapons {
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 5,
                     Stat.STRAIN, 15,
-                    Stat.RANGE, -1.5,
+                    Stat.WEAPON_RANGE, -1.5,
                     Stat.MOVE_SPEED, 5,
                     Stat.CRIT_CHANCE, 25,
                     Stat.CRIT_DAMAGE, 25,
                     Stat.LIFESTEAL, 5
                 )))
                 .addComponent(new AttributesComponent("slash"))
+            );
+            Main.dataManager.addItem(new Item<>("training-katana", "Training Katana", "iron_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A weapon given to ninjas in training.")
+                .setRarity(Rarity.LEGENDARY)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 9,
+                    Stat.STRAIN, 25,
+                    Stat.EVASION, 15
+                )))
+                .addComponent(new AttributesComponent("slash","shurikens")
+                    .setEnchantSlots(1)
+                )
             );
         }
 

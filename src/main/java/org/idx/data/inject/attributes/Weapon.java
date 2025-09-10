@@ -42,25 +42,34 @@ public class Weapon {
         // Rare
         {
             Main.dataManager.addItem(new AttributeItem("combo-slash", "Combo Slash", "golden_sword", AttributeType.ATTRIBUTE)
-                    .setDescription("A three swing combo.")
-                    .setRarity(Rarity.RARE)
-                    .setTarget(ItemType.MELEE_WEAPON)
-                    .addComponent(new TriggersComponent(
-                            Trigger.MELEE_ATTACK
-                    ))
+                .setDescription("A three swing combo.")
+                .setRarity(Rarity.RARE)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.MELEE_ATTACK
+                ))
             );
 
-            Main.dataManager.addItem(new AttributeItem("throwing", "Throwing", "snowball", AttributeType.ATTRIBUTE)
-                    .setDescription("Allows melee weapons to be thrown, dealing damage and returning to the thrower")
-                    .setTarget(ItemType.MELEE_WEAPON)
-                    .addComponent(new TriggersComponent(
-                            Trigger.DROP))
+            Main.dataManager.addItem(new AttributeItem("throwable", "Throwable", "snowball", AttributeType.ATTRIBUTE)
+                .setDescription("Allows melee weapons to be thrown when dropped, dealing damage at a distance.")
+                .setRarity(Rarity.RARE)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.DROP
+                ))
             );
         }
 
         // Epic
         {
-
+            Main.dataManager.addItem(new AttributeItem("shurikens", "Shurikens", "nether_star", AttributeType.ATTRIBUTE)
+                .setDescription("Allows melee weapons to throw 3 shurikens, which deal 0.3x damage each.")
+                .setRarity(Rarity.EPIC)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.USE 
+                ))
+            );
         }
 
         // Legendary
