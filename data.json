@@ -193,6 +193,20 @@
     "stack-size" : 64,
     "rarity" : "mythic"
   }, {
+    "id" : "training-sword",
+    "name" : "Training Sword",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A simple wooden blade, not particularly effective.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "damage" : 5,
+        "strain" : 30
+      }
+    }
+  }, {
     "id" : "treads-of-clyde",
     "name" : "Treads of Clyde",
     "material" : "chainmail_boots",
@@ -236,6 +250,21 @@
     },
     "rarity" : "rare"
   }, {
+    "id" : "stone-sword",
+    "name" : "Stone Sword",
+    "material" : "stone_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "damage" : 7,
+        "strain" : 32
+      }
+    },
+    "level" : 6
+  }, {
     "id" : "wooden-spear",
     "name" : "Wooden Spear",
     "material" : "angler_pottery_sherd",
@@ -243,12 +272,14 @@
     "description" : "A blunt spear made of wood, most likely used for training.",
     "components" : {
       "attributes" : [ "stab" ],
+      "enchantSlots" : 1,
       "stats" : {
-        "damage" : 1,
-        "weapon-attack-speed" : 1.1,
-        "weapon-range" : 5
+        "damage" : 5,
+        "strain" : 35,
+        "weapon-range" : 2.5
       }
     },
+    "level" : 4,
     "rarity" : "uncommon",
     "modeldata" : 3
   }, {
@@ -326,24 +357,11 @@
     "components" : {
       "attributes" : [ "slash" ],
       "stats" : {
-        "damage" : 1,
-        "weapon-attack-speed" : 3.1
+        "damage" : 3,
+        "strain" : 20
       }
-    }
-  }, {
-    "id" : "stone-knife",
-    "name" : "Stone Knife",
-    "material" : "stone_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A crude knife made from a sharpened stone.",
-    "components" : {
-      "attributes" : [ "slash" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "damage" : 2,
-        "strain" : 15
-      }
-    }
+    },
+    "level" : 2
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -419,12 +437,11 @@
     "item-type" : "melee-weapon",
     "description" : "A balanced axe designed for throwing, can be retrieved after use.",
     "components" : {
-      "attributes" : [ "throwing" ],
+      "attributes" : [ "slash", "throwable" ],
       "stats" : {
-        "damage" : 5.0,
+        "damage" : 10,
         "crit-chance" : 10.0,
-        "crit-damage" : 25.0,
-        "weapon-attack-speed" : 1.2
+        "strain" : 40
       }
     },
     "rarity" : "rare"
@@ -475,6 +492,26 @@
     },
     "rarity" : "developer",
     "modeldata" : 1
+  }, {
+    "id" : "bloodlusted-cleaver",
+    "name" : "Bloodlusted Cleaver",
+    "material" : "angler_pottery_sherd",
+    "item-type" : "melee-weapon",
+    "description" : "A bloodied cleaver that seems drawn to violence.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "stats" : {
+        "damage" : 5,
+        "range" : -1.5,
+        "crit-chance" : 25,
+        "crit-damage" : 25,
+        "lifesteal" : 5,
+        "strain" : 15,
+        "move-speed" : 5
+      }
+    },
+    "rarity" : "legendary",
+    "modeldata" : 4
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -636,23 +673,6 @@
       }
     }
   }, {
-    "id" : "butcher-knife",
-    "name" : "Butcher Knife",
-    "material" : "angler_pottery_sherd",
-    "item-type" : "melee-weapon",
-    "description" : "A large, heavy knife used for butchering meat.",
-    "components" : {
-      "attributes" : [ "slash" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "damage" : 3.0,
-        "crit-chance" : 2.0,
-        "weapon-attack-speed" : 1.8
-      }
-    },
-    "rarity" : "uncommon",
-    "modeldata" : 4
-  }, {
     "id" : "rope",
     "name" : "Rope",
     "material" : "lead",
@@ -739,6 +759,22 @@
     "description" : "Have a fungus.",
     "stack-size" : 64,
     "rarity" : "rare"
+  }, {
+    "id" : "weighted-javelin",
+    "name" : "Weighted Javelin",
+    "material" : "iron-shovel",
+    "item-type" : "melee-weapon",
+    "description" : "A javelin with a very heavy tip, which lurches the user forwards when used.",
+    "components" : {
+      "attributes" : [ "thrust" ],
+      "stats" : {
+        "evasion" : 5,
+        "damage" : 15,
+        "strain" : 40,
+        "move-speed" : 15
+      }
+    },
+    "rarity" : "epic"
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",

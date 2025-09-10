@@ -17,20 +17,34 @@ public class Weapons {
 
         // Common
         {
+            Main.dataManager.addItem(new Item<>("training-sword", "Training Sword", "wooden_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A simple wooden blade, not particularly effective.")
+                .setLevel(1)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 5,
+                    Stat.STRAIN, 30
+                )))
+                .addComponent(new AttributesComponent("slash")
+                    .setEnchantSlots(1)
+                )
+            );
+
             Main.dataManager.addItem(new Item<>("wooden-shiv", "Wooden Shiv", "wooden_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A simple wooden blade, not particularly effective.")
+                .setLevel(2)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 1,
-                    Stat.WEAPON_ATTACK_SPEED, 3.1
+                    Stat.DAMAGE, 3,
+                    Stat.STRAIN, 20
                 )))
                 .addComponent(new AttributesComponent("slash"))
             );
 
-            Main.dataManager.addItem(new Item<>("stone-knife", "Stone Knife", "stone_sword", ItemType.MELEE_WEAPON)
-                .setDescription("A crude knife made from a sharpened stone.")
+            Main.dataManager.addItem(new Item<>("stone-sword", "Stone Sword", "stone_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.")
+                .setLevel(6)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 2,
-                    Stat.STRAIN, 15
+                    Stat.DAMAGE, 7,
+                    Stat.STRAIN, 32
                 )))
                 .addComponent(new AttributesComponent("slash")
                     .setEnchantSlots(1)
@@ -42,24 +56,14 @@ public class Weapons {
         {
             Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", Resource.SPEAR, ItemType.MELEE_WEAPON)
                 .setDescription("A blunt spear made of wood, most likely used for training.")
+                .setLevel(4)
                 .setRarity(Rarity.UNCOMMON)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 1,
-                    Stat.WEAPON_ATTACK_SPEED, 1.1,
-                    Stat.WEAPON_RANGE, 5
+                    Stat.DAMAGE, 5,
+                    Stat.STRAIN, 35,
+                    Stat.WEAPON_RANGE, 2.5
                 )))
-                .addComponent(new AttributesComponent("stab"))
-            );
-
-            Main.dataManager.addItem(new Item<>("butcher-knife", "Butcher Knife", Resource.BUTCHER_KNIFE, ItemType.MELEE_WEAPON)
-                .setDescription("A large, heavy knife used for butchering meat.")
-                .setRarity(Rarity.UNCOMMON)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 3.0,
-                    Stat.WEAPON_ATTACK_SPEED, 1.8,
-                    Stat.CRIT_CHANCE, 2.0
-                )))
-                .addComponent(new AttributesComponent("slash")
+                .addComponent(new AttributesComponent("stab")
                     .setEnchantSlots(1)
                 )
             );
@@ -84,23 +88,45 @@ public class Weapons {
                 .setDescription("A balanced axe designed for throwing, can be retrieved after use.")
                 .setRarity(Rarity.RARE)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 5.0,
-                    Stat.CRIT_CHANCE, 10.0,
-                    Stat.CRIT_DAMAGE, 25.0,
-                    Stat.WEAPON_ATTACK_SPEED, 1.2
+                    Stat.DAMAGE, 10,
+                    Stat.STRAIN, 40,
+                    Stat.CRIT_CHANCE, 10.0
                 )))
-                .addComponent(new AttributesComponent("throwing"))
+                .addComponent(new AttributesComponent("slash","throwable"))
             );
         }
 
         // Epic
         {
-
+            Main.dataManager.addItem(new Item<>("weighted-javelin", "Weighted Javelin", "iron-shovel", ItemType.MELEE_WEAPON)
+                .setDescription("A javelin with a very heavy tip, which lurches the user forwards when used.")
+                .setRarity(Rarity.EPIC)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 15,
+                    Stat.STRAIN, 40,
+                    Stat.MOVE_SPEED, 15,
+                    Stat.EVASION, 5
+                )))
+                .addComponent(new AttributesComponent("thrust"))
+            );
         }
 
         // Legendary
         {
-
+            Main.dataManager.addItem(new Item<>("bloodlusted-cleaver", "Bloodlusted Cleaver", Resource.BUTCHER_KNIFE, ItemType.MELEE_WEAPON)
+                .setDescription("A bloodied cleaver that seems drawn to violence.")
+                .setRarity(Rarity.LEGENDARY)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 5,
+                    Stat.STRAIN, 15,
+                    Stat.RANGE, -1.5,
+                    Stat.MOVE_SPEED, 5,
+                    Stat.CRIT_CHANCE, 25,
+                    Stat.CRIT_DAMAGE, 25,
+                    Stat.LIFESTEAL, 5
+                )))
+                .addComponent(new AttributesComponent("slash"))
+            );
         }
 
         // Mythic
