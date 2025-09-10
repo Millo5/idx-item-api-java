@@ -98,7 +98,7 @@ public class Weapons {
 
         // Epic
         {
-            Main.dataManager.addItem(new Item<>("weighted-javelin", "Weighted Javelin", "iron-shovel", ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("weighted-javelin", "Weighted Javelin", "iron_shovel", ItemType.MELEE_WEAPON)
                 .setDescription("A javelin with a very heavy tip, which lurches the user forwards when used.")
                 .setRarity(Rarity.EPIC)
                 .addComponent(new StatsComponent(Map.of(
