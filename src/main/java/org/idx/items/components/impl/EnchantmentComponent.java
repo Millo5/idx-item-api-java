@@ -1,9 +1,14 @@
 package org.idx.items.components.impl;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.idx.Main;
+import org.idx.data.DataManager;
+import org.idx.enums.ItemType;
+import org.idx.items.Item;
 import org.idx.items.components.ItemComponent;
 
 import java.util.Map;
+import java.util.Optional;
 
 public class EnchantmentComponent implements ItemComponent {
 
@@ -45,6 +50,14 @@ public class EnchantmentComponent implements ItemComponent {
 
     @Override
     public Map<String, ?> jsonEntries() {
-        return Map.of("enchantment", enchantment);
+        Item<? extends Item<?>> enchantItem = Main.dataManager.getItem(enchantment);
+        Optional<AttributeTypeComponent> optionalAttributeType = enchantItem.getComponent(AttributeTypeComponent.class);
+        if (optionalAttributeType.isEmpty()) {
+            System.out.println("Enchantment " + enchantment + " does not have an AttributeTypeComponent!");
+            return Map.of("enchantment", enchantment);
+        }
+        ItemType target = optionalAttributeType.get().getTargetType();
+        return Map.of("enchantment", enchantment,
+                "attribute-target", target);
     }
 }

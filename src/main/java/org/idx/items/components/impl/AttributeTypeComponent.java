@@ -44,6 +44,10 @@ public class AttributeTypeComponent implements ItemComponent {
         return 1;
     }
 
+    public ItemType getTargetType() {
+        return targetType;
+    }
+
     @Override
     public Map<String, ?> jsonEntries() {
         Map<String, Object> map = new HashMap<>();

@@ -182,8 +182,8 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "epic",
-    "modeldata" : 6
+    "modeldata" : 6,
+    "rarity" : "epic"
   }, {
     "id" : "ender-pearl",
     "name" : "Ender Pearl",
@@ -249,8 +249,8 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "uncommon",
-    "modeldata" : 3
+    "modeldata" : 3,
+    "rarity" : "uncommon"
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
@@ -348,8 +348,8 @@
         "weapon-attack-speed" : 1.6
       }
     },
-    "rarity" : "rare",
-    "modeldata" : 2
+    "modeldata" : 2,
+    "rarity" : "rare"
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -412,6 +412,7 @@
     "description" : "An echoing fragment that grants the Recursion enchantment.",
     "item-type" : "enchantment",
     "components" : {
+      "attribute-target" : "armor",
       "enchantment" : "recursion"
     },
     "rarity" : "legendary"
@@ -441,8 +442,8 @@
         "recursion" : 20
       }
     },
-    "rarity" : "developer",
-    "modeldata" : 1
+    "modeldata" : 1,
+    "rarity" : "developer"
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -454,8 +455,8 @@
         "luck" : 57
       }
     },
-    "rarity" : "mythic",
-    "modeldata" : 5
+    "modeldata" : 5,
+    "rarity" : "mythic"
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -618,8 +619,8 @@
         "weapon-attack-speed" : 1.8
       }
     },
-    "rarity" : "uncommon",
-    "modeldata" : 4
+    "modeldata" : 4,
+    "rarity" : "uncommon"
   }, {
     "id" : "rope",
     "name" : "Rope",
@@ -668,8 +669,8 @@
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "rarity" : "epic",
-    "modeldata" : 4
+    "modeldata" : 4,
+    "rarity" : "epic"
   }, {
     "id" : "apple",
     "name" : "Apple",
