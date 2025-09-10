@@ -25,6 +25,17 @@ public class Weapons {
                 )))
                 .addComponent(new AttributesComponent("slash"))
             );
+
+            Main.dataManager.addItem(new Item<>("stone-knife", "Stone Knife", "stone_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A crude knife made from a sharpened stone.")
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 2,
+                    Stat.STRAIN, 15
+                )))
+                .addComponent(new AttributesComponent("slash")
+                    .setEnchantSlots(1)
+                )
+            );
         }
 
         // Uncommon

@@ -34,9 +34,9 @@ public enum Stat {
 
     /** Fatigue gained from actions */
     STRAIN,
-    /** Fatigue recover rate */
+    /** Fatigue recover rate % */
     RESILIENCE,
-    /** Fatigue capacity */
+    /** Fatigue capacity, base 100 */
     ENDURANCE,
 
     /** Movement speed percentile increase */

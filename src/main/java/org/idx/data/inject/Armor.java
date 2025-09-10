@@ -101,7 +101,8 @@ public class Armor {
                     .setRarity(Rarity.LEGENDARY)
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE,  2,
-                        Stat.HEALTH, 50
+                        Stat.HEALTH, 50,
+                        Stat.ENDURANCE, 20
                     )))
                     .addComponent(new AttributesComponent("gourmand")
                         .setEnchantSlots(1)
@@ -179,6 +180,20 @@ public class Armor {
 
             // Epic
             {
+                Main.dataManager.addItem(new Item<>("assassins-boots", "Assassin's Boots", "chainmail_boots", ItemType.BOOTS)
+                    .setDescription("Boots worn by the legendary assassin, Shadow. Increases resilience and evasion.")
+                    .setRarity(Rarity.EPIC)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 8,
+                        Stat.HEALTH, 4,
+                        Stat.RESILIENCE, 15,
+                        Stat.EVASION, 20
+                    )))
+                    .addComponent(new AttributesComponent()
+                        .setEnchantSlots(1)
+                    )
+                    .setLevel(10)
+                );
 
             }
 
