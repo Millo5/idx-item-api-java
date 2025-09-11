@@ -27,8 +27,10 @@ public enum Stat {
     CRIT_CHANCE,
     /** Critical hit damage multiplier */
     CRIT_DAMAGE,
-    /** Chance to gain health on kill */
+    /** Health gained on kill */
     LIFESTEAL,
+    /** Chance to gain health on hit */
+    LEECHING,
     /** Bonus damage against bosses */
     KNOCKBACK,
 

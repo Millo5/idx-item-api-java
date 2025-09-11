@@ -123,7 +123,7 @@ public class Weapons {
                     Stat.MOVE_SPEED, 5,
                     Stat.CRIT_CHANCE, 25,
                     Stat.CRIT_DAMAGE, 25,
-                    Stat.LIFESTEAL, 5
+                    Stat.LEECHING, 5
                 )))
                 .addComponent(new AttributesComponent("slash"))
             );
