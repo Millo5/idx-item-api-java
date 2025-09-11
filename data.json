@@ -25,7 +25,7 @@
     "id" : "shurikens",
     "name" : "Shurikens",
     "material" : "nether_star",
-    "description" : "Allows melee weapons to throw 3 shurikens, which deal 0.3x damage each.",
+    "description" : "Allows melee weapons to throw 3 shurikens, which deal 0.4x damage each.",
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "melee-weapon",
@@ -292,8 +292,8 @@
         "weapon-range" : 2.5
       }
     },
-    "rarity" : "uncommon",
     "level" : 4,
+    "rarity" : "uncommon",
     "modeldata" : 3
   }, {
     "id" : "frog-leg",
@@ -318,8 +318,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -335,8 +335,8 @@
         "resilience" : 15
       }
     },
-    "rarity" : "epic",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "epic"
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -410,6 +410,7 @@
         "strain" : 30
       }
     },
+    "level" : 3,
     "rarity" : "rare",
     "modeldata" : 2
   }, {
@@ -457,6 +458,7 @@
         "strain" : 40
       }
     },
+    "level" : 8,
     "rarity" : "rare"
   }, {
     "id" : "spider-eye",
@@ -523,6 +525,7 @@
         "weapon-range" : -1.5
       }
     },
+    "level" : 5,
     "rarity" : "legendary",
     "modeldata" : 4
   }, {
@@ -630,8 +633,8 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "training-katana",
     "name" : "Training Katana",
@@ -647,6 +650,7 @@
         "strain" : 25
       }
     },
+    "level" : 12,
     "rarity" : "legendary"
   }, {
     "id" : "echo-shard",
@@ -729,6 +733,22 @@
     },
     "rarity" : "mythic"
   }, {
+    "id" : "tarnished-golden-knife",
+    "name" : "Tarnished Golden Knife",
+    "material" : "golden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A very old knife, plated in gold.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 3,
+      "stats" : {
+        "damage" : 4,
+        "strain" : 28
+      }
+    },
+    "level" : 10,
+    "rarity" : "uncommon"
+  }, {
     "id" : "slime",
     "name" : "Slime",
     "material" : "slime_ball",
@@ -803,6 +823,7 @@
         "move-speed" : 15
       }
     },
+    "level" : 7,
     "rarity" : "epic"
   }, {
     "id" : "gourmands-bib",
@@ -819,8 +840,8 @@
         "endurance" : 20
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",

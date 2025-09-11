@@ -56,8 +56,8 @@ public class Weapons {
         {
             Main.dataManager.addItem(new Item<>("wooden-spear", "Wooden Spear", Resource.SPEAR, ItemType.MELEE_WEAPON)
                 .setDescription("A blunt spear made of wood, most likely used for training.")
-                .setLevel(4)
                 .setRarity(Rarity.UNCOMMON)
+                .setLevel(4)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 5,
                     Stat.STRAIN, 35,
@@ -67,6 +67,19 @@ public class Weapons {
                     .setEnchantSlots(1)
                 )
             );
+
+            Main.dataManager.addItem(new Item<>("tarnished-golden-knife", "Tarnished Golden Knife", "golden_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A very old knife, plated in gold.")
+                .setRarity(Rarity.UNCOMMON)
+                .setLevel(10)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 4,
+                    Stat.STRAIN, 28
+                )))
+                .addComponent(new AttributesComponent("slash")
+                    .setEnchantSlots(3)
+                )
+            );
         }
 
         // Rare
@@ -74,6 +87,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", Resource.SWORD, ItemType.MELEE_WEAPON)
                 .setDescription("A sword polished to a mirror finish, reflecting the light beautifully.")
                 .setRarity(Rarity.RARE)
+                .setLevel(3)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 7.0,
                     Stat.STRAIN, 30,
@@ -87,6 +101,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("throwing-axe", "Throwing Axe", "stone_axe", ItemType.MELEE_WEAPON)
                 .setDescription("A balanced axe designed for throwing, can be retrieved after use.")
                 .setRarity(Rarity.RARE)
+                .setLevel(8)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 10,
                     Stat.STRAIN, 40,
@@ -101,6 +116,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("weighted-javelin", "Weighted Javelin", "iron_shovel", ItemType.MELEE_WEAPON)
                 .setDescription("A javelin with a very heavy tip, which lurches the user forwards when used.")
                 .setRarity(Rarity.EPIC)
+                .setLevel(7)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 15,
                     Stat.STRAIN, 40,
@@ -116,6 +132,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("bloodlusted-cleaver", "Bloodlusted Cleaver", Resource.BUTCHER_KNIFE, ItemType.MELEE_WEAPON)
                 .setDescription("A bloodied cleaver that seems drawn to violence.")
                 .setRarity(Rarity.LEGENDARY)
+                .setLevel(5)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 5,
                     Stat.STRAIN, 15,
@@ -130,6 +147,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("training-katana", "Training Katana", "iron_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A weapon given to ninjas in training.")
                 .setRarity(Rarity.LEGENDARY)
+                .setLevel(12)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 9,
                     Stat.STRAIN, 25,

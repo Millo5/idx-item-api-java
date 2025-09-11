@@ -216,6 +216,7 @@ public class Armor {
             Main.dataManager.addItem(new Item<>(
                     "leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("Slightly lessens blows to the head. Slightly.")
+                    .setLevel(1)
                     .setRarity(Rarity.COMMON)
                     .addComponent(new StatsComponent(Map.of(
                             Stat.HEALTH, 1)))
@@ -227,6 +228,7 @@ public class Armor {
                     "leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Protect yourself with the power of cow skin.")
                     .setRarity(Rarity.COMMON)
+                    .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
                             Stat.HEALTH, 2)))
                     .addComponent(new AttributesComponent()
@@ -237,6 +239,7 @@ public class Armor {
                     "leather-pants", "Leather Pants", "leather_leggings", ItemType.LEGGINGS)
                     .setDescription("Incredibly suffocating.")
                     .setRarity(Rarity.COMMON)
+                    .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
                             Stat.HEALTH, 2)))
                     .addComponent(new AttributesComponent()
@@ -247,6 +250,7 @@ public class Armor {
                     "leather-boots", "Leather Boots", "leather_boots", ItemType.BOOTS)
                     .setDescription("Ye olde Nikes.")
                     .setRarity(Rarity.COMMON)
+                    .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
                             Stat.HEALTH, 1)))
                     .addComponent(new AttributesComponent()

@@ -63,7 +63,7 @@ public class Weapon {
         // Epic
         {
             Main.dataManager.addItem(new AttributeItem("shurikens", "Shurikens", "nether_star", AttributeType.ATTRIBUTE)
-                .setDescription("Allows melee weapons to throw 3 shurikens, which deal 0.3x damage each.")
+                .setDescription("Allows melee weapons to throw 3 shurikens, which deal 0.4x damage each.")
                 .setRarity(Rarity.EPIC)
                 .setTarget(ItemType.MELEE_WEAPON)
                 .addComponent(new TriggersComponent(
