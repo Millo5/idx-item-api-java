@@ -196,8 +196,8 @@
         "weapon-range" : 5
       }
     },
-    "modeldata" : 6,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 6
   }, {
     "id" : "ender-pearl",
     "name" : "Ender Pearl",
@@ -278,9 +278,9 @@
         "weapon-range" : 2.5
       }
     },
-    "modeldata" : 3,
     "rarity" : "uncommon",
-    "level" : 4
+    "level" : 4,
+    "modeldata" : 3
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
@@ -406,8 +406,7 @@
       "attribute-target" : "melee-weapon",
       "enchantment" : "shurikens"
     },
-    "rarity" : "epic",
-    "level" : 12
+    "rarity" : "epic"
   }, {
     "id" : "polished-sword",
     "name" : "Polished Sword",
@@ -423,9 +422,9 @@
         "strain" : 30
       }
     },
-    "modeldata" : 2,
     "rarity" : "rare",
-    "level" : 3
+    "level" : 3,
+    "modeldata" : 2
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -491,8 +490,7 @@
       "attribute-target" : "armor",
       "enchantment" : "recursion"
     },
-    "rarity" : "legendary",
-    "level" : 50
+    "rarity" : "legendary"
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -519,8 +517,8 @@
         "recursion" : 20
       }
     },
-    "modeldata" : 1,
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "modeldata" : 1
   }, {
     "id" : "bloodlusted-cleaver",
     "name" : "Bloodlusted Cleaver",
@@ -539,9 +537,9 @@
         "weapon-range" : -1.5
       }
     },
-    "modeldata" : 4,
     "rarity" : "legendary",
-    "level" : 9
+    "level" : 9,
+    "modeldata" : 4
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -553,8 +551,8 @@
         "luck" : 57
       }
     },
-    "modeldata" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "modeldata" : 5
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -630,8 +628,7 @@
       "attribute-target" : "helmet",
       "enchantment" : "voltaic-aura"
     },
-    "rarity" : "legendary",
-    "level" : 35
+    "rarity" : "legendary"
   }, {
     "id" : "simple-bow",
     "name" : "Simple Bow",
@@ -778,8 +775,8 @@
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "modeldata" : 4,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 4
   }, {
     "id" : "apple",
     "name" : "Apple",
