@@ -51,7 +51,7 @@ public class Enchantments {
                 .setRarity(Rarity.LEGENDARY)
                 .setLevel(50)
             );
-            Main.dataManager.addItem(new EnchantmentItem("tempest-crystal", "Tempest Crystal", "blue_ice", "voltaic_aura")
+            Main.dataManager.addItem(new EnchantmentItem("tempest-crystal", "Tempest Crystal", "blue_ice", "voltaic-aura")
                 .setDescription("A magical crystal swirling with the fury of a thousand storms.")
                 .setRarity(Rarity.LEGENDARY)
                 .setLevel(35)
