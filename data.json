@@ -55,7 +55,8 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "enchantment",
       "stats" : {
-        "damage" : 1.5
+        "crit-chance" : 10,
+        "crit-damage" : 10
       }
     }
   }, {
@@ -263,21 +264,6 @@
     },
     "rarity" : "rare"
   }, {
-    "id" : "stone-sword",
-    "name" : "Stone Sword",
-    "material" : "stone_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.",
-    "components" : {
-      "attributes" : [ "slash" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "damage" : 7,
-        "strain" : 32
-      }
-    },
-    "level" : 6
-  }, {
     "id" : "wooden-spear",
     "name" : "Wooden Spear",
     "material" : "angler_pottery_sherd",
@@ -287,13 +273,13 @@
       "attributes" : [ "stab" ],
       "enchantSlots" : 1,
       "stats" : {
-        "damage" : 5,
+        "damage" : 9,
         "strain" : 35,
         "weapon-range" : 2.5
       }
     },
-    "level" : 4,
     "rarity" : "uncommon",
+    "level" : 4,
     "modeldata" : 3
   }, {
     "id" : "frog-leg",
@@ -318,8 +304,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -335,8 +321,8 @@
         "resilience" : 15
       }
     },
-    "level" : 10,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 10
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -376,6 +362,21 @@
     },
     "level" : 2
   }, {
+    "id" : "stone-knife",
+    "name" : "Stone Knife",
+    "material" : "stone_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "damage" : 12,
+        "strain" : 32
+      }
+    },
+    "level" : 6
+  }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
     "material" : "leather_chestplate",
@@ -396,13 +397,25 @@
     "stack-size" : 64,
     "rarity" : "rare"
   }, {
+    "id" : "ninja-star-spirit",
+    "name" : "Ninja Star Spirit",
+    "material" : "nether_star",
+    "description" : "A ghostly apparition in the shape of a shuriken.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "shurikens"
+    },
+    "rarity" : "epic",
+    "level" : 12
+  }, {
     "id" : "polished-sword",
     "name" : "Polished Sword",
     "material" : "angler_pottery_sherd",
     "item-type" : "melee-weapon",
     "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
     "components" : {
-      "attributes" : [ "sharp", "slash" ],
+      "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
         "damage" : 7.0,
@@ -410,8 +423,8 @@
         "strain" : 30
       }
     },
-    "level" : 3,
     "rarity" : "rare",
+    "level" : 3,
     "modeldata" : 2
   }, {
     "id" : "leather-pants",
@@ -440,7 +453,7 @@
     "description" : "A small wooden shield.",
     "components" : {
       "stats" : {
-        "defense" : 5
+        "defense" : 1
       }
     },
     "modeldata" : 6
@@ -453,13 +466,13 @@
     "components" : {
       "attributes" : [ "slash", "throwable" ],
       "stats" : {
-        "damage" : 10,
-        "crit-chance" : 10.0,
+        "damage" : 20,
+        "crit-damage" : 50.0,
         "strain" : 40
       }
     },
-    "level" : 8,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 8
   }, {
     "id" : "spider-eye",
     "name" : "Spider Eye",
@@ -472,13 +485,14 @@
     "id" : "echoing-fragment",
     "name" : "Echoing Fragment",
     "material" : "echo_shard",
-    "description" : "An echoing fragment that grants the Recursion enchantment.",
+    "description" : "An otherworldly fragment that loudly resonates whenever struck.",
     "item-type" : "enchantment",
     "components" : {
       "attribute-target" : "armor",
       "enchantment" : "recursion"
     },
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 50
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -525,8 +539,8 @@
         "weapon-range" : -1.5
       }
     },
-    "level" : 5,
     "rarity" : "legendary",
+    "level" : 9,
     "modeldata" : 4
   }, {
     "id" : "infinite-leafed-clover",
@@ -633,25 +647,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
-  }, {
-    "id" : "training-katana",
-    "name" : "Training Katana",
-    "material" : "iron_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A weapon given to ninjas in training.",
-    "components" : {
-      "attributes" : [ "slash", "shurikens" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "evasion" : 15,
-        "damage" : 9,
-        "strain" : 25
-      }
-    },
-    "level" : 12,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
@@ -742,12 +739,12 @@
       "attributes" : [ "slash" ],
       "enchantSlots" : 3,
       "stats" : {
-        "damage" : 4,
+        "damage" : 5,
         "strain" : 28
       }
     },
-    "level" : 10,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 10
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -816,6 +813,7 @@
     "description" : "A javelin with a very heavy tip, which lurches the user forwards when used.",
     "components" : {
       "attributes" : [ "thrust" ],
+      "enchantSlots" : 1,
       "stats" : {
         "evasion" : 5,
         "damage" : 15,
@@ -823,8 +821,8 @@
         "move-speed" : 15
       }
     },
-    "level" : 7,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 7
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -840,8 +838,8 @@
         "endurance" : 20
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -850,6 +848,16 @@
     "description" : "Shiny...",
     "stack-size" : 64,
     "rarity" : "legendary"
+  }, {
+    "id" : "old-whetstone",
+    "name" : "Old Whetstone",
+    "material" : "brick",
+    "description" : "A very old whetstone, covered in the rust of hundreds of sharpened blades.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "sharp"
+    }
   }, {
     "id" : "bone",
     "name" : "Bone",
@@ -880,12 +888,19 @@
     },
     "rarity" : "epic"
   }, {
-    "id" : "blaze-rod",
-    "name" : "Blaze Rod",
-    "material" : "blaze_rod",
-    "item-type" : "material",
-    "description" : "What are these? Arms? Legs? Tentacles???",
-    "stack-size" : 64,
-    "rarity" : "epic"
-  } ]
-}
+    "id" : "aerodynamic-pommel",
+    "name" : "Aerodynamic Pommel",
+    "material" : "stone_button",
+    "description" : "A melee weapon pommel designed to fly through the air with unmatched grace.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "throwable"
+    },
+    "rarity" : "rare"
+  }, {
+    "id" : "tempest crystal",
+    "name" : "Tempest Crystal",
+    "material" : "blue_ice",
+    "description" : "A magical crystal swirling with the fury of a thousand storms.",
+    "item-type" : "enchantment"
