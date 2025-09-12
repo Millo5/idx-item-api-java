@@ -86,7 +86,19 @@ public class Armor {
 
             // Rare
             {
-
+                Main.dataManager.addItem(new Item<>("thornplate", "Thornplate", "leather_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("A tunic of moss and vines, stinging any who dare touch.")
+                    .setRarity(Rarity.RARE)
+                    .setLevel(4)
+                    .setColor("#006600")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 6,
+                        Stat.THORNS, 2
+                    )))
+                    .addComponent(new AttributesComponent("gourmand")
+                        .setEnchantSlots(1)
+                    )
+                );
             }
 
             // Epic
@@ -99,15 +111,15 @@ public class Armor {
                 Main.dataManager.addItem(new Item<>("gourmands-bib", "Gourmand's Bib", "golden_chestplate", ItemType.CHESTPLATE)
                     .setDescription("An old bib that has born witness to countless numbers of incredible meals.")
                     .setRarity(Rarity.LEGENDARY)
+                    .setLevel(8)
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE,  2,
-                        Stat.HEALTH, 50,
+                        Stat.HEALTH, 15,
                         Stat.ENDURANCE, 20
                     )))
                     .addComponent(new AttributesComponent("gourmand")
                         .setEnchantSlots(1)
                     )
-                    .setLevel(10)
                 );
             }
 

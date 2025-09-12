@@ -576,6 +576,23 @@
       }
     }
   }, {
+    "id" : "thornplate",
+    "name" : "Thornplate",
+    "material" : "leather_chestplate",
+    "item-type" : "chestplate",
+    "description" : "A tunic of moss and vines, stinging any who dare touch.",
+    "color" : "#006600",
+    "components" : {
+      "attributes" : [ "gourmand" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "health" : 6,
+        "thorns" : 2
+      }
+    },
+    "rarity" : "rare",
+    "level" : 4
+  }, {
     "id" : "large-coin",
     "name" : "Large Coin",
     "material" : "archer_pottery_sherd",
@@ -842,13 +859,13 @@
       "attributes" : [ "gourmand" ],
       "enchantSlots" : 1,
       "stats" : {
-        "health" : 50,
+        "health" : 15,
         "defense" : 2,
         "endurance" : 20
       }
     },
     "rarity" : "legendary",
-    "level" : 10
+    "level" : 8
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",

@@ -16,6 +16,8 @@ public enum Stat {
     EVASION,
     /** Resistance to knockback effects */
     KNOCKBACK_RESISTANCE,
+    /** Damage dealt to attacker upon being hit */
+    THORNS,
 
     /** Flat damage added to all attacks */
     DAMAGE,
@@ -31,7 +33,7 @@ public enum Stat {
     LIFESTEAL,
     /** Chance to gain health on hit */
     LEECHING,
-    /** Bonus damage against bosses */
+    /** Knockback multiplier */
     KNOCKBACK,
 
     /** Fatigue gained from actions */
