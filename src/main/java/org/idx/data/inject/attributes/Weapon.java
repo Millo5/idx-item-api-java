@@ -102,7 +102,8 @@ public class Weapon {
                     .setDescription("Increases the damage of melee weapons")
                     .setTarget(ItemType.MELEE_WEAPON)
                     .addComponent(new StatsComponent(Map.of(
-                            Stat.DAMAGE, 1.5
+                            Stat.CRIT_CHANCE, 10,
+                            Stat.CRIT_DAMAGE, 10
                     )))
             );
         }

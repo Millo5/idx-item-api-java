@@ -39,11 +39,11 @@ public class Weapons {
                 .addComponent(new AttributesComponent("slash"))
             );
 
-            Main.dataManager.addItem(new Item<>("stone-sword", "Stone Sword", "stone_sword", ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("stone-knife", "Stone Knife", "stone_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.")
                 .setLevel(6)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 7,
+                    Stat.DAMAGE, 12,
                     Stat.STRAIN, 32
                 )))
                 .addComponent(new AttributesComponent("slash")
@@ -59,7 +59,7 @@ public class Weapons {
                 .setRarity(Rarity.UNCOMMON)
                 .setLevel(4)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 5,
+                    Stat.DAMAGE, 9,
                     Stat.STRAIN, 35,
                     Stat.WEAPON_RANGE, 2.5
                 )))
@@ -73,7 +73,7 @@ public class Weapons {
                 .setRarity(Rarity.UNCOMMON)
                 .setLevel(10)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 4,
+                    Stat.DAMAGE, 5,
                     Stat.STRAIN, 28
                 )))
                 .addComponent(new AttributesComponent("slash")
@@ -93,7 +93,7 @@ public class Weapons {
                     Stat.STRAIN, 30,
                     Stat.CRIT_CHANCE, 10
                 ))) 
-                .addComponent(new AttributesComponent("sharp", "slash")
+                .addComponent(new AttributesComponent( "slash")
                     .setEnchantSlots(1)
                 )
             );
@@ -103,9 +103,9 @@ public class Weapons {
                 .setRarity(Rarity.RARE)
                 .setLevel(8)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 10,
+                    Stat.DAMAGE, 20,
                     Stat.STRAIN, 40,
-                    Stat.CRIT_CHANCE, 10.0
+                    Stat.CRIT_DAMAGE, 50.0
                 )))
                 .addComponent(new AttributesComponent("slash","throwable"))
             );
@@ -123,7 +123,9 @@ public class Weapons {
                     Stat.MOVE_SPEED, 15,
                     Stat.EVASION, 5
                 )))
-                .addComponent(new AttributesComponent("thrust"))
+                .addComponent(new AttributesComponent("thrust")
+                    .setEnchantSlots(1)
+                )
             );
         }
 
@@ -132,7 +134,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("bloodlusted-cleaver", "Bloodlusted Cleaver", Resource.BUTCHER_KNIFE, ItemType.MELEE_WEAPON)
                 .setDescription("A bloodied cleaver that seems drawn to violence.")
                 .setRarity(Rarity.LEGENDARY)
-                .setLevel(5)
+                .setLevel(9)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 5,
                     Stat.STRAIN, 15,
@@ -143,19 +145,6 @@ public class Weapons {
                     Stat.LEECHING, 5
                 )))
                 .addComponent(new AttributesComponent("slash"))
-            );
-            Main.dataManager.addItem(new Item<>("training-katana", "Training Katana", "iron_sword", ItemType.MELEE_WEAPON)
-                .setDescription("A weapon given to ninjas in training.")
-                .setRarity(Rarity.LEGENDARY)
-                .setLevel(12)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 9,
-                    Stat.STRAIN, 25,
-                    Stat.EVASION, 15
-                )))
-                .addComponent(new AttributesComponent("slash","shurikens")
-                    .setEnchantSlots(1)
-                )
             );
         }
 
