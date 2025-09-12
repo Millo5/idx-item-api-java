@@ -29,7 +29,7 @@
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "melee-weapon",
-      "attribute-type" : "attribute",
+      "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
     "rarity" : "epic"
@@ -41,7 +41,7 @@
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "melee-weapon",
-      "attribute-type" : "attribute",
+      "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
     "rarity" : "rare"
