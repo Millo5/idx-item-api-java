@@ -228,12 +228,12 @@
     "name" : "Training Sword",
     "material" : "wooden_sword",
     "item-type" : "melee-weapon",
-    "description" : "A simple wooden blade, not particularly effective.",
+    "description" : "A blunt wooden stick, used by students to train.",
     "components" : {
       "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
-        "weapon-damage" : 5,
+        "weapon-damage" : 3,
         "strain" : 30
       }
     }
@@ -365,20 +365,6 @@
     "description" : "Brown and sticky.",
     "stack-size" : 64
   }, {
-    "id" : "wooden-shiv",
-    "name" : "Wooden Shiv",
-    "material" : "wooden_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A simple wooden blade, not particularly effective.",
-    "components" : {
-      "attributes" : [ "slash" ],
-      "stats" : {
-        "weapon-damage" : 3,
-        "strain" : 20
-      }
-    },
-    "level" : 2
-  }, {
     "id" : "stone-knife",
     "name" : "Stone Knife",
     "material" : "stone_sword",
@@ -388,11 +374,27 @@
       "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
-        "weapon-damage" : 12,
-        "strain" : 32
+        "weapon-damage" : 28,
+        "strain" : 30
       }
     },
-    "level" : 6
+    "level" : 10
+  }, {
+    "id" : "wooden-shiv",
+    "name" : "Wooden Shiv",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A short knife of wood, not particularly wounding but incredibly easy to wield.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "weapon-damage" : 5,
+        "strain" : 15
+      }
+    },
+    "rarity" : "uncommon",
+    "level" : 2
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -429,13 +431,14 @@
     "name" : "Polished Sword",
     "material" : "angler_pottery_sherd",
     "item-type" : "melee-weapon",
-    "description" : "A sword polished to a mirror finish, reflecting the light beautifully.",
+    "description" : "A sword polished to a mirror finish, and sharpened to cut flesh like butter.",
     "components" : {
       "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 7.0,
-        "crit-chance" : 10,
+        "crit-chance" : 15,
+        "crit-damage" : 15,
         "strain" : 30
       }
     },
@@ -482,7 +485,7 @@
     "components" : {
       "attributes" : [ "slash", "throwable" ],
       "stats" : {
-        "weapon-damage" : 20,
+        "weapon-damage" : 35,
         "crit-damage" : 50.0,
         "strain" : 40
       }
@@ -508,6 +511,27 @@
       "enchantment" : "recursion"
     },
     "rarity" : "legendary"
+  }, {
+    "id" : "bloodthirsty-cleaver",
+    "name" : "Bloodthirsty Cleaver",
+    "material" : "angler_pottery_sherd",
+    "item-type" : "melee-weapon",
+    "description" : "A bloodied cleaver that seems drawn to violence.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "stats" : {
+        "weapon-damage" : 9,
+        "crit-chance" : 25,
+        "crit-damage" : 25,
+        "leeching" : 5,
+        "strain" : 15,
+        "move-speed" : 5,
+        "weapon-range" : -1.5
+      }
+    },
+    "rarity" : "legendary",
+    "level" : 9,
+    "modeldata" : 4
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -536,27 +560,6 @@
     },
     "rarity" : "developer",
     "modeldata" : 1
-  }, {
-    "id" : "bloodlusted-cleaver",
-    "name" : "Bloodlusted Cleaver",
-    "material" : "angler_pottery_sherd",
-    "item-type" : "melee-weapon",
-    "description" : "A bloodied cleaver that seems drawn to violence.",
-    "components" : {
-      "attributes" : [ "slash" ],
-      "stats" : {
-        "weapon-damage" : 5,
-        "crit-chance" : 25,
-        "crit-damage" : 25,
-        "leeching" : 5,
-        "strain" : 15,
-        "move-speed" : 5,
-        "weapon-range" : -1.5
-      }
-    },
-    "rarity" : "legendary",
-    "level" : 9,
-    "modeldata" : 4
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -777,16 +780,16 @@
     "name" : "Tarnished Golden Knife",
     "material" : "golden_sword",
     "item-type" : "melee-weapon",
-    "description" : "A very old knife, plated in gold.",
+    "description" : "A very old knife, plated in gold. Terrible quality, but with immense mystical potential.",
     "components" : {
       "attributes" : [ "slash" ],
-      "enchantSlots" : 3,
+      "enchantSlots" : 5,
       "stats" : {
         "weapon-damage" : 5,
-        "strain" : 28
+        "strain" : 30
       }
     },
-    "rarity" : "uncommon",
+    "rarity" : "rare",
     "level" : 10
   }, {
     "id" : "slime",
@@ -855,13 +858,15 @@
     "item-type" : "melee-weapon",
     "description" : "A javelin with a very heavy tip, which lurches the user forwards when used.",
     "components" : {
-      "attributes" : [ "thrust" ],
+      "attributes" : [ "thrust", "two-handed" ],
       "enchantSlots" : 1,
       "stats" : {
         "evasion" : 5,
-        "weapon-damage" : 15,
-        "strain" : 40,
-        "move-speed" : 15
+        "weapon-damage" : 30,
+        "knockback" : 30,
+        "strain" : 45,
+        "move-speed" : 15,
+        "weapon-range" : 1
       }
     },
     "rarity" : "epic",
@@ -914,6 +919,20 @@
     "material" : "knowledge_book",
     "item-type" : "menu",
     "stack-size" : 64
+  }, {
+    "id" : "wooden-sword",
+    "name" : "Wooden Sword",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A simple wooden blade, not particularly effective.",
+    "components" : {
+      "attributes" : [ "slash" ],
+      "stats" : {
+        "weapon-damage" : 12,
+        "strain" : 30
+      }
+    },
+    "level" : 5
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
