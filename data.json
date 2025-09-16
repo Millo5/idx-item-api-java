@@ -1,15 +1,5 @@
 {
   "attributes" : [ {
-    "id" : "consumed",
-    "name" : "Consumed",
-    "material" : "structure_void",
-    "description" : "Causes the item to disappear when used.",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-type" : "attribute",
-      "triggers" : [ "use" ]
-    }
-  }, {
     "id" : "gourmand",
     "name" : "Gourmand",
     "material" : "cake",
@@ -21,6 +11,16 @@
       "triggers" : [ "eat-global" ]
     },
     "rarity" : "legendary"
+  }, {
+    "id" : "drinkable",
+    "name" : "Drinkable",
+    "material" : "potion",
+    "description" : "Causes the item to disappear when eaten, leaving a glass bottle.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
+    }
   }, {
     "id" : "shurikens",
     "name" : "Shurikens",
@@ -84,12 +84,12 @@
   }, {
     "id" : "consumable",
     "name" : "Consumable",
-    "material" : "cooked_beef",
-    "description" : "Causes the item to disappear when eaten.",
+    "material" : "structure_void",
+    "description" : "Causes the item to disappear when used.",
     "item-type" : "attribute",
     "components" : {
       "attribute-type" : "attribute",
-      "triggers" : [ "eat" ]
+      "triggers" : [ "use" ]
     }
   }, {
     "id" : "voltaic-aura",
@@ -147,6 +147,16 @@
     },
     "rarity" : "rare"
   }, {
+    "id" : "edible",
+    "name" : "Edible",
+    "material" : "cooked_beef",
+    "description" : "Causes the item to disappear when eaten.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "eat" ]
+    }
+  }, {
     "id" : "grapple",
     "name" : "Grapple",
     "material" : "lead",
@@ -199,6 +209,13 @@
     "rarity" : "epic",
     "modeldata" : 6
   }, {
+    "id" : "glass-bottle",
+    "name" : "Glass Bottle",
+    "material" : "glass_bottle",
+    "item-type" : "material",
+    "description" : "Stored liquids, until very recently.",
+    "stack-size" : 64
+  }, {
     "id" : "ender-pearl",
     "name" : "Ender Pearl",
     "material" : "ender_pearl",
@@ -216,7 +233,7 @@
       "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
-        "damage" : 5,
+        "weapon-damage" : 5,
         "strain" : 30
       }
     }
@@ -257,7 +274,7 @@
     "description" : "A large bow with increased range and damage",
     "components" : {
       "stats" : {
-        "damage" : 4,
+        "weapon-damage" : 4,
         "weapon-attack-speed" : 1.2,
         "weapon-range" : 25
       }
@@ -273,7 +290,7 @@
       "attributes" : [ "stab" ],
       "enchantSlots" : 1,
       "stats" : {
-        "damage" : 9,
+        "weapon-damage" : 9,
         "strain" : 35,
         "weapon-range" : 2.5
       }
@@ -345,7 +362,7 @@
     "name" : "Stick",
     "material" : "stick",
     "item-type" : "material",
-    "description" : "Useful for creation of boom boom",
+    "description" : "Brown and sticky.",
     "stack-size" : 64
   }, {
     "id" : "wooden-shiv",
@@ -356,7 +373,7 @@
     "components" : {
       "attributes" : [ "slash" ],
       "stats" : {
-        "damage" : 3,
+        "weapon-damage" : 3,
         "strain" : 20
       }
     },
@@ -371,7 +388,7 @@
       "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
-        "damage" : 12,
+        "weapon-damage" : 12,
         "strain" : 32
       }
     },
@@ -417,7 +434,7 @@
       "attributes" : [ "slash" ],
       "enchantSlots" : 1,
       "stats" : {
-        "damage" : 7.0,
+        "weapon-damage" : 7.0,
         "crit-chance" : 10,
         "strain" : 30
       }
@@ -465,7 +482,7 @@
     "components" : {
       "attributes" : [ "slash", "throwable" ],
       "stats" : {
-        "damage" : 20,
+        "weapon-damage" : 20,
         "crit-damage" : 50.0,
         "strain" : 40
       }
@@ -504,7 +521,7 @@
         "health" : 2,
         "defense" : 2,
         "evasion" : 30,
-        "damage" : 9.5,
+        "weapon-damage" : 9.5,
         "range" : 30,
         "crit-chance" : 40,
         "crit-damage" : 50,
@@ -528,7 +545,7 @@
     "components" : {
       "attributes" : [ "slash" ],
       "stats" : {
-        "damage" : 5,
+        "weapon-damage" : 5,
         "crit-chance" : 25,
         "crit-damage" : 25,
         "leeching" : 5,
@@ -570,7 +587,7 @@
     "color" : "#ff0000",
     "stack-size" : 8,
     "components" : {
-      "attributes" : [ "heal", "consumable" ],
+      "attributes" : [ "heal", "drinkable" ],
       "stats" : {
         "healing" : 4
       }
@@ -654,7 +671,7 @@
     "description" : "A basic bow, not particularly powerful but gets the job done,",
     "components" : {
       "stats" : {
-        "damage" : 2,
+        "weapon-damage" : 2,
         "weapon-attack-speed" : 1.5,
         "weapon-range" : 15
       }
@@ -736,7 +753,7 @@
     "description" : "A long piece of rope, useful for climbing.",
     "stack-size" : 64,
     "components" : {
-      "attributes" : [ "grapple", "consumed" ]
+      "attributes" : [ "grapple", "consumable" ]
     }
   }, {
     "id" : "clydes-carapace",
@@ -765,7 +782,7 @@
       "attributes" : [ "slash" ],
       "enchantSlots" : 3,
       "stats" : {
-        "damage" : 5,
+        "weapon-damage" : 5,
         "strain" : 28
       }
     },
@@ -802,7 +819,7 @@
     "description" : "One a day keeps the doctor away.",
     "stack-size" : 64,
     "components" : {
-      "attributes" : [ "heal", "consumable" ],
+      "attributes" : [ "heal", "edible" ],
       "stats" : {
         "healing" : 2
       }
@@ -842,7 +859,7 @@
       "enchantSlots" : 1,
       "stats" : {
         "evasion" : 5,
-        "damage" : 15,
+        "weapon-damage" : 15,
         "strain" : 40,
         "move-speed" : 15
       }

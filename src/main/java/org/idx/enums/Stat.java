@@ -20,6 +20,8 @@ public enum Stat {
     THORNS,
 
     /** Flat damage added to all attacks */
+    WEAPON_DAMAGE,
+    /** Damage percentile increase */
     DAMAGE,
     /** Attack speed percentile increase */
     ATTACK_SPEED,

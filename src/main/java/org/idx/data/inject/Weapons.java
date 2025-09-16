@@ -21,7 +21,7 @@ public class Weapons {
                 .setDescription("A simple wooden blade, not particularly effective.")
                 .setLevel(1)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 5,
+                    Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 30
                 )))
                 .addComponent(new AttributesComponent("slash")
@@ -33,7 +33,7 @@ public class Weapons {
                 .setDescription("A simple wooden blade, not particularly effective.")
                 .setLevel(2)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 3,
+                    Stat.WEAPON_DAMAGE, 3,
                     Stat.STRAIN, 20
                 )))
                 .addComponent(new AttributesComponent("slash"))
@@ -43,7 +43,7 @@ public class Weapons {
                 .setDescription("A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.")
                 .setLevel(6)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 12,
+                    Stat.WEAPON_DAMAGE, 12,
                     Stat.STRAIN, 32
                 )))
                 .addComponent(new AttributesComponent("slash")
@@ -59,7 +59,7 @@ public class Weapons {
                 .setRarity(Rarity.UNCOMMON)
                 .setLevel(4)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 9,
+                    Stat.WEAPON_DAMAGE, 9,
                     Stat.STRAIN, 35,
                     Stat.WEAPON_RANGE, 2.5
                 )))
@@ -73,7 +73,7 @@ public class Weapons {
                 .setRarity(Rarity.UNCOMMON)
                 .setLevel(10)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 5,
+                    Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 28
                 )))
                 .addComponent(new AttributesComponent("slash")
@@ -89,7 +89,7 @@ public class Weapons {
                 .setRarity(Rarity.RARE)
                 .setLevel(3)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 7.0,
+                    Stat.WEAPON_DAMAGE, 7.0,
                     Stat.STRAIN, 30,
                     Stat.CRIT_CHANCE, 10
                 ))) 
@@ -103,7 +103,7 @@ public class Weapons {
                 .setRarity(Rarity.RARE)
                 .setLevel(8)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 20,
+                    Stat.WEAPON_DAMAGE, 20,
                     Stat.STRAIN, 40,
                     Stat.CRIT_DAMAGE, 50.0
                 )))
@@ -118,7 +118,7 @@ public class Weapons {
                 .setRarity(Rarity.EPIC)
                 .setLevel(7)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 15,
+                    Stat.WEAPON_DAMAGE, 15,
                     Stat.STRAIN, 40,
                     Stat.MOVE_SPEED, 15,
                     Stat.EVASION, 5
@@ -136,7 +136,7 @@ public class Weapons {
                 .setRarity(Rarity.LEGENDARY)
                 .setLevel(9)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 5,
+                    Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 15,
                     Stat.WEAPON_RANGE, -1.5,
                     Stat.MOVE_SPEED, 5,
@@ -159,7 +159,7 @@ public class Weapons {
                 .setDescription("A blade that seems to have a mind of it's own. Can be quite dangerous.")
                 .setRarity(Rarity.DEVELOPER)
                 .addComponent(StatsComponent.builder()
-                        .add(Stat.DAMAGE, 9.5)
+                        .add(Stat.WEAPON_DAMAGE, 9.5)
                         .add(Stat.WEAPON_ATTACK_SPEED, 1.6)
                         .add(Stat.WEAPON_RANGE, 1)
                         .add(Stat.DEFENSE, 2)
@@ -189,7 +189,7 @@ public class Weapons {
             Main.dataManager.addItem(new Item<>("simple-bow", "Simple Bow", "bow", ItemType.RANGED_WEAPON)
                 .setDescription("A basic bow, not particularly powerful but gets the job done,")
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 2,
+                    Stat.WEAPON_DAMAGE, 2,
                     Stat.WEAPON_ATTACK_SPEED, 1.5,
                     Stat.WEAPON_RANGE, 15
                 )))
@@ -207,7 +207,7 @@ public class Weapons {
                 .setDescription("A large bow with increased range and damage")
                 .setRarity(Rarity.RARE)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.DAMAGE, 4,
+                    Stat.WEAPON_DAMAGE, 4,
                     Stat.WEAPON_ATTACK_SPEED, 1.2,
                     Stat.WEAPON_RANGE, 25
                 )))

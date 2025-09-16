@@ -24,7 +24,10 @@ public class Material {
                 .setDescription("Stronger than steel!")
             );
             Main.dataManager.addItem(new Item<>("stick", "Stick", "stick", ItemType.MATERIAL)
-                .setDescription("Useful for creation of boom boom")
+                .setDescription("Brown and sticky.")
+            );
+            Main.dataManager.addItem(new Item<>("glass-bottle", "Glass Bottle", "glass_bottle", ItemType.MATERIAL)
+                .setDescription("Stored liquids, until very recently.")
             );
         }
 
