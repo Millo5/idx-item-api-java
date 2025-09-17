@@ -49,6 +49,15 @@ public class Weapon {
                     Trigger.MELEE_ATTACK
                 ))
             );
+
+            Main.dataManager.addItem(new AttributeItem("lunging-thrust", "Lunging Thrust", "iron_shovel", AttributeType.ATTRIBUTE)
+                .setDescription("A powerful thrust that carries the user along with it.")
+                .setRarity(Rarity.RARE)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.MELEE_ATTACK
+                ))
+            );
         }
 
         // Epic

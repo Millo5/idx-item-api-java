@@ -92,7 +92,8 @@ public class Armor {
                     .setLevel(4)
                     .setColor("#006600")
                     .addComponent(new StatsComponent(Map.of(
-                        Stat.HEALTH, 6,
+                        Stat.HEALTH, 3,
+                        Stat.DEFENSE, 2,
                         Stat.THORNS, 2
                     )))
                     .addComponent(new AttributesComponent("gourmand")
@@ -231,7 +232,7 @@ public class Armor {
                     .setLevel(1)
                     .setRarity(Rarity.COMMON)
                     .addComponent(new StatsComponent(Map.of(
-                            Stat.HEALTH, 1)))
+                            Stat.DEFENSE, 1)))
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(1))
             );
@@ -242,7 +243,7 @@ public class Armor {
                     .setRarity(Rarity.COMMON)
                     .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
-                            Stat.HEALTH, 2)))
+                            Stat.DEFENSE, 1)))
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(1))
             );
@@ -253,7 +254,7 @@ public class Armor {
                     .setRarity(Rarity.COMMON)
                     .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
-                            Stat.HEALTH, 2)))
+                            Stat.DEFENSE, 1)))
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(1))
             );
@@ -264,7 +265,7 @@ public class Armor {
                     .setRarity(Rarity.COMMON)
                     .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
-                            Stat.HEALTH, 1)))
+                            Stat.DEFENSE, 1)))
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(1))
             );

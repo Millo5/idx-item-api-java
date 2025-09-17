@@ -36,7 +36,9 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 12,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("slash"))
+                .addComponent(new AttributesComponent("slash")
+                    .setEnchantSlots(1)
+                )
             );
 
             Main.dataManager.addItem(new Item<>("stone-knife", "Stone Knife", "stone_sword", ItemType.MELEE_WEAPON)
@@ -139,7 +141,7 @@ public class Weapons {
                     Stat.KNOCKBACK, 30,
                     Stat.WEAPON_RANGE, 1
                 )))
-                .addComponent(new AttributesComponent("thrust","two-handed")
+                .addComponent(new AttributesComponent("lunging-thrust","two-handed")
                     .setEnchantSlots(1)
                 )
             );
