@@ -27,10 +27,26 @@ public class Weapon {
                             Trigger.MELEE_ATTACK
                     ))
             );
-            Main.dataManager.addItem(new AttributeItem("currency", "Currency", "gold_nugget", AttributeType.ATTRIBUTE)
-                    .setDescription("Denotes an item as currency.")
+            Main.dataManager.addItem(new AttributeItem("blade", "Blade", "iron_sword", AttributeType.ATTRIBUTE)
+                    .setDescription("A basic melee weapon style.")
+                    .setTarget(ItemType.MELEE_WEAPON)
                     .addComponent(new TriggersComponent(
-                            Trigger.PICKUP))
+                            Trigger.MELEE_ATTACK
+                    ))
+            );
+            Main.dataManager.addItem(new AttributeItem("heavy-melee", "Heavy Melee", "iron_axe", AttributeType.ATTRIBUTE)
+                    .setDescription("A powerful but slower melee style.")
+                    .setTarget(ItemType.MELEE_WEAPON)
+                    .addComponent(new TriggersComponent(
+                            Trigger.MELEE_ATTACK
+                    ))
+            );
+            Main.dataManager.addItem(new AttributeItem("light-melee", "Light Melee", "shears", AttributeType.ATTRIBUTE)
+                    .setDescription("A fast and light melee style.")
+                    .setTarget(ItemType.MELEE_WEAPON)
+                    .addComponent(new TriggersComponent(
+                            Trigger.MELEE_ATTACK
+                    ))
             );
         }
 

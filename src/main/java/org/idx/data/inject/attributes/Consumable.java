@@ -34,7 +34,11 @@ public class Consumable {
                         Trigger.EAT
                 ))
         );
-
+        Main.dataManager.addItem(new AttributeItem("currency", "Currency", "gold_nugget", AttributeType.ATTRIBUTE)
+                .setDescription("Denotes an item as currency.")
+                .addComponent(new TriggersComponent(
+                        Trigger.PICKUP))
+        );
     }
 
 }

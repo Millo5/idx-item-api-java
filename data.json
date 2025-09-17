@@ -58,6 +58,28 @@
     },
     "rarity" : "rare"
   }, {
+    "id" : "heavy-melee",
+    "name" : "Heavy Melee",
+    "material" : "iron_axe",
+    "description" : "A powerful but slower melee style.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "melee-attack" ]
+    }
+  }, {
+    "id" : "blade",
+    "name" : "Blade",
+    "material" : "iron_sword",
+    "description" : "A basic melee weapon style.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "melee-attack" ]
+    }
+  }, {
     "id" : "sharp",
     "name" : "Sharp",
     "material" : "wooden_sword",
@@ -116,6 +138,17 @@
     },
     "rarity" : "legendary"
   }, {
+    "id" : "light-melee",
+    "name" : "Light Melee",
+    "material" : "shears",
+    "description" : "A fast and light melee style.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "attribute",
+      "triggers" : [ "melee-attack" ]
+    }
+  }, {
     "id" : "heal",
     "name" : "Heal",
     "material" : "apple",
@@ -135,16 +168,6 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "attribute",
       "triggers" : [ "melee-attack" ]
-    }
-  }, {
-    "id" : "currency",
-    "name" : "Currency",
-    "material" : "gold_nugget",
-    "description" : "Denotes an item as currency.",
-    "item-type" : "attribute",
-    "components" : {
-      "attribute-type" : "attribute",
-      "triggers" : [ "pickup" ]
     }
   }, {
     "id" : "combo-slash",
@@ -167,6 +190,16 @@
     "components" : {
       "attribute-type" : "attribute",
       "triggers" : [ "eat" ]
+    }
+  }, {
+    "id" : "currency",
+    "name" : "Currency",
+    "material" : "gold_nugget",
+    "description" : "Denotes an item as currency.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "pickup" ]
     }
   }, {
     "id" : "grapple",
@@ -242,7 +275,7 @@
     "item-type" : "melee-weapon",
     "description" : "A blunt wooden stick, used by students to train.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "blade" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 3,
@@ -307,8 +340,8 @@
         "weapon-range" : 2.5
       }
     },
-    "level" : 4,
     "rarity" : "uncommon",
+    "level" : 4,
     "modeldata" : 3
   }, {
     "id" : "frog-leg",
@@ -333,8 +366,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -350,8 +383,8 @@
         "resilience" : 15
       }
     },
-    "level" : 10,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 10
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -383,7 +416,7 @@
     "item-type" : "melee-weapon",
     "description" : "A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "heavy-melee" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 28,
@@ -398,15 +431,15 @@
     "item-type" : "melee-weapon",
     "description" : "A short knife of wood, not particularly wounding but incredibly easy to wield.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "light-melee" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 5,
         "strain" : 15
       }
     },
-    "level" : 2,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 2
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -445,7 +478,7 @@
     "item-type" : "melee-weapon",
     "description" : "A sword polished to a mirror finish, and sharpened to cut flesh like butter.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "blade" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 7.0,
@@ -454,8 +487,8 @@
         "strain" : 30
       }
     },
-    "level" : 3,
     "rarity" : "rare",
+    "level" : 3,
     "modeldata" : 2
   }, {
     "id" : "leather-pants",
@@ -495,15 +528,15 @@
     "item-type" : "melee-weapon",
     "description" : "A balanced axe designed for throwing, can be retrieved after use.",
     "components" : {
-      "attributes" : [ "slash", "throwable" ],
+      "attributes" : [ "heavy-melee", "throwable" ],
       "stats" : {
         "weapon-damage" : 35,
         "crit-damage" : 50.0,
         "strain" : 40
       }
     },
-    "level" : 8,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 8
   }, {
     "id" : "spider-eye",
     "name" : "Spider Eye",
@@ -530,7 +563,7 @@
     "item-type" : "melee-weapon",
     "description" : "A bloodied cleaver that seems drawn to violence.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "light-melee" ],
       "stats" : {
         "weapon-damage" : 9,
         "crit-chance" : 25,
@@ -541,8 +574,8 @@
         "weapon-range" : -1.5
       }
     },
-    "level" : 9,
     "rarity" : "legendary",
+    "level" : 9,
     "modeldata" : 4
   }, {
     "id" : "clydes-blade",
@@ -551,7 +584,7 @@
     "item-type" : "melee-weapon",
     "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
     "components" : {
-      "attributes" : [ "sharp", "combo-slash", "two-handed" ],
+      "attributes" : [ "sharp", "melee", "two-handed" ],
       "enchantSlots" : 3,
       "stats" : {
         "health" : 2,
@@ -623,8 +656,8 @@
         "thorns" : 2
       }
     },
-    "level" : 4,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 4
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -706,8 +739,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
@@ -795,15 +828,15 @@
     "item-type" : "melee-weapon",
     "description" : "A very old knife, plated in gold. Terrible quality, but with immense mystical potential.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "blade" ],
       "enchantSlots" : 5,
       "stats" : {
         "weapon-damage" : 5,
         "strain" : 30
       }
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -882,8 +915,8 @@
         "weapon-range" : 1
       }
     },
-    "level" : 7,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 7
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -899,8 +932,8 @@
         "endurance" : 20
       }
     },
-    "level" : 8,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 8
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -939,7 +972,7 @@
     "item-type" : "melee-weapon",
     "description" : "A simple wooden blade, not particularly effective.",
     "components" : {
-      "attributes" : [ "slash" ],
+      "attributes" : [ "blade" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 12,

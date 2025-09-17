@@ -24,7 +24,7 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 3,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("slash")
+                .addComponent(new AttributesComponent("blade")
                     .setEnchantSlots(1)
                 )
             );
@@ -36,7 +36,7 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 12,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("slash")
+                .addComponent(new AttributesComponent("blade")
                     .setEnchantSlots(1)
                 )
             );
@@ -48,7 +48,7 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 28,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("slash")
+                .addComponent(new AttributesComponent("heavy-melee")
                     .setEnchantSlots(1)
                 )
             );
@@ -64,7 +64,7 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 15
                 )))
-                .addComponent(new AttributesComponent("slash")
+                .addComponent(new AttributesComponent("light-melee")
                     .setEnchantSlots(1)
                 )
             );
@@ -96,7 +96,7 @@ public class Weapons {
                     Stat.CRIT_CHANCE, 15,
                     Stat.CRIT_DAMAGE, 15
                 ))) 
-                .addComponent(new AttributesComponent( "slash")
+                .addComponent(new AttributesComponent( "blade")
                     .setEnchantSlots(1)
                 )
             );
@@ -110,7 +110,7 @@ public class Weapons {
                     Stat.STRAIN, 40,
                     Stat.CRIT_DAMAGE, 50.0
                 )))
-                .addComponent(new AttributesComponent("slash","throwable"))
+                .addComponent(new AttributesComponent("heavy-melee","throwable"))
             );
 
             Main.dataManager.addItem(new Item<>("tarnished-golden-knife", "Tarnished Golden Knife", "golden_sword", ItemType.MELEE_WEAPON)
@@ -121,7 +121,7 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("slash")
+                .addComponent(new AttributesComponent("blade")
                     .setEnchantSlots(5)
                 )
             );
@@ -162,7 +162,7 @@ public class Weapons {
                     Stat.CRIT_DAMAGE, 25,
                     Stat.LEECHING, 5
                 )))
-                .addComponent(new AttributesComponent("slash"))
+                .addComponent(new AttributesComponent("light-melee"))
             );
         }
 
@@ -192,7 +192,7 @@ public class Weapons {
                         .add(Stat.RANGE, 30)
                         .add(Stat.LIFESTEAL, 20)
                         .build())
-                .addComponent(new AttributesComponent("sharp", "combo-slash", "two-handed")
+                .addComponent(new AttributesComponent("sharp", "melee", "two-handed")
                     .setEnchantSlots(3)
                 )
             );
