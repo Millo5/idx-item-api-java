@@ -48,7 +48,7 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 28,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("heavy-melee")
+                .addComponent(new AttributesComponent("light-melee")
                     .setEnchantSlots(1)
                 )
             );
@@ -192,7 +192,7 @@ public class Weapons {
                         .add(Stat.RANGE, 30)
                         .add(Stat.LIFESTEAL, 20)
                         .build())
-                .addComponent(new AttributesComponent("sharp", "melee", "two-handed")
+                .addComponent(new AttributesComponent("sharp", "blade", "two-handed")
                     .setEnchantSlots(3)
                 )
             );

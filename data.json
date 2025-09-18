@@ -416,7 +416,7 @@
     "item-type" : "melee-weapon",
     "description" : "A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.",
     "components" : {
-      "attributes" : [ "heavy-melee" ],
+      "attributes" : [ "light-melee" ],
       "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 28,
@@ -584,7 +584,7 @@
     "item-type" : "melee-weapon",
     "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
     "components" : {
-      "attributes" : [ "sharp", "melee", "two-handed" ],
+      "attributes" : [ "sharp", "blade", "two-handed" ],
       "enchantSlots" : 3,
       "stats" : {
         "health" : 2,
