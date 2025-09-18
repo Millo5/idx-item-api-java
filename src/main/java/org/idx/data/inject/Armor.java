@@ -122,11 +122,33 @@ public class Armor {
                         .setEnchantSlots(1)
                     )
                 );
+
+                Main.dataManager.addItem(new Item<>("strainplusser", "Strainplusser", "golden_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("Me when heavy.")
+                    .setRarity(Rarity.DEVELOPER)
+                    .setLevel(1)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.STRAIN, 10
+                    )))
+                );
             }
 
             // Mythic
             {
                 
+            }
+
+            // Developer
+            {
+                Main.dataManager.addItem(new Item<>("strainminusser", "Strainminusser", "diamond_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("Me when light.")
+                    .setRarity(Rarity.DEVELOPER)
+                    .setLevel(1)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.STRAIN, -10
+                    )))
+                );
+
             }
         }
 
