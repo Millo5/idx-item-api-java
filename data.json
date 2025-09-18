@@ -89,8 +89,7 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "enchantment",
       "stats" : {
-        "crit-chance" : 10,
-        "crit-damage" : 10
+        "damage" : 15
       }
     }
   }, {
@@ -251,8 +250,8 @@
         "weapon-range" : 5
       }
     },
-    "modeldata" : 6,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 6
   }, {
     "id" : "glass-bottle",
     "name" : "Glass Bottle",
@@ -268,20 +267,6 @@
     "description" : "Please be the eyes, please be the eyes...",
     "stack-size" : 64,
     "rarity" : "mythic"
-  }, {
-    "id" : "training-sword",
-    "name" : "Training Sword",
-    "material" : "wooden_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A blunt wooden stick, used by students to train.",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "weapon-damage" : 3,
-        "strain" : 30
-      }
-    }
   }, {
     "id" : "treads-of-clyde",
     "name" : "Treads of Clyde",
@@ -326,6 +311,19 @@
     },
     "rarity" : "rare"
   }, {
+    "id" : "old-wooden-sword",
+    "name" : "Old Wooden Sword",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A blunt wooden stick, used by students to train.",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "stats" : {
+        "weapon-damage" : 3,
+        "strain" : 30
+      }
+    }
+  }, {
     "id" : "wooden-spear",
     "name" : "Wooden Spear",
     "material" : "angler_pottery_sherd",
@@ -340,9 +338,22 @@
         "weapon-range" : 2.5
       }
     },
-    "modeldata" : 3,
     "rarity" : "uncommon",
-    "level" : 4
+    "level" : 4,
+    "modeldata" : 3
+  }, {
+    "id" : "padded-leather-tunic",
+    "name" : "Padded Leather Tunic",
+    "material" : "leather_chestplate",
+    "item-type" : "helmet",
+    "description" : "Feels like wearing an inflated life jacket.",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 3
+      }
+    },
+    "level" : 10
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
@@ -407,7 +418,7 @@
     "name" : "Strainminusser",
     "material" : "diamond_chestplate",
     "item-type" : "chestplate",
-    "description" : "Me when light.",
+    "description" : "Whee im so fast!",
     "components" : {
       "stats" : {
         "strain" : -10
@@ -415,27 +426,26 @@
     },
     "rarity" : "developer"
   }, {
+    "id" : "sharpened-wooden-sword",
+    "name" : "Sharpened Wooden Sword",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A razor sharp sword of hardwood, designed for combative use.",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "stats" : {
+        "weapon-damage" : 50,
+        "strain" : 30
+      }
+    },
+    "level" : 15
+  }, {
     "id" : "stick",
     "name" : "Stick",
     "material" : "stick",
     "item-type" : "material",
     "description" : "Brown and sticky.",
     "stack-size" : 64
-  }, {
-    "id" : "stone-knife",
-    "name" : "Stone Knife",
-    "material" : "stone_sword",
-    "item-type" : "melee-weapon",
-    "description" : "A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.",
-    "components" : {
-      "attributes" : [ "light-melee" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "weapon-damage" : 28,
-        "strain" : 30
-      }
-    },
-    "level" : 10
   }, {
     "id" : "wooden-shiv",
     "name" : "Wooden Shiv",
@@ -456,14 +466,14 @@
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
     "material" : "leather_chestplate",
-    "item-type" : "chestplate",
+    "item-type" : "helmet",
     "description" : "Protect yourself with the power of cow skin.",
     "components" : {
-      "enchantSlots" : 1,
       "stats" : {
-        "defense" : 1
+        "health" : 1
       }
-    }
+    },
+    "level" : 5
   }, {
     "id" : "guardian-scale",
     "name" : "Guardian Scale",
@@ -499,21 +509,21 @@
         "strain" : 30
       }
     },
-    "modeldata" : 2,
     "rarity" : "rare",
-    "level" : 3
+    "level" : 3,
+    "modeldata" : 2
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
     "material" : "leather_leggings",
-    "item-type" : "leggings",
-    "description" : "Incredibly suffocating.",
+    "item-type" : "helmet",
+    "description" : "Indescribably tight.",
     "components" : {
-      "enchantSlots" : 1,
       "stats" : {
-        "defense" : 1
+        "health" : 1
       }
-    }
+    },
+    "level" : 5
   }, {
     "id" : "rotten-flesh",
     "name" : "Rotten Flesh",
@@ -521,6 +531,17 @@
     "item-type" : "material",
     "description" : "For some reason you feel like you used to eat this.",
     "stack-size" : 64
+  }, {
+    "id" : "old-leather-tunic",
+    "name" : "Old Leather Tunic",
+    "material" : "leather_chestplate",
+    "item-type" : "helmet",
+    "description" : "Supreme brand, very expensive. The dungeon monsters don't care, though.",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    }
   }, {
     "id" : "wooden-targe",
     "name" : "Wooden Targe",
@@ -549,6 +570,17 @@
     },
     "rarity" : "rare",
     "level" : 8
+  }, {
+    "id" : "old-leather-hood",
+    "name" : "Old Leather Hood",
+    "material" : "leather_helmet",
+    "item-type" : "helmet",
+    "description" : "A scrap of old leather, shaped to suggest that it is worn on the head.",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    }
   }, {
     "id" : "spider-eye",
     "name" : "Spider Eye",
@@ -586,9 +618,9 @@
         "weapon-range" : -1.5
       }
     },
-    "modeldata" : 4,
     "rarity" : "legendary",
-    "level" : 9
+    "level" : 9,
+    "modeldata" : 4
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -615,8 +647,8 @@
         "recursion" : 20
       }
     },
-    "modeldata" : 1,
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "modeldata" : 1
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -628,8 +660,8 @@
         "luck" : 57
       }
     },
-    "modeldata" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "modeldata" : 5
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -652,6 +684,19 @@
         "healing" : 4
       }
     }
+  }, {
+    "id" : "toughened-leather-hood",
+    "name" : "Toughened Leather Hood",
+    "material" : "leather_helmet",
+    "item-type" : "helmet",
+    "description" : "You sure this isnt plastic?",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 3
+      }
+    },
+    "level" : 15
   }, {
     "id" : "thornplate",
     "name" : "Thornplate",
@@ -683,6 +728,19 @@
       }
     },
     "modeldata" : 3
+  }, {
+    "id" : "padded-leather-pants",
+    "name" : "Padded Leather Pants",
+    "material" : "leather_leggings",
+    "item-type" : "helmet",
+    "description" : "What they lack in breathability, they make up for in crotch protection.",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 2
+      }
+    },
+    "level" : 10
   }, {
     "id" : "big-coin",
     "name" : "Big Coin",
@@ -725,6 +783,19 @@
     },
     "rarity" : "legendary"
   }, {
+    "id" : "padded-leather-hood",
+    "name" : "Padded Leather Hood",
+    "material" : "leather_helmet",
+    "item-type" : "helmet",
+    "description" : "Recieved from the WVBA after your 100th death.",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 1
+      }
+    },
+    "level" : 10
+  }, {
     "id" : "simple-bow",
     "name" : "Simple Bow",
     "material" : "bow",
@@ -754,6 +825,19 @@
     "rarity" : "legendary",
     "level" : 10
   }, {
+    "id" : "toughened-leather-pants",
+    "name" : "Toughened Leather Pants",
+    "material" : "leather_leggings",
+    "item-type" : "helmet",
+    "description" : "Now with inbuilt shin pads!",
+    "components" : {
+      "stats" : {
+        "health" : 2,
+        "defense" : 3
+      }
+    },
+    "level" : 15
+  }, {
     "id" : "echo-shard",
     "name" : "Echo Shard",
     "material" : "echo_shard",
@@ -778,14 +862,14 @@
     "id" : "leather-boots",
     "name" : "Leather Boots",
     "material" : "leather_boots",
-    "item-type" : "boots",
+    "item-type" : "helmet",
     "description" : "Ye olde Nikes.",
     "components" : {
-      "enchantSlots" : 1,
       "stats" : {
-        "defense" : 1
+        "defense" : 2
       }
-    }
+    },
+    "level" : 5
   }, {
     "id" : "necrotic-matter",
     "name" : "Necrotic Matter",
@@ -795,17 +879,44 @@
     "stack-size" : 64,
     "rarity" : "legendary"
   }, {
+    "id" : "polished-wooden-sword",
+    "name" : "Polished Wooden Sword",
+    "material" : "wooden_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A well crafted wooden sword, though seemingly more decorative than functional.",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "stats" : {
+        "weapon-damage" : 28,
+        "strain" : 30
+      }
+    },
+    "level" : 10
+  }, {
     "id" : "leather-hood",
     "name" : "Leather Hood",
     "material" : "leather_helmet",
     "item-type" : "helmet",
     "description" : "Slightly lessens blows to the head. Slightly.",
     "components" : {
-      "enchantSlots" : 1,
       "stats" : {
-        "defense" : 1
+        "defense" : 2
       }
-    }
+    },
+    "level" : 5
+  }, {
+    "id" : "toughened-leather-boots",
+    "name" : "Toughened Leather Boots",
+    "material" : "leather_boots",
+    "item-type" : "helmet",
+    "description" : "The first choice of many construction workers.",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 3
+      }
+    },
+    "level" : 15
   }, {
     "id" : "rope",
     "name" : "Rope",
@@ -833,6 +944,17 @@
       }
     },
     "rarity" : "mythic"
+  }, {
+    "id" : "old-leather-boots",
+    "name" : "Old Leather Boots",
+    "material" : "leather_boots",
+    "item-type" : "helmet",
+    "description" : "With the amount of holes, they may as well be sandals.",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    }
   }, {
     "id" : "tarnished-golden-knife",
     "name" : "Tarnished Golden Knife",
@@ -870,8 +992,8 @@
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "modeldata" : 4,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 4
   }, {
     "id" : "apple",
     "name" : "Apple",
@@ -965,12 +1087,36 @@
       "enchantment" : "sharp"
     }
   }, {
+    "id" : "old-leather-pants",
+    "name" : "Old Leather Pants",
+    "material" : "leather_leggings",
+    "item-type" : "helmet",
+    "description" : "Denim jeans with the color washed off.",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    }
+  }, {
     "id" : "bone",
     "name" : "Bone",
     "material" : "bone",
     "item-type" : "material",
     "description" : "I used to be a femur.",
     "stack-size" : 64
+  }, {
+    "id" : "padded-leather-boots",
+    "name" : "Padded Leather Boots",
+    "material" : "leather_boots",
+    "item-type" : "helmet",
+    "description" : "Budget UGG boots.",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 1
+      }
+    },
+    "level" : 10
   }, {
     "id" : "menu",
     "name" : "Menu",
@@ -985,7 +1131,6 @@
     "description" : "A simple wooden blade, not particularly effective.",
     "components" : {
       "attributes" : [ "blade" ],
-      "enchantSlots" : 1,
       "stats" : {
         "weapon-damage" : 12,
         "strain" : 30
@@ -993,11 +1138,24 @@
     },
     "level" : 5
   }, {
+    "id" : "toughened-leather-tunic",
+    "name" : "Toughened Leather Tunic",
+    "material" : "leather_chestplate",
+    "item-type" : "helmet",
+    "description" : "Makes the wearer look gangster af.",
+    "components" : {
+      "stats" : {
+        "health" : 2,
+        "defense" : 4
+      }
+    },
+    "level" : 15
+  }, {
     "id" : "strainplusser",
     "name" : "Strainplusser",
     "material" : "golden_chestplate",
     "item-type" : "chestplate",
-    "description" : "Me when heavy.",
+    "description" : "Oof owie im so slow.",
     "components" : {
       "stats" : {
         "strain" : 10

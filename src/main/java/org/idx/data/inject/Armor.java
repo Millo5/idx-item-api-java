@@ -1,5 +1,7 @@
 package org.idx.data.inject;
 
+import java.util.Map;
+
 import org.idx.Main;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
@@ -9,8 +11,6 @@ import org.idx.items.components.impl.AttributesComponent;
 import org.idx.items.components.impl.SetComponent;
 import org.idx.items.components.impl.StatsComponent;
 
-import java.util.Map;
-
 public class Armor {
 
     public static void unique() {
@@ -19,7 +19,39 @@ public class Armor {
         {
             // Common
             {
+                Main.dataManager.addItem(new Item<>("old-leather-hood", "Old Leather Hood", "leather_helmet", ItemType.HELMET)
+                    .setDescription("A scrap of old leather, shaped to suggest that it is worn on the head.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 1
+                    )))
+                    .setLevel(1)
+                );
 
+                Main.dataManager.addItem(new Item<>("leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
+                    .setDescription("Slightly lessens blows to the head. Slightly.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 2
+                    )))
+                    .setLevel(5)
+                );
+
+                Main.dataManager.addItem(new Item<>("padded-leather-hood", "Padded Leather Hood", "leather_helmet", ItemType.HELMET)
+                    .setDescription("Recieved from the WVBA after your 100th death.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 1
+                    )))
+                    .setLevel(10)
+                );
+
+                Main.dataManager.addItem(new Item<>("toughened-leather-hood", "Toughened Leather Hood", "leather_helmet", ItemType.HELMET)
+                    .setDescription("You sure this isnt plastic?")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 3
+                    )))
+                    .setLevel(15)
+                );
             }
 
             // Uncommon
@@ -76,7 +108,39 @@ public class Armor {
         {
             // Common
             {
+                Main.dataManager.addItem(new Item<>("old-leather-tunic", "Old Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                    .setDescription("Supreme brand, very expensive. The dungeon monsters don't care, though.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 1
+                    )))
+                    .setLevel(1)
+                );
 
+                Main.dataManager.addItem(new Item<>("leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                    .setDescription("Protect yourself with the power of cow skin.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1
+                    )))
+                    .setLevel(5)
+                );
+
+                Main.dataManager.addItem(new Item<>("padded-leather-tunic", "Padded Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                    .setDescription("Feels like wearing an inflated life jacket.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 3
+                    )))
+                    .setLevel(10)
+                );
+
+                Main.dataManager.addItem(new Item<>("toughened-leather-tunic", "Toughened Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                    .setDescription("Makes the wearer look gangster af.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 2,
+                        Stat.DEFENSE, 4
+                    )))
+                    .setLevel(15)
+                );
             }
 
             // Uncommon
@@ -122,15 +186,6 @@ public class Armor {
                         .setEnchantSlots(1)
                     )
                 );
-
-                Main.dataManager.addItem(new Item<>("strainplusser", "Strainplusser", "golden_chestplate", ItemType.CHESTPLATE)
-                    .setDescription("Me when heavy.")
-                    .setRarity(Rarity.DEVELOPER)
-                    .setLevel(1)
-                    .addComponent(new StatsComponent(Map.of(
-                        Stat.STRAIN, 10
-                    )))
-                );
             }
 
             // Mythic
@@ -140,8 +195,17 @@ public class Armor {
 
             // Developer
             {
+                Main.dataManager.addItem(new Item<>("strainplusser", "Strainplusser", "golden_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("Oof owie im so slow.")
+                    .setRarity(Rarity.DEVELOPER)
+                    .setLevel(1)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.STRAIN, 10
+                    )))
+                );
+
                 Main.dataManager.addItem(new Item<>("strainminusser", "Strainminusser", "diamond_chestplate", ItemType.CHESTPLATE)
-                    .setDescription("Me when light.")
+                    .setDescription("Whee im so fast!")
                     .setRarity(Rarity.DEVELOPER)
                     .setLevel(1)
                     .addComponent(new StatsComponent(Map.of(
@@ -156,7 +220,39 @@ public class Armor {
         {
             // Common
             {
+                Main.dataManager.addItem(new Item<>("old-leather-pants", "Old Leather Pants", "leather_leggings", ItemType.HELMET)
+                    .setDescription("Denim jeans with the color washed off.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 1
+                    )))
+                    .setLevel(1)
+                );
 
+                Main.dataManager.addItem(new Item<>("leather-pants", "Leather Pants", "leather_leggings", ItemType.HELMET)
+                    .setDescription("Indescribably tight.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1
+                    )))
+                    .setLevel(5)
+                );
+
+                Main.dataManager.addItem(new Item<>("padded-leather-pants", "Padded Leather Pants", "leather_leggings", ItemType.HELMET)
+                    .setDescription("What they lack in breathability, they make up for in crotch protection.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 2
+                    )))
+                    .setLevel(10)
+                );
+
+                Main.dataManager.addItem(new Item<>("toughened-leather-pants", "Toughened Leather Pants", "leather_leggings", ItemType.HELMET)
+                    .setDescription("Now with inbuilt shin pads!")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 2,
+                        Stat.DEFENSE, 3
+                    )))
+                    .setLevel(15)
+                );
             }
 
             // Uncommon
@@ -200,7 +296,39 @@ public class Armor {
         {
             // Common
             {
+                Main.dataManager.addItem(new Item<>("old-leather-boots", "Old Leather Boots", "leather_boots", ItemType.HELMET)
+                    .setDescription("With the amount of holes, they may as well be sandals.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 1
+                    )))
+                    .setLevel(1)
+                );
 
+                Main.dataManager.addItem(new Item<>("leather-boots", "Leather Boots", "leather_boots", ItemType.HELMET)
+                    .setDescription("Ye olde Nikes.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DEFENSE, 2
+                    )))
+                    .setLevel(5)
+                );
+
+                Main.dataManager.addItem(new Item<>("padded-leather-boots", "Padded Leather Boots", "leather_boots", ItemType.HELMET)
+                    .setDescription("Budget UGG boots.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 1
+                    )))
+                    .setLevel(10)
+                );
+
+                Main.dataManager.addItem(new Item<>("toughened-leather-boots", "Toughened Leather Boots", "leather_boots", ItemType.HELMET)
+                    .setDescription("The first choice of many construction workers.")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 3
+                    )))
+                    .setLevel(15)
+                );
             }
 
             // Uncommon

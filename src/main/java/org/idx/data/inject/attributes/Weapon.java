@@ -108,12 +108,11 @@ public class Weapon {
         // Common
         {
             Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden_sword", AttributeType.ENCHANTMENT)
-                    .setDescription("Increases the damage of melee weapons")
-                    .setTarget(ItemType.MELEE_WEAPON)
-                    .addComponent(new StatsComponent(Map.of(
-                            Stat.CRIT_CHANCE, 10,
-                            Stat.CRIT_DAMAGE, 10 
-                    )))
+                .setDescription("Increases the damage of melee weapons")
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DAMAGE, 15
+                )))
             );
         }
 

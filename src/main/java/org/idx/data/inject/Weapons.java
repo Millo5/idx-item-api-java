@@ -17,16 +17,14 @@ public class Weapons {
 
         // Common
         {
-            Main.dataManager.addItem(new Item<>("training-sword", "Training Sword", "wooden_sword", ItemType.MELEE_WEAPON)
+            Main.dataManager.addItem(new Item<>("old-wooden-sword", "Old Wooden Sword", "wooden_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A blunt wooden stick, used by students to train.")
                 .setLevel(1)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.WEAPON_DAMAGE, 3,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("blade")
-                    .setEnchantSlots(1)
-                )
+                .addComponent(new AttributesComponent("blade"))
             );
 
             Main.dataManager.addItem(new Item<>("wooden-sword", "Wooden Sword", "wooden_sword", ItemType.MELEE_WEAPON)
@@ -36,21 +34,27 @@ public class Weapons {
                     Stat.WEAPON_DAMAGE, 12,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("blade")
-                    .setEnchantSlots(1)
-                )
+                .addComponent(new AttributesComponent("blade"))
             );
 
-            Main.dataManager.addItem(new Item<>("stone-knife", "Stone Knife", "stone_sword", ItemType.MELEE_WEAPON)
-                .setDescription("A crude blade made from sharpened stone, haphazardly tied to a makeshift handle.")
+            Main.dataManager.addItem(new Item<>("polished-wooden-sword", "Polished Wooden Sword", "wooden_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A well crafted wooden sword, though seemingly more decorative than functional.")
                 .setLevel(10)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.WEAPON_DAMAGE, 28,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("light-melee")
-                    .setEnchantSlots(1)
-                )
+                .addComponent(new AttributesComponent("blade"))
+            );
+
+            Main.dataManager.addItem(new Item<>("sharpened-wooden-sword", "Sharpened Wooden Sword", "wooden_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A razor sharp sword of hardwood, designed for combative use.")
+                .setLevel(15)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 50,
+                    Stat.STRAIN, 30
+                )))
+                .addComponent(new AttributesComponent("blade"))
             );
         }
 
