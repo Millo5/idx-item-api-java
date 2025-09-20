@@ -51,6 +51,8 @@ public enum Stat {
     LUCK,
     /** Size of the player model, affects hitbox */
     SCALE,
+    /** Experience gained multiplier */
+    XP_BONUS,
 
     /** A weapon's attacks per second */
     WEAPON_ATTACK_SPEED("weapon-attack-speed"),

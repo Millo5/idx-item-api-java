@@ -93,6 +93,19 @@
       }
     }
   }, {
+    "id" : "polished",
+    "name" : "Polished",
+    "material" : "iron_chestplate",
+    "description" : "Increases the defense of armor",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "armor",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "defense" : 1
+      }
+    }
+  }, {
     "id" : "hook",
     "name" : "Hook",
     "material" : "chain",
@@ -319,7 +332,7 @@
     "components" : {
       "attributes" : [ "blade" ],
       "stats" : {
-        "weapon-damage" : 3,
+        "weapon-damage" : 5,
         "strain" : 30
       }
     }
@@ -333,7 +346,7 @@
       "attributes" : [ "stab" ],
       "enchantSlots" : 1,
       "stats" : {
-        "weapon-damage" : 9,
+        "weapon-damage" : 7,
         "strain" : 35,
         "weapon-range" : 2.5
       }
@@ -434,7 +447,7 @@
     "components" : {
       "attributes" : [ "blade" ],
       "stats" : {
-        "weapon-damage" : 50,
+        "weapon-damage" : 12,
         "strain" : 30
       }
     },
@@ -456,7 +469,7 @@
       "attributes" : [ "light-melee" ],
       "enchantSlots" : 1,
       "stats" : {
-        "weapon-damage" : 5,
+        "weapon-damage" : 3,
         "strain" : 15
       }
     },
@@ -474,6 +487,17 @@
       }
     },
     "level" : 5
+  }, {
+    "id" : "armor-polish",
+    "name" : "Armor Polish",
+    "material" : "potion",
+    "description" : "A small bottle of polish, with a hint of defensively oriented mysticism.",
+    "color" : "#aaffff",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "armor",
+      "enchantment" : "polished"
+    }
   }, {
     "id" : "guardian-scale",
     "name" : "Guardian Scale",
@@ -493,25 +517,6 @@
       "enchantment" : "shurikens"
     },
     "rarity" : "epic"
-  }, {
-    "id" : "polished-sword",
-    "name" : "Polished Sword",
-    "material" : "angler_pottery_sherd",
-    "item-type" : "melee-weapon",
-    "description" : "A sword polished to a mirror finish, and sharpened to cut flesh like butter.",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "weapon-damage" : 7.0,
-        "crit-chance" : 15,
-        "crit-damage" : 15,
-        "strain" : 30
-      }
-    },
-    "rarity" : "rare",
-    "level" : 3,
-    "modeldata" : 2
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -563,13 +568,13 @@
     "components" : {
       "attributes" : [ "heavy-melee", "throwable" ],
       "stats" : {
-        "weapon-damage" : 35,
+        "weapon-damage" : 10,
         "crit-damage" : 50.0,
         "strain" : 40
       }
     },
     "rarity" : "rare",
-    "level" : 8
+    "level" : 3
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -609,7 +614,7 @@
     "components" : {
       "attributes" : [ "light-melee" ],
       "stats" : {
-        "weapon-damage" : 9,
+        "weapon-damage" : 5,
         "crit-chance" : 25,
         "crit-damage" : 25,
         "leeching" : 5,
@@ -859,6 +864,25 @@
     },
     "modeldata" : 2
   }, {
+    "id" : "travellers-blade",
+    "name" : "Traveller's Blade",
+    "material" : "angler_pottery_sherd",
+    "item-type" : "melee-weapon",
+    "description" : "The gold standard weapon for any new traveller looking to find their way within the dungeon.",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "weapon-damage" : 10,
+        "crit-chance" : 20,
+        "strain" : 25,
+        "xp-bonus" : 10
+      }
+    },
+    "rarity" : "rare",
+    "level" : 8,
+    "modeldata" : 2
+  }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
     "material" : "leather_boots",
@@ -887,7 +911,7 @@
     "components" : {
       "attributes" : [ "blade" ],
       "stats" : {
-        "weapon-damage" : 28,
+        "weapon-damage" : 9,
         "strain" : 30
       }
     },
@@ -1069,6 +1093,24 @@
     "rarity" : "legendary",
     "level" : 8
   }, {
+    "id" : "granite-greatsword",
+    "name" : "Granite Greatsword",
+    "material" : "stone_sword",
+    "item-type" : "melee-weapon",
+    "description" : "A balanced axe designed for throwing, can be retrieved after use.",
+    "components" : {
+      "attributes" : [ "heavy-melee", "throwable" ],
+      "stats" : {
+        "weapon-damage" : 25,
+        "crit-damage" : 50,
+        "knockback" : 50,
+        "strain" : 40,
+        "weapon-range" : 1.5
+      }
+    },
+    "rarity" : "rare",
+    "level" : 8
+  }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
     "material" : "gold_nugget",
@@ -1132,7 +1174,7 @@
     "components" : {
       "attributes" : [ "blade" ],
       "stats" : {
-        "weapon-damage" : 12,
+        "weapon-damage" : 7,
         "strain" : 30
       }
     },

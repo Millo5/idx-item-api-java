@@ -17,8 +17,13 @@ public class Enchantments {
     
         // Common
         {
-           Main.dataManager.addItem(new EnchantmentItem("old-whetstone", "Old Whetstone", "brick", "sharp")
+            Main.dataManager.addItem(new EnchantmentItem("old-whetstone", "Old Whetstone", "brick", "sharp")
                 .setDescription("A very old whetstone, covered in the rust of hundreds of sharpened blades.")
+            );
+
+            Main.dataManager.addItem(new EnchantmentItem("armor-polish", "Armor Polish", "potion", "polished")
+                .setDescription("A small bottle of polish, with a hint of defensively oriented mysticism.")
+                .setColor("#aaffff")
             );
         }
 

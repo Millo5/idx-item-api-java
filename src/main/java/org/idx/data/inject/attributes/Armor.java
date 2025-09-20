@@ -14,7 +14,13 @@ public class Armor {
 
         // Common
         {
-
+            Main.dataManager.addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
+                .setDescription("Increases the defense of armor")
+                .setTarget(ItemType.ARMOR)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DEFENSE, 1
+                )))
+            );
         }
 
         // Uncommon

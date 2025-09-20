@@ -21,7 +21,7 @@ public class Weapons {
                 .setDescription("A blunt wooden stick, used by students to train.")
                 .setLevel(1)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 3,
+                    Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 30
                 )))
                 .addComponent(new AttributesComponent("blade"))
@@ -31,7 +31,7 @@ public class Weapons {
                 .setDescription("A simple wooden blade, not particularly effective.")
                 .setLevel(5)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 12,
+                    Stat.WEAPON_DAMAGE, 7,
                     Stat.STRAIN, 30
                 )))
                 .addComponent(new AttributesComponent("blade"))
@@ -41,7 +41,7 @@ public class Weapons {
                 .setDescription("A well crafted wooden sword, though seemingly more decorative than functional.")
                 .setLevel(10)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 28,
+                    Stat.WEAPON_DAMAGE, 9,
                     Stat.STRAIN, 30
                 )))
                 .addComponent(new AttributesComponent("blade"))
@@ -51,7 +51,7 @@ public class Weapons {
                 .setDescription("A razor sharp sword of hardwood, designed for combative use.")
                 .setLevel(15)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 50,
+                    Stat.WEAPON_DAMAGE, 12,
                     Stat.STRAIN, 30
                 )))
                 .addComponent(new AttributesComponent("blade"))
@@ -65,7 +65,7 @@ public class Weapons {
                 .setRarity(Rarity.UNCOMMON)
                 .setLevel(2)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 5,
+                    Stat.WEAPON_DAMAGE, 3,
                     Stat.STRAIN, 15
                 )))
                 .addComponent(new AttributesComponent("light-melee")
@@ -78,7 +78,7 @@ public class Weapons {
                 .setRarity(Rarity.UNCOMMON)
                 .setLevel(4)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 9,
+                    Stat.WEAPON_DAMAGE, 7,
                     Stat.STRAIN, 35,
                     Stat.WEAPON_RANGE, 2.5
                 )))
@@ -90,31 +90,31 @@ public class Weapons {
 
         // Rare
         {
-            Main.dataManager.addItem(new Item<>("polished-sword", "Polished Sword", Resource.SWORD, ItemType.MELEE_WEAPON)
-                .setDescription("A sword polished to a mirror finish, and sharpened to cut flesh like butter.")
-                .setRarity(Rarity.RARE)
-                .setLevel(3)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 7.0,
-                    Stat.STRAIN, 30,
-                    Stat.CRIT_CHANCE, 15,
-                    Stat.CRIT_DAMAGE, 15
-                ))) 
-                .addComponent(new AttributesComponent( "blade")
-                    .setEnchantSlots(1)
-                )
-            );
-
             Main.dataManager.addItem(new Item<>("throwing-axe", "Throwing Axe", "stone_axe", ItemType.MELEE_WEAPON)
                 .setDescription("A balanced axe designed for throwing, can be retrieved after use.")
                 .setRarity(Rarity.RARE)
-                .setLevel(8)
+                .setLevel(3)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 35,
+                    Stat.WEAPON_DAMAGE, 10,
                     Stat.STRAIN, 40,
                     Stat.CRIT_DAMAGE, 50.0
                 )))
                 .addComponent(new AttributesComponent("heavy-melee","throwable"))
+            );
+
+            Main.dataManager.addItem(new Item<>("travellers-blade", "Traveller's Blade", Resource.SWORD, ItemType.MELEE_WEAPON)
+                .setDescription("The gold standard weapon for any new traveller looking to find their way within the dungeon.")
+                .setRarity(Rarity.RARE)
+                .setLevel(8)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 10,
+                    Stat.STRAIN, 25,
+                    Stat.CRIT_CHANCE, 20,
+                    Stat.XP_BONUS, 10
+                ))) 
+                .addComponent(new AttributesComponent( "blade")
+                    .setEnchantSlots(1)
+                )
             );
 
             Main.dataManager.addItem(new Item<>("tarnished-golden-knife", "Tarnished Golden Knife", "golden_sword", ItemType.MELEE_WEAPON)
@@ -149,6 +149,21 @@ public class Weapons {
                     .setEnchantSlots(1)
                 )
             );
+
+            Main.dataManager.addItem(new Item<>("granite-greatsword", "Granite Greatsword", "stone_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A balanced axe designed for throwing, can be retrieved after use.")
+                .setRarity(Rarity.RARE)
+                .setLevel(8)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 25,
+                    Stat.STRAIN, 40,
+                    Stat.WEAPON_RANGE, 1.5,
+                    Stat.CRIT_DAMAGE, 50,
+                    Stat.KNOCKBACK, 50
+                )))
+                .addComponent(new AttributesComponent("heavy-melee","throwable"))
+            );
+
         }
 
         // Legendary
@@ -158,7 +173,7 @@ public class Weapons {
                 .setRarity(Rarity.LEGENDARY)
                 .setLevel(9)
                 .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 9,
+                    Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 15,
                     Stat.WEAPON_RANGE, -1.5,
                     Stat.MOVE_SPEED, 5,
