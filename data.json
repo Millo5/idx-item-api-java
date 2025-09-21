@@ -22,12 +22,12 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "eat-global" ]
     },
-    "rarity" : "legendary",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "legendary"
   }, {
     "id" : "visceral",
     "name" : "Visceral",
-    "material" : "snowball",
+    "material" : "mutton",
     "description" : "Killing bloodied enemies makes them explode in gore, dealing damage and applying blood to nearby enemies.",
     "item-type" : "attribute",
     "components" : {
@@ -35,8 +35,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "kill" ]
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "drinkable",
     "name" : "Drinkable",
@@ -58,8 +58,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
-    "rarity" : "epic",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "epic"
   }, {
     "id" : "bloodied",
     "name" : "Bloodied",
@@ -85,8 +85,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "rarity" : "uncommon",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "uncommon"
   }, {
     "id" : "heavy-melee",
     "name" : "Heavy Melee",
@@ -178,8 +178,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "level" : 20,
+    "rarity" : "legendary"
   }, {
     "id" : "light-melee",
     "name" : "Light Melee",
@@ -280,8 +280,8 @@
         "recursion" : 25
       }
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "level" : 20,
+    "rarity" : "legendary"
   } ],
   "items" : [ {
     "id" : "restless-chain",
@@ -295,8 +295,8 @@
         "weapon-range" : 5
       }
     },
-    "modeldata" : 6,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 6
   }, {
     "id" : "glass-bottle",
     "name" : "Glass Bottle",
@@ -383,9 +383,9 @@
         "weapon-range" : 2.5
       }
     },
-    "modeldata" : 3,
+    "level" : 4,
     "rarity" : "uncommon",
-    "level" : 4
+    "modeldata" : 3
   }, {
     "id" : "padded-leather-tunic",
     "name" : "Padded Leather Tunic",
@@ -422,8 +422,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -439,8 +439,8 @@
         "resilience" : 15
       }
     },
-    "rarity" : "epic",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "epic"
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -505,8 +505,8 @@
         "strain" : 15
       }
     },
-    "rarity" : "uncommon",
-    "level" : 2
+    "level" : 2,
+    "rarity" : "uncommon"
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -587,8 +587,8 @@
     "color" : "#ffbb00",
     "item-type" : "enchantment",
     "components" : {
-      "attribute-target" : "helmet",
-      "enchantment" : "voltaic-aura"
+      "attribute-target" : "chestplate",
+      "enchantment" : "gourmand"
     },
     "rarity" : "legendary"
   }, {
@@ -617,8 +617,8 @@
         "strain" : 40
       }
     },
-    "rarity" : "rare",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "rare"
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -668,9 +668,9 @@
         "weapon-range" : -1.5
       }
     },
-    "modeldata" : 4,
+    "level" : 9,
     "rarity" : "legendary",
-    "level" : 9
+    "modeldata" : 4
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -697,8 +697,8 @@
         "recursion" : 20
       }
     },
-    "modeldata" : 1,
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "modeldata" : 1
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -710,8 +710,8 @@
         "luck" : 57
       }
     },
-    "modeldata" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "modeldata" : 5
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -762,8 +762,8 @@
         "thorns" : 2
       }
     },
-    "rarity" : "rare",
-    "level" : 4
+    "level" : 4,
+    "rarity" : "rare"
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -871,8 +871,8 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
@@ -923,9 +923,9 @@
         "xp-bonus" : 10
       }
     },
-    "modeldata" : 2,
+    "level" : 8,
     "rarity" : "rare",
-    "level" : 8
+    "modeldata" : 2
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
@@ -1037,8 +1037,8 @@
         "strain" : 30
       }
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1060,8 +1060,8 @@
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "modeldata" : 4,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 4
   }, {
     "id" : "apple",
     "name" : "Apple",
@@ -1114,8 +1114,8 @@
         "strain" : 25
       }
     },
-    "rarity" : "uncommon",
-    "level" : 12
+    "level" : 12,
+    "rarity" : "uncommon"
   }, {
     "id" : "weighted-javelin",
     "name" : "Weighted Javelin",
@@ -1134,8 +1134,8 @@
         "weapon-range" : 1
       }
     },
-    "rarity" : "epic",
-    "level" : 7
+    "level" : 7,
+    "rarity" : "epic"
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1151,8 +1151,8 @@
         "endurance" : 20
       }
     },
-    "rarity" : "legendary",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "legendary"
   }, {
     "id" : "granite-greatsword",
     "name" : "Granite Greatsword",
@@ -1170,8 +1170,8 @@
         "weapon-range" : 1.5
       }
     },
-    "rarity" : "epic",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "epic"
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",

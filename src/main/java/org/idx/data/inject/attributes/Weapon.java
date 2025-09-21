@@ -141,7 +141,7 @@ public class Weapon {
 
         // Rare
         {
-            Main.dataManager.addItem(new AttributeItem("visceral", "Visceral", "snowball", AttributeType.ENCHANTMENT)
+            Main.dataManager.addItem(new AttributeItem("visceral", "Visceral", "mutton", AttributeType.ENCHANTMENT)
                 .setDescription("Killing bloodied enemies makes them explode in gore, dealing damage and applying blood to nearby enemies.")
                 .setRarity(Rarity.RARE)
                 .setLevel(10)
