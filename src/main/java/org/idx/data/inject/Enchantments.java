@@ -65,7 +65,7 @@ public class Enchantments {
                 .setDescription("A magical crystal swirling with the fury of a thousand storms.")
                 .setRarity(Rarity.LEGENDARY)
             );
-            Main.dataManager.addItem(new EnchantmentItem("michelin-menu", "Michelin Menu", "map", "voltaic-aura")
+            Main.dataManager.addItem(new EnchantmentItem("michelin-menu", "Michelin Menu", "map", "gourmand")
                 .setDescription("Just looking at it makes me drool...")
                 .setRarity(Rarity.LEGENDARY)
                 .setColor("#ffbb00")
