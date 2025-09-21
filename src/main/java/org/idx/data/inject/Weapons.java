@@ -86,6 +86,20 @@ public class Weapons {
                     .setEnchantSlots(1)
                 )
             );
+
+            Main.dataManager.addItem(new Item<>("kidney-piercer", "Kidney Piercer", "shears", ItemType.MELEE_WEAPON)
+                .setDescription("Obliterates kidneys. Slightly irritates everything else.")
+                .setRarity(Rarity.UNCOMMON)
+                .setLevel(12)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 2,
+                    Stat.STRAIN, 25,
+                    Stat.CRIT_DAMAGE, 2000
+                )))
+                .addComponent(new AttributesComponent("light-melee")
+                    .setEnchantSlots(1)
+                )
+            );
         }
 
         // Rare
@@ -152,7 +166,7 @@ public class Weapons {
 
             Main.dataManager.addItem(new Item<>("granite-greatsword", "Granite Greatsword", "stone_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A giant hunk of heavy granite, tied haphazardly to a stick.")
-                .setRarity(Rarity.RARE)
+                .setRarity(Rarity.EPIC)
                 .setLevel(8)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.WEAPON_DAMAGE, 25,

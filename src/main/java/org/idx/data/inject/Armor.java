@@ -156,11 +156,11 @@ public class Armor {
                     .setLevel(4)
                     .setColor("#006600")
                     .addComponent(new StatsComponent(Map.of(
-                        Stat.HEALTH, 3,
-                        Stat.DEFENSE, 2,
+                        Stat.HEALTH, 1,
+                        Stat.DEFENSE, 1,
                         Stat.THORNS, 2
                     )))
-                    .addComponent(new AttributesComponent("gourmand")
+                    .addComponent(new AttributesComponent()
                         .setEnchantSlots(1)
                     )
                 );
@@ -179,7 +179,7 @@ public class Armor {
                     .setLevel(8)
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE,  2,
-                        Stat.HEALTH, 15,
+                        Stat.HEALTH, 3,
                         Stat.ENDURANCE, 20
                     )))
                     .addComponent(new AttributesComponent("gourmand")

@@ -288,8 +288,8 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "epic",
-    "modeldata" : 6
+    "modeldata" : 6,
+    "rarity" : "epic"
   }, {
     "id" : "glass-bottle",
     "name" : "Glass Bottle",
@@ -376,9 +376,9 @@
         "weapon-range" : 2.5
       }
     },
-    "level" : 4,
+    "modeldata" : 3,
     "rarity" : "uncommon",
-    "modeldata" : 3
+    "level" : 4
   }, {
     "id" : "padded-leather-tunic",
     "name" : "Padded Leather Tunic",
@@ -415,8 +415,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -432,8 +432,8 @@
         "resilience" : 15
       }
     },
-    "level" : 10,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 10
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -498,8 +498,8 @@
         "strain" : 15
       }
     },
-    "level" : 2,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 2
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -541,8 +541,8 @@
       "attribute-target" : "melee-weapon",
       "enchantment" : "shurikens"
     },
-    "level" : 8,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -599,8 +599,8 @@
         "strain" : 40
       }
     },
-    "level" : 3,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 3
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -630,8 +630,8 @@
       "attribute-target" : "armor",
       "enchantment" : "recursion"
     },
-    "level" : 20,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "bloodthirsty-cleaver",
     "name" : "Bloodthirsty Cleaver",
@@ -651,9 +651,9 @@
         "weapon-range" : -1.5
       }
     },
-    "level" : 9,
+    "modeldata" : 4,
     "rarity" : "legendary",
-    "modeldata" : 4
+    "level" : 9
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -680,8 +680,8 @@
         "recursion" : 20
       }
     },
-    "rarity" : "developer",
-    "modeldata" : 1
+    "modeldata" : 1,
+    "rarity" : "developer"
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -693,8 +693,8 @@
         "luck" : 57
       }
     },
-    "rarity" : "mythic",
-    "modeldata" : 5
+    "modeldata" : 5,
+    "rarity" : "mythic"
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -738,16 +738,15 @@
     "description" : "A tunic of moss and vines, stinging any who dare touch.",
     "color" : "#006600",
     "components" : {
-      "attributes" : [ "gourmand" ],
       "enchantSlots" : 1,
       "stats" : {
-        "health" : 3,
-        "defense" : 2,
+        "health" : 1,
+        "defense" : 1,
         "thorns" : 2
       }
     },
-    "level" : 4,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 4
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -814,8 +813,8 @@
       "attribute-target" : "helmet",
       "enchantment" : "voltaic-aura"
     },
-    "level" : 20,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "padded-leather-hood",
     "name" : "Padded Leather Hood",
@@ -856,8 +855,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
@@ -908,9 +907,9 @@
         "xp-bonus" : 10
       }
     },
-    "level" : 8,
+    "modeldata" : 2,
     "rarity" : "rare",
-    "modeldata" : 2
+    "level" : 8
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
@@ -1022,8 +1021,8 @@
         "strain" : 30
       }
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1045,8 +1044,8 @@
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "rarity" : "epic",
-    "modeldata" : 4
+    "modeldata" : 4,
+    "rarity" : "epic"
   }, {
     "id" : "apple",
     "name" : "Apple",
@@ -1085,6 +1084,23 @@
     "stack-size" : 64,
     "rarity" : "rare"
   }, {
+    "id" : "kidney-piercer",
+    "name" : "Kidney Piercer",
+    "material" : "shears",
+    "item-type" : "melee-weapon",
+    "description" : "Obliterates kidneys. Slightly irritates everything else.",
+    "components" : {
+      "attributes" : [ "light-melee" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "weapon-damage" : 2,
+        "crit-damage" : 2000,
+        "strain" : 25
+      }
+    },
+    "rarity" : "uncommon",
+    "level" : 12
+  }, {
     "id" : "weighted-javelin",
     "name" : "Weighted Javelin",
     "material" : "iron_shovel",
@@ -1102,8 +1118,8 @@
         "weapon-range" : 1
       }
     },
-    "level" : 7,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 7
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1114,13 +1130,13 @@
       "attributes" : [ "gourmand" ],
       "enchantSlots" : 1,
       "stats" : {
-        "health" : 15,
+        "health" : 3,
         "defense" : 2,
         "endurance" : 20
       }
     },
-    "level" : 8,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 8
   }, {
     "id" : "granite-greatsword",
     "name" : "Granite Greatsword",
@@ -1138,8 +1154,8 @@
         "weapon-range" : 1.5
       }
     },
-    "level" : 8,
-    "rarity" : "rare"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -1219,8 +1235,8 @@
       "attribute-target" : "weapon",
       "enchantment" : "visceral"
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "toughened-leather-tunic",
     "name" : "Toughened Leather Tunic",
@@ -1272,8 +1288,8 @@
       "attribute-target" : "melee-weapon",
       "enchantment" : "throwable"
     },
-    "level" : 3,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 3
   }, {
     "id" : "blaze-rod",
     "name" : "Blaze Rod",
