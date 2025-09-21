@@ -44,8 +44,12 @@ public class Consumables extends DataInjector {
         // Uncommon
         {
             addItem(new PotionItem("speed-potion", "Speed Potion", "potion",
-                    new PotionEffect("speed", 500, 10),
-                    new PotionEffect("attack-speed", 500, 5)));
+                new PotionEffect("speed", 600, 1))
+            );
+
+            addItem(new PotionItem("strength-potion", "Strength Potion", "potion",
+                new PotionEffect("strength", 600, 1))
+            );
         }
 
         // Rare
