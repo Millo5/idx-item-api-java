@@ -19,35 +19,45 @@ public class Enchantments {
         {
             Main.dataManager.addItem(new EnchantmentItem("old-whetstone", "Old Whetstone", "brick", "sharp")
                 .setDescription("A very old whetstone, covered in the rust of hundreds of sharpened blades.")
+                .setLevel(1)
             );
 
             Main.dataManager.addItem(new EnchantmentItem("armor-polish", "Armor Polish", "potion", "polished")
                 .setDescription("A small bottle of polish, with a hint of defensively oriented mysticism.")
+                .setLevel(1)
                 .setColor("#aaffff")
+            );
+            Main.dataManager.addItem(new EnchantmentItem("vial-of-blood", "Vial of Blood", "potion", "bloodied")
+                .setDescription("Seems to emanate pure violence.")
+                .setLevel(5)
+                .setColor("#aa0000")
             );
         }
 
         // Uncommon
         {
             Main.dataManager.addItem(new EnchantmentItem("aerodynamic-pommel", "Aerodynamic Pommel", "stone_button", "throwable")
-                .setDescription("A melee weapon pommel designed to fly through the air with unmatched grace.")
+                .setDescription("Its kinda just a rock with wings.")
                 .setRarity(Rarity.UNCOMMON)
+                .setLevel(3)
             );
         }
 
         // Rare
         {
             Main.dataManager.addItem(new EnchantmentItem("infected-spleen", "Infected Spleen", "beef", "visceral")
-                .setDescription("A spleen, infected with a virus that has inflated it to a bursting point.")
+                .setDescription("Looks like its about to burst.")
                 .setRarity(Rarity.RARE)
+                .setLevel(10)
             );
         }
 
         // Epic
         {
             Main.dataManager.addItem(new EnchantmentItem("ninja-star-spirit", "Ninja Star Spirit", "nether_star", "shurikens")
-                .setDescription("A ghostly apparition in the shape of a shuriken.")
+                .setDescription("How does an inanimate object have a ghost???")
                 .setRarity(Rarity.EPIC)
+                .setLevel(8)
             );
         }
 
@@ -56,10 +66,12 @@ public class Enchantments {
             Main.dataManager.addItem(new EnchantmentItem("echoing-fragment", "Echoing Fragment", "echo_shard", "recursion")
                 .setDescription("An otherworldly fragment that loudly resonates whenever struck.")
                 .setRarity(Rarity.LEGENDARY)
+                .setLevel(20)
             );
             Main.dataManager.addItem(new EnchantmentItem("tempest-crystal", "Tempest Crystal", "blue_ice", "voltaic-aura")
                 .setDescription("A magical crystal swirling with the fury of a thousand storms.")
                 .setRarity(Rarity.LEGENDARY)
+                .setLevel(20)
             );
         }
 

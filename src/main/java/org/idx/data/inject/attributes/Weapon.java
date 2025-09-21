@@ -114,6 +114,14 @@ public class Weapon {
                     Stat.DAMAGE, 15
                 )))
             );
+
+            Main.dataManager.addItem(new AttributeItem("bloodied", "Bloodied", "redstone", AttributeType.ENCHANTMENT)
+                .setDescription("Gives weapons a chance to bloody attacked enemies.")
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.BLOODY, 10
+                )))
+            );
         }
 
         // Uncommon

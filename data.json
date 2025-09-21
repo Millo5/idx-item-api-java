@@ -58,6 +58,19 @@
     },
     "rarity" : "epic"
   }, {
+    "id" : "bloodied",
+    "name" : "Bloodied",
+    "material" : "redstone",
+    "description" : "Gives weapons a chance to bloody attacked enemies.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "bloody" : 10
+      }
+    }
+  }, {
     "id" : "throwable",
     "name" : "Throwable",
     "material" : "snowball",
@@ -522,12 +535,13 @@
     "id" : "ninja-star-spirit",
     "name" : "Ninja Star Spirit",
     "material" : "nether_star",
-    "description" : "A ghostly apparition in the shape of a shuriken.",
+    "description" : "How does an inanimate object have a ghost???",
     "item-type" : "enchantment",
     "components" : {
       "attribute-target" : "melee-weapon",
       "enchantment" : "shurikens"
     },
+    "level" : 8,
     "rarity" : "epic"
   }, {
     "id" : "leather-pants",
@@ -616,6 +630,7 @@
       "attribute-target" : "armor",
       "enchantment" : "recursion"
     },
+    "level" : 20,
     "rarity" : "legendary"
   }, {
     "id" : "bloodthirsty-cleaver",
@@ -799,6 +814,7 @@
       "attribute-target" : "helmet",
       "enchantment" : "voltaic-aura"
     },
+    "level" : 20,
     "rarity" : "legendary"
   }, {
     "id" : "padded-leather-hood",
@@ -1197,12 +1213,13 @@
     "id" : "infected-spleen",
     "name" : "Infected Spleen",
     "material" : "beef",
-    "description" : "A spleen, infected with a virus that has inflated it to a bursting point.",
+    "description" : "Looks like its about to burst.",
     "item-type" : "enchantment",
     "components" : {
       "attribute-target" : "weapon",
       "enchantment" : "visceral"
     },
+    "level" : 10,
     "rarity" : "rare"
   }, {
     "id" : "toughened-leather-tunic",
@@ -1249,12 +1266,13 @@
     "id" : "aerodynamic-pommel",
     "name" : "Aerodynamic Pommel",
     "material" : "stone_button",
-    "description" : "A melee weapon pommel designed to fly through the air with unmatched grace.",
+    "description" : "Its kinda just a rock with wings.",
     "item-type" : "enchantment",
     "components" : {
       "attribute-target" : "melee-weapon",
       "enchantment" : "throwable"
     },
+    "level" : 3,
     "rarity" : "uncommon"
   }, {
     "id" : "blaze-rod",
@@ -1264,5 +1282,17 @@
     "description" : "What are these? Arms? Legs? Tentacles???",
     "stack-size" : 64,
     "rarity" : "epic"
+  }, {
+    "id" : "vial-of-blood",
+    "name" : "Vial of Blood",
+    "material" : "potion",
+    "description" : "Seems to emanate pure violence.",
+    "color" : "#aa0000",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "bloodied"
+    },
+    "level" : 5
   } ]
 }
