@@ -3,7 +3,6 @@ package org.idx.items.components.impl;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.idx.enums.Stat;
-import org.idx.items.Item;
 import org.idx.items.components.ItemComponent;
 
 import java.util.HashMap;

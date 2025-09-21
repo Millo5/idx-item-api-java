@@ -2,7 +2,7 @@ package org.idx.items.components;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import org.idx.items.Item;
+import org.idx.items.ItemBase;
 import org.idx.items.components.impl.EnchantmentComponent;
 import org.idx.items.components.impl.TriggersComponent;
 
@@ -26,7 +26,7 @@ public interface ItemComponent {
 
     default void validate() throws IllegalStateException {};
 
-    default void addIfHasData(Item<?> item) {
+    default void addIfHasData(ItemBase<?> item) {
         if (hasData()) {
             item.addComponent(this);
         }

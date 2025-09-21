@@ -1,15 +1,9 @@
 package org.idx.items.components.impl;
 
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.idx.Main;
-import org.idx.items.AttributeItem;
-import org.idx.items.Item;
 import org.idx.items.components.ItemComponent;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class SetComponent implements ItemComponent {

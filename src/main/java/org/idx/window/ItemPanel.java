@@ -1,6 +1,6 @@
 package org.idx.window;
 
-import org.idx.items.Item;
+import org.idx.items.ItemBase;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -11,10 +11,10 @@ import java.io.File;
 public class ItemPanel extends JPanel {
 
 
-    private Item item;
+    private ItemBase item;
     private BufferedImage image;
 
-    public ItemPanel(Item item) {
+    public ItemPanel(ItemBase item) {
         this.item = item;
 
         setPreferredSize(new Dimension(300, 64));

@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.idx.items.AttributeItem;
-import org.idx.items.Item;
+import org.idx.items.ItemBase;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,9 +24,9 @@ public class DataManager {
     private static final ObjectMapper mapper = new ObjectMapper();
     private final File file;
 
-    private final ArrayList<Item<?>> items = new ArrayList<>();
+    private final ArrayList<ItemBase<?>> items = new ArrayList<>();
 
-    private final HashMap<String, Item<?>> itemMap = new HashMap<>();
+    private final HashMap<String, ItemBase<?>> itemMap = new HashMap<>();
     private final HashMap<String, AttributeItem> attributeMap = new HashMap<>();
 
 
@@ -39,21 +39,21 @@ public class DataManager {
     //
 
 
-    public Item<?> getItem(String id) {
+    public ItemBase<?> getItem(String id) {
         return items.stream()
                 .filter(item -> item.getId().equals(id))
                 .findFirst()
                 .orElse(null);
     }
 
-    public Item<?> getItemItem(String id) {
+    public ItemBase<?> getItemItem(String id) {
         return getItemMap().get(id);
     }
     public AttributeItem getAttributeItem(String id) {
         return getAttributeMap().get(id);
     }
 
-    public void addItem(Item<?> item) {
+    public void addItem(ItemBase<?> item) {
         if (getItem(item.getId()) != null) {
             System.out.println("Item with ID " + item.getId() + " already exists.");
             return;
@@ -66,13 +66,13 @@ public class DataManager {
         }
     }
 
-    public ArrayList<Item<?>> getItems() {
+    public ArrayList<ItemBase<?>> getItems() {
         return items;
     }
 
-    public Map<String, Item<?>> getItemMap() {
+    public Map<String, ItemBase<?>> getItemMap() {
         if (itemMap.isEmpty()) {
-            for (Item<?> item : items) {
+            for (ItemBase<?> item : items) {
                 if (!(item instanceof AttributeItem)) {
                     itemMap.put(item.getId(), item);
                 }
@@ -83,7 +83,7 @@ public class DataManager {
 
     public Map<String, AttributeItem> getAttributeMap() {
         if (attributeMap.isEmpty()) {
-            for (Item<?> item : items) {
+            for (ItemBase<?> item : items) {
                 if (item instanceof AttributeItem attributeItem) {
                     attributeMap.put(attributeItem.getId(), attributeItem);
                 }
@@ -93,7 +93,7 @@ public class DataManager {
     }
 
     public void validate() {
-        items.forEach(Item::validate);
+        items.forEach(ItemBase::validate);
     }
 
     //
@@ -123,18 +123,18 @@ public class DataManager {
         try {
 //            List<Item<?>> loaded = mapper.readValue(file, new TypeReference<>() {});
 
-            Map<String, List<Item<?>>> root = mapper.readValue(file, new TypeReference<>() {});
-            List<Item<?>> loadedItems = root.get("items");
-            List<Item<?>> loadedAttributes = root.get("attributes");
+            Map<String, List<ItemBase<?>>> root = mapper.readValue(file, new TypeReference<>() {});
+            List<ItemBase<?>> loadedItems = root.get("items");
+            List<ItemBase<?>> loadedAttributes = root.get("attributes");
 
             if (loadedItems != null) {
-                for (Item<?> item : loadedItems) {
+                for (ItemBase<?> item : loadedItems) {
                     addItem(item);
                 }
             }
 
             if (loadedAttributes != null) {
-                for (Item<?> item : loadedAttributes) {
+                for (ItemBase<?> item : loadedAttributes) {
                     if (item instanceof AttributeItem attributeItem) {
                         addItem(attributeItem);
                     } else {

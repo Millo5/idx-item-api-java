@@ -1,7 +1,7 @@
 package org.idx.window;
 
 import org.idx.Main;
-import org.idx.items.Item;
+import org.idx.items.ItemBase;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,7 +27,7 @@ public class Window {
         listPanel.setLayout(new OverlayLayout(listPanel));
         listPanel.setBackground(Theme.BACKGROUND_COLOR);
 
-        for (Item item : Main.dataManager.getItems()) {
+        for (ItemBase item : Main.dataManager.getItems()) {
             listPanel.add(new ItemPanel(item));
         }
 

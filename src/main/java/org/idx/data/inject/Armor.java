@@ -3,6 +3,7 @@ package org.idx.data.inject;
 import java.util.Map;
 
 import org.idx.Main;
+import org.idx.data.DataInjector;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
@@ -11,7 +12,7 @@ import org.idx.items.components.impl.AttributesComponent;
 import org.idx.items.components.impl.SetComponent;
 import org.idx.items.components.impl.StatsComponent;
 
-public class Armor {
+public class Armor extends DataInjector {
 
     public static void unique() {
 
@@ -19,7 +20,7 @@ public class Armor {
         {
             // Common
             {
-                Main.dataManager.addItem(new Item<>("old-leather-hood", "Old Leather Hood", "leather_helmet", ItemType.HELMET)
+                addItem(new Item("old-leather-hood", "Old Leather Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("A scrap of old leather, shaped to suggest that it is worn on the head.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -27,7 +28,7 @@ public class Armor {
                     .setLevel(1)
                 );
 
-                Main.dataManager.addItem(new Item<>("leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
+                addItem(new Item("leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("Slightly lessens blows to the head. Slightly.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 2
@@ -35,7 +36,7 @@ public class Armor {
                     .setLevel(5)
                 );
 
-                Main.dataManager.addItem(new Item<>("padded-leather-hood", "Padded Leather Hood", "leather_helmet", ItemType.HELMET)
+                addItem(new Item("padded-leather-hood", "Padded Leather Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("Recieved from the WVBA after your 100th death.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -44,7 +45,7 @@ public class Armor {
                     .setLevel(10)
                 );
 
-                Main.dataManager.addItem(new Item<>("toughened-leather-hood", "Toughened Leather Hood", "leather_helmet", ItemType.HELMET)
+                addItem(new Item("toughened-leather-hood", "Toughened Leather Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("You sure this isnt plastic?")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -71,7 +72,7 @@ public class Armor {
 
             // Legendary
             {
-                Main.dataManager.addItem(new Item<>("echoing-hood", "Echoing Hood", "leather_helmet", ItemType.HELMET)
+                addItem(new Item("echoing-hood", "Echoing Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("A legendary relic of the deep dark, with the ability to echo it's wearer's actions.")
                     .setRarity(Rarity.LEGENDARY)
                     .setColor("#012a39")
@@ -84,7 +85,7 @@ public class Armor {
                     )
                     .setLevel(5)
                 );
-                Main.dataManager.addItem(new Item<>("voltaic-crown", "Voltaic Crown", "diamond_helmet", ItemType.HELMET)
+                addItem(new Item("voltaic-crown", "Voltaic Crown", "diamond_helmet", ItemType.HELMET)
                     .setDescription("A crown of crystal, brimming with electrical potential.")
                     .setRarity(Rarity.LEGENDARY)
                     .addComponent(new StatsComponent(Map.of(
@@ -108,7 +109,7 @@ public class Armor {
         {
             // Common
             {
-                Main.dataManager.addItem(new Item<>("old-leather-tunic", "Old Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                addItem(new Item("old-leather-tunic", "Old Leather Tunic", "leather_chestplate", ItemType.HELMET)
                     .setDescription("Supreme brand, very expensive. The dungeon monsters don't care, though.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -116,7 +117,7 @@ public class Armor {
                     .setLevel(1)
                 );
 
-                Main.dataManager.addItem(new Item<>("leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                addItem(new Item("leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.HELMET)
                     .setDescription("Protect yourself with the power of cow skin.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1
@@ -173,7 +174,7 @@ public class Armor {
 
             // Legendary
             {
-                Main.dataManager.addItem(new Item<>("gourmands-bib", "Gourmand's Bib", "golden_chestplate", ItemType.CHESTPLATE)
+                addItem(new Item("gourmands-bib", "Gourmand's Bib", "golden_chestplate", ItemType.CHESTPLATE)
                     .setDescription("An old bib that has born witness to countless numbers of incredible meals.")
                     .setRarity(Rarity.LEGENDARY)
                     .setLevel(8)
@@ -185,6 +186,7 @@ public class Armor {
                     .addComponent(new AttributesComponent("gourmand")
                         .setEnchantSlots(1)
                     )
+                    .setLevel(10)
                 );
             }
 
@@ -195,7 +197,7 @@ public class Armor {
 
             // Developer
             {
-                Main.dataManager.addItem(new Item<>("strainplusser", "Strainplusser", "golden_chestplate", ItemType.CHESTPLATE)
+                addItem(new Item("strainplusser", "Strainplusser", "golden_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Oof owie im so slow.")
                     .setRarity(Rarity.DEVELOPER)
                     .setLevel(1)
@@ -204,7 +206,7 @@ public class Armor {
                     )))
                 );
 
-                Main.dataManager.addItem(new Item<>("strainminusser", "Strainminusser", "diamond_chestplate", ItemType.CHESTPLATE)
+                addItem(new Item("strainminusser", "Strainminusser", "diamond_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Whee im so fast!")
                     .setRarity(Rarity.DEVELOPER)
                     .setLevel(1)
@@ -220,7 +222,7 @@ public class Armor {
         {
             // Common
             {
-                Main.dataManager.addItem(new Item<>("old-leather-pants", "Old Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("old-leather-pants", "Old Leather Pants", "leather_leggings", ItemType.HELMET)
                     .setDescription("Denim jeans with the color washed off.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -228,7 +230,7 @@ public class Armor {
                     .setLevel(1)
                 );
 
-                Main.dataManager.addItem(new Item<>("leather-pants", "Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("leather-pants", "Leather Pants", "leather_leggings", ItemType.HELMET)
                     .setDescription("Indescribably tight.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1
@@ -236,7 +238,7 @@ public class Armor {
                     .setLevel(5)
                 );
 
-                Main.dataManager.addItem(new Item<>("padded-leather-pants", "Padded Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("padded-leather-pants", "Padded Leather Pants", "leather_leggings", ItemType.HELMET)
                     .setDescription("What they lack in breathability, they make up for in crotch protection.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -245,7 +247,7 @@ public class Armor {
                     .setLevel(10)
                 );
 
-                Main.dataManager.addItem(new Item<>("toughened-leather-pants", "Toughened Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("toughened-leather-pants", "Toughened Leather Pants", "leather_leggings", ItemType.HELMET)
                     .setDescription("Now with inbuilt shin pads!")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 2,
@@ -267,7 +269,7 @@ public class Armor {
 
             // Epic
             {
-                Main.dataManager.addItem(new Item<>("madam-8-legs", "Madam 8 Legs", "diamond_leggings", ItemType.LEGGINGS)
+                addItem(new Item("madam-8-legs", "Madam 8 Legs", "diamond_leggings", ItemType.LEGGINGS)
                     .setDescription("A pair of enchanted legs that greatly increase the speed of the wearer")
                     .setRarity(Rarity.EPIC)
                     .addComponent(new StatsComponent(Map.of(
@@ -296,7 +298,7 @@ public class Armor {
         {
             // Common
             {
-                Main.dataManager.addItem(new Item<>("old-leather-boots", "Old Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("old-leather-boots", "Old Leather Boots", "leather_boots", ItemType.HELMET)
                     .setDescription("With the amount of holes, they may as well be sandals.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -304,7 +306,7 @@ public class Armor {
                     .setLevel(1)
                 );
 
-                Main.dataManager.addItem(new Item<>("leather-boots", "Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("leather-boots", "Leather Boots", "leather_boots", ItemType.HELMET)
                     .setDescription("Ye olde Nikes.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 2
@@ -312,7 +314,7 @@ public class Armor {
                     .setLevel(5)
                 );
 
-                Main.dataManager.addItem(new Item<>("padded-leather-boots", "Padded Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("padded-leather-boots", "Padded Leather Boots", "leather_boots", ItemType.HELMET)
                     .setDescription("Budget UGG boots.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -321,7 +323,7 @@ public class Armor {
                     .setLevel(10)
                 );
 
-                Main.dataManager.addItem(new Item<>("toughened-leather-boots", "Toughened Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("toughened-leather-boots", "Toughened Leather Boots", "leather_boots", ItemType.HELMET)
                     .setDescription("The first choice of many construction workers.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -343,7 +345,7 @@ public class Armor {
 
             // Epic
             {
-                Main.dataManager.addItem(new Item<>("assassins-boots", "Assassin's Boots", "chainmail_boots", ItemType.BOOTS)
+                addItem(new Item("assassins-boots", "Assassin's Boots", "chainmail_boots", ItemType.BOOTS)
                     .setDescription("Boots worn by the legendary assassin, Shadow. Increases resilience and evasion.")
                     .setRarity(Rarity.EPIC)
                     .addComponent(new StatsComponent(Map.of(
@@ -376,7 +378,7 @@ public class Armor {
     public static void sets() {
         // Leather
         {
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
                     .setDescription("Slightly lessens blows to the head. Slightly.")
                     .setLevel(1)
@@ -387,7 +389,7 @@ public class Armor {
                             .setEnchantSlots(1))
             );
 
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Protect yourself with the power of cow skin.")
                     .setRarity(Rarity.COMMON)
@@ -398,7 +400,7 @@ public class Armor {
                             .setEnchantSlots(1))
             );
 
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "leather-pants", "Leather Pants", "leather_leggings", ItemType.LEGGINGS)
                     .setDescription("Incredibly suffocating.")
                     .setRarity(Rarity.COMMON)
@@ -409,7 +411,7 @@ public class Armor {
                             .setEnchantSlots(1))
             );
 
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "leather-boots", "Leather Boots", "leather_boots", ItemType.BOOTS)
                     .setDescription("Ye olde Nikes.")
                     .setRarity(Rarity.COMMON)
@@ -423,7 +425,7 @@ public class Armor {
 
         // Clyde's Lost Set
         {
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "veil-of-clyde", "Veil of Clyde", "chainmail_helmet", ItemType.HELMET)
                     .setDescription("The lost helmet of the great adventurer, Clyde.")
                     .setRarity(Rarity.MYTHIC)
@@ -437,7 +439,7 @@ public class Armor {
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(2))
             );
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "clydes-carapace", "Clyde's Carapace", "chainmail_chestplate", ItemType.CHESTPLATE)
                     .setDescription("The lost chestplate of the great adventurer, Clyde.")
                     .setRarity(Rarity.MYTHIC)
@@ -451,7 +453,7 @@ public class Armor {
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(2))
             );
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "clydes-strides", "Clyde's Strides", "chainmail_leggings", ItemType.LEGGINGS)
                     .setDescription("The lost leggings of the great adventurer, Clyde.")
                     .setRarity(Rarity.MYTHIC)
@@ -465,7 +467,7 @@ public class Armor {
                     .addComponent(new AttributesComponent()
                             .setEnchantSlots(2))
             );
-            Main.dataManager.addItem(new Item<>(
+            addItem(new Item(
                     "treads-of-clyde", "Treads of Clyde", "chainmail_boots", ItemType.BOOTS)
                     .setDescription("The lost boots of the great adventurer, Clyde.")
                     .setRarity(Rarity.MYTHIC)

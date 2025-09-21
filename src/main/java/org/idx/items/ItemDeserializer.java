@@ -8,22 +8,18 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
-import org.idx.items.components.impl.AttributeTypeComponent;
-import org.idx.items.components.impl.AttributesComponent;
-import org.idx.items.components.impl.EnchantmentComponent;
-import org.idx.items.components.impl.StatsComponent;
-import org.idx.items.components.impl.TriggersComponent;
+import org.idx.items.components.impl.*;
 
 import java.io.IOException;
 
-public class ItemDeserializer extends StdDeserializer<Item> {
+public class ItemDeserializer extends StdDeserializer<ItemBase> {
 
     protected ItemDeserializer() {
-        super(Item.class);
+        super(ItemBase.class);
     }
 
     @Override
-    public Item deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JacksonException {
+    public ItemBase deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JacksonException {
         ObjectMapper mapper = (ObjectMapper) p.getCodec();
         ObjectNode node = mapper.readTree(p);
 
@@ -59,6 +55,7 @@ public class ItemDeserializer extends StdDeserializer<Item> {
             StatsComponent.fromJson(componentsNode).addIfHasData(item);
             TriggersComponent.fromJson(componentsNode).addIfHasData(item);
             AttributeTypeComponent.fromJson(componentsNode).addIfHasData(item);
+            PotionComponent.fromJson(componentsNode).addIfHasData(item);
         }
 
 

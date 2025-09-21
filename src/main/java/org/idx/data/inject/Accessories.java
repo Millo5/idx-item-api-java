@@ -3,20 +3,22 @@ package org.idx.data.inject;
 import java.util.Map;
 
 import org.idx.Main;
+import org.idx.data.DataInjector;
 import org.idx.enums.Resource;
 import org.idx.enums.ItemType;
 import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
 import org.idx.items.Item;
+import org.idx.items.ItemBase;
 import org.idx.items.components.impl.StatsComponent;
 
 
-public class Accessories {
+public class Accessories extends DataInjector {
     public static void offhand() {
 
         // Common
         {
-            Main.dataManager.addItem(new Item<>("wooden-targe", "Wooden Targe", Resource.WOODEN_TARGE, ItemType.OFFHAND)
+            addItem(new Item("wooden-targe", "Wooden Targe", Resource.WOODEN_TARGE, ItemType.OFFHAND)
                 .setDescription("A small wooden shield.")
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DEFENSE, 1
@@ -81,7 +83,7 @@ public class Accessories {
 
         // Mythic
         {
-            Main.dataManager.addItem(new Item<>("infinite-leafed-clover", "Infinite Leafed Clover", Resource.INFINITE_LEAFED_CLOVER, ItemType.TRINKET)
+            addItem(new Item("infinite-leafed-clover", "Infinite Leafed Clover", Resource.INFINITE_LEAFED_CLOVER, ItemType.TRINKET)
                 .setDescription("A mystical clover that seems to radiate good fortune.")
                 .setRarity(Rarity.MYTHIC)
                 .addComponent(new StatsComponent(Map.of(

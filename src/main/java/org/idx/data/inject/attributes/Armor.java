@@ -1,6 +1,6 @@
 package org.idx.data.inject.attributes;
 
-import org.idx.Main;
+import org.idx.data.DataInjector;
 import org.idx.enums.*;
 import org.idx.items.AttributeItem;
 import org.idx.items.components.impl.StatsComponent;
@@ -8,7 +8,7 @@ import org.idx.items.components.impl.TriggersComponent;
 
 import java.util.Map;
 
-public class Armor {
+public class Armor extends DataInjector {
 
     public static void inject() {
 
@@ -105,7 +105,7 @@ public class Armor {
 
         // Legendary
         {
-            Main.dataManager.addItem(new AttributeItem("recursion", "Recursion", "echo_shard", AttributeType.ENCHANTMENT)
+            addItem(new AttributeItem("recursion", "Recursion", "echo_shard", AttributeType.ENCHANTMENT)
                     .setDescription("A strange enchantment that allows the user to duplicate their actions")
                     .setRarity(Rarity.LEGENDARY)
                     .setLevel(20)
@@ -114,7 +114,7 @@ public class Armor {
                             Stat.RECURSION, 25
                     )))
             );
-            Main.dataManager.addItem(new AttributeItem("voltaic-aura", "Voltaic Aura", "light_blue_dye", AttributeType.ENCHANTMENT)
+            addItem(new AttributeItem("voltaic-aura", "Voltaic Aura", "light_blue_dye", AttributeType.ENCHANTMENT)
                     .setDescription("A powerful enchantment that creates an aura of damage around the user")
                     .setRarity(Rarity.LEGENDARY)
                     .setLevel(20)
@@ -124,7 +124,7 @@ public class Armor {
                             Trigger.PASSIVE_SLOW
                     ))
             );
-            Main.dataManager.addItem(new AttributeItem("gourmand", "Gourmand", "cake", AttributeType.ENCHANTMENT)
+            addItem(new AttributeItem("gourmand", "Gourmand", "cake", AttributeType.ENCHANTMENT)
                     .setDescription("A wondrous enchantment that heals surrounding allies when the user eats.")
                     .setRarity(Rarity.LEGENDARY)
                     .setLevel(8)

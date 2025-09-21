@@ -1,7 +1,7 @@
 package org.idx.enums;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.idx.items.Item;
+import org.idx.items.ItemBase;
 import org.idx.items.components.impl.AttributeTypeComponent;
 import org.idx.items.components.impl.EnchantmentComponent;
 import org.idx.items.components.ItemComponent;
@@ -20,6 +20,7 @@ public enum ItemType {
 
     CONSUMABLE,
     ARROW,
+    POTION,
 
     ACCESSORY, // Group
     TRINKET,
@@ -41,12 +42,12 @@ public enum ItemType {
     MENU;
 
 
-    Predicate<Item<?>> isValidPredicate = (item) -> true;
+    Predicate<ItemBase<?>> isValidPredicate = (item) -> true;
     private boolean stackable = true;
 
     ItemType() {}
 
-    ItemType(Predicate<Item<?>> isValidPredicate) {
+    ItemType(Predicate<ItemBase<?>> isValidPredicate) {
         this.isValidPredicate = isValidPredicate;
     }
 
@@ -55,7 +56,7 @@ public enum ItemType {
     }
 
 
-    public boolean isValid(Item<?> item) {
+    public boolean isValid(ItemBase<?> item) {
         if (item == null) return false;
         if (item.getType() != this) return false;
 
@@ -66,13 +67,13 @@ public enum ItemType {
         return stackable;
     }
 
-    private static boolean requireComponent(Item<?> item, Class<? extends ItemComponent> componentClass) {
+    private static boolean requireComponent(ItemBase<?> item, Class<? extends ItemComponent> componentClass) {
         if (!item.hasComponent(componentClass)) {
             throw new ExpectedComponentException(item.getType(), componentClass);
         }
         return true;
     }
-    private static boolean requireSingleComponent(Item<?> item, Class<? extends ItemComponent> componentClass) {
+    private static boolean requireSingleComponent(ItemBase<?> item, Class<? extends ItemComponent> componentClass) {
         if (!item.hasSingleComponent(componentClass)) {
             if (item.hasComponent(componentClass)) {
                 Collection<ItemComponent> components = item.getComponents();

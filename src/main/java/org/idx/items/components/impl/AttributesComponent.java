@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.idx.Main;
 import org.idx.items.AttributeItem;
-import org.idx.items.Item;
+import org.idx.items.ItemBase;
 import org.idx.items.components.ItemComponent;
 
 import java.util.*;
@@ -72,7 +72,7 @@ public class AttributesComponent implements ItemComponent {
         List<String> invalidAttributes = new ArrayList<>();
         for (String attr : attributes) {
             boolean found = false;
-            for (Item<?> item : Main.dataManager.getItems()) {
+            for (ItemBase<?> item : Main.dataManager.getItems()) {
                 if (item instanceof AttributeItem attributeItem) {
                     if (attributeItem.getId().equals(attr)) {
                         found = true;
