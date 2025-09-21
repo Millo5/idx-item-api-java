@@ -16,6 +16,7 @@ public class Armor {
         {
             Main.dataManager.addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
                 .setDescription("Increases the defense of armor")
+                .setLevel(1)
                 .setTarget(ItemType.ARMOR)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DEFENSE, 1

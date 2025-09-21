@@ -19,17 +19,14 @@ public class Enchantments {
         {
             Main.dataManager.addItem(new EnchantmentItem("old-whetstone", "Old Whetstone", "brick", "sharp")
                 .setDescription("A very old whetstone, covered in the rust of hundreds of sharpened blades.")
-                .setLevel(1)
             );
 
             Main.dataManager.addItem(new EnchantmentItem("armor-polish", "Armor Polish", "potion", "polished")
                 .setDescription("A small bottle of polish, with a hint of defensively oriented mysticism.")
-                .setLevel(1)
                 .setColor("#aaffff")
             );
             Main.dataManager.addItem(new EnchantmentItem("vial-of-blood", "Vial of Blood", "potion", "bloodied")
                 .setDescription("Seems to emanate pure violence.")
-                .setLevel(5)
                 .setColor("#aa0000")
             );
         }

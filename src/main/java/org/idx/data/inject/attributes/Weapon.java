@@ -109,6 +109,7 @@ public class Weapon {
         {
             Main.dataManager.addItem(new AttributeItem("sharp", "Sharp", "wooden_sword", AttributeType.ENCHANTMENT)
                 .setDescription("Increases the damage of melee weapons")
+                .setLevel(1)
                 .setTarget(ItemType.MELEE_WEAPON)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.DAMAGE, 15
@@ -117,6 +118,7 @@ public class Weapon {
 
             Main.dataManager.addItem(new AttributeItem("bloodied", "Bloodied", "redstone", AttributeType.ENCHANTMENT)
                 .setDescription("Gives weapons a chance to bloody attacked enemies.")
+                .setLevel(5)
                 .setTarget(ItemType.MELEE_WEAPON)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.BLOODY, 10
