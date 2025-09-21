@@ -10,6 +10,7 @@ public enum Trigger {
 
     // Triggers when the player hits an entity
     HIT(true),
+    KILL,
     // Triggers when the player uses an item
     USE,
     // Triggers when the player swings an item

@@ -118,17 +118,24 @@ public class Weapon {
 
         // Uncommon
         {
-
+            Main.dataManager.addItem(new AttributeItem("throwable", "Throwable", "snowball", AttributeType.ENCHANTMENT)
+                .setDescription("Allows melee weapons to be thrown when dropped, dealing damage at a distance.")
+                .setRarity(Rarity.UNCOMMON)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.DROP
+                ))
+            );
         }
 
         // Rare
         {
-            Main.dataManager.addItem(new AttributeItem("throwable", "Throwable", "snowball", AttributeType.ENCHANTMENT)
-                .setDescription("Allows melee weapons to be thrown when dropped, dealing damage at a distance.")
+            Main.dataManager.addItem(new AttributeItem("visceral", "Visceral", "snowball", AttributeType.ENCHANTMENT)
+                .setDescription("Killing bloodied enemies makes them explode in gore, dealing damage and applying blood to nearby enemies.")
                 .setRarity(Rarity.RARE)
-                .setTarget(ItemType.MELEE_WEAPON)
+                .setTarget(ItemType.WEAPON)
                 .addComponent(new TriggersComponent(
-                    Trigger.DROP
+                    Trigger.KILL
                 ))
             );
         }

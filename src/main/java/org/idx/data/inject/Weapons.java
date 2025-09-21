@@ -151,7 +151,7 @@ public class Weapons {
             );
 
             Main.dataManager.addItem(new Item<>("granite-greatsword", "Granite Greatsword", "stone_sword", ItemType.MELEE_WEAPON)
-                .setDescription("A balanced axe designed for throwing, can be retrieved after use.")
+                .setDescription("A giant hunk of heavy granite, tied haphazardly to a stick.")
                 .setRarity(Rarity.RARE)
                 .setLevel(8)
                 .addComponent(new StatsComponent(Map.of(
@@ -159,9 +159,10 @@ public class Weapons {
                     Stat.STRAIN, 40,
                     Stat.WEAPON_RANGE, 1.5,
                     Stat.CRIT_DAMAGE, 50,
-                    Stat.KNOCKBACK, 50
+                    Stat.KNOCKBACK, 50,
+                    Stat.BLOODY, 50
                 )))
-                .addComponent(new AttributesComponent("heavy-melee","throwable"))
+                .addComponent(new AttributesComponent("heavy-melee","visceral"))
             );
 
         }
@@ -179,7 +180,8 @@ public class Weapons {
                     Stat.MOVE_SPEED, 5,
                     Stat.CRIT_CHANCE, 25,
                     Stat.CRIT_DAMAGE, 25,
-                    Stat.LEECHING, 5
+                    Stat.LEECHING, 5,
+                    Stat.BLOODY, 5
                 )))
                 .addComponent(new AttributesComponent("light-melee"))
             );

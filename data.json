@@ -24,6 +24,18 @@
     },
     "rarity" : "legendary"
   }, {
+    "id" : "visceral",
+    "name" : "Visceral",
+    "material" : "snowball",
+    "description" : "Killing bloodied enemies makes them explode in gore, dealing damage and applying blood to nearby enemies.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "weapon",
+      "attribute-type" : "enchantment",
+      "triggers" : [ "kill" ]
+    },
+    "rarity" : "rare"
+  }, {
     "id" : "drinkable",
     "name" : "Drinkable",
     "material" : "potion",
@@ -56,7 +68,7 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "rarity" : "rare"
+    "rarity" : "uncommon"
   }, {
     "id" : "heavy-melee",
     "name" : "Heavy Melee",
@@ -351,8 +363,8 @@
         "weapon-range" : 2.5
       }
     },
-    "rarity" : "uncommon",
     "level" : 4,
+    "rarity" : "uncommon",
     "modeldata" : 3
   }, {
     "id" : "padded-leather-tunic",
@@ -390,8 +402,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -407,8 +419,8 @@
         "resilience" : 15
       }
     },
-    "rarity" : "epic",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "epic"
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -473,8 +485,8 @@
         "strain" : 15
       }
     },
-    "rarity" : "uncommon",
-    "level" : 2
+    "level" : 2,
+    "rarity" : "uncommon"
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -573,8 +585,8 @@
         "strain" : 40
       }
     },
-    "rarity" : "rare",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "rare"
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -618,13 +630,14 @@
         "crit-chance" : 25,
         "crit-damage" : 25,
         "leeching" : 5,
+        "bloody" : 5,
         "strain" : 15,
         "move-speed" : 5,
         "weapon-range" : -1.5
       }
     },
-    "rarity" : "legendary",
     "level" : 9,
+    "rarity" : "legendary",
     "modeldata" : 4
   }, {
     "id" : "clydes-blade",
@@ -718,8 +731,8 @@
         "thorns" : 2
       }
     },
-    "rarity" : "rare",
-    "level" : 4
+    "level" : 4,
+    "rarity" : "rare"
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -827,8 +840,8 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
@@ -879,8 +892,8 @@
         "xp-bonus" : 10
       }
     },
-    "rarity" : "rare",
     "level" : 8,
+    "rarity" : "rare",
     "modeldata" : 2
   }, {
     "id" : "leather-boots",
@@ -993,8 +1006,8 @@
         "strain" : 30
       }
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1073,8 +1086,8 @@
         "weapon-range" : 1
       }
     },
-    "rarity" : "epic",
-    "level" : 7
+    "level" : 7,
+    "rarity" : "epic"
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1090,26 +1103,27 @@
         "endurance" : 20
       }
     },
-    "rarity" : "legendary",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "legendary"
   }, {
     "id" : "granite-greatsword",
     "name" : "Granite Greatsword",
     "material" : "stone_sword",
     "item-type" : "melee-weapon",
-    "description" : "A balanced axe designed for throwing, can be retrieved after use.",
+    "description" : "A giant hunk of heavy granite, tied haphazardly to a stick.",
     "components" : {
-      "attributes" : [ "heavy-melee", "throwable" ],
+      "attributes" : [ "heavy-melee", "visceral" ],
       "stats" : {
         "weapon-damage" : 25,
         "crit-damage" : 50,
         "knockback" : 50,
+        "bloody" : 50,
         "strain" : 40,
         "weapon-range" : 1.5
       }
     },
-    "rarity" : "rare",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "rare"
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -1180,6 +1194,17 @@
     },
     "level" : 5
   }, {
+    "id" : "infected-spleen",
+    "name" : "Infected Spleen",
+    "material" : "beef",
+    "description" : "A spleen, infected with a virus that has inflated it to a bursting point.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "weapon",
+      "enchantment" : "visceral"
+    },
+    "rarity" : "rare"
+  }, {
     "id" : "toughened-leather-tunic",
     "name" : "Toughened Leather Tunic",
     "material" : "leather_chestplate",
@@ -1230,7 +1255,7 @@
       "attribute-target" : "melee-weapon",
       "enchantment" : "throwable"
     },
-    "rarity" : "rare"
+    "rarity" : "uncommon"
   }, {
     "id" : "blaze-rod",
     "name" : "Blaze Rod",

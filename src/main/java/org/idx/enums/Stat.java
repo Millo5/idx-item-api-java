@@ -37,6 +37,8 @@ public enum Stat {
     LEECHING,
     /** Knockback multiplier */
     KNOCKBACK,
+    /** Chance to apply Blood to enemies */
+    BLOODY,
 
     /** Fatigue gained from actions */
     STRAIN,

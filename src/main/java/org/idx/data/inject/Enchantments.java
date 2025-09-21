@@ -29,13 +29,16 @@ public class Enchantments {
 
         // Uncommon
         {
-
+            Main.dataManager.addItem(new EnchantmentItem("aerodynamic-pommel", "Aerodynamic Pommel", "stone_button", "throwable")
+                .setDescription("A melee weapon pommel designed to fly through the air with unmatched grace.")
+                .setRarity(Rarity.UNCOMMON)
+            );
         }
 
         // Rare
         {
-            Main.dataManager.addItem(new EnchantmentItem("aerodynamic-pommel", "Aerodynamic Pommel", "stone_button", "throwable")
-                .setDescription("A melee weapon pommel designed to fly through the air with unmatched grace.")
+            Main.dataManager.addItem(new EnchantmentItem("infected-spleen", "Infected Spleen", "beef", "visceral")
+                .setDescription("A spleen, infected with a virus that has inflated it to a bursting point.")
                 .setRarity(Rarity.RARE)
             );
         }
