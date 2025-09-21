@@ -16,7 +16,6 @@ public class Consumable extends DataInjector {
                         Trigger.EAT
                 ))
         );
-        addItem(new AttributeItem("consumed", "Consumed", "structure_void", AttributeType.ATTRIBUTE)
         addItem(new AttributeItem("drinkable", "Drinkable", "potion", AttributeType.ATTRIBUTE)
                 .setDescription("Causes the item to disappear when eaten, leaving a glass bottle.")
                 .addComponent(new TriggersComponent(

@@ -78,7 +78,7 @@ public class Armor extends DataInjector {
     public static void enchants() {
         // Common
         {
-            Main.dataManager.addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
+            addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
                 .setDescription("Increases the defense of armor")
                 .setLevel(1)
                 .setTarget(ItemType.ARMOR)

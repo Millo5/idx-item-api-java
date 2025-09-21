@@ -125,7 +125,7 @@ public class Armor extends DataInjector {
                     .setLevel(5)
                 );
 
-                Main.dataManager.addItem(new Item<>("padded-leather-tunic", "Padded Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                Main.dataManager.addItem(new Item("padded-leather-tunic", "Padded Leather Tunic", "leather_chestplate", ItemType.HELMET)
                     .setDescription("Feels like wearing an inflated life jacket.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -134,7 +134,7 @@ public class Armor extends DataInjector {
                     .setLevel(10)
                 );
 
-                Main.dataManager.addItem(new Item<>("toughened-leather-tunic", "Toughened Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                Main.dataManager.addItem(new Item("toughened-leather-tunic", "Toughened Leather Tunic", "leather_chestplate", ItemType.HELMET)
                     .setDescription("Makes the wearer look gangster af.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 2,
@@ -151,7 +151,7 @@ public class Armor extends DataInjector {
 
             // Rare
             {
-                Main.dataManager.addItem(new Item<>("thornplate", "Thornplate", "leather_chestplate", ItemType.CHESTPLATE)
+                Main.dataManager.addItem(new Item("thornplate", "Thornplate", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("A tunic of moss and vines, stinging any who dare touch.")
                     .setRarity(Rarity.RARE)
                     .setLevel(4)
