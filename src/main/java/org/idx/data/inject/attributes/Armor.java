@@ -14,14 +14,7 @@ public class Armor {
 
         // Common
         {
-            Main.dataManager.addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
-                .setDescription("Increases the defense of armor")
-                .setLevel(1)
-                .setTarget(ItemType.ARMOR)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.DEFENSE, 1
-                )))
-            );
+            
         }
 
         // Uncommon
@@ -85,7 +78,14 @@ public class Armor {
     public static void enchants() {
         // Common
         {
-
+            Main.dataManager.addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
+                .setDescription("Increases the defense of armor")
+                .setLevel(1)
+                .setTarget(ItemType.ARMOR)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.DEFENSE, 1
+                )))
+            );
         }
 
         // Uncommon
@@ -108,6 +108,7 @@ public class Armor {
             Main.dataManager.addItem(new AttributeItem("recursion", "Recursion", "echo_shard", AttributeType.ENCHANTMENT)
                     .setDescription("A strange enchantment that allows the user to duplicate their actions")
                     .setRarity(Rarity.LEGENDARY)
+                    .setLevel(20)
                     .setTarget(ItemType.ARMOR)
                     .addComponent(new StatsComponent(Map.of(
                             Stat.RECURSION, 25
@@ -116,6 +117,7 @@ public class Armor {
             Main.dataManager.addItem(new AttributeItem("voltaic-aura", "Voltaic Aura", "light_blue_dye", AttributeType.ENCHANTMENT)
                     .setDescription("A powerful enchantment that creates an aura of damage around the user")
                     .setRarity(Rarity.LEGENDARY)
+                    .setLevel(20)
                     .setTarget(ItemType.HELMET)
                     .addComponent(new TriggersComponent(
                             Trigger.PASSIVE,
@@ -125,6 +127,7 @@ public class Armor {
             Main.dataManager.addItem(new AttributeItem("gourmand", "Gourmand", "cake", AttributeType.ENCHANTMENT)
                     .setDescription("A wondrous enchantment that heals surrounding allies when the user eats.")
                     .setRarity(Rarity.LEGENDARY)
+                    .setLevel(8)
                     .setTarget(ItemType.CHESTPLATE)
                     .addComponent(new TriggersComponent(
                             Trigger.EAT_GLOBAL

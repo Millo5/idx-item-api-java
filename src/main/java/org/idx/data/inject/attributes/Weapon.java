@@ -131,6 +131,7 @@ public class Weapon {
             Main.dataManager.addItem(new AttributeItem("throwable", "Throwable", "snowball", AttributeType.ENCHANTMENT)
                 .setDescription("Allows melee weapons to be thrown when dropped, dealing damage at a distance.")
                 .setRarity(Rarity.UNCOMMON)
+                .setLevel(3)
                 .setTarget(ItemType.MELEE_WEAPON)
                 .addComponent(new TriggersComponent(
                     Trigger.DROP
@@ -143,6 +144,7 @@ public class Weapon {
             Main.dataManager.addItem(new AttributeItem("visceral", "Visceral", "snowball", AttributeType.ENCHANTMENT)
                 .setDescription("Killing bloodied enemies makes them explode in gore, dealing damage and applying blood to nearby enemies.")
                 .setRarity(Rarity.RARE)
+                .setLevel(10)
                 .setTarget(ItemType.WEAPON)
                 .addComponent(new TriggersComponent(
                     Trigger.KILL
@@ -155,6 +157,7 @@ public class Weapon {
             Main.dataManager.addItem(new AttributeItem("shurikens", "Shurikens", "nether_star", AttributeType.ENCHANTMENT)
                 .setDescription("Allows melee weapons to throw 3 shurikens, which deal 0.4x damage each.")
                 .setRarity(Rarity.EPIC)
+                .setLevel(8)
                 .setTarget(ItemType.MELEE_WEAPON)
                 .addComponent(new TriggersComponent(
                     Trigger.USE 

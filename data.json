@@ -22,7 +22,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "eat-global" ]
     },
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 8
   }, {
     "id" : "visceral",
     "name" : "Visceral",
@@ -34,7 +35,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "kill" ]
     },
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "drinkable",
     "name" : "Drinkable",
@@ -56,7 +58,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "bloodied",
     "name" : "Bloodied",
@@ -82,7 +85,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 3
   }, {
     "id" : "heavy-melee",
     "name" : "Heavy Melee",
@@ -174,7 +178,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "light-melee",
     "name" : "Light Melee",
@@ -275,7 +280,8 @@
         "recursion" : 25
       }
     },
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   } ],
   "items" : [ {
     "id" : "restless-chain",
@@ -289,8 +295,8 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "epic",
-    "modeldata" : 6
+    "modeldata" : 6,
+    "rarity" : "epic"
   }, {
     "id" : "glass-bottle",
     "name" : "Glass Bottle",
@@ -377,9 +383,9 @@
         "weapon-range" : 2.5
       }
     },
+    "modeldata" : 3,
     "rarity" : "uncommon",
-    "level" : 4,
-    "modeldata" : 3
+    "level" : 4
   }, {
     "id" : "padded-leather-tunic",
     "name" : "Padded Leather Tunic",
@@ -542,8 +548,7 @@
       "attribute-target" : "melee-weapon",
       "enchantment" : "shurikens"
     },
-    "rarity" : "epic",
-    "level" : 8
+    "rarity" : "epic"
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -574,6 +579,18 @@
         "defense" : 1
       }
     }
+  }, {
+    "id" : "michelin-menu",
+    "name" : "Michelin Menu",
+    "material" : "map",
+    "description" : "Just looking at it makes me drool...",
+    "color" : "#ffbb00",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "helmet",
+      "enchantment" : "voltaic-aura"
+    },
+    "rarity" : "legendary"
   }, {
     "id" : "wooden-targe",
     "name" : "Wooden Targe",
@@ -631,8 +648,7 @@
       "attribute-target" : "armor",
       "enchantment" : "recursion"
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "rarity" : "legendary"
   }, {
     "id" : "bloodthirsty-cleaver",
     "name" : "Bloodthirsty Cleaver",
@@ -652,9 +668,9 @@
         "weapon-range" : -1.5
       }
     },
+    "modeldata" : 4,
     "rarity" : "legendary",
-    "level" : 9,
-    "modeldata" : 4
+    "level" : 9
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -681,8 +697,8 @@
         "recursion" : 20
       }
     },
-    "rarity" : "developer",
-    "modeldata" : 1
+    "modeldata" : 1,
+    "rarity" : "developer"
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -694,8 +710,8 @@
         "luck" : 57
       }
     },
-    "rarity" : "mythic",
-    "modeldata" : 5
+    "modeldata" : 5,
+    "rarity" : "mythic"
   }, {
     "id" : "gunpowder",
     "name" : "Gunpowder",
@@ -814,8 +830,7 @@
       "attribute-target" : "helmet",
       "enchantment" : "voltaic-aura"
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "rarity" : "legendary"
   }, {
     "id" : "padded-leather-hood",
     "name" : "Padded Leather Hood",
@@ -908,9 +923,9 @@
         "xp-bonus" : 10
       }
     },
+    "modeldata" : 2,
     "rarity" : "rare",
-    "level" : 8,
-    "modeldata" : 2
+    "level" : 8
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
@@ -1045,8 +1060,8 @@
     "item-type" : "material",
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "stack-size" : 64,
-    "rarity" : "epic",
-    "modeldata" : 4
+    "modeldata" : 4,
+    "rarity" : "epic"
   }, {
     "id" : "apple",
     "name" : "Apple",
@@ -1236,8 +1251,7 @@
       "attribute-target" : "weapon",
       "enchantment" : "visceral"
     },
-    "rarity" : "rare",
-    "level" : 10
+    "rarity" : "rare"
   }, {
     "id" : "toughened-leather-tunic",
     "name" : "Toughened Leather Tunic",
@@ -1289,8 +1303,7 @@
       "attribute-target" : "melee-weapon",
       "enchantment" : "throwable"
     },
-    "rarity" : "uncommon",
-    "level" : 3
+    "rarity" : "uncommon"
   }, {
     "id" : "blaze-rod",
     "name" : "Blaze Rod",

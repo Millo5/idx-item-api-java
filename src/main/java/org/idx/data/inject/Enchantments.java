@@ -36,7 +36,6 @@ public class Enchantments {
             Main.dataManager.addItem(new EnchantmentItem("aerodynamic-pommel", "Aerodynamic Pommel", "stone_button", "throwable")
                 .setDescription("Its kinda just a rock with wings.")
                 .setRarity(Rarity.UNCOMMON)
-                .setLevel(3)
             );
         }
 
@@ -45,7 +44,6 @@ public class Enchantments {
             Main.dataManager.addItem(new EnchantmentItem("infected-spleen", "Infected Spleen", "beef", "visceral")
                 .setDescription("Looks like its about to burst.")
                 .setRarity(Rarity.RARE)
-                .setLevel(10)
             );
         }
 
@@ -54,7 +52,6 @@ public class Enchantments {
             Main.dataManager.addItem(new EnchantmentItem("ninja-star-spirit", "Ninja Star Spirit", "nether_star", "shurikens")
                 .setDescription("How does an inanimate object have a ghost???")
                 .setRarity(Rarity.EPIC)
-                .setLevel(8)
             );
         }
 
@@ -63,12 +60,15 @@ public class Enchantments {
             Main.dataManager.addItem(new EnchantmentItem("echoing-fragment", "Echoing Fragment", "echo_shard", "recursion")
                 .setDescription("An otherworldly fragment that loudly resonates whenever struck.")
                 .setRarity(Rarity.LEGENDARY)
-                .setLevel(20)
             );
             Main.dataManager.addItem(new EnchantmentItem("tempest-crystal", "Tempest Crystal", "blue_ice", "voltaic-aura")
                 .setDescription("A magical crystal swirling with the fury of a thousand storms.")
                 .setRarity(Rarity.LEGENDARY)
-                .setLevel(20)
+            );
+            Main.dataManager.addItem(new EnchantmentItem("michelin-menu", "Michelin Menu", "map", "voltaic-aura")
+                .setDescription("Just looking at it makes me drool...")
+                .setRarity(Rarity.LEGENDARY)
+                .setColor("#ffbb00")
             );
         }
 
