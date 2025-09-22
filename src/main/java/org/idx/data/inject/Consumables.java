@@ -5,6 +5,7 @@ import java.util.Map;
 import org.idx.Main;
 import org.idx.data.DataInjector;
 import org.idx.enums.ItemType;
+import org.idx.enums.Rarity;
 import org.idx.enums.StackSize;
 import org.idx.enums.Stat;
 import org.idx.items.Item;
@@ -45,10 +46,20 @@ public class Consumables extends DataInjector {
         {
             addItem(new PotionItem("speed-potion", "Speed Potion", "potion",
                 new PotionEffect("speed", 600, 1))
+                .setDescription("Perfectly legal.")
+                .setRarity(Rarity.UNCOMMON)
+                .setStackSize(StackSize.POTION)
+                .setColor("#88ffff")
+                .addComponent(new AttributesComponent("potion", "drinkable"))
             );
 
             addItem(new PotionItem("strength-potion", "Strength Potion", "potion",
                 new PotionEffect("strength", 600, 1))
+                .setDescription("Makes you feel like you can lift god. Speaking from experience.")
+                .setRarity(Rarity.UNCOMMON)
+                .setStackSize(StackSize.POTION)
+                .setColor("#880000")
+                .addComponent(new AttributesComponent("potion", "drinkable"))
             );
         }
 
