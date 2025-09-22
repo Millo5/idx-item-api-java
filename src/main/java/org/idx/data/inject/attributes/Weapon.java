@@ -124,6 +124,15 @@ public class Weapon extends DataInjector {
                     Stat.BLOODY, 10
                 )))
             );
+
+            addItem(new AttributeItem("light", "Light", "feather", AttributeType.ENCHANTMENT)
+                .setDescription("Makes weapons less straining to swing.")
+                .setLevel(8)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.STRAIN, -3
+                )))
+            );
         }
 
         // Uncommon
@@ -155,9 +164,6 @@ public class Weapon extends DataInjector {
                 .setRarity(Rarity.RARE)
                 .setLevel(11)
                 .setTarget(ItemType.MELEE_WEAPON)
-                .addComponent(new TriggersComponent(
-                    Trigger.DROP
-                ))
             );
         }
 

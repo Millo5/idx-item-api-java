@@ -22,6 +22,9 @@ public class Enchantments extends DataInjector {
                 .setDescription("Seems to emanate pure violence.")
                 .setColor("#aa0000")
             );
+            addItem(new EnchantmentItem("aerogel", "Aerogel", "light_blue_stained_glass", "light")
+                .setDescription("As perceptible as it is heavy.")
+            );
         }
 
         // Uncommon

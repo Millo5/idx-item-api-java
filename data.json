@@ -10,8 +10,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "eat-global" ]
     },
-    "level" : 8,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 8
   }, {
     "id" : "visceral",
     "name" : "Visceral",
@@ -23,8 +23,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "kill" ]
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "drinkable",
     "name" : "Drinkable",
@@ -106,8 +106,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "level" : 20,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "light-melee",
     "name" : "Light Melee",
@@ -165,8 +165,8 @@
         "recursion" : 25
       }
     },
-    "level" : 20,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "lunging-thrust",
     "name" : "Lunging Thrust",
@@ -201,8 +201,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
-    "level" : 8,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "throwable",
     "name" : "Throwable",
@@ -214,8 +214,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "level" : 3,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 3
   }, {
     "id" : "sharp",
     "name" : "Sharp",
@@ -241,6 +241,20 @@
       "triggers" : [ "melee-attack" ]
     }
   }, {
+    "id" : "light",
+    "name" : "Light",
+    "material" : "feather",
+    "description" : "Makes weapons less straining to swing.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment",
+      "stats" : {
+        "strain" : -3
+      }
+    },
+    "level" : 8
+  }, {
     "id" : "returning",
     "name" : "Returning",
     "material" : "trident",
@@ -248,11 +262,10 @@
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "melee-weapon",
-      "attribute-type" : "enchantment",
-      "triggers" : [ "drop" ]
+      "attribute-type" : "enchantment"
     },
-    "level" : 11,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 11
   }, {
     "id" : "consumable",
     "name" : "Consumable",
@@ -407,8 +420,8 @@
         "weapon-range" : 2.5
       }
     },
-    "level" : 4,
     "rarity" : "uncommon",
+    "level" : 4,
     "modeldata" : 3
   }, {
     "id" : "padded-leather-tunic",
@@ -446,8 +459,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -463,8 +476,8 @@
         "resilience" : 15
       }
     },
-    "level" : 10,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 10
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -529,8 +542,8 @@
         "strain" : 15
       }
     },
-    "level" : 2,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 2
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -641,8 +654,8 @@
         "strain" : 40
       }
     },
-    "level" : 3,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 3
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -692,8 +705,8 @@
         "weapon-range" : -1.5
       }
     },
-    "level" : 9,
     "rarity" : "legendary",
+    "level" : 9,
     "modeldata" : 4
   }, {
     "id" : "clydes-blade",
@@ -804,8 +817,8 @@
         "thorns" : 2
       }
     },
-    "level" : 4,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 4
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -913,8 +926,8 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
@@ -965,8 +978,8 @@
         "xp-bonus" : 10
       }
     },
-    "level" : 8,
     "rarity" : "rare",
+    "level" : 8,
     "modeldata" : 2
   }, {
     "id" : "leather-boots",
@@ -1091,8 +1104,8 @@
         "strain" : 30
       }
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1168,8 +1181,8 @@
         "strain" : 25
       }
     },
-    "level" : 12,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 12
   }, {
     "id" : "weighted-javelin",
     "name" : "Weighted Javelin",
@@ -1188,8 +1201,8 @@
         "weapon-range" : 1
       }
     },
-    "level" : 7,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 7
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1205,8 +1218,18 @@
         "endurance" : 20
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
+  }, {
+    "id" : "aerogel",
+    "name" : "Aerogel",
+    "material" : "light_blue_stained_glass",
+    "description" : "As perceptible as it is heavy.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "light"
+    }
   }, {
     "id" : "granite-greatsword",
     "name" : "Granite Greatsword",
@@ -1224,8 +1247,8 @@
         "weapon-range" : 1.5
       }
     },
-    "level" : 8,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
