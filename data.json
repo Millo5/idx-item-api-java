@@ -10,8 +10,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "eat-global" ]
     },
-    "rarity" : "legendary",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "legendary"
   }, {
     "id" : "visceral",
     "name" : "Visceral",
@@ -23,8 +23,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "kill" ]
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "drinkable",
     "name" : "Drinkable",
@@ -106,8 +106,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "level" : 20,
+    "rarity" : "legendary"
   }, {
     "id" : "light-melee",
     "name" : "Light Melee",
@@ -165,8 +165,8 @@
         "recursion" : 25
       }
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "level" : 20,
+    "rarity" : "legendary"
   }, {
     "id" : "lunging-thrust",
     "name" : "Lunging Thrust",
@@ -201,8 +201,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
-    "rarity" : "epic",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "epic"
   }, {
     "id" : "throwable",
     "name" : "Throwable",
@@ -214,8 +214,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "rarity" : "uncommon",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "uncommon"
   }, {
     "id" : "sharp",
     "name" : "Sharp",
@@ -240,6 +240,19 @@
       "attribute-type" : "attribute",
       "triggers" : [ "melee-attack" ]
     }
+  }, {
+    "id" : "returning",
+    "name" : "Returning",
+    "material" : "trident",
+    "description" : "Makes thrown weapons return to you upon landing.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment",
+      "triggers" : [ "drop" ]
+    },
+    "level" : 11,
+    "rarity" : "rare"
   }, {
     "id" : "consumable",
     "name" : "Consumable",
@@ -394,8 +407,8 @@
         "weapon-range" : 2.5
       }
     },
-    "rarity" : "uncommon",
     "level" : 4,
+    "rarity" : "uncommon",
     "modeldata" : 3
   }, {
     "id" : "padded-leather-tunic",
@@ -433,8 +446,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -450,8 +463,8 @@
         "resilience" : 15
       }
     },
-    "rarity" : "epic",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "epic"
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -516,8 +529,8 @@
         "strain" : 15
       }
     },
-    "rarity" : "uncommon",
-    "level" : 2
+    "level" : 2,
+    "rarity" : "uncommon"
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -628,8 +641,8 @@
         "strain" : 40
       }
     },
-    "rarity" : "rare",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "rare"
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -679,8 +692,8 @@
         "weapon-range" : -1.5
       }
     },
-    "rarity" : "legendary",
     "level" : 9,
+    "rarity" : "legendary",
     "modeldata" : 4
   }, {
     "id" : "clydes-blade",
@@ -735,8 +748,8 @@
       "attributes" : [ "potion", "drinkable" ],
       "effects" : {
         "strength" : {
-          "amplifier" : 1,
-          "ticks" : 600
+          "amplifier" : 5,
+          "ticks" : 1200
         }
       }
     },
@@ -791,8 +804,8 @@
         "thorns" : 2
       }
     },
-    "rarity" : "rare",
-    "level" : 4
+    "level" : 4,
+    "rarity" : "rare"
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -900,8 +913,8 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
@@ -952,8 +965,8 @@
         "xp-bonus" : 10
       }
     },
-    "rarity" : "rare",
     "level" : 8,
+    "rarity" : "rare",
     "modeldata" : 2
   }, {
     "id" : "leather-boots",
@@ -1001,6 +1014,18 @@
       }
     },
     "level" : 5
+  }, {
+    "id" : "boomerangs-soul",
+    "name" : "Boomerang's Soul",
+    "material" : "rabbit_foot",
+    "description" : "You do always come back!",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "returning",
+      "required-enchantments" : [ "throwable" ]
+    },
+    "rarity" : "rare"
   }, {
     "id" : "toughened-leather-boots",
     "name" : "Toughened Leather Boots",
@@ -1066,8 +1091,8 @@
         "strain" : 30
       }
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1143,8 +1168,8 @@
         "strain" : 25
       }
     },
-    "rarity" : "uncommon",
-    "level" : 12
+    "level" : 12,
+    "rarity" : "uncommon"
   }, {
     "id" : "weighted-javelin",
     "name" : "Weighted Javelin",
@@ -1163,8 +1188,8 @@
         "weapon-range" : 1
       }
     },
-    "rarity" : "epic",
-    "level" : 7
+    "level" : 7,
+    "rarity" : "epic"
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1180,8 +1205,8 @@
         "endurance" : 20
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "granite-greatsword",
     "name" : "Granite Greatsword",
@@ -1199,8 +1224,8 @@
         "weapon-range" : 1.5
       }
     },
-    "rarity" : "epic",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "epic"
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -1282,8 +1307,8 @@
       "attributes" : [ "potion", "drinkable" ],
       "effects" : {
         "speed" : {
-          "amplifier" : 1,
-          "ticks" : 600
+          "amplifier" : 5,
+          "ticks" : 1200
         }
       }
     },
