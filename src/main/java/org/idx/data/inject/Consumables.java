@@ -45,7 +45,7 @@ public class Consumables extends DataInjector {
         // Uncommon
         {
             addItem(new PotionItem("speed-potion", "Speed Potion", "potion",
-                new PotionEffect("speed", 600, 1))
+                new PotionEffect("speed", 1200, 5))
                 .setDescription("Perfectly legal.")
                 .setRarity(Rarity.UNCOMMON)
                 .setStackSize(StackSize.POTION)
@@ -54,7 +54,7 @@ public class Consumables extends DataInjector {
             );
 
             addItem(new PotionItem("strength-potion", "Strength Potion", "potion",
-                new PotionEffect("strength", 600, 1))
+                new PotionEffect("strength", 1200, 5))
                 .setDescription("Makes you feel like you can lift god. Speaking from experience.")
                 .setRarity(Rarity.UNCOMMON)
                 .setStackSize(StackSize.POTION)

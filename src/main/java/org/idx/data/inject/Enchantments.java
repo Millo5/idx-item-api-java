@@ -38,6 +38,11 @@ public class Enchantments extends DataInjector {
                 .setDescription("Looks like its about to burst.")
                 .setRarity(Rarity.RARE)
             );
+            addItem(new EnchantmentItem("boomerangs-soul", "Boomerang's Soul", "rabbit_foot", "returning")
+                .setDescription("You do always come back!")
+                .setRarity(Rarity.RARE)
+                .addRequiredEnchantments("throwable")
+            );
         }
 
         // Epic

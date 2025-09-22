@@ -150,6 +150,15 @@ public class Weapon extends DataInjector {
                     Trigger.KILL
                 ))
             );
+            addItem(new AttributeItem("returning", "Returning", "trident", AttributeType.ENCHANTMENT)
+                .setDescription("Makes thrown weapons return to you upon landing.")
+                .setRarity(Rarity.RARE)
+                .setLevel(11)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.DROP
+                ))
+            );
         }
 
         // Epic
