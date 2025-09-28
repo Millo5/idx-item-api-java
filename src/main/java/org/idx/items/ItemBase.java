@@ -26,7 +26,7 @@ public abstract class ItemBase<T extends ItemBase<T>> {
     private int modeldata;
 
     private Rarity rarity;
-    private int level = 1;
+    private int level = 0;
     private int stackSize = 64;
 
     @JsonUnwrapped
@@ -168,7 +168,7 @@ public abstract class ItemBase<T extends ItemBase<T>> {
     @JsonProperty("level")
     @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     public int getLevelForSerialization() {
-        return level > 1 ? level : 0; // Only serialize if level is greater than 1
+        return level; // Only serialize if level is greater than 1
     }
 
     @JsonIgnore

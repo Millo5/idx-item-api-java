@@ -6,6 +6,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import org.idx.enums.lootpool.LootPool;
+import org.idx.enums.lootpool.LootPools;
 import org.idx.items.AttributeItem;
 import org.idx.items.ItemBase;
 
@@ -100,6 +102,14 @@ public class DataManager {
     public void save() {
 
         validate();
+
+        for (LootPool lootPool : LootPools.getLootPools()) {
+            StringBuilder disp = new StringBuilder(lootPool.getId() + ": ");
+            for (Object itemId : lootPool.getItems().values()) {
+                disp.append(itemId).append(", ");
+            }
+            System.out.println(disp);
+        }
 
         try {
             ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter()

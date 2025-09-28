@@ -1,6 +1,7 @@
 package org.idx.data;
 
 import org.idx.data.inject.*;
+import org.idx.enums.lootpool.LootPools;
 
 public class InjectData {
 

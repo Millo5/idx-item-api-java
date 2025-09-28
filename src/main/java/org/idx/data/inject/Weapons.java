@@ -1,13 +1,10 @@
 package org.idx.data.inject;
 
-import org.idx.Main;
 import org.idx.data.DataInjector;
-import org.idx.enums.Resource;
-import org.idx.enums.ItemType;
-import org.idx.enums.Rarity;
-import org.idx.enums.Stat;
+import org.idx.enums.*;
+import org.idx.enums.lootpool.LootPools;
+import org.idx.enums.lootpool.SingularLootPool;
 import org.idx.items.Item;
-import org.idx.items.ItemBase;
 import org.idx.items.components.impl.AttributesComponent;
 import org.idx.items.components.impl.StatsComponent;
 
@@ -26,7 +23,8 @@ public class Weapons extends DataInjector {
                     Stat.WEAPON_DAMAGE, 5,
                     Stat.STRAIN, 30
                 )))
-                .addComponent(new AttributesComponent("blade"))
+                .addComponent(new AttributesComponent("blade")),
+                    LootPools.BASIC_CHEST
             );
 
             addItem(new Item("wooden-sword", "Wooden Sword", "wooden_sword", ItemType.MELEE_WEAPON)
