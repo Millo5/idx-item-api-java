@@ -10,8 +10,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "eat-global" ]
     },
-    "level" : 8,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 8
   }, {
     "id" : "visceral",
     "name" : "Visceral",
@@ -23,8 +23,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "kill" ]
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "drinkable",
     "name" : "Drinkable",
@@ -35,6 +35,19 @@
       "attribute-type" : "attribute",
       "triggers" : [ "eat" ]
     }
+  }, {
+    "id" : "raging",
+    "name" : "Raging",
+    "material" : "blaze_powder",
+    "description" : "Hitting enemies or getting hurt temporarily increases all damage dealt. Stacks.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "armor",
+      "attribute-type" : "enchantment",
+      "triggers" : [ "hit", "hurt" ]
+    },
+    "rarity" : "epic",
+    "level" : 9
   }, {
     "id" : "bloodied",
     "name" : "Bloodied",
@@ -75,7 +88,7 @@
     "id" : "polished",
     "name" : "Polished",
     "material" : "iron_chestplate",
-    "description" : "Increases the defense of armor",
+    "description" : "Increases the defense of armor.",
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "armor",
@@ -107,8 +120,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "level" : 20,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "light-melee",
     "name" : "Light Melee",
@@ -166,8 +179,8 @@
         "recursion" : 25
       }
     },
-    "level" : 20,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 20
   }, {
     "id" : "lunging-thrust",
     "name" : "Lunging Thrust",
@@ -202,8 +215,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
-    "level" : 8,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "throwable",
     "name" : "Throwable",
@@ -215,8 +228,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "level" : 3,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 3
   }, {
     "id" : "sharp",
     "name" : "Sharp",
@@ -266,8 +279,8 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "enchantment"
     },
-    "level" : 11,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 11
   }, {
     "id" : "consumable",
     "name" : "Consumable",
@@ -334,8 +347,8 @@
         "weapon-range" : 5
       }
     },
-    "rarity" : "epic",
-    "modeldata" : 6
+    "modeldata" : 6,
+    "rarity" : "epic"
   }, {
     "id" : "glass-bottle",
     "name" : "Glass Bottle",
@@ -423,15 +436,15 @@
         "weapon-range" : 2.5
       }
     },
-    "level" : 4,
+    "modeldata" : 3,
     "rarity" : "uncommon",
-    "modeldata" : 3
+    "level" : 4
   }, {
     "id" : "padded-leather-tunic",
     "name" : "Padded Leather Tunic",
     "material" : "leather_chestplate",
     "description" : "Feels like wearing an inflated life jacket.",
-    "item-type" : "helmet",
+    "item-type" : "chestplate",
     "components" : {
       "stats" : {
         "health" : 1,
@@ -439,6 +452,23 @@
       }
     },
     "level" : 10
+  }, {
+    "id" : "berserkers-pauldrons",
+    "name" : "Berserker's Pauldrons",
+    "material" : "leather_chestplate",
+    "description" : "Two small pauldrons, worn on the shoulders. Contains the unrelenting rage of the previous wearer.",
+    "item-type" : "chestplate",
+    "components" : {
+      "attributes" : [ "raging" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "damage" : 10,
+        "crit-chance" : 10,
+        "crit-damage" : 10
+      }
+    },
+    "rarity" : "uncommon",
+    "level" : 4
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
@@ -462,8 +492,8 @@
         "defense" : 8
       }
     },
-    "level" : 5,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 5
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -479,8 +509,8 @@
         "resilience" : 15
       }
     },
-    "level" : 10,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 10
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -509,8 +539,8 @@
         "strain" : -10
       }
     },
-    "level" : 1,
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "level" : 1
   }, {
     "id" : "sharpened-wooden-sword",
     "name" : "Sharpened Wooden Sword",
@@ -546,14 +576,14 @@
         "strain" : 15
       }
     },
-    "level" : 2,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 2
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
     "material" : "leather_chestplate",
     "description" : "Protect yourself with the power of cow skin.",
-    "item-type" : "helmet",
+    "item-type" : "chestplate",
     "components" : {
       "stats" : {
         "health" : 1
@@ -595,7 +625,7 @@
     "name" : "Leather Pants",
     "material" : "leather_leggings",
     "description" : "Indescribably tight.",
-    "item-type" : "helmet",
+    "item-type" : "leggings",
     "components" : {
       "stats" : {
         "health" : 1
@@ -614,7 +644,7 @@
     "name" : "Old Leather Tunic",
     "material" : "leather_chestplate",
     "description" : "Supreme brand, very expensive. The dungeon monsters don't care, though.",
-    "item-type" : "helmet",
+    "item-type" : "chestplate",
     "components" : {
       "stats" : {
         "defense" : 1
@@ -659,8 +689,8 @@
         "strain" : 40
       }
     },
-    "level" : 3,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 3
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -711,9 +741,9 @@
         "weapon-range" : -1.5
       }
     },
-    "level" : 9,
+    "modeldata" : 4,
     "rarity" : "legendary",
-    "modeldata" : 4
+    "level" : 9
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -740,8 +770,8 @@
         "recursion" : 20
       }
     },
-    "rarity" : "developer",
-    "modeldata" : 1
+    "modeldata" : 1,
+    "rarity" : "developer"
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -753,8 +783,8 @@
         "luck" : 57
       }
     },
-    "rarity" : "mythic",
-    "modeldata" : 5
+    "modeldata" : 5,
+    "rarity" : "mythic"
   }, {
     "id" : "strength-potion",
     "name" : "Strength Potion",
@@ -823,8 +853,8 @@
         "thorns" : 2
       }
     },
-    "level" : 4,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 4
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -839,11 +869,38 @@
     },
     "modeldata" : 3
   }, {
+    "id" : "soul-of-the-barbarian",
+    "name" : "Soul of the Barbarian",
+    "material" : "blaze_powder",
+    "description" : "Screams of blood and beer. Is very loud. I haven't slept in 3 days.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "armor",
+      "enchantment" : "raging"
+    },
+    "rarity" : "epic"
+  }, {
+    "id" : "rotting-carcass",
+    "name" : "Rotting Carcass",
+    "material" : "leather_chestplate",
+    "description" : "Smells rancid...but it'll protect you quite well.",
+    "color" : "#816060",
+    "item-type" : "chestplate",
+    "components" : {
+      "stats" : {
+        "health" : 4,
+        "strain" : 3,
+        "move-speed" : -15
+      }
+    },
+    "rarity" : "uncommon",
+    "level" : 4
+  }, {
     "id" : "padded-leather-pants",
     "name" : "Padded Leather Pants",
     "material" : "leather_leggings",
     "description" : "What they lack in breathability, they make up for in crotch protection.",
-    "item-type" : "helmet",
+    "item-type" : "leggings",
     "components" : {
       "stats" : {
         "health" : 1,
@@ -932,14 +989,14 @@
         "damage" : 5
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
     "material" : "leather_leggings",
     "description" : "Now with inbuilt shin pads!",
-    "item-type" : "helmet",
+    "item-type" : "leggings",
     "components" : {
       "stats" : {
         "health" : 2,
@@ -984,15 +1041,15 @@
         "xp-bonus" : 10
       }
     },
-    "level" : 8,
+    "modeldata" : 2,
     "rarity" : "rare",
-    "modeldata" : 2
+    "level" : 8
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
     "material" : "leather_boots",
     "description" : "Ye olde Nikes.",
-    "item-type" : "helmet",
+    "item-type" : "boots",
     "components" : {
       "stats" : {
         "defense" : 2
@@ -1050,7 +1107,7 @@
     "name" : "Toughened Leather Boots",
     "material" : "leather_boots",
     "description" : "The first choice of many construction workers.",
-    "item-type" : "helmet",
+    "item-type" : "boots",
     "components" : {
       "stats" : {
         "health" : 1,
@@ -1090,7 +1147,7 @@
     "name" : "Old Leather Boots",
     "material" : "leather_boots",
     "description" : "With the amount of holes, they may as well be sandals.",
-    "item-type" : "helmet",
+    "item-type" : "boots",
     "components" : {
       "stats" : {
         "defense" : 1
@@ -1111,8 +1168,8 @@
         "strain" : 30
       }
     },
-    "level" : 10,
-    "rarity" : "rare"
+    "rarity" : "rare",
+    "level" : 10
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1134,8 +1191,8 @@
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "item-type" : "material",
     "stack-size" : 64,
-    "rarity" : "epic",
-    "modeldata" : 4
+    "modeldata" : 4,
+    "rarity" : "epic"
   }, {
     "id" : "apple",
     "name" : "Apple",
@@ -1188,8 +1245,8 @@
         "strain" : 25
       }
     },
-    "level" : 12,
-    "rarity" : "uncommon"
+    "rarity" : "uncommon",
+    "level" : 12
   }, {
     "id" : "weighted-javelin",
     "name" : "Weighted Javelin",
@@ -1208,8 +1265,8 @@
         "weapon-range" : 1
       }
     },
-    "level" : 7,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 7
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1225,8 +1282,8 @@
         "endurance" : 20
       }
     },
-    "level" : 10,
-    "rarity" : "legendary"
+    "rarity" : "legendary",
+    "level" : 10
   }, {
     "id" : "aerogel",
     "name" : "Aerogel",
@@ -1254,8 +1311,8 @@
         "weapon-range" : 1.5
       }
     },
-    "level" : 8,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "level" : 8
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -1279,7 +1336,7 @@
     "name" : "Old Leather Pants",
     "material" : "leather_leggings",
     "description" : "Denim jeans with the color washed off.",
-    "item-type" : "helmet",
+    "item-type" : "leggings",
     "components" : {
       "stats" : {
         "defense" : 1
@@ -1298,7 +1355,7 @@
     "name" : "Padded Leather Boots",
     "material" : "leather_boots",
     "description" : "Budget UGG boots.",
-    "item-type" : "helmet",
+    "item-type" : "boots",
     "components" : {
       "stats" : {
         "health" : 1,
@@ -1360,7 +1417,7 @@
     "name" : "Toughened Leather Tunic",
     "material" : "leather_chestplate",
     "description" : "Makes the wearer look gangster af.",
-    "item-type" : "helmet",
+    "item-type" : "chestplate",
     "components" : {
       "stats" : {
         "health" : 2,
@@ -1379,8 +1436,8 @@
         "strain" : 10
       }
     },
-    "level" : 1,
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "level" : 1
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",

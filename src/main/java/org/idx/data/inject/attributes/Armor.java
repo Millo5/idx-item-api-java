@@ -79,7 +79,7 @@ public class Armor extends DataInjector {
         // Common
         {
             addItem(new AttributeItem("polished", "Polished", "iron_chestplate", AttributeType.ENCHANTMENT)
-                .setDescription("Increases the defense of armor")
+                .setDescription("Increases the defense of armor.")
                 .setLevel(1)
                 .setTarget(ItemType.ARMOR)
                 .addComponent(new StatsComponent(Map.of(
@@ -100,38 +100,47 @@ public class Armor extends DataInjector {
 
         // Epic
         {
-
+            addItem(new AttributeItem("raging", "Raging", "blaze_powder", AttributeType.ENCHANTMENT)
+                .setDescription("Hitting enemies or getting hurt temporarily increases all damage dealt. Stacks.")
+                .setRarity(Rarity.EPIC)
+                .setLevel(9)
+                .setTarget(ItemType.ARMOR)
+                .addComponent(new TriggersComponent(
+                    Trigger.HIT,
+                    Trigger.HURT
+                ))
+            );
         }
 
         // Legendary
         {
             addItem(new AttributeItem("recursion", "Recursion", "echo_shard", AttributeType.ENCHANTMENT)
-                    .setDescription("A strange enchantment that allows the user to duplicate their actions")
-                    .setRarity(Rarity.LEGENDARY)
-                    .setLevel(20)
-                    .setTarget(ItemType.ARMOR)
-                    .addComponent(new StatsComponent(Map.of(
-                            Stat.RECURSION, 25
-                    )))
+                .setDescription("A strange enchantment that allows the user to duplicate their actions")
+                .setRarity(Rarity.LEGENDARY)
+                .setLevel(20)
+                .setTarget(ItemType.ARMOR)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.RECURSION, 25
+                )))
             );
             addItem(new AttributeItem("voltaic-aura", "Voltaic Aura", "light_blue_dye", AttributeType.ENCHANTMENT)
-                    .setDescription("A powerful enchantment that creates an aura of damage around the user")
-                    .setRarity(Rarity.LEGENDARY)
-                    .setLevel(20)
-                    .setTarget(ItemType.HELMET)
-                    .addComponent(new TriggersComponent(
-                            Trigger.PASSIVE,
-                            Trigger.PASSIVE_SLOW
-                    ))
+                .setDescription("A powerful enchantment that creates an aura of damage around the user")
+                .setRarity(Rarity.LEGENDARY)
+                .setLevel(20)
+                .setTarget(ItemType.HELMET)
+                .addComponent(new TriggersComponent(
+                    Trigger.PASSIVE,
+                    Trigger.PASSIVE_SLOW
+                ))
             );
             addItem(new AttributeItem("gourmand", "Gourmand", "cake", AttributeType.ENCHANTMENT)
-                    .setDescription("A wondrous enchantment that heals surrounding allies when the user eats.")
-                    .setRarity(Rarity.LEGENDARY)
-                    .setLevel(8)
-                    .setTarget(ItemType.CHESTPLATE)
-                    .addComponent(new TriggersComponent(
-                            Trigger.EAT_GLOBAL
-                    ))
+                .setDescription("A wondrous enchantment that heals surrounding allies when the user eats.")
+                .setRarity(Rarity.LEGENDARY)
+                .setLevel(8)
+                .setTarget(ItemType.CHESTPLATE)
+                .addComponent(new TriggersComponent(
+                    Trigger.EAT_GLOBAL
+                ))
             );
         }
 

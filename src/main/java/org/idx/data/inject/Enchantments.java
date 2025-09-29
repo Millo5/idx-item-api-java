@@ -54,6 +54,10 @@ public class Enchantments extends DataInjector {
                 .setDescription("How does an inanimate object have a ghost???")
                 .setRarity(Rarity.EPIC)
             );
+            addItem(new EnchantmentItem("soul-of-the-barbarian", "Soul of the Barbarian", "blaze_powder", "raging")
+                .setDescription("Screams of blood and beer. Is very loud. I haven't slept in 3 days.")
+                .setRarity(Rarity.EPIC)
+            );
         }
 
         // Legendary

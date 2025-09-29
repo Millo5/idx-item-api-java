@@ -109,7 +109,7 @@ public class Armor extends DataInjector {
         {
             // Common
             {
-                addItem(new Item("old-leather-tunic", "Old Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                addItem(new Item("old-leather-tunic", "Old Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Supreme brand, very expensive. The dungeon monsters don't care, though.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -117,7 +117,7 @@ public class Armor extends DataInjector {
                     .setLevel(1)
                 );
 
-                addItem(new Item("leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                addItem(new Item("leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Protect yourself with the power of cow skin.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1
@@ -125,7 +125,7 @@ public class Armor extends DataInjector {
                     .setLevel(5)
                 );
 
-                Main.dataManager.addItem(new Item("padded-leather-tunic", "Padded Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                addItem(new Item("padded-leather-tunic", "Padded Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Feels like wearing an inflated life jacket.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -134,7 +134,7 @@ public class Armor extends DataInjector {
                     .setLevel(10)
                 );
 
-                Main.dataManager.addItem(new Item("toughened-leather-tunic", "Toughened Leather Tunic", "leather_chestplate", ItemType.HELMET)
+                addItem(new Item("toughened-leather-tunic", "Toughened Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Makes the wearer look gangster af.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 2,
@@ -146,12 +146,22 @@ public class Armor extends DataInjector {
 
             // Uncommon
             {
-
+                addItem(new Item("rotting-carcass", "Rotting Carcass", "leather_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("Smells rancid...but it'll protect you quite well.")
+                    .setRarity(Rarity.UNCOMMON)
+                    .setLevel(4)
+                    .setColor("#816060")
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.HEALTH, 4,
+                        Stat.MOVE_SPEED, -15,
+                        Stat.STRAIN, 3
+                    )))
+                );
             }
 
             // Rare
             {
-                Main.dataManager.addItem(new Item("thornplate", "Thornplate", "leather_chestplate", ItemType.CHESTPLATE)
+                addItem(new Item("thornplate", "Thornplate", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("A tunic of moss and vines, stinging any who dare touch.")
                     .setRarity(Rarity.RARE)
                     .setLevel(4)
@@ -169,7 +179,19 @@ public class Armor extends DataInjector {
 
             // Epic
             {
-
+                addItem(new Item("berserkers-pauldrons", "Berserker's Pauldrons", "leather_chestplate", ItemType.CHESTPLATE)
+                    .setDescription("Two small pauldrons, worn on the shoulders. Contains the unrelenting rage of the previous wearer.")
+                    .setRarity(Rarity.UNCOMMON)
+                    .setLevel(4)
+                    .addComponent(new StatsComponent(Map.of(
+                        Stat.DAMAGE, 10,
+                        Stat.CRIT_CHANCE, 10,
+                        Stat.CRIT_DAMAGE, 10
+                    )))
+                    .addComponent(new AttributesComponent("raging")
+                        .setEnchantSlots(1)
+                    )
+                );
             }
 
             // Legendary
@@ -222,7 +244,7 @@ public class Armor extends DataInjector {
         {
             // Common
             {
-                addItem(new Item("old-leather-pants", "Old Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("old-leather-pants", "Old Leather Pants", "leather_leggings", ItemType.LEGGINGS)
                     .setDescription("Denim jeans with the color washed off.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -230,7 +252,7 @@ public class Armor extends DataInjector {
                     .setLevel(1)
                 );
 
-                addItem(new Item("leather-pants", "Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("leather-pants", "Leather Pants", "leather_leggings", ItemType.LEGGINGS)
                     .setDescription("Indescribably tight.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1
@@ -238,7 +260,7 @@ public class Armor extends DataInjector {
                     .setLevel(5)
                 );
 
-                addItem(new Item("padded-leather-pants", "Padded Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("padded-leather-pants", "Padded Leather Pants", "leather_leggings", ItemType.LEGGINGS)
                     .setDescription("What they lack in breathability, they make up for in crotch protection.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -247,7 +269,7 @@ public class Armor extends DataInjector {
                     .setLevel(10)
                 );
 
-                addItem(new Item("toughened-leather-pants", "Toughened Leather Pants", "leather_leggings", ItemType.HELMET)
+                addItem(new Item("toughened-leather-pants", "Toughened Leather Pants", "leather_leggings", ItemType.LEGGINGS)
                     .setDescription("Now with inbuilt shin pads!")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 2,
@@ -298,7 +320,7 @@ public class Armor extends DataInjector {
         {
             // Common
             {
-                addItem(new Item("old-leather-boots", "Old Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("old-leather-boots", "Old Leather Boots", "leather_boots", ItemType.BOOTS)
                     .setDescription("With the amount of holes, they may as well be sandals.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 1
@@ -306,7 +328,7 @@ public class Armor extends DataInjector {
                     .setLevel(1)
                 );
 
-                addItem(new Item("leather-boots", "Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("leather-boots", "Leather Boots", "leather_boots", ItemType.BOOTS)
                     .setDescription("Ye olde Nikes.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DEFENSE, 2
@@ -314,7 +336,7 @@ public class Armor extends DataInjector {
                     .setLevel(5)
                 );
 
-                addItem(new Item("padded-leather-boots", "Padded Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("padded-leather-boots", "Padded Leather Boots", "leather_boots", ItemType.BOOTS)
                     .setDescription("Budget UGG boots.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -323,7 +345,7 @@ public class Armor extends DataInjector {
                     .setLevel(10)
                 );
 
-                addItem(new Item("toughened-leather-boots", "Toughened Leather Boots", "leather_boots", ItemType.HELMET)
+                addItem(new Item("toughened-leather-boots", "Toughened Leather Boots", "leather_boots", ItemType.BOOTS)
                     .setDescription("The first choice of many construction workers.")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.HEALTH, 1,
@@ -376,52 +398,6 @@ public class Armor extends DataInjector {
     }
 
     public static void sets() {
-        // Leather
-        {
-            addItem(new Item(
-                    "leather-hood", "Leather Hood", "leather_helmet", ItemType.HELMET)
-                    .setDescription("Slightly lessens blows to the head. Slightly.")
-                    .setLevel(1)
-                    .setRarity(Rarity.COMMON)
-                    .addComponent(new StatsComponent(Map.of(
-                            Stat.DEFENSE, 1)))
-                    .addComponent(new AttributesComponent()
-                            .setEnchantSlots(1))
-            );
-
-            addItem(new Item(
-                    "leather-tunic", "Leather Tunic", "leather_chestplate", ItemType.CHESTPLATE)
-                    .setDescription("Protect yourself with the power of cow skin.")
-                    .setRarity(Rarity.COMMON)
-                    .setLevel(1)
-                    .addComponent(new StatsComponent(Map.of(
-                            Stat.DEFENSE, 1)))
-                    .addComponent(new AttributesComponent()
-                            .setEnchantSlots(1))
-            );
-
-            addItem(new Item(
-                    "leather-pants", "Leather Pants", "leather_leggings", ItemType.LEGGINGS)
-                    .setDescription("Incredibly suffocating.")
-                    .setRarity(Rarity.COMMON)
-                    .setLevel(1)
-                    .addComponent(new StatsComponent(Map.of(
-                            Stat.DEFENSE, 1)))
-                    .addComponent(new AttributesComponent()
-                            .setEnchantSlots(1))
-            );
-
-            addItem(new Item(
-                    "leather-boots", "Leather Boots", "leather_boots", ItemType.BOOTS)
-                    .setDescription("Ye olde Nikes.")
-                    .setRarity(Rarity.COMMON)
-                    .setLevel(1)
-                    .addComponent(new StatsComponent(Map.of(
-                            Stat.DEFENSE, 1)))
-                    .addComponent(new AttributesComponent()
-                            .setEnchantSlots(1))
-            );
-        }
 
         // Clyde's Lost Set
         {
