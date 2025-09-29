@@ -181,8 +181,9 @@ public class Armor extends DataInjector {
             {
                 addItem(new Item("berserkers-pauldrons", "Berserker's Pauldrons", "leather_chestplate", ItemType.CHESTPLATE)
                     .setDescription("Two small pauldrons, worn on the shoulders. Contains the unrelenting rage of the previous wearer.")
-                    .setRarity(Rarity.UNCOMMON)
-                    .setLevel(4)
+                    .setRarity(Rarity.EPIC)
+                    .setLevel(9)
+                    .setColor("#ff0000")
                     .addComponent(new StatsComponent(Map.of(
                         Stat.DAMAGE, 10,
                         Stat.CRIT_CHANCE, 10,

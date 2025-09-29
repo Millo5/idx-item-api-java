@@ -347,8 +347,8 @@
         "weapon-range" : 5
       }
     },
-    "modeldata" : 6,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 6
   }, {
     "id" : "glass-bottle",
     "name" : "Glass Bottle",
@@ -436,9 +436,9 @@
         "weapon-range" : 2.5
       }
     },
-    "modeldata" : 3,
     "rarity" : "uncommon",
-    "level" : 4
+    "level" : 4,
+    "modeldata" : 3
   }, {
     "id" : "padded-leather-tunic",
     "name" : "Padded Leather Tunic",
@@ -457,6 +457,7 @@
     "name" : "Berserker's Pauldrons",
     "material" : "leather_chestplate",
     "description" : "Two small pauldrons, worn on the shoulders. Contains the unrelenting rage of the previous wearer.",
+    "color" : "#ff0000",
     "item-type" : "chestplate",
     "components" : {
       "attributes" : [ "raging" ],
@@ -467,8 +468,8 @@
         "crit-damage" : 10
       }
     },
-    "rarity" : "uncommon",
-    "level" : 4
+    "rarity" : "epic",
+    "level" : 9
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
@@ -741,9 +742,9 @@
         "weapon-range" : -1.5
       }
     },
-    "modeldata" : 4,
     "rarity" : "legendary",
-    "level" : 9
+    "level" : 9,
+    "modeldata" : 4
   }, {
     "id" : "clydes-blade",
     "name" : "Clyde's Blade",
@@ -770,8 +771,8 @@
         "recursion" : 20
       }
     },
-    "modeldata" : 1,
-    "rarity" : "developer"
+    "rarity" : "developer",
+    "modeldata" : 1
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -783,8 +784,8 @@
         "luck" : 57
       }
     },
-    "modeldata" : 5,
-    "rarity" : "mythic"
+    "rarity" : "mythic",
+    "modeldata" : 5
   }, {
     "id" : "strength-potion",
     "name" : "Strength Potion",
@@ -1041,9 +1042,9 @@
         "xp-bonus" : 10
       }
     },
-    "modeldata" : 2,
     "rarity" : "rare",
-    "level" : 8
+    "level" : 8,
+    "modeldata" : 2
   }, {
     "id" : "leather-boots",
     "name" : "Leather Boots",
@@ -1191,8 +1192,8 @@
     "description" : "If it doesn't turn into an arm after 2-3 hours, it's probably not a vampire.",
     "item-type" : "material",
     "stack-size" : 64,
-    "modeldata" : 4,
-    "rarity" : "epic"
+    "rarity" : "epic",
+    "modeldata" : 4
   }, {
     "id" : "apple",
     "name" : "Apple",
