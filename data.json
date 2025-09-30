@@ -10,8 +10,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "eat-global" ]
     },
-    "rarity" : "legendary",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "legendary"
   }, {
     "id" : "visceral",
     "name" : "Visceral",
@@ -23,8 +23,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "kill" ]
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "drinkable",
     "name" : "Drinkable",
@@ -46,8 +46,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "hit", "hurt" ]
     },
-    "rarity" : "epic",
-    "level" : 9
+    "level" : 9,
+    "rarity" : "epic"
   }, {
     "id" : "bloodied",
     "name" : "Bloodied",
@@ -99,6 +99,17 @@
     },
     "level" : 1
   }, {
+    "id" : "windstep",
+    "name" : "Windstep",
+    "material" : "feather",
+    "description" : "Allows you to double jump.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-type" : "attribute",
+      "triggers" : [ "air-jump" ]
+    },
+    "rarity" : "legendary"
+  }, {
     "id" : "hook",
     "name" : "Hook",
     "material" : "chain",
@@ -120,8 +131,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "passive", "passive-slow" ]
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "level" : 20,
+    "rarity" : "legendary"
   }, {
     "id" : "light-melee",
     "name" : "Light Melee",
@@ -179,8 +190,8 @@
         "recursion" : 25
       }
     },
-    "rarity" : "legendary",
-    "level" : 20
+    "level" : 20,
+    "rarity" : "legendary"
   }, {
     "id" : "lunging-thrust",
     "name" : "Lunging Thrust",
@@ -215,8 +226,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "use" ]
     },
-    "rarity" : "epic",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "epic"
   }, {
     "id" : "throwable",
     "name" : "Throwable",
@@ -228,8 +239,8 @@
       "attribute-type" : "enchantment",
       "triggers" : [ "drop" ]
     },
-    "rarity" : "uncommon",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "uncommon"
   }, {
     "id" : "sharp",
     "name" : "Sharp",
@@ -279,8 +290,8 @@
       "attribute-target" : "melee-weapon",
       "attribute-type" : "enchantment"
     },
-    "rarity" : "rare",
-    "level" : 11
+    "level" : 11,
+    "rarity" : "rare"
   }, {
     "id" : "consumable",
     "name" : "Consumable",
@@ -436,8 +447,8 @@
         "weapon-range" : 2.5
       }
     },
-    "rarity" : "uncommon",
     "level" : 4,
+    "rarity" : "uncommon",
     "modeldata" : 3
   }, {
     "id" : "padded-leather-tunic",
@@ -468,8 +479,8 @@
         "crit-damage" : 10
       }
     },
-    "rarity" : "epic",
-    "level" : 9
+    "level" : 9,
+    "rarity" : "epic"
   }, {
     "id" : "frog-leg",
     "name" : "Frog Leg",
@@ -493,8 +504,8 @@
         "defense" : 8
       }
     },
-    "rarity" : "legendary",
-    "level" : 5
+    "level" : 5,
+    "rarity" : "legendary"
   }, {
     "id" : "assassins-boots",
     "name" : "Assassin's Boots",
@@ -510,8 +521,8 @@
         "resilience" : 15
       }
     },
-    "rarity" : "epic",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "epic"
   }, {
     "id" : "veil-of-clyde",
     "name" : "Veil of Clyde",
@@ -540,8 +551,8 @@
         "strain" : -10
       }
     },
-    "rarity" : "developer",
-    "level" : 1
+    "level" : 1,
+    "rarity" : "developer"
   }, {
     "id" : "sharpened-wooden-sword",
     "name" : "Sharpened Wooden Sword",
@@ -577,8 +588,8 @@
         "strain" : 15
       }
     },
-    "rarity" : "uncommon",
-    "level" : 2
+    "level" : 2,
+    "rarity" : "uncommon"
   }, {
     "id" : "leather-tunic",
     "name" : "Leather Tunic",
@@ -690,8 +701,8 @@
         "strain" : 40
       }
     },
-    "rarity" : "rare",
-    "level" : 3
+    "level" : 3,
+    "rarity" : "rare"
   }, {
     "id" : "old-leather-hood",
     "name" : "Old Leather Hood",
@@ -742,8 +753,8 @@
         "weapon-range" : -1.5
       }
     },
-    "rarity" : "legendary",
     "level" : 9,
+    "rarity" : "legendary",
     "modeldata" : 4
   }, {
     "id" : "clydes-blade",
@@ -854,8 +865,8 @@
         "thorns" : 2
       }
     },
-    "rarity" : "rare",
-    "level" : 4
+    "level" : 4,
+    "rarity" : "rare"
   }, {
     "id" : "large-coin",
     "name" : "Large Coin",
@@ -894,8 +905,8 @@
         "move-speed" : -15
       }
     },
-    "rarity" : "uncommon",
-    "level" : 4
+    "level" : 4,
+    "rarity" : "uncommon"
   }, {
     "id" : "padded-leather-pants",
     "name" : "Padded Leather Pants",
@@ -990,8 +1001,8 @@
         "damage" : 5
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "toughened-leather-pants",
     "name" : "Toughened Leather Pants",
@@ -1042,8 +1053,8 @@
         "xp-bonus" : 10
       }
     },
-    "rarity" : "rare",
     "level" : 8,
+    "rarity" : "rare",
     "modeldata" : 2
   }, {
     "id" : "leather-boots",
@@ -1169,8 +1180,8 @@
         "strain" : 30
       }
     },
-    "rarity" : "rare",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "rare"
   }, {
     "id" : "slime",
     "name" : "Slime",
@@ -1246,8 +1257,8 @@
         "strain" : 25
       }
     },
-    "rarity" : "uncommon",
-    "level" : 12
+    "level" : 12,
+    "rarity" : "uncommon"
   }, {
     "id" : "weighted-javelin",
     "name" : "Weighted Javelin",
@@ -1266,8 +1277,8 @@
         "weapon-range" : 1
       }
     },
-    "rarity" : "epic",
-    "level" : 7
+    "level" : 7,
+    "rarity" : "epic"
   }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
@@ -1283,8 +1294,8 @@
         "endurance" : 20
       }
     },
-    "rarity" : "legendary",
-    "level" : 10
+    "level" : 10,
+    "rarity" : "legendary"
   }, {
     "id" : "aerogel",
     "name" : "Aerogel",
@@ -1312,8 +1323,19 @@
         "weapon-range" : 1.5
       }
     },
-    "rarity" : "epic",
-    "level" : 8
+    "level" : 8,
+    "rarity" : "epic"
+  }, {
+    "id" : "windstep-charm",
+    "name" : "Windstep Charm",
+    "material" : "feather",
+    "description" : "A charm which briefly alters the wearer's density to be.",
+    "item-type" : "trinket",
+    "stack-size" : 64,
+    "components" : {
+      "attributes" : [ "windstep" ]
+    },
+    "rarity" : "mythic"
   }, {
     "id" : "golden-nugget",
     "name" : "Golden Nugget",
@@ -1437,8 +1459,8 @@
         "strain" : 10
       }
     },
-    "rarity" : "developer",
-    "level" : 1
+    "level" : 1,
+    "rarity" : "developer"
   }, {
     "id" : "madam-8-legs",
     "name" : "Madam 8 Legs",
