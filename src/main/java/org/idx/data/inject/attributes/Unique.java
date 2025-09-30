@@ -46,7 +46,13 @@ public class Unique extends DataInjector {
 
         // Legendary
         {
-
+            addItem(new AttributeItem("windstep", "Windstep", "feather", AttributeType.ATTRIBUTE)
+                .setDescription("Allows you to double jump.")
+                .setRarity(Rarity.LEGENDARY)
+                .addComponent(new TriggersComponent(
+                    Trigger.AIR_JUMP
+                ))
+            );
         }
 
         // Mythic

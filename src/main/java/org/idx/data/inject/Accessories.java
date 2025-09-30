@@ -10,7 +10,9 @@ import org.idx.enums.Rarity;
 import org.idx.enums.Stat;
 import org.idx.items.Item;
 import org.idx.items.ItemBase;
+import org.idx.items.components.impl.AttributesComponent;
 import org.idx.items.components.impl.StatsComponent;
+import org.idx.items.components.impl.TriggersComponent;
 
 
 public class Accessories extends DataInjector {
@@ -78,7 +80,13 @@ public class Accessories extends DataInjector {
 
         // Legendary
         {
-            
+            addItem(new Item("windstep-charm", "Windstep Charm", "feather", ItemType.TRINKET)
+                .setDescription("A charm which briefly alters the wearer's density to be.")
+                .setRarity(Rarity.MYTHIC)
+                .addComponent(new AttributesComponent(
+                    "windstep"
+                ))
+            );
         }
 
         // Mythic

@@ -30,7 +30,19 @@ public enum Trigger {
     EAT,
     EAT_GLOBAL(true),
     // Triggers when the player picks up an item
-    PICKUP;
+    PICKUP,
+    
+    // Triggers when the player jumps on the ground 
+    JUMP(true),
+    // Triggers when the player jumps while in the air
+    AIR_JUMP(true),
+    // Triggers when the player sprints
+    SPRINT(true),
+    // Triggers when the player sneaks
+    SNEAK(true),
+    // Triggers when the player dashes
+    DASH(true)
+    ;
 
 
 
