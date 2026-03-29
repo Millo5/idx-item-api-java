@@ -86,6 +86,21 @@ public class Weapons extends DataInjector {
                     .setEnchantSlots(1)
                 )
             );
+            
+            addItem(new Item("travellers-blade", "Traveller's Blade", Resource.SWORD, ItemType.MELEE_WEAPON)
+                .setDescription("The gold standard weapon for any new traveller looking to find their way within the dungeon.")
+                .setRarity(Rarity.UNCOMMON)
+                .setLevel(8)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 10,
+                    Stat.STRAIN, 25,
+                    Stat.CRIT_CHANCE, 20,
+                    Stat.XP_BONUS, 10
+                ))) 
+                .addComponent(new AttributesComponent( "blade")
+                    .setEnchantSlots(1)
+                )
+            );
 
             addItem(new Item("kidney-piercer", "Kidney Piercer", "shears", ItemType.MELEE_WEAPON)
                 .setDescription("Obliterates kidneys. Slightly irritates everything else.")
@@ -116,21 +131,6 @@ public class Weapons extends DataInjector {
                 .addComponent(new AttributesComponent("heavy-melee","throwable"))
             );
 
-            addItem(new Item("travellers-blade", "Traveller's Blade", Resource.SWORD, ItemType.MELEE_WEAPON)
-                .setDescription("The gold standard weapon for any new traveller looking to find their way within the dungeon.")
-                .setRarity(Rarity.RARE)
-                .setLevel(8)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 10,
-                    Stat.STRAIN, 25,
-                    Stat.CRIT_CHANCE, 20,
-                    Stat.XP_BONUS, 10
-                ))) 
-                .addComponent(new AttributesComponent( "blade")
-                    .setEnchantSlots(1)
-                )
-            );
-
             addItem(new Item("tarnished-golden-knife", "Tarnished Golden Knife", "golden_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A very old knife, plated in gold. Terrible quality, but with immense mystical potential.")
                 .setRarity(Rarity.RARE)
@@ -143,11 +143,26 @@ public class Weapons extends DataInjector {
                     .setEnchantSlots(5)
                 )
             );
+
+            addItem(new Item("granite-greatsword", "Granite Greatsword", "stone_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A giant hunk of heavy granite, tied haphazardly to a stick.")
+                .setRarity(Rarity.RARE)
+                .setLevel(8)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 25,
+                    Stat.STRAIN, 40,
+                    Stat.WEAPON_RANGE, 1.5,
+                    Stat.CRIT_DAMAGE, 50,
+                    Stat.KNOCKBACK, 50,
+                    Stat.BLOODY, 50
+                )))
+                .addComponent(new AttributesComponent("heavy-melee","visceral"))
+            );
         }
 
         // Epic
         {
-            addItem(new Item("weighted-javelin", "Weighted Javelin", "iron_shovel", ItemType.MELEE_WEAPON)
+            addItem(new Item("weighted-javelin", "Weighted Javelin", "iron_spear", ItemType.MELEE_WEAPON)
                 .setDescription("A javelin with a very heavy tip, which lurches the user forwards when used.")
                 .setRarity(Rarity.EPIC)
                 .setLevel(7)
@@ -164,28 +179,9 @@ public class Weapons extends DataInjector {
                 )
             );
 
-            addItem(new Item("granite-greatsword", "Granite Greatsword", "stone_sword", ItemType.MELEE_WEAPON)
-                .setDescription("A giant hunk of heavy granite, tied haphazardly to a stick.")
-                .setRarity(Rarity.EPIC)
-                .setLevel(8)
-                .addComponent(new StatsComponent(Map.of(
-                    Stat.WEAPON_DAMAGE, 25,
-                    Stat.STRAIN, 40,
-                    Stat.WEAPON_RANGE, 1.5,
-                    Stat.CRIT_DAMAGE, 50,
-                    Stat.KNOCKBACK, 50,
-                    Stat.BLOODY, 50
-                )))
-                .addComponent(new AttributesComponent("heavy-melee","visceral"))
-            );
-
-        }
-
-        // Legendary
-        {
             addItem(new Item("bloodthirsty-cleaver", "Bloodthirsty Cleaver", Resource.BUTCHER_KNIFE, ItemType.MELEE_WEAPON)
                 .setDescription("A bloodied cleaver that seems drawn to violence.")
-                .setRarity(Rarity.LEGENDARY)
+                .setRarity(Rarity.EPIC)
                 .setLevel(9)
                 .addComponent(new StatsComponent(Map.of(
                     Stat.WEAPON_DAMAGE, 5,
@@ -197,8 +193,26 @@ public class Weapons extends DataInjector {
                     Stat.LEECHING, 5,
                     Stat.BLOODY, 5
                 )))
+                .addComponent(new AttributesComponent("light-melee","hemovore"))
+            );
+
+        }
+
+        // Legendary
+        {
+            addItem(new Item("vampires-tooth", "Vampire's Tooth", "ghast_tear", ItemType.MELEE_WEAPON)
+                .setDescription("The sharpened fang of a creature of the night, which seems to be able to sense the presence of blood.")
+                .setRarity(Rarity.LEGENDARY)
+                .setLevel(6)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 1,
+                    Stat.STRAIN, 90,
+                    Stat.WEAPON_RANGE, -1.5,
+                    Stat.BLOODY, 1
+                )))
                 .addComponent(new AttributesComponent("light-melee"))
             );
+
         }
 
         // Mythic

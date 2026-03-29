@@ -75,6 +75,10 @@ public class Enchantments extends DataInjector {
                 .setRarity(Rarity.LEGENDARY)
                 .setColor("#ffbb00")
             );
+            addItem(new EnchantmentItem("nosferatu-gene", "Nosferatu Gene", "crimson_vines", "hemovore")
+                .setDescription("Doesn't seem to be made of denim.")
+                .setRarity(Rarity.LEGENDARY)
+            );
         }
 
         // Mythic

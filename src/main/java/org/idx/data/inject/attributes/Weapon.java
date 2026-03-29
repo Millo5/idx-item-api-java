@@ -182,6 +182,15 @@ public class Weapon extends DataInjector {
 
         // Legendary
         {
+            addItem(new AttributeItem("hemovore", "Hemovore", "redstone_dust", AttributeType.ENCHANTMENT)
+                .setDescription("Allows melee weapons to consume blood on enemies, healing them.")
+                .setRarity(Rarity.LEGENDARY)
+                .setLevel(3)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.HIT 
+                ))
+            );
 
         }
 
