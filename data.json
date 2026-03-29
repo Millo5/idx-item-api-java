@@ -112,7 +112,7 @@
   }, {
     "id" : "hook",
     "name" : "Hook",
-    "material" : "chain",
+    "material" : "iron_chain",
     "description" : "Pull enemies toward you or yourself to terrain.",
     "item-type" : "attribute",
     "components" : {

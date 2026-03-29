@@ -34,7 +34,7 @@ public class Unique extends DataInjector {
 
         // Epic
         {
-            addItem(new AttributeItem("hook", "Hook", "chain", AttributeType.ATTRIBUTE)
+            addItem(new AttributeItem("hook", "Hook", "iron_chain", AttributeType.ATTRIBUTE)
                     .setDescription("Pull enemies toward you or yourself to terrain.")
                     .setRarity(Rarity.EPIC)
                     .addComponent(new TriggersComponent(
