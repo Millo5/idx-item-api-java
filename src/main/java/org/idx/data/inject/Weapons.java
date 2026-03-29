@@ -193,7 +193,7 @@ public class Weapons extends DataInjector {
                     Stat.LEECHING, 5,
                     Stat.BLOODY, 5
                 )))
-                .addComponent(new AttributesComponent("light-melee","hemovore"))
+                .addComponent(new AttributesComponent("light-melee"))
             );
 
         }
@@ -210,7 +210,7 @@ public class Weapons extends DataInjector {
                     Stat.WEAPON_RANGE, -1.5,
                     Stat.BLOODY, 1
                 )))
-                .addComponent(new AttributesComponent("light-melee"))
+                .addComponent(new AttributesComponent("light-melee","hemovore"))
             );
 
         }
