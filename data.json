@@ -244,7 +244,7 @@
   }, {
     "id" : "hemovore",
     "name" : "Hemovore",
-    "material" : "redstone_dust",
+    "material" : "redstone",
     "description" : "Allows melee weapons to consume blood on enemies, healing them.",
     "item-type" : "attribute",
     "components" : {
@@ -569,7 +569,7 @@
   }, {
     "id" : "nosferatu-gene",
     "name" : "Nosferatu Gene",
-    "material" : "crimson_vines",
+    "material" : "weeping_vines",
     "description" : "Doesn't seem to be made of denim.",
     "item-type" : "enchantment",
     "components" : {

@@ -182,7 +182,7 @@ public class Weapon extends DataInjector {
 
         // Legendary
         {
-            addItem(new AttributeItem("hemovore", "Hemovore", "redstone_dust", AttributeType.ENCHANTMENT)
+            addItem(new AttributeItem("hemovore", "Hemovore", "redstone", AttributeType.ENCHANTMENT)
                 .setDescription("Allows melee weapons to consume blood on enemies, healing them.")
                 .setRarity(Rarity.LEGENDARY)
                 .setLevel(3)
