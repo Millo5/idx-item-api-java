@@ -7,9 +7,11 @@ public enum Trigger {
 
     // Triggers when the player is hurt
     HURT(true),
-
     // Triggers when the player hits an entity
     HIT(true),
+    // Triggers when the player hits an entity, before all stat calculations
+    PREHIT(true),
+    // Triggers when the player kills an entity
     KILL,
     // Triggers when the player uses an item
     USE,

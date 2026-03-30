@@ -185,7 +185,7 @@ public class Weapon extends DataInjector {
                 .setLevel(2)
                 .setTarget(ItemType.MELEE_WEAPON)
                 .addComponent(new TriggersComponent(
-                    Trigger.PASSIVE 
+                    Trigger.PREHIT 
                 ))
             );
         }

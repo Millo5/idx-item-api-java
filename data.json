@@ -34,7 +34,7 @@
     "components" : {
       "attribute-target" : "melee-weapon",
       "attribute-type" : "enchantment",
-      "triggers" : [ "passive" ]
+      "triggers" : [ "prehit" ]
     },
     "rarity" : "epic",
     "level" : 2
