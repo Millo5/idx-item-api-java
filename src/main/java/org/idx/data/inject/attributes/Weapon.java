@@ -178,6 +178,16 @@ public class Weapon extends DataInjector {
                     Trigger.USE 
                 ))
             );
+
+            addItem(new AttributeItem("gravity-enhanced", "Gravity Enhanced", "anvil", AttributeType.ENCHANTMENT)
+                .setDescription("Doubles the user's crit chance and damage while falling.")
+                .setRarity(Rarity.EPIC)
+                .setLevel(2)
+                .setTarget(ItemType.MELEE_WEAPON)
+                .addComponent(new TriggersComponent(
+                    Trigger.PASSIVE 
+                ))
+            );
         }
 
         // Legendary

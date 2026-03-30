@@ -18,13 +18,16 @@ public class Enchantments extends DataInjector {
                 .setDescription("A small bottle of polish, with a hint of defensively oriented mysticism.")
                 .setColor("#aaffff")
             );
+
             addItem(new EnchantmentItem("vial-of-blood", "Vial of Blood", "potion", "bloodied")
                 .setDescription("Seems to emanate pure violence.")
                 .setColor("#aa0000")
             );
+
             addItem(new EnchantmentItem("aerogel", "Aerogel", "light_blue_stained_glass", "light")
                 .setDescription("As perceptible as it is heavy.")
             );
+
         }
 
         // Uncommon
@@ -33,6 +36,7 @@ public class Enchantments extends DataInjector {
                 .setDescription("Its kinda just a rock with wings.")
                 .setRarity(Rarity.UNCOMMON)
             );
+
         }
 
         // Rare
@@ -41,11 +45,13 @@ public class Enchantments extends DataInjector {
                 .setDescription("Looks like its about to burst.")
                 .setRarity(Rarity.RARE)
             );
+
             addItem(new EnchantmentItem("boomerangs-soul", "Boomerang's Soul", "rabbit_foot", "returning")
                 .setDescription("You do always come back!")
                 .setRarity(Rarity.RARE)
                 .addRequiredEnchantments("throwable")
             );
+
         }
 
         // Epic
@@ -54,10 +60,17 @@ public class Enchantments extends DataInjector {
                 .setDescription("How does an inanimate object have a ghost???")
                 .setRarity(Rarity.EPIC)
             );
+
             addItem(new EnchantmentItem("soul-of-the-barbarian", "Soul of the Barbarian", "blaze_powder", "raging")
                 .setDescription("Screams of blood and beer. Is very loud. I haven't slept in 3 days.")
                 .setRarity(Rarity.EPIC)
             );
+
+            addItem(new EnchantmentItem("tungsten-cube", "Tungsten Cube", "netherite_block", "gravity-enhanced")
+                .setDescription("Wishes to be one with the floor.")
+                .setRarity(Rarity.EPIC)
+            );
+
         }
 
         // Legendary
@@ -66,19 +79,23 @@ public class Enchantments extends DataInjector {
                 .setDescription("An otherworldly fragment that loudly resonates whenever struck.")
                 .setRarity(Rarity.LEGENDARY)
             );
+
             addItem(new EnchantmentItem("tempest-crystal", "Tempest Crystal", "blue_ice", "voltaic-aura")
                 .setDescription("A magical crystal swirling with the fury of a thousand storms.")
                 .setRarity(Rarity.LEGENDARY)
             );
+
             addItem(new EnchantmentItem("michelin-menu", "Michelin Menu", "map", "gourmand")
                 .setDescription("Just looking at it makes me drool...")
                 .setRarity(Rarity.LEGENDARY)
                 .setColor("#ffbb00")
             );
+
             addItem(new EnchantmentItem("nosferatu-gene", "Nosferatu Gene", "weeping_vines", "hemovore")
                 .setDescription("Doesn't seem to be made of denim.")
                 .setRarity(Rarity.LEGENDARY)
             );
+
         }
 
         // Mythic

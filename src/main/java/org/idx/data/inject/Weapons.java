@@ -131,6 +131,18 @@ public class Weapons extends DataInjector {
                 .addComponent(new AttributesComponent("heavy-melee","throwable"))
             );
 
+            addItem(new Item("overwhammer", "Overwhammer", "netherite_axe", ItemType.MELEE_WEAPON)
+                .setDescription("A hammer designed for the sole purpose of crushing skulls.")
+                .setRarity(Rarity.RARE)
+                .setLevel(5)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 7,
+                    Stat.STRAIN, 30,
+                    Stat.CRIT_CHANCE, 40.0
+                )))
+                .addComponent(new AttributesComponent("heavy-melee","gravity-enhanced"))
+            );
+
             addItem(new Item("tarnished-golden-knife", "Tarnished Golden Knife", "golden_sword", ItemType.MELEE_WEAPON)
                 .setDescription("A very old knife, plated in gold. Terrible quality, but with immense mystical potential.")
                 .setRarity(Rarity.RARE)
@@ -201,7 +213,7 @@ public class Weapons extends DataInjector {
         // Legendary
         {
             addItem(new Item("vampires-tooth", "Vampire's Tooth", "ghast_tear", ItemType.MELEE_WEAPON)
-                .setDescription("The sharpened fang of a creature of the night, which seems to be able to sense the presence of blood.")
+                .setDescription("It's Morbin time.")
                 .setRarity(Rarity.LEGENDARY)
                 .setLevel(6)
                 .addComponent(new StatsComponent(Map.of(
