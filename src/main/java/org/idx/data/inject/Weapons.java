@@ -225,6 +225,20 @@ public class Weapons extends DataInjector {
                 .addComponent(new AttributesComponent("light-melee","hemovore"))
             );
 
+            addItem(new Item("double-bladed-scimitar", "Double Bladed Scimitar", "diamond_sword", ItemType.MELEE_WEAPON)
+                .setDescription("AGAIN!")
+                .setRarity(Rarity.LEGENDARY)
+                .setLevel(13)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 12,
+                    Stat.STRAIN, 35,
+                    Stat.RECURSION, 1
+                )))
+                .addComponent(new AttributesComponent("blade")
+                    .setEnchantSlots(4)
+                )
+            );
+
         }
 
         // Mythic

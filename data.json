@@ -29,7 +29,7 @@
     "id" : "gravity-enhanced",
     "name" : "Gravity Enhanced",
     "material" : "anvil",
-    "description" : "Doubles the user's crit chance and damage while falling.",
+    "description" : "Doubles the user's crit chance and crit damage while falling.",
     "item-type" : "attribute",
     "components" : {
       "attribute-target" : "melee-weapon",
@@ -1569,6 +1569,23 @@
     },
     "rarity" : "rare",
     "level" : 5
+  }, {
+    "id" : "double-bladed-scimitar",
+    "name" : "Double Bladed Scimitar",
+    "material" : "diamond_sword",
+    "description" : "AGAIN!",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "enchantSlots" : 4,
+      "stats" : {
+        "weapon-damage" : 12,
+        "strain" : 35,
+        "recursion" : 1
+      }
+    },
+    "rarity" : "legendary",
+    "level" : 13
   }, {
     "id" : "blaze-rod",
     "name" : "Blaze Rod",

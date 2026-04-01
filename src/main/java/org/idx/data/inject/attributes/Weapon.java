@@ -180,7 +180,7 @@ public class Weapon extends DataInjector {
             );
 
             addItem(new AttributeItem("gravity-enhanced", "Gravity Enhanced", "anvil", AttributeType.ENCHANTMENT)
-                .setDescription("Doubles the user's crit chance and damage while falling.")
+                .setDescription("Doubles the user's crit chance and crit damage while falling.")
                 .setRarity(Rarity.EPIC)
                 .setLevel(2)
                 .setTarget(ItemType.MELEE_WEAPON)
