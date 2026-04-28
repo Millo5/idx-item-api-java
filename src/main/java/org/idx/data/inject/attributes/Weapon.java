@@ -159,6 +159,12 @@ public class Weapon extends DataInjector {
                     Trigger.KILL
                 ))
             );
+            addItem(new AttributeItem("windblade", "Windblade", "kelp", AttributeType.ENCHANTMENT)
+                .setDescription("Makes melee weapons send forth wind projectiles when swung.")
+                .setRarity(Rarity.RARE)
+                .setLevel(10)
+                .setTarget(ItemType.MELEE_WEAPON)
+            );
             addItem(new AttributeItem("returning", "Returning", "trident", AttributeType.ENCHANTMENT)
                 .setDescription("Makes thrown weapons return to you upon landing.")
                 .setRarity(Rarity.RARE)

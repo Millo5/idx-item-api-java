@@ -45,7 +45,10 @@ public class Enchantments extends DataInjector {
                 .setDescription("Looks like its about to burst.")
                 .setRarity(Rarity.RARE)
             );
-
+            addItem(new EnchantmentItem("very-thin-fan", "Very Thin Fan", "stick", "windblade")
+                .setDescription("Not how aerodynamics work.")
+                .setRarity(Rarity.RARE)
+            );
             addItem(new EnchantmentItem("boomerangs-soul", "Boomerang's Soul", "rabbit_foot", "returning")
                 .setDescription("You do always come back!")
                 .setRarity(Rarity.RARE)

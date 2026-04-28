@@ -208,6 +208,17 @@ public class Weapons extends DataInjector {
                 .addComponent(new AttributesComponent("light-melee"))
             );
 
+            addItem(new Item("leaf-blade", "Leaf Blade", "iron_sword", ItemType.MELEE_WEAPON)
+                .setDescription("A blade attuned with the wind and designed to guide its flow.")
+                .setRarity(Rarity.EPIC)
+                .setLevel(10)
+                .addComponent(new StatsComponent(Map.of(
+                    Stat.WEAPON_DAMAGE, 10,
+                    Stat.STRAIN, 25
+                )))
+                .addComponent(new AttributesComponent("blade","windblade"))
+            );
+
         }
 
         // Legendary

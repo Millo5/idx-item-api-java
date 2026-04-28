@@ -39,6 +39,18 @@
     "rarity" : "epic",
     "level" : 2
   }, {
+    "id" : "windblade",
+    "name" : "Windblade",
+    "material" : "kelp",
+    "description" : "Makes melee weapons send forth wind projectiles when swung.",
+    "item-type" : "attribute",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "attribute-type" : "enchantment"
+    },
+    "rarity" : "rare",
+    "level" : 10
+  }, {
     "id" : "drinkable",
     "name" : "Drinkable",
     "material" : "potion",
@@ -373,27 +385,6 @@
     }
   } ],
   "items" : [ {
-    "id" : "restless-chain",
-    "name" : "Restless Chain",
-    "material" : "archer_pottery_sherd",
-    "description" : "A heavy chain that seems to writhe and move on its own, as if alive.",
-    "item-type" : "unique",
-    "components" : {
-      "attributes" : [ "hook" ],
-      "stats" : {
-        "weapon-range" : 5
-      }
-    },
-    "rarity" : "epic",
-    "modeldata" : 6
-  }, {
-    "id" : "glass-bottle",
-    "name" : "Glass Bottle",
-    "material" : "glass_bottle",
-    "description" : "Stored liquids, until very recently.",
-    "item-type" : "material",
-    "stack-size" : 64
-  }, {
     "id" : "ender-pearl",
     "name" : "Ender Pearl",
     "material" : "ender_pearl",
@@ -401,35 +392,6 @@
     "item-type" : "material",
     "stack-size" : 64,
     "rarity" : "mythic"
-  }, {
-    "id" : "treads-of-clyde",
-    "name" : "Treads of Clyde",
-    "material" : "chainmail_boots",
-    "description" : "The lost boots of the great adventurer, Clyde.",
-    "item-type" : "boots",
-    "components" : {
-      "enchantSlots" : 2,
-      "set" : "clydes-lost-set",
-      "stats" : {
-        "health" : 4,
-        "defense" : 8,
-        "evasion" : 10,
-        "crit-damage" : 40
-      }
-    },
-    "rarity" : "mythic"
-  }, {
-    "id" : "arrow",
-    "name" : "Arrow",
-    "material" : "arrow",
-    "description" : "A simple arrow, used for ranged weapons.",
-    "item-type" : "arrow",
-    "stack-size" : 64,
-    "components" : {
-      "stats" : {
-        "damage" : 1
-      }
-    }
   }, {
     "id" : "longbow",
     "name" : "Longbow",
@@ -444,20 +406,6 @@
       }
     },
     "rarity" : "rare"
-  }, {
-    "id" : "old-wooden-sword",
-    "name" : "Old Wooden Sword",
-    "material" : "wooden_sword",
-    "description" : "A blunt wooden stick, used by students to train.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "stats" : {
-        "weapon-damage" : 5,
-        "strain" : 30
-      }
-    },
-    "level" : 1
   }, {
     "id" : "wooden-spear",
     "name" : "Wooden Spear",
@@ -515,6 +463,636 @@
     "item-type" : "material",
     "stack-size" : 64,
     "rarity" : "rare"
+  }, {
+    "id" : "sharpened-wooden-sword",
+    "name" : "Sharpened Wooden Sword",
+    "material" : "wooden_sword",
+    "description" : "A razor sharp sword of hardwood, designed for combative use.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "stats" : {
+        "weapon-damage" : 12,
+        "strain" : 30
+      }
+    },
+    "level" : 15
+  }, {
+    "id" : "stick",
+    "name" : "Stick",
+    "material" : "stick",
+    "description" : "Brown and sticky.",
+    "item-type" : "material",
+    "stack-size" : 64
+  }, {
+    "id" : "armor-polish",
+    "name" : "Armor Polish",
+    "material" : "potion",
+    "description" : "A small bottle of polish, with a hint of defensively oriented mysticism.",
+    "color" : "#aaffff",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "armor",
+      "enchantment" : "polished"
+    }
+  }, {
+    "id" : "ninja-star-spirit",
+    "name" : "Ninja Star Spirit",
+    "material" : "nether_star",
+    "description" : "How does an inanimate object have a ghost???",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "shurikens"
+    },
+    "rarity" : "epic"
+  }, {
+    "id" : "michelin-menu",
+    "name" : "Michelin Menu",
+    "material" : "map",
+    "description" : "Just looking at it makes me drool...",
+    "color" : "#ffbb00",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "chestplate",
+      "enchantment" : "gourmand"
+    },
+    "rarity" : "legendary"
+  }, {
+    "id" : "old-leather-hood",
+    "name" : "Old Leather Hood",
+    "material" : "leather_helmet",
+    "description" : "A scrap of old leather, shaped to suggest that it is worn on the head.",
+    "item-type" : "helmet",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    },
+    "level" : 1
+  }, {
+    "id" : "echoing-fragment",
+    "name" : "Echoing Fragment",
+    "material" : "echo_shard",
+    "description" : "An otherworldly fragment that loudly resonates whenever struck.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "armor",
+      "enchantment" : "recursion"
+    },
+    "rarity" : "legendary"
+  }, {
+    "id" : "bloodthirsty-cleaver",
+    "name" : "Bloodthirsty Cleaver",
+    "material" : "angler_pottery_sherd",
+    "description" : "A bloodied cleaver that seems drawn to violence.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "light-melee" ],
+      "stats" : {
+        "weapon-damage" : 5,
+        "crit-chance" : 25,
+        "crit-damage" : 25,
+        "leeching" : 5,
+        "bloody" : 5,
+        "strain" : 15,
+        "move-speed" : 5,
+        "weapon-range" : -1.5
+      }
+    },
+    "rarity" : "epic",
+    "level" : 9,
+    "modeldata" : 4
+  }, {
+    "id" : "clydes-blade",
+    "name" : "Clyde's Blade",
+    "material" : "angler_pottery_sherd",
+    "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "sharp", "blade", "two-handed" ],
+      "enchantSlots" : 3,
+      "stats" : {
+        "health" : 2,
+        "defense" : 2,
+        "evasion" : 30,
+        "weapon-damage" : 9.5,
+        "range" : 30,
+        "crit-chance" : 40,
+        "crit-damage" : 50,
+        "lifesteal" : 20,
+        "knockback" : -40,
+        "move-speed" : 40,
+        "luck" : 225,
+        "weapon-attack-speed" : 1.6,
+        "weapon-range" : 1,
+        "recursion" : 20
+      }
+    },
+    "rarity" : "developer",
+    "modeldata" : 1
+  }, {
+    "id" : "strength-potion",
+    "name" : "Strength Potion",
+    "material" : "potion",
+    "description" : "Makes you feel like you can lift god. Speaking from experience.",
+    "color" : "#880000",
+    "item-type" : "potion",
+    "stack-size" : 8,
+    "components" : {
+      "attributes" : [ "potion", "drinkable" ],
+      "effects" : {
+        "strength" : {
+          "amplifier" : 5,
+          "ticks" : 1200
+        }
+      }
+    },
+    "rarity" : "uncommon"
+  }, {
+    "id" : "gunpowder",
+    "name" : "Gunpowder",
+    "material" : "gunpowder",
+    "description" : "Useful for creation of boom boom.",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "rare"
+  }, {
+    "id" : "thornplate",
+    "name" : "Thornplate",
+    "material" : "leather_chestplate",
+    "description" : "A tunic of moss and vines, stinging any who dare touch.",
+    "color" : "#006600",
+    "item-type" : "chestplate",
+    "components" : {
+      "enchantSlots" : 1,
+      "stats" : {
+        "health" : 1,
+        "defense" : 1,
+        "thorns" : 2
+      }
+    },
+    "rarity" : "rare",
+    "level" : 4
+  }, {
+    "id" : "large-coin",
+    "name" : "Large Coin",
+    "material" : "archer_pottery_sherd",
+    "description" : "A massive gold coin, certainly of great value.",
+    "item-type" : "unique",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 20
+      }
+    },
+    "modeldata" : 3
+  }, {
+    "id" : "padded-leather-pants",
+    "name" : "Padded Leather Pants",
+    "material" : "leather_leggings",
+    "description" : "What they lack in breathability, they make up for in crotch protection.",
+    "item-type" : "leggings",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 2
+      }
+    },
+    "level" : 10
+  }, {
+    "id" : "big-coin",
+    "name" : "Big Coin",
+    "material" : "archer_pottery_sherd",
+    "description" : "A large gold coin, definitely of some value.",
+    "item-type" : "unique",
+    "components" : {
+      "attributes" : [ "currency" ],
+      "stats" : {
+        "money" : 5
+      }
+    },
+    "modeldata" : 1
+  }, {
+    "id" : "tempest-crystal",
+    "name" : "Tempest Crystal",
+    "material" : "blue_ice",
+    "description" : "A magical crystal swirling with the fury of a thousand storms.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "helmet",
+      "enchantment" : "voltaic-aura"
+    },
+    "rarity" : "legendary"
+  }, {
+    "id" : "voltaic-crown",
+    "name" : "Voltaic Crown",
+    "material" : "diamond_helmet",
+    "description" : "A crown of crystal, brimming with electrical potential.",
+    "item-type" : "helmet",
+    "components" : {
+      "attributes" : [ "voltaic-aura" ],
+      "enchantSlots" : 2,
+      "stats" : {
+        "defense" : 6,
+        "damage" : 5
+      }
+    },
+    "rarity" : "legendary",
+    "level" : 10
+  }, {
+    "id" : "toughened-leather-pants",
+    "name" : "Toughened Leather Pants",
+    "material" : "leather_leggings",
+    "description" : "Now with inbuilt shin pads!",
+    "item-type" : "leggings",
+    "components" : {
+      "stats" : {
+        "health" : 2,
+        "defense" : 3
+      }
+    },
+    "level" : 15
+  }, {
+    "id" : "echo-shard",
+    "name" : "Echo Shard",
+    "material" : "echo_shard",
+    "description" : "Kinda...glitchy?",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "mythic"
+  }, {
+    "id" : "travellers-blade",
+    "name" : "Traveller's Blade",
+    "material" : "angler_pottery_sherd",
+    "description" : "The gold standard weapon for any new traveller looking to find their way within the dungeon.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "weapon-damage" : 10,
+        "crit-chance" : 20,
+        "strain" : 25,
+        "xp-bonus" : 10
+      }
+    },
+    "rarity" : "uncommon",
+    "level" : 8,
+    "modeldata" : 2
+  }, {
+    "id" : "necrotic-matter",
+    "name" : "Necrotic Matter",
+    "material" : "coal",
+    "description" : "Mr Dweevius, I don't feel so good...",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "legendary"
+  }, {
+    "id" : "boomerangs-soul",
+    "name" : "Boomerang's Soul",
+    "material" : "rabbit_foot",
+    "description" : "You do always come back!",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "returning",
+      "required-enchantments" : [ "throwable" ]
+    },
+    "rarity" : "rare"
+  }, {
+    "id" : "toughened-leather-boots",
+    "name" : "Toughened Leather Boots",
+    "material" : "leather_boots",
+    "description" : "The first choice of many construction workers.",
+    "item-type" : "boots",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 3
+      }
+    },
+    "level" : 15
+  }, {
+    "id" : "clydes-carapace",
+    "name" : "Clyde's Carapace",
+    "material" : "chainmail_chestplate",
+    "description" : "The lost chestplate of the great adventurer, Clyde.",
+    "item-type" : "chestplate",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 7,
+        "defense" : 15,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
+  }, {
+    "id" : "old-leather-boots",
+    "name" : "Old Leather Boots",
+    "material" : "leather_boots",
+    "description" : "With the amount of holes, they may as well be sandals.",
+    "item-type" : "boots",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    },
+    "level" : 1
+  }, {
+    "id" : "tarnished-golden-knife",
+    "name" : "Tarnished Golden Knife",
+    "material" : "golden_sword",
+    "description" : "A very old knife, plated in gold. Terrible quality, but with immense mystical potential.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "enchantSlots" : 5,
+      "stats" : {
+        "weapon-damage" : 5,
+        "strain" : 30
+      }
+    },
+    "rarity" : "rare",
+    "level" : 10
+  }, {
+    "id" : "slime",
+    "name" : "Slime",
+    "material" : "slime_ball",
+    "description" : "Tastes like a booger. Don't ask how I know that.",
+    "item-type" : "material",
+    "stack-size" : 64
+  }, {
+    "id" : "torn-cloth",
+    "name" : "Torn Cloth",
+    "material" : "rabbit_hide",
+    "description" : "Very low quality.",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "rare"
+  }, {
+    "id" : "crude-iron",
+    "name" : "Crude Iron",
+    "material" : "raw_iron",
+    "description" : "Seems to have been wrecked relatively recently.",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "rare"
+  }, {
+    "id" : "weighted-javelin",
+    "name" : "Weighted Javelin",
+    "material" : "iron_spear",
+    "description" : "A javelin with a very heavy tip, which lurches the user forwards when used.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "lunging-thrust", "two-handed" ],
+      "enchantSlots" : 1,
+      "stats" : {
+        "evasion" : 5,
+        "weapon-damage" : 30,
+        "knockback" : 30,
+        "strain" : 45,
+        "move-speed" : 15,
+        "weapon-range" : 1
+      }
+    },
+    "rarity" : "epic",
+    "level" : 7
+  }, {
+    "id" : "aerogel",
+    "name" : "Aerogel",
+    "material" : "light_blue_stained_glass",
+    "description" : "As perceptible as it is heavy.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "light"
+    }
+  }, {
+    "id" : "golden-nugget",
+    "name" : "Golden Nugget",
+    "material" : "gold_nugget",
+    "description" : "Shiny...",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "legendary"
+  }, {
+    "id" : "old-whetstone",
+    "name" : "Old Whetstone",
+    "material" : "brick",
+    "description" : "A very old whetstone, covered in the rust of hundreds of sharpened blades.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "sharp"
+    }
+  }, {
+    "id" : "very-thin-fan",
+    "name" : "Very Thin Fan",
+    "material" : "stick",
+    "description" : "Not how aerodynamics work.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "melee-weapon",
+      "enchantment" : "windblade"
+    },
+    "rarity" : "rare"
+  }, {
+    "id" : "old-leather-pants",
+    "name" : "Old Leather Pants",
+    "material" : "leather_leggings",
+    "description" : "Denim jeans with the color washed off.",
+    "item-type" : "leggings",
+    "components" : {
+      "stats" : {
+        "defense" : 1
+      }
+    },
+    "level" : 1
+  }, {
+    "id" : "padded-leather-boots",
+    "name" : "Padded Leather Boots",
+    "material" : "leather_boots",
+    "description" : "Budget UGG boots.",
+    "item-type" : "boots",
+    "components" : {
+      "stats" : {
+        "health" : 1,
+        "defense" : 1
+      }
+    },
+    "level" : 10
+  }, {
+    "id" : "menu",
+    "name" : "Menu",
+    "material" : "knowledge_book",
+    "item-type" : "menu",
+    "stack-size" : 64
+  }, {
+    "id" : "speed-potion",
+    "name" : "Speed Potion",
+    "material" : "potion",
+    "description" : "Perfectly legal.",
+    "color" : "#88ffff",
+    "item-type" : "potion",
+    "stack-size" : 8,
+    "components" : {
+      "attributes" : [ "potion", "drinkable" ],
+      "effects" : {
+        "speed" : {
+          "amplifier" : 5,
+          "ticks" : 1200
+        }
+      }
+    },
+    "rarity" : "uncommon"
+  }, {
+    "id" : "infected-spleen",
+    "name" : "Infected Spleen",
+    "material" : "beef",
+    "description" : "Looks like its about to burst.",
+    "item-type" : "enchantment",
+    "components" : {
+      "attribute-target" : "weapon",
+      "enchantment" : "visceral"
+    },
+    "rarity" : "rare"
+  }, {
+    "id" : "toughened-leather-tunic",
+    "name" : "Toughened Leather Tunic",
+    "material" : "leather_chestplate",
+    "description" : "Makes the wearer look gangster af.",
+    "item-type" : "chestplate",
+    "components" : {
+      "stats" : {
+        "health" : 2,
+        "defense" : 4
+      }
+    },
+    "level" : 15
+  }, {
+    "id" : "madam-8-legs",
+    "name" : "Madam 8 Legs",
+    "material" : "diamond_leggings",
+    "description" : "A pair of enchanted legs that greatly increase the speed of the wearer",
+    "item-type" : "leggings",
+    "components" : {
+      "stats" : {
+        "health" : 5,
+        "defense" : 10,
+        "attack-speed" : 25,
+        "crit-chance" : 25,
+        "move-speed" : 25
+      }
+    },
+    "rarity" : "epic"
+  }, {
+    "id" : "double-bladed-scimitar",
+    "name" : "Double Bladed Scimitar",
+    "material" : "diamond_sword",
+    "description" : "AGAIN!",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "enchantSlots" : 4,
+      "stats" : {
+        "weapon-damage" : 12,
+        "strain" : 35,
+        "recursion" : 1
+      }
+    },
+    "rarity" : "legendary",
+    "level" : 13
+  }, {
+    "id" : "blaze-rod",
+    "name" : "Blaze Rod",
+    "material" : "blaze_rod",
+    "description" : "What are these? Arms? Legs? Tentacles???",
+    "item-type" : "material",
+    "stack-size" : 64,
+    "rarity" : "epic"
+  }, {
+    "id" : "restless-chain",
+    "name" : "Restless Chain",
+    "material" : "archer_pottery_sherd",
+    "description" : "A heavy chain that seems to writhe and move on its own, as if alive.",
+    "item-type" : "unique",
+    "components" : {
+      "attributes" : [ "hook" ],
+      "stats" : {
+        "weapon-range" : 5
+      }
+    },
+    "rarity" : "epic",
+    "modeldata" : 6
+  }, {
+    "id" : "leaf-blade",
+    "name" : "Leaf Blade",
+    "material" : "iron_sword",
+    "description" : "A blade attuned with the wind and designed to guide its flow.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade", "windblade" ],
+      "stats" : {
+        "weapon-damage" : 10,
+        "strain" : 25
+      }
+    },
+    "rarity" : "epic",
+    "level" : 10
+  }, {
+    "id" : "glass-bottle",
+    "name" : "Glass Bottle",
+    "material" : "glass_bottle",
+    "description" : "Stored liquids, until very recently.",
+    "item-type" : "material",
+    "stack-size" : 64
+  }, {
+    "id" : "treads-of-clyde",
+    "name" : "Treads of Clyde",
+    "material" : "chainmail_boots",
+    "description" : "The lost boots of the great adventurer, Clyde.",
+    "item-type" : "boots",
+    "components" : {
+      "enchantSlots" : 2,
+      "set" : "clydes-lost-set",
+      "stats" : {
+        "health" : 4,
+        "defense" : 8,
+        "evasion" : 10,
+        "crit-damage" : 40
+      }
+    },
+    "rarity" : "mythic"
+  }, {
+    "id" : "arrow",
+    "name" : "Arrow",
+    "material" : "arrow",
+    "description" : "A simple arrow, used for ranged weapons.",
+    "item-type" : "arrow",
+    "stack-size" : 64,
+    "components" : {
+      "stats" : {
+        "damage" : 1
+      }
+    }
+  }, {
+    "id" : "old-wooden-sword",
+    "name" : "Old Wooden Sword",
+    "material" : "wooden_sword",
+    "description" : "A blunt wooden stick, used by students to train.",
+    "item-type" : "melee-weapon",
+    "components" : {
+      "attributes" : [ "blade" ],
+      "stats" : {
+        "weapon-damage" : 5,
+        "strain" : 30
+      }
+    },
+    "level" : 1
   }, {
     "id" : "echoing-hood",
     "name" : "Echoing Hood",
@@ -591,27 +1169,6 @@
     },
     "rarity" : "legendary"
   }, {
-    "id" : "sharpened-wooden-sword",
-    "name" : "Sharpened Wooden Sword",
-    "material" : "wooden_sword",
-    "description" : "A razor sharp sword of hardwood, designed for combative use.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "stats" : {
-        "weapon-damage" : 12,
-        "strain" : 30
-      }
-    },
-    "level" : 15
-  }, {
-    "id" : "stick",
-    "name" : "Stick",
-    "material" : "stick",
-    "description" : "Brown and sticky.",
-    "item-type" : "material",
-    "stack-size" : 64
-  }, {
     "id" : "wooden-shiv",
     "name" : "Wooden Shiv",
     "material" : "wooden_sword",
@@ -640,17 +1197,6 @@
     },
     "level" : 5
   }, {
-    "id" : "armor-polish",
-    "name" : "Armor Polish",
-    "material" : "potion",
-    "description" : "A small bottle of polish, with a hint of defensively oriented mysticism.",
-    "color" : "#aaffff",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "armor",
-      "enchantment" : "polished"
-    }
-  }, {
     "id" : "guardian-scale",
     "name" : "Guardian Scale",
     "material" : "prismarine_shard",
@@ -658,17 +1204,6 @@
     "item-type" : "material",
     "stack-size" : 64,
     "rarity" : "rare"
-  }, {
-    "id" : "ninja-star-spirit",
-    "name" : "Ninja Star Spirit",
-    "material" : "nether_star",
-    "description" : "How does an inanimate object have a ghost???",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "enchantment" : "shurikens"
-    },
-    "rarity" : "epic"
   }, {
     "id" : "leather-pants",
     "name" : "Leather Pants",
@@ -701,18 +1236,6 @@
     },
     "level" : 1
   }, {
-    "id" : "michelin-menu",
-    "name" : "Michelin Menu",
-    "material" : "map",
-    "description" : "Just looking at it makes me drool...",
-    "color" : "#ffbb00",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "chestplate",
-      "enchantment" : "gourmand"
-    },
-    "rarity" : "legendary"
-  }, {
     "id" : "wooden-targe",
     "name" : "Wooden Targe",
     "material" : "angler_pottery_sherd",
@@ -741,18 +1264,6 @@
     "rarity" : "rare",
     "level" : 3
   }, {
-    "id" : "old-leather-hood",
-    "name" : "Old Leather Hood",
-    "material" : "leather_helmet",
-    "description" : "A scrap of old leather, shaped to suggest that it is worn on the head.",
-    "item-type" : "helmet",
-    "components" : {
-      "stats" : {
-        "defense" : 1
-      }
-    },
-    "level" : 1
-  }, {
     "id" : "spider-eye",
     "name" : "Spider Eye",
     "material" : "spider_eye",
@@ -760,67 +1271,6 @@
     "item-type" : "material",
     "stack-size" : 64,
     "rarity" : "epic"
-  }, {
-    "id" : "echoing-fragment",
-    "name" : "Echoing Fragment",
-    "material" : "echo_shard",
-    "description" : "An otherworldly fragment that loudly resonates whenever struck.",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "armor",
-      "enchantment" : "recursion"
-    },
-    "rarity" : "legendary"
-  }, {
-    "id" : "bloodthirsty-cleaver",
-    "name" : "Bloodthirsty Cleaver",
-    "material" : "angler_pottery_sherd",
-    "description" : "A bloodied cleaver that seems drawn to violence.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "light-melee" ],
-      "stats" : {
-        "weapon-damage" : 5,
-        "crit-chance" : 25,
-        "crit-damage" : 25,
-        "leeching" : 5,
-        "bloody" : 5,
-        "strain" : 15,
-        "move-speed" : 5,
-        "weapon-range" : -1.5
-      }
-    },
-    "rarity" : "epic",
-    "level" : 9,
-    "modeldata" : 4
-  }, {
-    "id" : "clydes-blade",
-    "name" : "Clyde's Blade",
-    "material" : "angler_pottery_sherd",
-    "description" : "A blade that seems to have a mind of it's own. Can be quite dangerous.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "sharp", "blade", "two-handed" ],
-      "enchantSlots" : 3,
-      "stats" : {
-        "health" : 2,
-        "defense" : 2,
-        "evasion" : 30,
-        "weapon-damage" : 9.5,
-        "range" : 30,
-        "crit-chance" : 40,
-        "crit-damage" : 50,
-        "lifesteal" : 20,
-        "knockback" : -40,
-        "move-speed" : 40,
-        "luck" : 225,
-        "weapon-attack-speed" : 1.6,
-        "weapon-range" : 1,
-        "recursion" : 20
-      }
-    },
-    "rarity" : "developer",
-    "modeldata" : 1
   }, {
     "id" : "infinite-leafed-clover",
     "name" : "Infinite Leafed Clover",
@@ -834,32 +1284,6 @@
     },
     "rarity" : "mythic",
     "modeldata" : 5
-  }, {
-    "id" : "strength-potion",
-    "name" : "Strength Potion",
-    "material" : "potion",
-    "description" : "Makes you feel like you can lift god. Speaking from experience.",
-    "color" : "#880000",
-    "item-type" : "potion",
-    "stack-size" : 8,
-    "components" : {
-      "attributes" : [ "potion", "drinkable" ],
-      "effects" : {
-        "strength" : {
-          "amplifier" : 5,
-          "ticks" : 1200
-        }
-      }
-    },
-    "rarity" : "uncommon"
-  }, {
-    "id" : "gunpowder",
-    "name" : "Gunpowder",
-    "material" : "gunpowder",
-    "description" : "Useful for creation of boom boom.",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "rare"
   }, {
     "id" : "small-health-potion",
     "name" : "Small Health Potion",
@@ -888,36 +1312,6 @@
     },
     "level" : 15
   }, {
-    "id" : "thornplate",
-    "name" : "Thornplate",
-    "material" : "leather_chestplate",
-    "description" : "A tunic of moss and vines, stinging any who dare touch.",
-    "color" : "#006600",
-    "item-type" : "chestplate",
-    "components" : {
-      "enchantSlots" : 1,
-      "stats" : {
-        "health" : 1,
-        "defense" : 1,
-        "thorns" : 2
-      }
-    },
-    "rarity" : "rare",
-    "level" : 4
-  }, {
-    "id" : "large-coin",
-    "name" : "Large Coin",
-    "material" : "archer_pottery_sherd",
-    "description" : "A massive gold coin, certainly of great value.",
-    "item-type" : "unique",
-    "components" : {
-      "attributes" : [ "currency" ],
-      "stats" : {
-        "money" : 20
-      }
-    },
-    "modeldata" : 3
-  }, {
     "id" : "soul-of-the-barbarian",
     "name" : "Soul of the Barbarian",
     "material" : "blaze_powder",
@@ -945,32 +1339,6 @@
     "rarity" : "uncommon",
     "level" : 4
   }, {
-    "id" : "padded-leather-pants",
-    "name" : "Padded Leather Pants",
-    "material" : "leather_leggings",
-    "description" : "What they lack in breathability, they make up for in crotch protection.",
-    "item-type" : "leggings",
-    "components" : {
-      "stats" : {
-        "health" : 1,
-        "defense" : 2
-      }
-    },
-    "level" : 10
-  }, {
-    "id" : "big-coin",
-    "name" : "Big Coin",
-    "material" : "archer_pottery_sherd",
-    "description" : "A large gold coin, definitely of some value.",
-    "item-type" : "unique",
-    "components" : {
-      "attributes" : [ "currency" ],
-      "stats" : {
-        "money" : 5
-      }
-    },
-    "modeldata" : 1
-  }, {
     "id" : "clydes-strides",
     "name" : "Clyde's Strides",
     "material" : "chainmail_leggings",
@@ -987,17 +1355,6 @@
       }
     },
     "rarity" : "mythic"
-  }, {
-    "id" : "tempest-crystal",
-    "name" : "Tempest Crystal",
-    "material" : "blue_ice",
-    "description" : "A magical crystal swirling with the fury of a thousand storms.",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "helmet",
-      "enchantment" : "voltaic-aura"
-    },
-    "rarity" : "legendary"
   }, {
     "id" : "padded-leather-hood",
     "name" : "Padded Leather Hood",
@@ -1025,43 +1382,6 @@
       }
     }
   }, {
-    "id" : "voltaic-crown",
-    "name" : "Voltaic Crown",
-    "material" : "diamond_helmet",
-    "description" : "A crown of crystal, brimming with electrical potential.",
-    "item-type" : "helmet",
-    "components" : {
-      "attributes" : [ "voltaic-aura" ],
-      "enchantSlots" : 2,
-      "stats" : {
-        "defense" : 6,
-        "damage" : 5
-      }
-    },
-    "rarity" : "legendary",
-    "level" : 10
-  }, {
-    "id" : "toughened-leather-pants",
-    "name" : "Toughened Leather Pants",
-    "material" : "leather_leggings",
-    "description" : "Now with inbuilt shin pads!",
-    "item-type" : "leggings",
-    "components" : {
-      "stats" : {
-        "health" : 2,
-        "defense" : 3
-      }
-    },
-    "level" : 15
-  }, {
-    "id" : "echo-shard",
-    "name" : "Echo Shard",
-    "material" : "echo_shard",
-    "description" : "Kinda...glitchy?",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "mythic"
-  }, {
     "id" : "coin",
     "name" : "Coin",
     "material" : "archer_pottery_sherd",
@@ -1073,25 +1393,6 @@
         "money" : 1
       }
     },
-    "modeldata" : 2
-  }, {
-    "id" : "travellers-blade",
-    "name" : "Traveller's Blade",
-    "material" : "angler_pottery_sherd",
-    "description" : "The gold standard weapon for any new traveller looking to find their way within the dungeon.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "weapon-damage" : 10,
-        "crit-chance" : 20,
-        "strain" : 25,
-        "xp-bonus" : 10
-      }
-    },
-    "rarity" : "uncommon",
-    "level" : 8,
     "modeldata" : 2
   }, {
     "id" : "tungsten-cube",
@@ -1116,14 +1417,6 @@
       }
     },
     "level" : 5
-  }, {
-    "id" : "necrotic-matter",
-    "name" : "Necrotic Matter",
-    "material" : "coal",
-    "description" : "Mr Dweevius, I don't feel so good...",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "legendary"
   }, {
     "id" : "polished-wooden-sword",
     "name" : "Polished Wooden Sword",
@@ -1151,31 +1444,6 @@
     },
     "level" : 5
   }, {
-    "id" : "boomerangs-soul",
-    "name" : "Boomerang's Soul",
-    "material" : "rabbit_foot",
-    "description" : "You do always come back!",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "enchantment" : "returning",
-      "required-enchantments" : [ "throwable" ]
-    },
-    "rarity" : "rare"
-  }, {
-    "id" : "toughened-leather-boots",
-    "name" : "Toughened Leather Boots",
-    "material" : "leather_boots",
-    "description" : "The first choice of many construction workers.",
-    "item-type" : "boots",
-    "components" : {
-      "stats" : {
-        "health" : 1,
-        "defense" : 3
-      }
-    },
-    "level" : 15
-  }, {
     "id" : "rope",
     "name" : "Rope",
     "material" : "lead",
@@ -1185,58 +1453,6 @@
     "components" : {
       "attributes" : [ "grapple", "consumable" ]
     }
-  }, {
-    "id" : "clydes-carapace",
-    "name" : "Clyde's Carapace",
-    "material" : "chainmail_chestplate",
-    "description" : "The lost chestplate of the great adventurer, Clyde.",
-    "item-type" : "chestplate",
-    "components" : {
-      "enchantSlots" : 2,
-      "set" : "clydes-lost-set",
-      "stats" : {
-        "health" : 7,
-        "defense" : 15,
-        "evasion" : 10,
-        "crit-damage" : 40
-      }
-    },
-    "rarity" : "mythic"
-  }, {
-    "id" : "old-leather-boots",
-    "name" : "Old Leather Boots",
-    "material" : "leather_boots",
-    "description" : "With the amount of holes, they may as well be sandals.",
-    "item-type" : "boots",
-    "components" : {
-      "stats" : {
-        "defense" : 1
-      }
-    },
-    "level" : 1
-  }, {
-    "id" : "tarnished-golden-knife",
-    "name" : "Tarnished Golden Knife",
-    "material" : "golden_sword",
-    "description" : "A very old knife, plated in gold. Terrible quality, but with immense mystical potential.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "enchantSlots" : 5,
-      "stats" : {
-        "weapon-damage" : 5,
-        "strain" : 30
-      }
-    },
-    "rarity" : "rare",
-    "level" : 10
-  }, {
-    "id" : "slime",
-    "name" : "Slime",
-    "material" : "slime_ball",
-    "description" : "Tastes like a booger. Don't ask how I know that.",
-    "item-type" : "material",
-    "stack-size" : 64
   }, {
     "id" : "spider-silk",
     "name" : "Spider Silk",
@@ -1267,22 +1483,6 @@
       }
     }
   }, {
-    "id" : "torn-cloth",
-    "name" : "Torn Cloth",
-    "material" : "rabbit_hide",
-    "description" : "Very low quality.",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "rare"
-  }, {
-    "id" : "crude-iron",
-    "name" : "Crude Iron",
-    "material" : "raw_iron",
-    "description" : "Seems to have been wrecked relatively recently.",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "rare"
-  }, {
     "id" : "fungus",
     "name" : "Fungus",
     "material" : "brown_mushroom",
@@ -1308,26 +1508,6 @@
     "rarity" : "uncommon",
     "level" : 12
   }, {
-    "id" : "weighted-javelin",
-    "name" : "Weighted Javelin",
-    "material" : "iron_spear",
-    "description" : "A javelin with a very heavy tip, which lurches the user forwards when used.",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "lunging-thrust", "two-handed" ],
-      "enchantSlots" : 1,
-      "stats" : {
-        "evasion" : 5,
-        "weapon-damage" : 30,
-        "knockback" : 30,
-        "strain" : 45,
-        "move-speed" : 15,
-        "weapon-range" : 1
-      }
-    },
-    "rarity" : "epic",
-    "level" : 7
-  }, {
     "id" : "gourmands-bib",
     "name" : "Gourmand's Bib",
     "material" : "golden_chestplate",
@@ -1344,16 +1524,6 @@
     },
     "rarity" : "legendary",
     "level" : 10
-  }, {
-    "id" : "aerogel",
-    "name" : "Aerogel",
-    "material" : "light_blue_stained_glass",
-    "description" : "As perceptible as it is heavy.",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "enchantment" : "light"
-    }
   }, {
     "id" : "granite-greatsword",
     "name" : "Granite Greatsword",
@@ -1385,60 +1555,11 @@
     },
     "rarity" : "mythic"
   }, {
-    "id" : "golden-nugget",
-    "name" : "Golden Nugget",
-    "material" : "gold_nugget",
-    "description" : "Shiny...",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "legendary"
-  }, {
-    "id" : "old-whetstone",
-    "name" : "Old Whetstone",
-    "material" : "brick",
-    "description" : "A very old whetstone, covered in the rust of hundreds of sharpened blades.",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "melee-weapon",
-      "enchantment" : "sharp"
-    }
-  }, {
-    "id" : "old-leather-pants",
-    "name" : "Old Leather Pants",
-    "material" : "leather_leggings",
-    "description" : "Denim jeans with the color washed off.",
-    "item-type" : "leggings",
-    "components" : {
-      "stats" : {
-        "defense" : 1
-      }
-    },
-    "level" : 1
-  }, {
     "id" : "bone",
     "name" : "Bone",
     "material" : "bone",
     "description" : "I used to be a femur.",
     "item-type" : "material",
-    "stack-size" : 64
-  }, {
-    "id" : "padded-leather-boots",
-    "name" : "Padded Leather Boots",
-    "material" : "leather_boots",
-    "description" : "Budget UGG boots.",
-    "item-type" : "boots",
-    "components" : {
-      "stats" : {
-        "health" : 1,
-        "defense" : 1
-      }
-    },
-    "level" : 10
-  }, {
-    "id" : "menu",
-    "name" : "Menu",
-    "material" : "knowledge_book",
-    "item-type" : "menu",
     "stack-size" : 64
   }, {
     "id" : "wooden-sword",
@@ -1454,35 +1575,6 @@
       }
     },
     "level" : 5
-  }, {
-    "id" : "speed-potion",
-    "name" : "Speed Potion",
-    "material" : "potion",
-    "description" : "Perfectly legal.",
-    "color" : "#88ffff",
-    "item-type" : "potion",
-    "stack-size" : 8,
-    "components" : {
-      "attributes" : [ "potion", "drinkable" ],
-      "effects" : {
-        "speed" : {
-          "amplifier" : 5,
-          "ticks" : 1200
-        }
-      }
-    },
-    "rarity" : "uncommon"
-  }, {
-    "id" : "infected-spleen",
-    "name" : "Infected Spleen",
-    "material" : "beef",
-    "description" : "Looks like its about to burst.",
-    "item-type" : "enchantment",
-    "components" : {
-      "attribute-target" : "weapon",
-      "enchantment" : "visceral"
-    },
-    "rarity" : "rare"
   }, {
     "id" : "vampires-tooth",
     "name" : "Vampire's Tooth",
@@ -1501,19 +1593,6 @@
     "rarity" : "legendary",
     "level" : 6
   }, {
-    "id" : "toughened-leather-tunic",
-    "name" : "Toughened Leather Tunic",
-    "material" : "leather_chestplate",
-    "description" : "Makes the wearer look gangster af.",
-    "item-type" : "chestplate",
-    "components" : {
-      "stats" : {
-        "health" : 2,
-        "defense" : 4
-      }
-    },
-    "level" : 15
-  }, {
     "id" : "strainplusser",
     "name" : "Strainplusser",
     "material" : "golden_chestplate",
@@ -1526,22 +1605,6 @@
     },
     "rarity" : "developer",
     "level" : 1
-  }, {
-    "id" : "madam-8-legs",
-    "name" : "Madam 8 Legs",
-    "material" : "diamond_leggings",
-    "description" : "A pair of enchanted legs that greatly increase the speed of the wearer",
-    "item-type" : "leggings",
-    "components" : {
-      "stats" : {
-        "health" : 5,
-        "defense" : 10,
-        "attack-speed" : 25,
-        "crit-chance" : 25,
-        "move-speed" : 25
-      }
-    },
-    "rarity" : "epic"
   }, {
     "id" : "aerodynamic-pommel",
     "name" : "Aerodynamic Pommel",
@@ -1569,31 +1632,6 @@
     },
     "rarity" : "rare",
     "level" : 5
-  }, {
-    "id" : "double-bladed-scimitar",
-    "name" : "Double Bladed Scimitar",
-    "material" : "diamond_sword",
-    "description" : "AGAIN!",
-    "item-type" : "melee-weapon",
-    "components" : {
-      "attributes" : [ "blade" ],
-      "enchantSlots" : 4,
-      "stats" : {
-        "weapon-damage" : 12,
-        "strain" : 35,
-        "recursion" : 1
-      }
-    },
-    "rarity" : "legendary",
-    "level" : 13
-  }, {
-    "id" : "blaze-rod",
-    "name" : "Blaze Rod",
-    "material" : "blaze_rod",
-    "description" : "What are these? Arms? Legs? Tentacles???",
-    "item-type" : "material",
-    "stack-size" : 64,
-    "rarity" : "epic"
   }, {
     "id" : "vial-of-blood",
     "name" : "Vial of Blood",
