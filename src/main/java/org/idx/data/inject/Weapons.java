@@ -243,7 +243,7 @@ public class Weapons extends DataInjector {
                 .addComponent(new StatsComponent(Map.of(
                     Stat.WEAPON_DAMAGE, 12,
                     Stat.STRAIN, 35,
-                    Stat.RECURSION, 1
+                    Stat.RECURSION, 100
                 )))
                 .addComponent(new AttributesComponent("blade")
                     .setEnchantSlots(4)
